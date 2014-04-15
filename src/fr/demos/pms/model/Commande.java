@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Commande {
@@ -14,6 +16,8 @@ public class Commande {
 	private long idCommande;
 	private Date dateCommande;
 	
+	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD
+	@ManyToOne()
 	private Client client;
 	
 	

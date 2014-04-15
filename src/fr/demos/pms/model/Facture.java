@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Facture {
@@ -13,6 +16,17 @@ public class Facture {
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long idFacture;
 	private Date dateFacture;
+	
+	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD
+	@OneToOne()
+	private Client client;
+	
+	@JoinColumn(name="idCommande")  //le nom de la colone dans la table DVD
+	@OneToOne()
+	private Commande commande;
+	private double totalTTC;
+	private double totalHT;
+	private double totalTVA;
 	
 	
 	protected Facture(){}
