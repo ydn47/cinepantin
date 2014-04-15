@@ -11,6 +11,7 @@ public class Client {
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Column(name="idClient")
 	private long idClient;
 	
 	private String login;

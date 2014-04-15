@@ -9,12 +9,15 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Facture {
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long idFacture;
+	@Temporal(TemporalType.DATE)
 	private Date dateFacture;
 	
 	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD

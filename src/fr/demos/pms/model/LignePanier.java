@@ -8,7 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class lignePanier {
+public class LignePanier {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int idLignePanier;
@@ -49,7 +49,7 @@ public class lignePanier {
 		this.qteCommande = qteCommande;
 	}
 
-	public lignePanier(int idLignePanier, int idArticle, int idPanier,
+	public LignePanier(int idLignePanier, int idArticle, int idPanier,
 			int qteCommande) {
 		super();
 		this.idLignePanier = idLignePanier;
