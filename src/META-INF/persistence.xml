@@ -4,21 +4,21 @@
 	<persistence-unit name="CinePAntin" transaction-type="JTA">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> 
 		 <!--<provider>org.hibernate.ejb.HibernatePersistence</provider> -->
-		 <jta-data-source>jdbc/cinepantin</jta-data-source>
+		 <jta-data-source>jdbc/cinePantin</jta-data-source>
 		 
 		<class>fr.demos.pms.model.Client</class>
 		 <class>fr.demos.pms.model.Commande</class>
 		 <class>fr.demos.pms.model.Article</class>
 		 <class>fr.demos.pms.model.Categorie</class>
 		 <class>fr.demos.pms.model.PlageDePrix</class>
-		 <class>fr.demos.pms.model.LigneCommande</class>
-		 <class>fr.demos.pms.model.Panier</class>
+		 <class>fr.demos.pms.model.LigneCommande</class>  
+		  <class>fr.demos.pms.model.Panier</class> 
 		 <class>fr.demos.pms.model.LignePanier</class>
-		 <class>fr.demos.pms.model.Facture</class>
+		 <class>fr.demos.pms.model.Facture</class>   
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="eclipselink.logging.level.sql" value="FINE"/> 
-			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
 			<!-- <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" />
       		<property name="hibernate.hbm2ddl.auto" value="update"/>
       		<property name="hibernate.show_sql" value="true" />-->
