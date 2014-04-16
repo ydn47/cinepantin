@@ -14,36 +14,32 @@ public class LignePanier {
 	private int idLignePanier;
 	@JoinColumn(name = "idArticle")
 	@ManyToOne()
-	private int idArticle;
+	private Article article;
 	@JoinColumn(name = "idPanier")
 	@ManyToOne()
-	private int idPanier;
+	private Panier Panier;
+	
 	private int qteCommande;
 
 	protected LignePanier() {
 		
 	}
-	
-	public int getIdLignePanier() {
-		return idLignePanier;
+
+	public Article getArticle() {
+		return article;
 	}
 
-	public void setIdLignePanier(int idLignePanier) {
-		this.idLignePanier = idLignePanier;
+	public void setArticle(Article article) {
+		this.article = article;
 	}
 
-	public int getIdPanier() {
-		return idPanier;
+	public Panier getPanier() {
+		return Panier;
 	}
 
-	public void setIdPanier(int idPanier) {
-		this.idPanier = idPanier;
+	public void setPanier(Panier panier) {
+		Panier = panier;
 	}
-
-	public int getIdArticle() {
-		return idArticle;
-	}
-
 
 	public int getQteCommande() {
 		return qteCommande;
@@ -53,21 +49,18 @@ public class LignePanier {
 		this.qteCommande = qteCommande;
 	}
 
-	public LignePanier(int idLignePanier, int idArticle, int idPanier,
-			int qteCommande) {
-		super();
-		this.idLignePanier = idLignePanier;
-		this.idArticle = idArticle;
-		this.idPanier = idPanier;
-		this.qteCommande = qteCommande;
+	public int getIdLignePanier() {
+		return idLignePanier;
 	}
 
 	@Override
 	public String toString() {
-		return "lignePanier [idLignePanier=" + idLignePanier + ", idArticle="
-				+ idArticle + ", idPanier=" + idPanier + ", qteCommande="
+		return "LignePanier [idLignePanier=" + idLignePanier + ", article="
+				+ article + ", Panier=" + Panier + ", qteCommande="
 				+ qteCommande + "]";
 	}
+	
+	
 
 	
 }

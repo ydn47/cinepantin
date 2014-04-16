@@ -1,6 +1,6 @@
 package fr.demos.pms.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Panier {
@@ -17,21 +19,27 @@ public class Panier {
 
 	@JoinColumn(name = "idClient")
 	@OneToOne()
-	private int idClient;
-
+	private Client client;
+	@Temporal(TemporalType.DATE)
 	private Date datePanier;
 	
 	protected Panier() {
 		
 	}
 
-	public int getIdClient() {
-		return idClient;
+	
+	
+	public Client getClient() {
+		return client;
 	}
 
-	public void setIdClient(int idClient) {
-		this.idClient = idClient;
+
+
+	public void setClient(Client client) {
+		this.client = client;
 	}
+
+
 
 	public Date getDatePanier() {
 		return datePanier;
@@ -48,13 +56,13 @@ public class Panier {
 	public Panier(int idPanier, int idClient, Date datePanier) {
 		super();
 		this.idPanier = idPanier;
-		this.idClient = idClient;
+		this.client = client;
 		this.datePanier = datePanier;
 	}
 
 	@Override
 	public String toString() {
-		return "Panier [idPanier=" + idPanier + ", idClient=" + idClient
+		return "Panier [idPanier=" + idPanier + ", idClient=" + client.getIdClient()
 				+ ", datePanier=" + datePanier + "]";
 	}
 
