@@ -20,6 +20,10 @@ public class Panier {
 	private int idClient;
 
 	private Date datePanier;
+	
+	protected Panier() {
+		
+	}
 
 	public int getIdClient() {
 		return idClient;

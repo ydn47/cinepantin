@@ -20,6 +20,10 @@ public class LignePanier {
 	private int idPanier;
 	private int qteCommande;
 
+	protected LignePanier() {
+		
+	}
+	
 	public int getIdLignePanier() {
 		return idLignePanier;
 	}
