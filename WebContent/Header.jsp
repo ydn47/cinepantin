@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="${boots}" />
 <link rel="stylesheet" type="text/css" media="screen"
 	href="//d85wutc1n854v.cloudfront.net/live/css/screen.css?buster-140319-2">
+
+<c:url var = "signin"  value="/sign/in"/>
+<c:url var = "signup"  value="/sign/up"/>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -34,10 +37,11 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<ul class="nav secondary-nav">
-					<li><a href="/signin"
-						style="padding-left: 17px; background: transparent url('//d85wutc1n854v.cloudfront.net/live/imgs/lock_icon.png') no-repeat 0px center;">Sign
-							in</a></li>
-					<li><a href="/signup">Sign up</a></li>
+					<li><a href="${signin}"
+						style="padding-left: 17px; background: transparent url('//d85wutc1n854v.cloudfront.net/live/imgs/lock_icon.png') no-repeat 0px center;">
+						Se connecter
+							</a></li>
+					<li><a href="${signup}">Créer un compte</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->

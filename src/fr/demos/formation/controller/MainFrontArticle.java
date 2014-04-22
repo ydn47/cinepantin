@@ -74,15 +74,11 @@ public class MainFrontArticle extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 			
-			Collection<Client>	 dvdsList = new ArrayList<>();
-			dvdsList = (Collection<Client>) daoDvd.findByParam("login", "mpd");
 			
-			  
-			request.setAttribute("dvdsList", dvdsList);
 			
 		
 			RequestDispatcher rd = request
-					.getRequestDispatcher("/newFile.jsp");
+					.getRequestDispatcher("/Main.jsp");
 					rd.forward(request, response);
 			return;		
 	}		

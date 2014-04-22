@@ -21,6 +21,16 @@ public class Client {
 	
 	protected Client(){}
 
+	
+	public Client(String login, String mdp, String nom, String prenom) {
+		super();
+		this.login = login;
+		this.mdp = mdp;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+
+
 	public long getIdClient() {
 		return idClient;
 	}

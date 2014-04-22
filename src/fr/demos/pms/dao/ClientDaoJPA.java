@@ -10,6 +10,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.UserTransaction;
 
+
 import fr.demos.pms.model.Client;
 
 public class ClientDaoJPA implements ClientDao {
@@ -43,6 +44,29 @@ public class ClientDaoJPA implements ClientDao {
 			}
 		} 
 		return user;
+	}
+
+
+
+	@Override
+	public Client findByLogin(String login) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public void create(Client c) throws DAOException {
+		try {
+			ut.begin();
+			em.persist(c);
+			ut.commit(); //le commit entraine le flush
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new DAOException("Pb création compte : " + c.getLogin(), e);		
+		}	
+		
 	}
 
 	
