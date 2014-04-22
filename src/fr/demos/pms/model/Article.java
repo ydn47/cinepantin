@@ -1,5 +1,7 @@
 package fr.demos.pms.model;
 
+import java.util.HashMap;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,7 +26,9 @@ public class Article {
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
 	private PlageDePrix plagePrixArticle;
-
+	
+	private HashMap<String, String> proprietes ;
+	
 	protected Article() {
 		// pour Hibernate
 	}

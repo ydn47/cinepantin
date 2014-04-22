@@ -44,8 +44,8 @@ import fr.demos.pms.model.Client;
  * Servlet implementation class SaisieDvd
  */
 //@WebServlet("/CrudDvd")
-@WebServlet("/dvd/*")   //getPathInfo()  /dvd/liste ; /dvd/add
-public class CrudDvd extends HttpServlet {
+@WebServlet("/boutique")   //getPathInfo()  /dvd/liste ; /dvd/add
+public class MainFrontArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	//@Inject  @Dao  //on cree nos propres annotations
@@ -57,19 +57,25 @@ public class CrudDvd extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CrudDvd() {
+    public MainFrontArticle() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * TODO 
+	 * charger la page acceuil home.jsp 
+	-menu/footer/logo
+	- partie user/client)
+	- zone de recherche
+	 -afficher la liste de top ventes
+	 * 
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 			
 			Collection<Client>	 dvdsList = new ArrayList<>();
-			 dvdsList = (Collection<Client>) daoDvd.findByParam("login", "mpd");
+			dvdsList = (Collection<Client>) daoDvd.findByParam("login", "mpd");
 			
 			  
 			request.setAttribute("dvdsList", dvdsList);
