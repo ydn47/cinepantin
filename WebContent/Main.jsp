@@ -13,17 +13,19 @@
 	<c:url var = "boots"     value="/_css/bootstrap.min.css"/>
 	<c:url var = "bord"     value="/_css/dashboard.css"/>
 	<c:url var = "starter"     value="/_css/starter-template.css"/>
+	<c:url var = "starter"     value="/_css/jumbotron.css"/>
 
 
 	<c:url var="urlAdd" value="/dvd/add" />
 	<link rel="stylesheet" href="${bord}" >
-	<link rel="stylesheet" href="${normalize}"  />
+	<link rel="stylesheet" href="${normalize}"/>
 	<link rel="stylesheet" href="${boots}" />
-	<link href="${starter}" rel="stylesheet">
+<%-- 	<link href="${starter}" rel="stylesheet"> --%>
+	<link href="${jumbotron}" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="//d85wutc1n854v.cloudfront.net/live/css/screen.css?buster-140319-2">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -47,9 +49,8 @@
 							in</a></li>
 					<li><a href="/signup">Sign up</a></li>
 				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		
+			</div><!--/.nav-collapse -->
+		</div>
 		<div id="menu">
                                 <div class="container">
                                         <div id="categories">
@@ -78,65 +79,40 @@
                                         </div>
                                        
                                 </div>
-                        </div>
+         </div>
+    </div>   <!-- /.navbar -->
+   <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+      </div>
     </div>
- </div>    
-     
-<div class="container">
-
-      <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
-          <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-          </div>
-          <div class="row">
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-
-      </div><!--/row-->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
 
       <hr>
 
       <footer>
         <p>© Company 2014</p>
       </footer>
-
     </div>
-
 </body>
 </html>
