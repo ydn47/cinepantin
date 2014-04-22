@@ -50,7 +50,7 @@
 			<div class="container">
 				<div id="categories">
 					<div class="category_button">
-						<a href="#" title="Select a category">Categories</a>
+						<a href="#" title="Sélectionnez une catégorie">Catégories</a>
 					</div>
 					<div class="dropdown_container">
 						<div class="categories">

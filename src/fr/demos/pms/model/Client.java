@@ -18,16 +18,17 @@ public class Client {
 	private String mdp;
 	private String nom;
 	private String prenom;
-	
+	private int newsletter;
 	protected Client(){}
 
 	
-	public Client(String login, String mdp, String nom, String prenom) {
+	public Client(String nom, String prenom,String login, String mdp,  int newsletter) {
 		super();
 		this.login = login;
 		this.mdp = mdp;
 		this.nom = nom;
 		this.prenom = prenom;
+		this.newsletter= newsletter;
 	}
 
 
@@ -51,5 +52,19 @@ public class Client {
 		return prenom;
 	}
 
+
+	public int getNewsletter() {
+		return newsletter;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Client [idClient=" + idClient + ", login=" + login + ", mdp="
+				+ mdp + ", nom=" + nom + ", prenom=" + prenom + ", newsletter="
+				+ newsletter + "]";
+	}
+
+	
 	
 }

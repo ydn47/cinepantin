@@ -11,6 +11,8 @@ import javax.persistence.TypedQuery;
 import javax.transaction.UserTransaction;
 
 
+
+
 import fr.demos.pms.model.Client;
 
 public class ClientDaoJPA implements ClientDao {
@@ -30,8 +32,8 @@ public class ClientDaoJPA implements ClientDao {
 
 	@Override
 	public Client findByParam(String login, String mdp) {
-		Client user = null;
-		String query = "select u from client u where u.login = ?1 and u.mdp = ?2";
+		Client client = null;
+		String query = "select c from client c where c.login = ?1 and c.mdp = ?2";
 		TypedQuery<Client> q = em.createQuery(query,Client.class);
 		q.setParameter(1,login);
 		q.setParameter(2,mdp);
@@ -39,19 +41,31 @@ public class ClientDaoJPA implements ClientDao {
 		int n = list.size();
 		if ( n==1 ){
 			for (Client user2 : list) {
-				user = user2;
+				client = user2;
 				break;
 			}
 		} 
-		return user;
+		return client;
 	}
 
 
 
 	@Override
 	public Client findByLogin(String login) {
-		// TODO Auto-generated method stub
-		return null;
+		Client client = null;
+		String query = "select c from Client c where c.login = ?1";
+		TypedQuery<Client> q = em.createQuery(query,Client.class);
+		q.setParameter(1,login);
+		
+		Collection<Client> list = q.getResultList();
+		int n = list.size();
+		if ( n==1 ){
+			for (Client user2 : list) {
+				client = user2;
+				break;
+			}
+		} 
+		return client;
 	}
 
 
@@ -64,7 +78,7 @@ public class ClientDaoJPA implements ClientDao {
 			ut.commit(); //le commit entraine le flush
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new DAOException("Pb création compte : " + c.getLogin(), e);		
+			throw new DAOException("Pb crï¿½ation compte : " + c.getLogin(), e);		
 		}	
 		
 	}
