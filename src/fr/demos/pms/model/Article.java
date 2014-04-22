@@ -18,6 +18,7 @@ public class Article {
 	private String nomArticle;
 	private String shortDescArticle;
 	private String longDescArticle;
+	/// Commentaire bidon
 	private double prixUnitArticle;
 	private int qteStock;
 	@JoinColumn(name = "idCategorie")
