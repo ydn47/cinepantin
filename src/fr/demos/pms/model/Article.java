@@ -28,8 +28,8 @@ public class Article {
 	@ManyToOne()
 	private PlageDePrix plagePrixArticle;
 	
-	private HashMap<String, String> proprietes ;
-	
+	private HashMap<String, String> proprietes ; //a serialiser
+	private String bidon;
 	protected Article() {
 		// pour Hibernate
 	}
