@@ -78,6 +78,7 @@ public class ArticleDaoJPA implements ArticleDao {
 
 	@Override
 	public Article findById(long idArticle) {
+
 		Article article = null;
 		String query = "SELECT a FROM Article a WHERE a.idArticle =?1" ;
 		TypedQuery<Article> q = em.createQuery(query, Article.class);
