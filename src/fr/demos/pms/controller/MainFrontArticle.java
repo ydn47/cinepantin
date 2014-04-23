@@ -20,6 +20,9 @@ import java.util.List;
 
 
 
+
+
+
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,10 +44,17 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
+
+
+
+import com.sun.xml.wss.saml.Action;
+
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ArticleDao;
+import fr.demos.pms.dao.CategorieDao;
 import fr.demos.pms.dao.ClientDao;
 import fr.demos.pms.model.Article;
+import fr.demos.pms.model.Categorie;
 import fr.demos.pms.model.Client;
 
 /**
@@ -61,6 +71,9 @@ public class MainFrontArticle extends HttpServlet {
 	
 	@Inject @Dao
 	private ArticleDao daoArticle;
+	
+	@Inject @Dao
+	private CategorieDao daoCategorie;
 	
 	//si on veut utiliser DvdDaoMySQL , on cree une nouvelle annotation @DaoMysql, et le met sur la classe
 	
@@ -82,12 +95,21 @@ public class MainFrontArticle extends HttpServlet {
 	 * 
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			// récupération du paramètre action dans l'URL
-			// String action = request.getParameter("action");
+		
+			// On vérifie si une recherche a été effectuée
+		    String action = request.getParameter("action");
+		    if (action != null && action.equals("/search")) {
+		    	//
+		    }
+		
+			// chargement des catégories depuis la base de données
+			Collection<Categorie> listeCategories = daoCategorie.findAllCategories();
+			
 		
 			// affichage des articles les plus vendus
 			Collection<Article> listeArticles = daoArticle.showMainArticles();
 			//Collection<Article> listeArticles = daoArticle.findByNom("Germinal");
+			request.setAttribute("lstCategories", listeCategories);
 			request.setAttribute("lstArticles", listeArticles);
 			RequestDispatcher rd = request
 					.getRequestDispatcher("/Main.jsp");
@@ -100,7 +122,7 @@ public class MainFrontArticle extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// Récupération 
 	}
 	
 
