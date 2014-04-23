@@ -21,6 +21,7 @@ public class Article {
 	/// Commentaire bidon
 	private double prixUnitArticle;
 	private int qteStock;
+	private String urlImage;
 	@JoinColumn(name = "idCategorie")
 	@ManyToOne()
 	private Categorie categorie;
@@ -29,7 +30,6 @@ public class Article {
 	private PlageDePrix plagePrixArticle;
 	
 	private HashMap<String, String> proprietes ; //a serialiser
-	private String bidon;
 	protected Article() {
 		// pour Hibernate
 	}
@@ -94,9 +94,12 @@ public class Article {
 		this.plagePrixArticle = plagePrixArticle;
 	}
 
+
+
 	public Article(long idArticle, String nomArticle, String shortDescArticle,
 			String longDescArticle, double prixUnitArticle, int qteStock,
-			Categorie categorie, PlageDePrix plagePrixArticle) {
+			String urlImage, Categorie categorie, PlageDePrix plagePrixArticle,
+			HashMap<String, String> proprietes) {
 		super();
 		this.idArticle = idArticle;
 		this.nomArticle = nomArticle;
@@ -104,8 +107,18 @@ public class Article {
 		this.longDescArticle = longDescArticle;
 		this.prixUnitArticle = prixUnitArticle;
 		this.qteStock = qteStock;
+		this.urlImage = urlImage;
 		this.categorie = categorie;
 		this.plagePrixArticle = plagePrixArticle;
+		this.proprietes = proprietes;
+	}
+
+	public String getUrlImage() {
+		return urlImage;
+	}
+
+	public void setUrlImage(String urlImage) {
+		this.urlImage = urlImage;
 	}
 
 	@Override
@@ -113,9 +126,11 @@ public class Article {
 		return "Article [idArticle=" + idArticle + ", nomArticle=" + nomArticle
 				+ ", shortDescArticle=" + shortDescArticle
 				+ ", longDescArticle=" + longDescArticle + ", prixUnitArticle="
-				+ prixUnitArticle + ", qteStock=" + qteStock + ", categorie="
-				+ categorie + ", plagePrixArticle=" + plagePrixArticle + "]";
+				+ prixUnitArticle + ", qteStock=" + qteStock + ", urlImage="
+				+ urlImage + ", categorie=" + categorie + ", plagePrixArticle="
+				+ plagePrixArticle + ", proprietes=" + proprietes + "]";
 	}
+	
 
 	// TODO : générer méthodes equals et hashcode
 }
