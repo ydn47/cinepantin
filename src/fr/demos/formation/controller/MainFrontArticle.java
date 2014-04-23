@@ -16,6 +16,9 @@ import java.util.List;
 
 
 
+
+
+
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,8 +39,13 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
+
+
+
 import fr.demos.formation.annotation.Dao;
+import fr.demos.pms.dao.ArticleDao;
 import fr.demos.pms.dao.ClientDao;
+import fr.demos.pms.model.Article;
 import fr.demos.pms.model.Client;
 
 /**
@@ -49,8 +57,11 @@ public class MainFrontArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	//@Inject  @Dao  //on cree nos propres annotations
-	private ClientDao daoDvd;
+	//private ClientDao daoDvd;
 	//private DvdDaoJPA daoDvd;
+	
+	@Inject @Dao
+	private ArticleDao daoArticle;
 	
 	//si on veut utiliser DvdDaoMySQL , on cree une nouvelle annotation @DaoMysql, et le met sur la classe
 	
@@ -72,15 +83,17 @@ public class MainFrontArticle extends HttpServlet {
 	 * 
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			// récupération du paramètre action dans l'URL
+			// String action = request.getParameter("action");
 		
-			
-			
-			
-		
+			// affichage des articles les plus vendus
+			Collection<Article> listeArticles = daoArticle.showMainArticles();
+			request.setAttribute("lstArticles", listeArticles);
 			RequestDispatcher rd = request
 					.getRequestDispatcher("/Main.jsp");
 					rd.forward(request, response);
-			return;		
+					return;
+					
 	}		
 		
 	/**
