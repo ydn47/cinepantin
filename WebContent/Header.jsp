@@ -72,35 +72,11 @@
 					<div class="dropdown_container">
 						<div class="categories">
 							<ul>
+								<c:forEach var="cat" items="${lstCategories}">
 								<li><a href="/themes/admin"
-									title="Admin, dashboard, and other backend themes">Admin
-										&amp; Dashboards <span>&nbsp;</span>
+									title="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}<span>&nbsp;</span>
 								</a></li>
-								<li><a href="/themes/landing-pages"
-									title="Landing page themes">Landing Pages <span>&nbsp;</span></a></li>
-								<li><a href="/themes/business"
-									title="Business and corporate themes">Business &amp;
-										Corporate <span>&nbsp;</span>
-								</a></li>
-								<li><a href="/themes/portfolios" title="Portfolio themes">Portfolios
-										<span>&nbsp;</span>
-								</a></li>
-								<li><a href="/themes/resumes-cv"
-									title="Resume and Curriculum Vitae (CV) themes">Resumes
-										&amp; CV <span>&nbsp;</span>
-								</a></li>
-								<li><a href="/themes/e-commerce"
-									title="E-Commerce and shopping themes">E-Commerce <span>&nbsp;</span></a></li>
-								<li><a href="/themes/components" title="Theme components">Components
-										<span>&nbsp;</span>
-								</a></li>
-								<li><a href="/themes/blogs-magazines"
-									title="Blog and magazine themes">Blogs &amp; Magazines <span>&nbsp;</span></a></li>
-								<li><a href="/themes/wordpress"
-									title="Bootstrap WordPress themes">WordPress <span>&nbsp;</span></a></li>
-								<li><a href="/themes/other" title="Miscellaneous themes">Other
-										<span>&nbsp;</span>
-								</a></li>
+								</c:forEach>
 							</ul>
 						</div>
 					</div>

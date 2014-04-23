@@ -35,15 +35,16 @@ public class FrontArticle extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
+		long idArticle = 0;
 		try {
-			long idArticle = Long.parseLong(info);
+			idArticle = Long.parseLong(info);
 		} catch (NumberFormatException e) {
 			System.err.println("Id article non valide" + e);
 		}
 		
-		if (idArticle != null) {
-			Article article = daoArticle.findById(idArticle);
-		}
+		
+		Article article = daoArticle.findById(idArticle);
+		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/Article.jsp");
 				rd.forward(request, response);
