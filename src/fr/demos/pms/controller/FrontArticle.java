@@ -33,22 +33,28 @@ public class FrontArticle extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session = request.getSession(); 
-		String info = request.getPathInfo();
+		
+		String info = request.getPathInfo();  //  /3
+		System.out.println ("infooooooooo" +info.substring(1));
 		long idArticle = 0;
+		
 		try {
-			idArticle = Long.parseLong(info);
+			idArticle = Long.parseLong(info.substring(1));
 		} catch (NumberFormatException e) {
 			System.err.println("Id article non valide" + e);
 		}
 		
-		
-		Article article = daoArticle.findById(idArticle);
+		Article article = null;
+		article = daoArticle.findById(idArticle);
+		System.out.print(article);
+		if (article != null)
+			request.setAttribute("articleObject", article);
 		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/Article.jsp");
 				rd.forward(request, response);
 				return;
+		
 	}
 
 	/**

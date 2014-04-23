@@ -12,6 +12,7 @@
 <c:url var="bootsiconlarge"   value="/_css/bootstrap.icon-large.min.css" />
 <c:url var="bootscloudfront"  value="/_css/screen.css" />
 <c:url var="jumbotron"  	  value="/_css/jumbotron.css" />
+<c:url var="dashboard"            value="/_css/dashboard.css" />
 <c:url var="img"              value="/_img" />
 
 <link rel="stylesheet" href="${normalize}" />
