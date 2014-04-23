@@ -75,4 +75,16 @@ public class ArticleDaoJPA implements ArticleDao {
 		
 	}
 
+	@Override
+	public Article findById(long idArticle) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Article findByNom(String nomArticle) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

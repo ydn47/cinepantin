@@ -97,25 +97,29 @@ public class MainFrontArticle extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 			// On vérifie si une recherche a été effectuée
-		    String action = request.getParameter("action");
+		    /*String action = request.getParameter("action");
 		    if (action != null && action.equals("/search")) {
-		    	//
+		    	String searchParameter = request.getParameter(name)
+		    	RequestDispatcher rd = request
+						.getRequestDispatcher("/Article.jsp");
+						rd.forward(request, response);
+						return;
 		    }
-		
-			// chargement des catégories depuis la base de données
-			Collection<Categorie> listeCategories = daoCategorie.findAllCategories();
+		    else // aucune recherche effectuée, comportement par défaut
+		    {*/
+		    	// chargement des catégories depuis la base de données
+				Collection<Categorie> listeCategories = daoCategorie.findAllCategories();
+				
 			
-		
-			// affichage des articles les plus vendus
-			Collection<Article> listeArticles = daoArticle.showMainArticles();
-			//Collection<Article> listeArticles = daoArticle.findByNom("Germinal");
-			request.setAttribute("lstCategories", listeCategories);
-			request.setAttribute("lstArticles", listeArticles);
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/Main.jsp");
-					rd.forward(request, response);
-					return;
-					
+				// affichage des articles les plus vendus
+				Collection<Article> listeArticles = daoArticle.showMainArticles();
+				request.setAttribute("lstCategories", listeCategories);
+				request.setAttribute("lstArticles", listeArticles);
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/Main.jsp");
+						rd.forward(request, response);
+						return;
+		  //  }				
 	}		
 		
 	/**
