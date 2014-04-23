@@ -11,13 +11,15 @@
 <c:url var="boots"            value="/_css/bootstrap.min.css" />
 <c:url var="bootsiconlarge"   value="/_css/bootstrap.icon-large.min.css" />
 <c:url var="bootscloudfront"  value="/_css/screen.css" />
+<c:url var="jumbotron"  	  value="/_css/jumbotron.css" />
 <c:url var="img"              value="/_img" />
 
 <link rel="stylesheet" href="${normalize}" />
 <link rel="stylesheet" href="${boots}" />
 <link rel="stylesheet" href="${bootsiconlarge}" >
 <link rel="stylesheet" href="${bootscloudfront}">
-
+<link rel="stylesheet" href="${jumbotron}">
+<c:url var = "article"  value="/article/"/>
 <c:url var = "boutique"  value="/boutique"/>
 <c:url var = "signin"  value="/sign/in"/>
 <c:url var = "signup"  value="/sign/up"/>
@@ -46,16 +48,16 @@
 				<ul class="nav secondary-nav">
 					<c:choose>
   						<c:when test="${msg != null}">
-  							<li><a class="dropdown-toggle" href="${signmodif}"><i class="glyphicon glyphicon-user"></i> ${msg}</a></li>
-    						<li><a class="dropdown-toggle"  href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
+  							<li><a href="${signmodif}"><i class="glyphicon glyphicon-user"></i> ${msg}</a></li>
+    						<li><a href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
   						</c:when>
   						<c:otherwise>
   							
-  							<li ><a class="dropdown-toggle" href="${signin}"><i class="glyphicon glyphicon-lock"></i> Se connecter</a></li>
-							<li ><a  class="dropdown-toggle" href="${signup}">Créer un compte</a></li>
+  							<li ><a  href="${signin}"><i class="glyphicon glyphicon-lock"></i> Se connecter</a></li>
+							<li ><a   href="${signup}">Créer un compte</a></li>
   						</c:otherwise>
 					</c:choose>
-				<li><a class="dropdown-toggle href="${signmodif}"><i class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
+				<li><a  class="dropdown-toggle" href="${signmodif}"><i class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
 					
 				</ul>
 			</div>
