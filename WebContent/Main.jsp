@@ -52,15 +52,6 @@
 				<p><a class="btn btn-default" href="#" role="button">Afficher détails »</a></p>
 				</div>
 			</c:forEach>
-			<c:forEach var="article" items="${lstArticles}"
-				varStatus="indexArticle">
-				<div class="col-md-4">
-				<h2>${article.getNomArticle()}</h2>
-				<p>${article.getShortDescArticle()}</p>
-				<p>${article.getLongDescArticle()}</p>
-				<p><a class="btn btn-default" href="#" role="button">Afficher détails »</a></p>
-				</div>
-			</c:forEach>
 		</div>
 
 	</div>
