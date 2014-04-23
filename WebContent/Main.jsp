@@ -30,7 +30,7 @@
 				<h2>${article.getNomArticle()}</h2>
 				<p>${article.getShortDescArticle()}</p>
 				<p>${article.getLongDescArticle()}</p>
-				<p><a class="btn btn-default" href="${article}${article.getIdArticle()}" role="button">Afficher détails »</a></p>
+				<p><a class="btn btn-default" href="${articleCont}${article.getIdArticle()}" role="button">Afficher détails »</a></p>
 				</div>
 			</c:forEach>
 		</div>

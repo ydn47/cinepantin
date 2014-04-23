@@ -8,12 +8,15 @@
 <c:url var="jQuery"           value="/_js/jquery-1.11.0.min.js" />
 <c:url var="bootstjs"         value="/_js/bootstrap.min.js" />
 <c:url var="multiseljs"       value="/_js/bootstrap_multiselect.js" />
+<c:url var="valider"       	 value="/_js/valider.js" />
+
 <c:url var="normalize"        value="/_css/normalize.css" />
 <c:url var="boots"            value="/_css/bootstrap.min.css" />
 <c:url var="bootsiconlarge"   value="/_css/bootstrap.icon-large.min.css" />
 <c:url var="bootscloudfront"  value="/_css/screen.css" />
 <c:url var="jumbotron"  	  value="/_css/jumbotron.css" />
-<c:url var="dashboard"            value="/_css/dashboard.css" />
+<c:url var="dashboard"        value="/_css/dashboard.css" />
+<c:url var="multiselcss"      value="/_css/bootstrap-multiselect.css" />
 <c:url var="img"              value="/_img" />
 
 <link rel="stylesheet" href="${normalize}" />
@@ -21,10 +24,14 @@
 <link rel="stylesheet" href="${bootsiconlarge}" >
 <link rel="stylesheet" href="${bootscloudfront}">
 <link rel="stylesheet" href="${jumbotron}">
+
 <script src="${jQuery}"></script>
 <script src="${bootstjs}"></script>
 <script src="${multiseljs}"></script>
-<c:url var = "article"  value="/article/"/>
+<script src="${valider}"></script>
+
+   
+<c:url var = "articleCont"  value="/article/"/>
 <c:url var = "boutique"  value="/boutique"/>
 <c:url var = "signin"  value="/sign/in"/>
 <c:url var = "signup"  value="/sign/up"/>
@@ -32,6 +39,12 @@
 <c:url var = "signmodif"  value="/sign/editAccount"/>
 </head>
 <body>
+<script type="text/javascript">
+      $(document).ready(function() {
+    	  mutiselectCode();  	 
+    });
+  </script>
+
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -71,23 +84,25 @@
 		<div id="menu">
 			<div class="container">
 				<div id="categories">
-					<div class="category_button">
-						<a href="#" title="Sélectionnez une catégorie">Catégories</a>
-					</div>
-					<select id="example22" multiple="multiple" style="display: none">
-								<c:forEach var="cat" items="${lstCategories}">
-									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option>
-								</c:forEach>
-							</select>
-					<div class="dropdown_container">
-						<div class="categories">
-							<select id="example22" multiple="multiple" style="display: none">
-								<c:forEach var="cat" items="${lstCategories}">
-									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option>
-								</c:forEach>
-							</select>
-						</div>
-					</div>
+				
+					
+<!--  						<a href="#" title="Sélectionnez une catégorie">Catégories</a>  -->
+ 					 
+						<select id="example22" multiple="multiple" style="display: none">
+							<c:forEach var="cat" items="${lstCategories}">
+								<option value="${cat.getIdCategorie()}">${cat.getNomCategorie()}</option>
+							</c:forEach>
+						</select>
+					
+<!-- 					<div class="dropdown_container"> -->
+<!-- 						<div class="categories"> -->
+<!-- 							<select id="example22" multiple="multiple" style="display: none"> -->
+<%-- 								<c:forEach var="cat" items="${lstCategories}"> --%>
+<%-- 									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option> --%>
+<%-- 								</c:forEach> --%>
+<!-- 							</select> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
 				</div>
 				<div id="search">
 					<form action="/search" method="get">
@@ -98,8 +113,8 @@
 				</div>
 
 			</div>
-		</div>
-	</div>
-	<!-- /.navbar -->
+		</div><!-- /.container -->
+	</div><!-- /.menu -->
+
 </body>
 </html>
