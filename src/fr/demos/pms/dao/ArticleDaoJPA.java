@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.UserTransaction;
 
-import fr.demos.formation.annotation.Dao;
+import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.model.Article;
 /**
  * 
