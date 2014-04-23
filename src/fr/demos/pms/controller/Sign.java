@@ -104,8 +104,9 @@ public class Sign extends HttpServlet {
 				
 				if (client != null){
 					session.setAttribute("client", client);
-					RequestDispatcher rd = request.getRequestDispatcher("/boutique");
-					rd.forward(request, response);
+					RequestDispatcher rd = request
+							.getRequestDispatcher("/boutique");
+							rd.forward(request, response);
 					return;	
 					
 				}
@@ -179,9 +180,10 @@ public class Sign extends HttpServlet {
 					}
 					
 					session.setAttribute("client", userParam);
-					RequestDispatcher rd = request.getRequestDispatcher("/Main.jsp");
-					rd.forward(request, response);
-					return;
+					RequestDispatcher rd = request
+							.getRequestDispatcher("/boutique");
+							rd.forward(request, response);
+					return;	
 					
 				}
 			}

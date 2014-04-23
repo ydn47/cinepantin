@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="${bootsiconlarge}" >
 <link rel="stylesheet" href="${bootscloudfront}">
 
+<c:url var = "boutique"  value="/boutique"/>
 <c:url var = "signin"  value="/sign/in"/>
 <c:url var = "signup"  value="/sign/up"/>
 <c:url var = "disconnect"  value="/sign/disconnect"/>
@@ -37,7 +38,7 @@
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Boutique</a></li>
+					<li class="active"><a href="${boutique}">Boutique</a></li>
 					<li><a href="#about">Evènements</a></li>
 					<li><a href="#about">A propos</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -45,23 +46,16 @@
 				<ul class="nav secondary-nav">
 					<c:choose>
   						<c:when test="${msg != null}">
-  							<li><a href="${signmodif}" style="padding-left: 17px; ">${msg}</a></li>
-    						<li><a href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
+  							<li><a class="dropdown-toggle" href="${signmodif}"><i class="glyphicon glyphicon-user"></i> ${msg}</a></li>
+    						<li><a class="dropdown-toggle"  href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
   						</c:when>
   						<c:otherwise>
-  							<li class="dropdown">
-          <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
-            <i class="glyphicon glyphicon-user"></i> Admin <span class="caret"></span></a>
-          <ul id="g-account-menu" class="dropdown-menu" role="menu">
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
-          </ul>
-        </li>
-  							<li><a href="${signin}" style="padding-left: 17px; background: transparent url('${img}/lock_icon.png') no-repeat 0px center;">Se connecter</a></li>
-							<li><a href="${signup}">Créer un compte</a></li>
+  							
+  							<li ><a class="dropdown-toggle" href="${signin}"><i class="glyphicon glyphicon-lock"></i> Se connecter</a></li>
+							<li ><a  class="dropdown-toggle" href="${signup}">Créer un compte</a></li>
   						</c:otherwise>
 					</c:choose>
-				
+				<li><a class="dropdown-toggle href="${signmodif}"><i class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
 					
 				</ul>
 			</div>
