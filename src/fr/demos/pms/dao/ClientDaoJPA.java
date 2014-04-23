@@ -10,11 +10,9 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.UserTransaction;
 
-
-
-
+import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.model.Client;
-
+@Dao
 public class ClientDaoJPA implements ClientDao {
 	
 		@PersistenceContext 
@@ -33,7 +31,7 @@ public class ClientDaoJPA implements ClientDao {
 	@Override
 	public Client findByParam(String login, String mdp) {
 		Client client = null;
-		String query = "select c from client c where c.login = ?1 and c.mdp = ?2";
+		String query = "select c from Client c where c.login = ?1 and c.mdp = ?2"; //le nom de la classe
 		TypedQuery<Client> q = em.createQuery(query,Client.class);
 		q.setParameter(1,login);
 		q.setParameter(2,mdp);
@@ -49,6 +47,7 @@ public class ClientDaoJPA implements ClientDao {
 	}
 
 
+	//ff
 
 	@Override
 	public Client findByLogin(String login) {

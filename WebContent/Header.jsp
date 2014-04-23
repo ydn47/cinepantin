@@ -5,17 +5,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<c:url var="jQuery" value="/_js/libs/jquery-1.10.2.min.js" />
-<c:url var="bootstjs" value="/_js/bootstrap.min.js" />
-<c:url var="normalize" value="/_css/normalize.css" />
-<c:url var="boots" value="/_css/bootstrap.min.css" />
+<c:url var="jQuery"           value="/_js/libs/jquery-1.10.2.min.js" />
+<c:url var="bootstjs"         value="/_js/bootstrap.min.js" />
+<c:url var="normalize"        value="/_css/normalize.css" />
+<c:url var="boots"            value="/_css/bootstrap.min.css" />
+<c:url var="bootsiconlarge"   value="/_css/bootstrap.icon-large.min.css" />
+<c:url var="bootscloudfront"  value="/_css/screen.css" />
+<c:url var="img"              value="/_img" />
+
 <link rel="stylesheet" href="${normalize}" />
 <link rel="stylesheet" href="${boots}" />
-<link rel="stylesheet" type="text/css" media="screen"
-	href="//d85wutc1n854v.cloudfront.net/live/css/screen.css?buster-140319-2">
+<link rel="stylesheet" href="${bootsiconlarge}" >
+<link rel="stylesheet" href="${bootscloudfront}">
 
 <c:url var = "signin"  value="/sign/in"/>
 <c:url var = "signup"  value="/sign/up"/>
+<c:url var = "disconnect"  value="/sign/disconnect"/>
+<c:url var = "signmodif"  value="/sign/editAccount"/>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,11 +43,26 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<ul class="nav secondary-nav">
-					<li><a href="${signin}"
-						style="padding-left: 17px; background: transparent url('//d85wutc1n854v.cloudfront.net/live/imgs/lock_icon.png') no-repeat 0px center;">
-						Se connecter
-							</a></li>
-					<li><a href="${signup}">Créer un compte</a></li>
+					<c:choose>
+  						<c:when test="${msg != null}">
+  							<li><a href="${signmodif}" style="padding-left: 17px; ">${msg}</a></li>
+    						<li><a href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
+  						</c:when>
+  						<c:otherwise>
+  							<li class="dropdown">
+          <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+            <i class="glyphicon glyphicon-user"></i> Admin <span class="caret"></span></a>
+          <ul id="g-account-menu" class="dropdown-menu" role="menu">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+          </ul>
+        </li>
+  							<li><a href="${signin}" style="padding-left: 17px; background: transparent url('${img}/lock_icon.png') no-repeat 0px center;">Se connecter</a></li>
+							<li><a href="${signup}">Créer un compte</a></li>
+  						</c:otherwise>
+					</c:choose>
+				
+					
 				</ul>
 			</div>
 			<!--/.nav-collapse -->

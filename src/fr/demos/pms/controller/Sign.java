@@ -1,10 +1,11 @@
-package fr.demos.formation.controller;
+package fr.demos.pms.controller;
 
 import java.io.IOException;
 import java.util.HashMap;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
+
+
+import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.*;
 import fr.demos.pms.model.Client;
 
@@ -22,8 +26,8 @@ import fr.demos.pms.model.Client;
 @WebServlet("/sign/*")
 public class Sign extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	@Inject  
-	private ClientDaoJPA clientDao;    
+	@Inject  @Dao
+	private ClientDao clientDao;    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -36,6 +40,7 @@ public class Sign extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
 		
 		if ((info != null) && (info.equals("/in")) ){  //se connecter
@@ -50,6 +55,22 @@ public class Sign extends HttpServlet {
 					.getRequestDispatcher("/Signup.jsp");
 					rd.forward(request, response);
 			return;	
+		}else if ((info != null) && (info.equals("/disconnect")) ){ //se deconnecter
+			session.setAttribute("client", null);
+			RequestDispatcher rd = request
+					.getRequestDispatcher("/boutique");
+					rd.forward(request, response);
+			return;	
+		}else if ((info != null) && (info.equals("/editAccount")) ){ //modifier son compte
+			Client client = (Client) session.getAttribute("client");
+			if (client != null){
+				request.setAttribute("nom",client.getNom());
+				request.setAttribute("prenom",client.getPrenom());
+				request.setAttribute("email",client.getLogin());
+				RequestDispatcher rd = request.getRequestDispatcher("/Signup");
+				rd.forward(request, response);
+				return;
+			}
 		}	
 	}
 
@@ -83,9 +104,9 @@ public class Sign extends HttpServlet {
 				
 				if (client != null){
 					session.setAttribute("client", client);
-					RequestDispatcher rd = request.getRequestDispatcher("/Main.jsp");
-							rd.forward(request, response);
-							return;	
+					RequestDispatcher rd = request.getRequestDispatcher("/boutique");
+					rd.forward(request, response);
+					return;	
 					
 				}
 				
