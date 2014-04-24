@@ -9,6 +9,7 @@
 
 
 
+<c:url var = "paniercont" value="/panier"/>
 
 </head>
 <body style="padding-top: 100px">
@@ -28,6 +29,7 @@
 	
 <%-- 	src="${img}/germinal.jpg"> --%>
 	<div class="row featurette">
+	<p id="succes">Il y a actuellement  :${nbvisiteurs} utilisateur(s) connecté(s)</p>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" 
           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
@@ -38,11 +40,28 @@
           <span class="text-muted">${articleObject.getPrixUnitArticle()}</span></h2>
           <p class="lead">${articleObject.getShortDescArticle()}</p>
           <p class="lead">${articleObject.getLongDescArticle()}</p>
-          <p><a class="btn btn-primary" href="#" role="button">Commander</a></p>
-        
+       
+        <form role="form" method="post" action="${paniercont}" id="form-product-details">
+			<!-- Hidden fields -->
+			<div class="hidden">
+				<input type="hidden" value="${articleObject.getIdArticle()}" name="productId">
+			</div>
+
+			<fieldset class="product-cart form-inline">
+				<div class="form-group group-qty">
+					<label for="quantity">Quantité</label>
+					<input type="number" required min="0" value="1" class="form-control" id="quantity" name="quantity">
+				</div>
+
+				<div class="form-group group-btn">
+					<input tabindex="3" class="btn primary large" type="submit" name="addCart" value="Ajouter au panier" />						
+				</div>
+			</fieldset>
+		</form>  
+         </div>
         </div>
          <h2 class="sub-header">Détails sur le produit</h2>
-         <div class="table-responsive" style= "float:left;">
+         <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>

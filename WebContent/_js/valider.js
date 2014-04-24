@@ -1,5 +1,4 @@
 function mutiselectCode() {
-	alert ('tott');
     $('#example22').multiselect({
         includeSelectAllOption: true,
         selectAllValue: 'multiselect-all',

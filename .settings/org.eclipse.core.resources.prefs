@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
 encoding//WebContent/Main.jsp=UTF-8
+encoding//WebContent/_css/product-details.css=UTF-8
 encoding//src/fr/demos/pms/controller/Sign.java=UTF-8
 encoding//src/fr/demos/pms/dao/ClientDaoJPA.java=UTF-8
