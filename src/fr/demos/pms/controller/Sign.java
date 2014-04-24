@@ -16,6 +16,7 @@ import javax.servlet.http.HttpSession;
 
 
 
+
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.*;
 import fr.demos.pms.model.Client;
@@ -27,7 +28,8 @@ import fr.demos.pms.model.Client;
 public class Sign extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Inject  @Dao
-	private ClientDao clientDao;    
+	private ClientDao clientDao;  
+	private PanierDao panierDao;    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -40,6 +42,7 @@ public class Sign extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.print("doGet Singn");
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
 		
@@ -56,6 +59,7 @@ public class Sign extends HttpServlet {
 					rd.forward(request, response);
 			return;	
 		}else if ((info != null) && (info.equals("/disconnect")) ){ //se deconnecter
+			System.out.print ("do Get disconnect");
 			session.setAttribute("client", null);
 			RequestDispatcher rd = request
 					.getRequestDispatcher("/boutique");
@@ -78,6 +82,7 @@ public class Sign extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.print("doPost Singn");
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
 		
@@ -104,12 +109,13 @@ public class Sign extends HttpServlet {
 				
 				if (client != null){
 					session.setAttribute("client", client);
+				}	
 					RequestDispatcher rd = request
 							.getRequestDispatcher("/boutique");
 							rd.forward(request, response);
+							System.out.print("doPost Singn fin");	
 					return;	
-					
-				}
+	
 				
 			}
 		}else if ((info != null) && (info.equals("/up")) ){//creer un compte

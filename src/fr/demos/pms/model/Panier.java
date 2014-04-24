@@ -43,12 +43,48 @@ public class Panier {
 		this.lignesPanier = lignesPanier;
 	}
 
+	public Panier(int idPanier, Client client, Date datePanier) {
+		super();
+		this.idPanier = idPanier;
+		this.client = client;
+		this.datePanier = datePanier;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Panier [idPanier=" + idPanier + ", client=" + client
+				+ ", datePanier=" + datePanier + ", lignesPanier="
+				+ lignesPanier + "]";
+	}
+
+
+
+
+	public ArrayList<LignePanier> getLignesPanier() {
+		return lignesPanier;
+	}
+
+
+
+
+	public void setLignesPanier(ArrayList<LignePanier> lignesPanier) {
+		this.lignesPanier = lignesPanier;
+	}
+
+
+
+
+	public void setIdPanier(int idPanier) {
+		this.idPanier = idPanier;
+	}
+
 
 
 
 	/**
 	* on verifie le stock sans retirer
-	* si on cherche à ajouter un article deja présent, on augmente la quantite
+	* si on cherche ï¿½ ajouter un article deja prï¿½sent, on augmente la quantite
 	* 
 	* @param LignePanier
 	*/
@@ -57,7 +93,7 @@ public class Panier {
 		
 		if (article.isInStock(qte)){  //la qte demande est disponible
 		
-			if (isArticleInCart(article)){ //si l'article est deja présent, on agit sur la quantite
+			if (isArticleInCart(article)){ //si l'article est deja prï¿½sent, on agit sur la quantite
 				for (LignePanier ligne : lignesPanier) {
 					if (ligne.getArticle().equals(article)){
 						ligne.setQteCommande(qte);
@@ -86,8 +122,8 @@ public class Panier {
 	}
 
 	/**
-	* Pour simplifier: pas d'exception ou de résultat
-	* pour indiquer qu'on cherche à supprimer une ligne non présente
+	* Pour simplifier: pas d'exception ou de rï¿½sultat
+	* pour indiquer qu'on cherche ï¿½ supprimer une ligne non prï¿½sente
 	* dans le Panier.
 	* @param livre
 	*/
@@ -98,7 +134,7 @@ public class Panier {
 	}
 
 	/**
-	* typiquement le montant total est un "attribut calculé".
+	* typiquement le montant total est un "attribut calculï¿½".
 	* @return
 	*/
 	public double getMontantTotalHT() {
@@ -133,17 +169,8 @@ public int getIdPanier() {
 	return idPanier;
 }
 
-public Panier(int idPanier, int idClient, Date datePanier) {
-	super();
-	this.idPanier = idPanier;
-	this.client = client;
-	this.datePanier = datePanier;
-}
 
-@Override
-public String toString() {
-	return "Panier [idPanier=" + idPanier + ", idClient=" + client.getIdClient()
-			+ ", datePanier=" + datePanier + "]";
-}
+
+
 
 }

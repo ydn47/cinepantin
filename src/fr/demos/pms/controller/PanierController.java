@@ -67,8 +67,8 @@ public class PanierController extends HttpServlet {
 			try {
 				qte = Integer.parseInt(quantite);
 			} catch (NumberFormatException e) {
-				System.err.println("Qte commandeé non valide" + e);
-				errorMap.put("quantite", "Quantité non valide!");
+				System.err.println("Qte commandeÃ© non valide" + e);
+				errorMap.put("quantite", "QuantitÃ© non valide!");
 			}
 			
 			Article article = null;
@@ -80,7 +80,7 @@ public class PanierController extends HttpServlet {
 					panier.ajouter(article, qte);
 					
 				} catch (ExceptionStock e) {
-					errorMap.put("quantite", "Quantité non disponible!" + "Seulement "+ e.étatStock);
+					errorMap.put("quantite", "QuantitÃ© non disponible!" + "Seulement "+ e.etatStock);
 					e.printStackTrace();
 				}
 				

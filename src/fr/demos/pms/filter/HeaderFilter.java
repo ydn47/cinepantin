@@ -18,19 +18,20 @@ import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ClientDao;
 import fr.demos.pms.dao.ClientDaoJPA;
 import fr.demos.pms.model.Client;
+import fr.demos.pms.model.Panier;
 
 
 /**
  * Servlet Filter implementation class LoginFilter
  */
 @WebFilter(filterName="LoginFilter", urlPatterns={"/*"}, dispatcherTypes={DispatcherType.REQUEST, DispatcherType.FORWARD})
-public class LoginFilter implements Filter {
+public class HeaderFilter implements Filter {
 	@Inject  @Dao
 	private ClientDao clientDao; 
     /**
      * Default constructor. 
      */
-    public LoginFilter() {
+    public HeaderFilter() {
         // TODO Auto-generated constructor stub
     }
 
@@ -44,11 +45,12 @@ public class LoginFilter implements Filter {
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
+	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpSession session = ((HttpServletRequest) request).getSession(); 
 		Client client       = (Client) session.getAttribute("client");
 		System.out.print("clientSession" + client);
-		if (client != null) {
+		if (client != null) {//l'user est connectÃ©, on affiche Bonjour
 			String nom    = client.getNom();
 			String prenom = client.getPrenom();
 			
@@ -57,12 +59,16 @@ public class LoginFilter implements Filter {
 			} else {
 				request.setAttribute("msg","Bonjour");		
 			}
-			/*
-			RequestDispatcher rd =
-					request.getRequestDispatcher("/boutique");
-			rd.forward(request, response);
-			*/
-		}//l'user est connecté, on affiche Bonjour
+		}
+		/*
+		Panier panier = (Panier) session.getAttribute("panier");
+		System.out.print("panierSession" + panier);
+		if (panier!= null) {
+			int nbArticles = panier.getLignesPanier().size();
+			request.setAttribute("nbArticles",nbArticles);	
+			
+		}
+		*/
 		try {
 			chain.doFilter(request, response);
 		} catch (Throwable t) {

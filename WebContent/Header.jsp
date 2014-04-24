@@ -54,7 +54,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">CinePantin</a>
+				<a class="navbar-brand" href="${boutique}">CinePantin</a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
@@ -78,8 +78,76 @@
 							<li><a href="${signup}">Créer un compte</a></li>
 						</c:otherwise>
 					</c:choose>
-					<li><a class="dropdown-toggle" href="${signmodif}"><i
-							class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
+					<!--<li><a class="dropdown-toggle" href><i class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>-->
+					<!-- Empty cart -->
+					<li class="dropdown">
+						<a href="cart.php" rel="nofollow" class="cart">
+							Cart <span class="badge">0</span>
+						</a>
+						<div class="dropdown-menu cart-content">
+							<p>You have no items in your shopping cart.</p>
+						</div>
+					</li>
+					<!-- Not empty cart -->
+							<li class="dropdown cart-not-empty">
+								<a href="cart.php" rel="nofollow" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i>
+									Panier <span class="badge">2</span>
+								</a>
+								<div class="dropdown-menu cart-content">
+									<form id="form-cart-mini" action="cart-step2.php" method="post" role="form">
+										<table class="table table-cart-mini">
+											<colgroup>
+												<col width="70">
+												<col>
+												<col width="100">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="image">
+														<a href="product-details.php" class="thumbnail"><img src="img/product/1/118x85.png" alt="Product #1"></a>
+													</td>
+													<td class="product">
+														<h3 class="name" style="margin:0"><a href="product-details.php">
+															Product #1
+														</a></h3>
+														<a href="?item=1&amp;qty=0" class="btn btn-remove" data-tip="tooltip" data-title="Delete" data-original-title=""><i class="icon-trash"></i> <span>Remove</span></a>
+													</td>
+													<td class="unitprice text-center">
+														<span class=="qty">2</span> X <span class="price" style="font-size:1em;">$50.00</span></div>
+													</td>
+												</tr>
+												<tr>
+													<td class="image">
+														<a href="product-details.php" class="thumbnail"><img src="img/product/1/118x85.png" alt="Product #2"></a>
+													</td>
+													<td class="product">
+														<h3 class="name" style="margin:0"><a href="product-details.php">
+															Product with very long name #2
+														</a></h3>
+														<a href="?item=1&amp;qty=0" class="btn btn-remove" data-tip="tooltip" data-title="Delete" data-original-title=""><i class="icon-trash"></i> <span>Remove</span></a>
+													</td>
+													<td class="unitprice text-center">
+														<span class=="qty">2</span> X <span class="price" style="font-size:1em;">$50.00</span></div>
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr >
+													<td colspan="2" class="empty">
+														<a href="cart.php" role="button" class="btn btn-default btn-sm"><span>View Cart</span></a>
+														<button type="submit" name="checkout" class="btn btn-warning btn-sm"><span>Checkout</span></button>
+													</td>
+													<td class="total">
+														<div class="total-price">
+															<span class="price">$200.00</span>
+														</div>
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+									</form>
+								</div>
+							</li>
 
 				</ul>
 			</div>

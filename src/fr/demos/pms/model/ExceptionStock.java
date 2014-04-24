@@ -8,37 +8,37 @@ public class ExceptionStock extends Exception {
 	private static final long serialVersionUID = 1L;
 	/**
      * NOTE IMPORTANTE: ici il y a un "couplage fort"
-     * entre les classes Livre et ExceptionStock (elles se référencent l'une l'autre)
-     * Il y a plusieurs manières de se tirer de ce mauvais pas
+     * entre les classes Livre et ExceptionStock (elles se rï¿½fï¿½rencent l'une l'autre)
+     * Il y a plusieurs maniï¿½res de se tirer de ce mauvais pas
      * <UL>
-     *   <LI> utiliser l'identifiant unique du livre comme référence
-     *  <LI> utiliser Object (exception plus générale)
-     *  <LI> (Exceptions paramétrées non disponibles pour l'instant)
+     *   <LI> utiliser l'identifiant unique du livre comme rï¿½fï¿½rence
+     *  <LI> utiliser Object (exception plus gï¿½nï¿½rale)
+     *  <LI> (Exceptions paramï¿½trï¿½es non disponibles pour l'instant)
      *  <LI> meilleure option:utiliser un type interface ... voir plus loin
-     *  <LI> créer un type Livre.ExceptionStockLivre qui est spécifique au Livre
-     *    (technique des classes enchassées ... voir plus loin...)
+     *  <LI> crï¿½er un type Livre.ExceptionStockLivre qui est spï¿½cifique au Livre
+     *    (technique des classes enchassï¿½es ... voir plus loin...)
      * </UL>
      */
     public final Article article;
     /**
-     * NOTE IMPORTANTE: l'état du stock est très "fragile" (il évolue en permanence)
-     * entre le moment où l'exception est générée et le moment où elle est exploitée
-     * cet état peut avoir évoluer. on a donc besoin d'un "instantané"
+     * NOTE IMPORTANTE: l'ï¿½tat du stock est trï¿½s "fragile" (il ï¿½volue en permanence)
+     * entre le moment oï¿½ l'exception est gï¿½nï¿½rï¿½e et le moment oï¿½ elle est exploitï¿½e
+     * cet ï¿½tat peut avoir ï¿½voluer. on a donc besoin d'un "instantanï¿½"
      */
-    public final int étatStock;
-    public final int nbDemandé;
+    public final int etatStock;
+    public final int nbDemande;
 
     public ExceptionStock(Article bk, int stock, int req) {
         this.article = bk;
-        this.étatStock = stock;
-        this.nbDemandé = req;
+        this.etatStock = stock;
+        this.nbDemande = req;
     }
 
     @Override
     public String toString() {
         return "StockException: " + this.article +
-                ";stock= " + this.étatStock +
-                ";demandés= " + this.nbDemandé;
+                ";stock= " + this.etatStock +
+                ";demandes= " + this.nbDemande;
     }
 
 }
