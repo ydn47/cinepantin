@@ -5,23 +5,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<c:url var="jQuery"           value="/_js/jquery-1.11.0.min.js" />
-<c:url var="bootstjs"         value="/_js/bootstrap.min.js" />
-<c:url var="multiseljs"       value="/_js/bootstrap_multiselect.js" />
-<c:url var="valider"       	 value="/_js/valider.js" />
+<c:url var="jQuery" value="/_js/jquery-1.11.0.min.js" />
+<c:url var="bootstjs" value="/_js/bootstrap.min.js" />
+<c:url var="multiseljs" value="/_js/bootstrap_multiselect.js" />
+<c:url var="valider" value="/_js/valider.js" />
 
-<c:url var="normalize"        value="/_css/normalize.css" />
-<c:url var="boots"            value="/_css/bootstrap.min.css" />
-<c:url var="bootsiconlarge"   value="/_css/bootstrap.icon-large.min.css" />
-<c:url var="bootscloudfront"  value="/_css/screen.css" />
-<c:url var="jumbotron"  	  value="/_css/jumbotron.css" />
-<c:url var="dashboard"        value="/_css/dashboard.css" />
-<c:url var="multiselcss"      value="/_css/bootstrap-multiselect.css" />
-<c:url var="img"              value="/_img" />
+<c:url var="normalize" value="/_css/normalize.css" />
+<c:url var="boots" value="/_css/bootstrap.min.css" />
+<c:url var="bootsiconlarge" value="/_css/bootstrap.icon-large.min.css" />
+<c:url var="bootscloudfront" value="/_css/screen.css" />
+<c:url var="jumbotron" value="/_css/jumbotron.css" />
+<c:url var="dashboard" value="/_css/dashboard.css" />
+<c:url var="multiselcss" value="/_css/bootstrap-multiselect.css" />
+<c:url var="img" value="/_img" />
 
 <link rel="stylesheet" href="${normalize}" />
 <link rel="stylesheet" href="${boots}" />
-<link rel="stylesheet" href="${bootsiconlarge}" >
+<link rel="stylesheet" href="${bootsiconlarge}">
 <link rel="stylesheet" href="${bootscloudfront}">
 <link rel="stylesheet" href="${jumbotron}">
 
@@ -30,20 +30,20 @@
 <script src="${multiseljs}"></script>
 <script src="${valider}"></script>
 
-   
-<c:url var = "articleCont"  value="/article/"/>
-<c:url var = "boutique"  value="/boutique"/>
-<c:url var = "signin"  value="/sign/in"/>
-<c:url var = "signup"  value="/sign/up"/>
-<c:url var = "disconnect"  value="/sign/disconnect"/>
-<c:url var = "signmodif"  value="/sign/editAccount"/>
+
+<c:url var="articleCont" value="/article/" />
+<c:url var="boutique" value="/boutique" />
+<c:url var="signin" value="/sign/in" />
+<c:url var="signup" value="/sign/up" />
+<c:url var="disconnect" value="/sign/disconnect" />
+<c:url var="signmodif" value="/sign/editAccount" />
 </head>
 <body>
-<script type="text/javascript">
-      $(document).ready(function() {
-    	  mutiselectCode();  	 
-    });
-  </script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			mutiselectCode();
+		});
+	</script>
 
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -65,56 +65,63 @@
 				</ul>
 				<ul class="nav secondary-nav">
 					<c:choose>
-  						<c:when test="${msg != null}">
-  							<li><a href="${signmodif}"><i class="glyphicon glyphicon-user"></i> ${msg}</a></li>
-    						<li><a href="${disconnect}"><i class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
-  						</c:when>
-  						<c:otherwise>
-  							
-  							<li ><a  href="${signin}"><i class="glyphicon glyphicon-lock"></i> Se connecter</a></li>
-							<li ><a   href="${signup}">Créer un compte</a></li>
-  						</c:otherwise>
+						<c:when test="${msg != null}">
+							<li><a href="${signmodif}"><i
+									class="glyphicon glyphicon-user"></i> ${msg}</a></li>
+							<li><a href="${disconnect}"><i
+									class="glyphicon glyphicon-lock"></i> Déconexion</a></li>
+						</c:when>
+						<c:otherwise>
+
+							<li><a href="${signin}"><i
+									class="glyphicon glyphicon-lock"></i> Se connecter</a></li>
+							<li><a href="${signup}">Créer un compte</a></li>
+						</c:otherwise>
 					</c:choose>
-				<li><a  class="dropdown-toggle" href="${signmodif}"><i class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
-					
+					<li><a class="dropdown-toggle" href="${signmodif}"><i
+							class="glyphicon glyphicon-shopping-cart"></i> Panier</a></li>
+
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
 		</div>
 		<div id="menu">
 			<div class="container">
-				<div id="categories">
-				
-					
-<!--  						<a href="#" title="Sélectionnez une catégorie">Catégories</a>  -->
- 					 
-						<select id="example22" multiple="multiple" style="display: none">
+				<form action="${boutique}" method="get">
+					<div id="categories">
+
+
+						<!--  						<a href="#" title="Sélectionnez une catégorie">Catégories</a>  -->
+						<select id="example22" multiple="multiple" style="display: none"
+							name="choixCategories">
 							<c:forEach var="cat" items="${lstCategories}">
 								<option value="${cat.getIdCategorie()}">${cat.getNomCategorie()}</option>
 							</c:forEach>
 						</select>
-					
-<!-- 					<div class="dropdown_container"> -->
-<!-- 						<div class="categories"> -->
-<!-- 							<select id="example22" multiple="multiple" style="display: none"> -->
-<%-- 								<c:forEach var="cat" items="${lstCategories}"> --%>
-<%-- 									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option> --%>
-<%-- 								</c:forEach> --%>
-<!-- 							</select> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-				</div>
-				<div id="search">
-					<form action="/search" method="get">
-						<input class="query" name="q" type="text"
-							placeholder="Enter search terms" size="29" value=""><input
-							class="submit button" type="submit" value="">
-					</form>
-				</div>
 
+						<!-- 					<div class="dropdown_container"> -->
+						<!-- 						<div class="categories"> -->
+						<!-- 							<select id="example22" multiple="multiple" style="display: none"> -->
+						<%-- 								<c:forEach var="cat" items="${lstCategories}"> --%>
+						<%-- 									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option> --%>
+						<%-- 								</c:forEach> --%>
+						<!-- 							</select> -->
+						<!-- 						</div> -->
+						<!-- 					</div> -->
+					</div>
+					<div id="search">
+						<input class="query" name="q" type="text"
+							placeholder="Enter search terms" size="29" value="" id="query"> 
+						<input id="searchForm"
+							class="submit button" type="submit" value="Rechercher"
+							name="search">
+					</div>
+				</form>
 			</div>
-		</div><!-- /.container -->
-	</div><!-- /.menu -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.menu -->
 
 </body>
 </html>

@@ -24,7 +24,6 @@ function mutiselectCode() {
         },
         onChange: function(element, checked) {
             if (checked == true) {
-                //alert ("selected ");
                 // action taken here if true
             }
             else if (checked == false) {
@@ -38,3 +37,16 @@ function mutiselectCode() {
         }
     });
 }
+
+/*
+ * Désactive le bouton de recherche s'il n'y a aucune saisie 
+ 
+$("#searchForm").submit( function(){
+	
+	if ($("#query").val() == '')
+	{
+		$("#searchForm input[type=submit]").attr("disabled");
+	}
+	
+});
+*/

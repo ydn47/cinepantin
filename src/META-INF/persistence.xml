@@ -15,6 +15,7 @@
 		  <class>fr.demos.pms.model.Panier</class> 
 		 <class>fr.demos.pms.model.LignePanier</class>
 		 <class>fr.demos.pms.model.Facture</class>   
+		 <class>fr.demos.pms.model.Adresse</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="eclipselink.logging.level.sql" value="FINE"/> 

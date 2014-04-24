@@ -37,6 +37,16 @@ public class Categorie {
 		
 	}
 	
+	
+	/**
+	 * Constructeur par idCategorie
+	 * @param idCategorie
+	 */
+	public Categorie(long idCategorie) {
+		super();
+		this.idCategorie = idCategorie;
+	}
+
 	public Categorie(long idCategorie, String nomCategorie,
 			String descriptionCategorie) {
 		super();
