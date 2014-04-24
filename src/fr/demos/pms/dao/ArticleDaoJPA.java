@@ -1,6 +1,7 @@
 package fr.demos.pms.dao;
 
 import java.util.Collection;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
@@ -10,6 +11,7 @@ import javax.transaction.UserTransaction;
 
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.model.Article;
+import fr.demos.pms.model.Categorie;
 import fr.demos.pms.model.Client;
 /**
  * 
@@ -41,21 +43,6 @@ public class ArticleDaoJPA implements ArticleDao {
 
 		return listeArticle;
 
-	}
-
-	/**
-	 * Retrouve un article à partir de son nom
-	 * @return renvoie le ou les articles recherchés
-	 */
-	@Override
-	public Collection<Article> findByNom(String nomArticle, long idCategorie) {
-		String query = "SELECT a FROM Article a WHERE UPPER(a.nomArticle) LIKE UPPER(?1)"
-				+ "AND idCategorie = ?2";
-		TypedQuery<Article> q = em.createQuery(query, Article.class);
-		q.setParameter(1, "%" + nomArticle + "%");
-		Collection<Article> listeArticle = q.getResultList();
-		
-		return listeArticle;
 	}
 
 	@Override
@@ -94,10 +81,35 @@ public class ArticleDaoJPA implements ArticleDao {
 		return article;
 	}
 
+	/**
+	 * Retrouve des articles à partir du nom 
+	 * @return une liste d'articles contenant le nom recherché
+	 */
 	@Override
-	public Article findByNom(String nomArticle) {
-		// TODO Auto-generated method stub
-		return null;
+	public Collection<Article> findByNom(String nomArticle) {
+		String query = "SELECT a FROM Article a WHERE UPPER(a.nomArticle) LIKE UPPER(?1)";
+		TypedQuery<Article> q = em.createQuery(query, Article.class);
+		q.setParameter(1, "%" + nomArticle + "%");
+		Collection<Article> listeArticle = q.getResultList();
+		
+		return listeArticle;
+	}
+
+	/**
+	 * Retrouve des articles à partir du nom et de leurs catégories
+	 * @return renvoie le ou les articles recherchés
+	 */
+	@Override
+	public Collection<Article> findByNom(String nomArticle, List<Categorie> categories) {
+		Collection<Article> listeArticle = null;
+		
+		String query = "SELECT a FROM Article a WHERE UPPER(a.nomArticle) LIKE UPPER(?1) "
+				+ "AND a.categorie IN ?2";
+		TypedQuery<Article> q = em.createQuery(query, Article.class);
+		q.setParameter(1, "%" + nomArticle + "%");
+		q.setParameter(2, categories);
+		listeArticle = q.getResultList();
+		return listeArticle;
 	}
 
 }
