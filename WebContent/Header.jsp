@@ -179,7 +179,7 @@
 					</div>
 					<div id="search">
 						<input class="query" name="q" type="text"
-							placeholder="Enter search terms" size="29" value="" id="query"> 
+							placeholder="Enter search terms" size="29" value="" id="query" required="required"> 
 						<input id="searchForm"
 							class="submit button" type="submit" value="Rechercher"
 							name="search">
