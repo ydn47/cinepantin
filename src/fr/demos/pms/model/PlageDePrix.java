@@ -59,6 +59,40 @@ public class PlageDePrix {
 		return "PlageDePrix [idPlageDePrix=" + idPlageDePrix + ", prixMin="
 				+ prixMin + ", prixMax=" + prixMax + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ (int) (idPlageDePrix ^ (idPlageDePrix >>> 32));
+		long temp;
+		temp = Double.doubleToLongBits(prixMax);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(prixMin);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		PlageDePrix other = (PlageDePrix) obj;
+		if (idPlageDePrix != other.idPlageDePrix)
+			return false;
+		if (Double.doubleToLongBits(prixMax) != Double
+				.doubleToLongBits(other.prixMax))
+			return false;
+		if (Double.doubleToLongBits(prixMin) != Double
+				.doubleToLongBits(other.prixMin))
+			return false;
+		return true;
+	}
 	
 	
 }

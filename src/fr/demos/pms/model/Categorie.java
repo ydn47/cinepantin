@@ -62,4 +62,43 @@ public class Categorie {
 				+ descriptionCategorie + "]";
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime
+				* result
+				+ ((descriptionCategorie == null) ? 0 : descriptionCategorie
+						.hashCode());
+		result = prime * result + (int) (idCategorie ^ (idCategorie >>> 32));
+		result = prime * result
+				+ ((nomCategorie == null) ? 0 : nomCategorie.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Categorie other = (Categorie) obj;
+		if (descriptionCategorie == null) {
+			if (other.descriptionCategorie != null)
+				return false;
+		} else if (!descriptionCategorie.equals(other.descriptionCategorie))
+			return false;
+		if (idCategorie != other.idCategorie)
+			return false;
+		if (nomCategorie == null) {
+			if (other.nomCategorie != null)
+				return false;
+		} else if (!nomCategorie.equals(other.nomCategorie))
+			return false;
+		return true;
+	}
+
+	
 }
