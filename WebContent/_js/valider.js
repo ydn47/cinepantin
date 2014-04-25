@@ -7,10 +7,10 @@ function mutiselectCode() {
         buttonWidth: 'auto',
         buttonText: function(options) {
             if (options.length == 0) {
-                return 'None selected <b class="caret"></b>';
+                return 'Séléctionner une catégorie <b class="caret"></b>';
             }
             else if (options.length > 6) {
-                return options.length + ' selected <b class="caret"></b>';
+                return options.length + ' selectionnés <b class="caret"></b>';
             }
             else {
                 var selected = '';
@@ -27,7 +27,7 @@ function mutiselectCode() {
                 // action taken here if true
             }
             else if (checked == false) {
-                if (confirm('Do you wish to deselect the element?')) {
+                if (confirm("Souhaitez-vous pour désélectionner l'élément?")) {
                     // action taken here
                 }
                 else {
@@ -39,7 +39,7 @@ function mutiselectCode() {
 }
 
 /*
- * D�sactive le bouton de recherche s'il n'y a aucune saisie 
+ * D�sactive le bouton de recherche s'il n'y a aucune saisie 
  
 $("#searchForm").submit( function(){
 	

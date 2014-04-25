@@ -1,4 +1,4 @@
-package fr.demos.formation.listener;
+package fr.demos.pms.listener;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -24,7 +24,7 @@ public class ContextListener implements ServletContextListener {
      */
     public void contextInitialized(ServletContextEvent evt) {
         // TODO Auto-generated method stub
-    	//recherche nombre de visites conservé en base de données
+    	//recherche nombre de visites conserv? en base de donn?es
     	Compteur nbvisiteurs = null ;
     	//stocke ce nombre dans l'objet ServletContext
     	ServletContext application = evt.getServletContext();
@@ -38,7 +38,7 @@ public class ContextListener implements ServletContextListener {
 	/**
      * @see ServletContextListener#contextDestroyed(ServletContextEvent)
      */
-    public void contextDestroyed(ServletContextEvent arg0) { //lorsque glassfish est arreté
+    public void contextDestroyed(ServletContextEvent arg0) { //lorsque glassfish est arret?
         // TODO Auto-generated method stub
     }
 	

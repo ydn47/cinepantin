@@ -1,4 +1,5 @@
 
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			mutiselectCode();
@@ -110,39 +111,23 @@
 					</li>
 
 				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
+			</div><!--/.nav-collapse -->
+		</div><!-- container-->
 		<div id="menu">
 			<div class="container">
 				<form action="${boutique}" method="get">
 					<div id="categories">
-
-
-						<!--  						<a href="#" title="Sélectionnez une catégorie">Catégories</a>  -->
-						<select id="example22" multiple="multiple" style="display: none"
-							name="choixCategories">
+						<select  id="example22" multiple="multiple" style="display: none" name="choixCategories">
 							<c:forEach var="cat" items="${lstCategories}">
 								<option value="${cat.getIdCategorie()}">${cat.getNomCategorie()}</option>
 							</c:forEach>
 						</select>
-
-						<!-- 					<div class="dropdown_container"> -->
-						<!-- 						<div class="categories"> -->
-						<!-- 							<select id="example22" multiple="multiple" style="display: none"> -->
-						<%-- 								<c:forEach var="cat" items="${lstCategories}"> --%>
-						<%-- 									<option value="${cat.getNomCategorie()}">${cat.getDescriptionCategorie()}</option> --%>
-						<%-- 								</c:forEach> --%>
-						<!-- 							</select> -->
-						<!-- 						</div> -->
-						<!-- 					</div> -->
 					</div>
 					<div id="search">
 						<input class="query" name="q" type="text"
 							placeholder="Enter search terms" size="29" value="" id="query"> 
-						<input id="searchForm"
-							class="submit button" type="submit" value="Rechercher"
-							name="search">
+						<input class="btn btn-search" id="searchForm" type="submit" value="Rechercher" name="search">
+						
 					</div>
 				</form>
 			</div>
@@ -150,3 +135,6 @@
 		<!-- /.container -->
 	</div>
 	<!-- /.menu -->
+
+</body>
+</html>

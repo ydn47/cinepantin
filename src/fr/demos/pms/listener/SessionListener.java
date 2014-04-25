@@ -1,4 +1,4 @@
-package fr.demos.formation.listener;
+package fr.demos.pms.listener;
 
 import javax.inject.Inject;
 import javax.servlet.annotation.WebListener;
@@ -37,11 +37,11 @@ public class SessionListener implements HttpSessionListener {
     	
     	nbvisiteurs.incrementer();
     	System.out.print("Created =" +nbvisiteurs);
-    	System.out.print("création panier de course associé à l'utilisateur");
-    	//création panier de course associé à l'utilisateur
+    	System.out.print("cr?ation panier de course associ? ? l'utilisateur");
+    	//cr?ation panier de course associ? ? l'utilisateur
     	
     	Panier panier = null;
-    	//si l'utilisateur est connecté, recuperer son panier de la bdd s'il existe
+    	//si l'utilisateur est connect?, recuperer son panier de la bdd s'il existe
     	Client client = (Client) session.getAttribute("client");
     	if (client != null){
     		panier = daoPanier.findByClient(client);

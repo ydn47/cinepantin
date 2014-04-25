@@ -17,9 +17,13 @@ import javax.servlet.http.HttpSession;
 
 
 
+
+
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.*;
 import fr.demos.pms.model.Client;
+
+import fr.demos.pms.util.SendExternalEmail;
 
 /**
  * Servlet implementation class Signin
@@ -108,8 +112,27 @@ public class Sign extends HttpServlet {
 				client = clientDao.findByParam(email, mdp);
 				
 				if (client != null){
-					session.setAttribute("client", client);
-				}	
+					session.setAttribute("client", client);		
+				}
+				 String eid = "wiem.marzouk@gmail.com";
+                 String message = " Welcome to CELEGANCE <br />";
+                      message+="Dear You have been successfully registered.";
+                  //    message+="<br/>" + name + ", You have been successfully registered." + event;
+
+                      message+="<br/>" ;
+                         String subject="DOWNLOAD THIS APPLICATION-ID E-MAIL NOTIFICATION !! ";
+                   /* SendExternalEmail semail =new SendExternalEmail(); 
+                      //semail.setLink(link);
+                      semail.setReceiver(" " + eid);
+                      semail.setSubject(subject);
+                      semail.setMessage(message);
+
+                      String msg=semail.sendEmail();
+                      System.out.println(" " + msg);*/
+                     
+                      
+                      
+                      
 					RequestDispatcher rd = request
 							.getRequestDispatcher("/boutique");
 							rd.forward(request, response);

@@ -22,6 +22,7 @@
 	</div>
 	
 <%-- 	src="${img}/germinal.jpg"> --%>
+<div class="container">
 	<div class="row featurette">
 		<p id="succes">Il y a actuellement  :${nbvisiteurs} utilisateur(s) connecté(s)</p>
         <div class="col-md-5">
@@ -35,23 +36,21 @@
           <p class="lead">${articleObject.getShortDescArticle()}</p>
           <p class="lead">${articleObject.getLongDescArticle()}</p>
        
-	        <form role="form" method="post" action="${paniercont}" id="form-product-details">
+	        <form class="form-inline" role="form" method="post" action="${paniercont}" id="form-product-details">
 				<!-- Hidden fields -->
 				<div class="hidden">
 					<input type="hidden" value="${articleObject.getIdArticle()}" name="productId">
 				</div>
 	
-				<fieldset class="product-cart form-inline">
-					<div class="form-group group-qty">
-						<label for="quantity">Quantité</label>
-						<input type="number" required min="0" value="1" class="form-control" id="quantity" name="quantity">
-					</div>
-	
-					<div class="form-group group-btn">
-						<input tabindex="3" class="btn primary large" type="submit" name="addCart" value="Ajouter au panier" />						
-					</div>
-				</fieldset>
-			</form>  
+  				<div class="form-group">
+  				
+    				<label for="quantity">Quantité</label>
+    				<input type="number" required min="1" max="5" value="1" class="form-control" id="quantity" name="quantity" size ="10" />
+  				</div>
+  				<input tabindex="3" class="btn primary large" type="submit" name="addCart" value="Ajouter au panier" />		
+  				
+			</form>
+			 
        </div>
 	</div>
     <h2 class="sub-header">Détails sur le produit</h2>
@@ -85,7 +84,7 @@
          </tbody>
        </table>
      </div>
-  
+</div>  
 
 	<hr>
 
