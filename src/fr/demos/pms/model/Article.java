@@ -25,6 +25,7 @@ public class Article {
 	private String longDescArticle;
 	// / Commentaire bidon
 	private double prixUnitArticle;
+	private Tva tva;
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
@@ -35,6 +36,7 @@ public class Article {
 	private PlageDePrix plagePrixArticle; 
 	@Lob
 	private HashMap<String, String> proprietes; // a serialiser
+	
 	
 
 	protected Article() {
@@ -147,15 +149,20 @@ public class Article {
 		this.urlImage = urlImage;
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return "Article [idArticle=" + idArticle + ", nomArticle=" + nomArticle
 				+ ", shortDescArticle=" + shortDescArticle
 				+ ", longDescArticle=" + longDescArticle + ", prixUnitArticle="
-				+ prixUnitArticle + ", qteStock=" + qteStock + ", urlImage="
-				+ urlImage + ", categorie=" + categorie + ", plagePrixArticle="
-				+ plagePrixArticle + ", proprietes=" + proprietes + "]";
+				+ prixUnitArticle + ", tva=" + tva + ", qteStock=" + qteStock
+				+ ", urlImage=" + urlImage + ", categorie=" + categorie
+				+ ", plagePrixArticle=" + plagePrixArticle + ", proprietes="
+				+ proprietes + "]";
 	}
+	
+	
 
 	@Override
 	public int hashCode() {
@@ -164,12 +171,25 @@ public class Article {
 		result = prime * result
 				+ ((categorie == null) ? 0 : categorie.hashCode());
 		result = prime * result + (int) (idArticle ^ (idArticle >>> 32));
+		result = prime * result
+				+ ((longDescArticle == null) ? 0 : longDescArticle.hashCode());
+		result = prime * result
+				+ ((nomArticle == null) ? 0 : nomArticle.hashCode());
+		result = prime
+				* result
+				+ ((plagePrixArticle == null) ? 0 : plagePrixArticle.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(prixUnitArticle);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result
 				+ ((proprietes == null) ? 0 : proprietes.hashCode());
 		result = prime * result + qteStock;
+		result = prime
+				* result
+				+ ((shortDescArticle == null) ? 0 : shortDescArticle.hashCode());
+		result = prime * result + ((tva == null) ? 0 : tva.hashCode());
+		result = prime * result
+				+ ((urlImage == null) ? 0 : urlImage.hashCode());
 		return result;
 	}
 
@@ -189,6 +209,21 @@ public class Article {
 			return false;
 		if (idArticle != other.idArticle)
 			return false;
+		if (longDescArticle == null) {
+			if (other.longDescArticle != null)
+				return false;
+		} else if (!longDescArticle.equals(other.longDescArticle))
+			return false;
+		if (nomArticle == null) {
+			if (other.nomArticle != null)
+				return false;
+		} else if (!nomArticle.equals(other.nomArticle))
+			return false;
+		if (plagePrixArticle == null) {
+			if (other.plagePrixArticle != null)
+				return false;
+		} else if (!plagePrixArticle.equals(other.plagePrixArticle))
+			return false;
 		if (Double.doubleToLongBits(prixUnitArticle) != Double
 				.doubleToLongBits(other.prixUnitArticle))
 			return false;
@@ -199,7 +234,27 @@ public class Article {
 			return false;
 		if (qteStock != other.qteStock)
 			return false;
+		if (shortDescArticle == null) {
+			if (other.shortDescArticle != null)
+				return false;
+		} else if (!shortDescArticle.equals(other.shortDescArticle))
+			return false;
+		if (tva != other.tva)
+			return false;
+		if (urlImage == null) {
+			if (other.urlImage != null)
+				return false;
+		} else if (!urlImage.equals(other.urlImage))
+			return false;
 		return true;
+	}
+
+	public Tva getTva() {
+		return tva;
+	}
+
+	public void setTva(Tva tva) {
+		this.tva = tva;
 	}
 
 	
