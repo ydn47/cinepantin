@@ -24,6 +24,11 @@
 		<!-- Example row of columns -->
 
 		<div class="row">
+			<c:if test="${empty lstArticles}">
+				<p>
+					Aucun résultat trouvé.
+				<p>
+			</c:if>
 			<c:forEach var="article" items="${lstArticles}"
 				varStatus="indexArticle">
 				<div class="col-md-4">
@@ -33,6 +38,7 @@
 				<p><a class="btn btn-default" href="${articleCont}${article.getIdArticle()}" role="button">Afficher détails »</a></p>
 				</div>
 			</c:forEach>
+		
 		</div>
 
 	</div>

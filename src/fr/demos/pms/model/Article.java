@@ -2,11 +2,14 @@ package fr.demos.pms.model;
 
 import java.util.HashMap;
 
+import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
 import fr.demos.pms.model.ExceptionStock;
@@ -29,9 +32,10 @@ public class Article {
 	private Categorie categorie;
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
-	private PlageDePrix plagePrixArticle;
-
+	private PlageDePrix plagePrixArticle; 
+	@Lob
 	private HashMap<String, String> proprietes; // a serialiser
+	
 
 	protected Article() {
 		// pour Hibernate
