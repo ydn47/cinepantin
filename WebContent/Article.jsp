@@ -1,19 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Bienvenue chez CinePantin</title>
 
+<%@include file="Head.jsp"%>
 
-
-<c:url var = "paniercont" value="/panier"/>
-
-</head>
 <body style="padding-top: 100px">
 	<%@include file="Header.jsp"%>
+
+
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Hello, world!</h1>
@@ -29,7 +23,7 @@
 	
 <%-- 	src="${img}/germinal.jpg"> --%>
 	<div class="row featurette">
-	<p id="succes">Il y a actuellement  :${nbvisiteurs} utilisateur(s) connecté(s)</p>
+		<p id="succes">Il y a actuellement  :${nbvisiteurs} utilisateur(s) connecté(s)</p>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" 
           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
@@ -41,59 +35,57 @@
           <p class="lead">${articleObject.getShortDescArticle()}</p>
           <p class="lead">${articleObject.getLongDescArticle()}</p>
        
-        <form role="form" method="post" action="${paniercont}" id="form-product-details">
-			<!-- Hidden fields -->
-			<div class="hidden">
-				<input type="hidden" value="${articleObject.getIdArticle()}" name="productId">
-			</div>
-
-			<fieldset class="product-cart form-inline">
-				<div class="form-group group-qty">
-					<label for="quantity">Quantité</label>
-					<input type="number" required min="0" value="1" class="form-control" id="quantity" name="quantity">
+	        <form role="form" method="post" action="${paniercont}" id="form-product-details">
+				<!-- Hidden fields -->
+				<div class="hidden">
+					<input type="hidden" value="${articleObject.getIdArticle()}" name="productId">
 				</div>
-
-				<div class="form-group group-btn">
-					<input tabindex="3" class="btn primary large" type="submit" name="addCart" value="Ajouter au panier" />						
-				</div>
-			</fieldset>
-		</form>  
-         </div>
-        </div>
-         <h2 class="sub-header">Détails sur le produit</h2>
-         <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
+	
+				<fieldset class="product-cart form-inline">
+					<div class="form-group group-qty">
+						<label for="quantity">Quantité</label>
+						<input type="number" required min="0" value="1" class="form-control" id="quantity" name="quantity">
+					</div>
+	
+					<div class="form-group group-btn">
+						<input tabindex="3" class="btn primary large" type="submit" name="addCart" value="Ajouter au panier" />						
+					</div>
+				</fieldset>
+			</form>  
+       </div>
+	</div>
+    <h2 class="sub-header">Détails sur le produit</h2>
+    <div class="table-responsive">
+       <table class="table table-striped">
+         <thead>
+           <tr>
+             <th>#</th>
+             <th>Header</th>
+             <th>Header</th>
+             <th>Header</th>
+             <th>Header</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>1,001</td>
+             <td>Lorem</td>
+             <td>ipsum</td>
+             <td>dolor</td>
+             <td>sit</td>
+           </tr>
+           <tr>
+             <td>1,002</td>
+             <td>amet</td>
+             <td>consectetur</td>
+             <td>adipiscing</td>
+             <td>elit</td>
+           </tr>
+           
+         </tbody>
+       </table>
      </div>
-    
-     
+  
 
 	<hr>
 

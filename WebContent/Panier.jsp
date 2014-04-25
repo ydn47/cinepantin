@@ -1,16 +1,29 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-<title>Valider votre panier</title>
-</head>
-<body>
-<%@include file="Header.jsp"%>
-<div class="">
-</div>
-<%@include file="Footer.jsp"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@include file="Head.jsp"%>
+
+<body style="padding-top: 100px">
+	<%@include file="Header.jsp"%>
+
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hello, world!</h1>
+			<p>This is a template for a simple marketing or informational
+				website. It includes a large callout called a jumbotron and three
+				supporting pieces of content. Use it as a starting point to create
+				something more unique.</p>
+			<p>
+				<a class="btn btn-primary btn-lg" role="button">Learn more »</a>
+			</p>
+		</div>
+	</div>
+
+
+	<hr>
+
+	<%@include file="Footer.jsp"%>
 </body>
-</html>
+</html>      
