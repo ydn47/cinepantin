@@ -97,13 +97,13 @@ public class Panier {
 	*/
 	
 	public void ajouter(Article article, int qte) throws ExceptionStock {
-		System.out.print("isArticleInCart" +isArticleInCart(article));
+		//System.out.print("isArticleInCart" +isArticleInCart(article));
 		if (article.isInStock(qte)){  //la qte demande est disponible
 		
 			if (isArticleInCart(article)){ //si l'article est deja pr�sent, on agit sur la quantite
 				for (LignePanier ligne : lignesPanier) {
 					if (ligne.getArticle().equals(article)){
-						System.out.print("isArticleInCart" +article.getIdArticle());
+						//System.out.print("isArticleInCart" +article.getIdArticle());
 						ligne.setQteCommande(ligne.getQteCommande()+qte);
 					}
 				}

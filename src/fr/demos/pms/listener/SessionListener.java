@@ -71,9 +71,11 @@ public class SessionListener implements HttpSessionListener {
     	//sauvgarde dans la bdd si le client est connecté
     	Client client = (Client) session.getAttribute("client");
     	Panier panier = (Panier) session.getAttribute("panier");
-    	System.out.print("Panier sessionDestroyed : "+panier);
+    	
     	if ( (client != null) && (panier!=null) ){
+    		System.out.print("Panier sessionDestroyed : "+panier);
     		try{
+    			panier.setClient(client);
     			daoPanier.create(panier);
 			}catch (DAOException e){
 				e.printStackTrace();

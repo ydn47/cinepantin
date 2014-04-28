@@ -23,6 +23,21 @@
 	
 <%-- 	src="${img}/germinal.jpg"> --%>
 <div class="container">
+	
+	<c:choose>
+		<c:when test="${succes == true}">
+			<script type="text/javascript">
+				alert('Votre article a été bien ajouté au panier !');
+			</script>
+			
+		</c:when>
+		<c:otherwise>
+
+							
+		</c:otherwise>
+	</c:choose>
+ 
+	
 	<div class="row featurette">
 		<p id="succes">Il y a actuellement  :${nbvisiteurs} utilisateur(s) connecté(s)</p>
         <div class="col-md-5">

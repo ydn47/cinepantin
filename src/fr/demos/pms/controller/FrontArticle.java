@@ -34,8 +34,8 @@ public class FrontArticle extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String info = request.getPathInfo();  //  /3
-		System.out.println ("infooooooooo" +info.substring(1));
+		String info = request.getPathInfo();  
+		
 		long idArticle = 0;
 		
 		try {
@@ -61,7 +61,28 @@ public class FrontArticle extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		System.out.print("doPost Front Article");
+		String info = request.getPathInfo();  
+		
+		long idArticle = 0;
+		
+		try {
+			idArticle = Long.parseLong(info.substring(1));
+		} catch (NumberFormatException e) {
+			System.err.println("Id article non valide" + e);
+		}
+		
+		Article article = null;
+		article = daoArticle.findById(idArticle);
+		System.out.print(article);
+		if (article != null)
+			request.setAttribute("articleObject", article);
+		
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/Article.jsp");
+				rd.forward(request, response);
+				return;
+		
 	}
 
 }

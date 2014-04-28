@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import javax.inject.Inject;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -87,6 +88,11 @@ public class PanierController extends HttpServlet {
 				System.out.print("Panier Controller : "+panier);
 				//MAJ panier en session , sauvegarde en BDD
 				session.setAttribute("panier", panier);
+				request.setAttribute("succes", true);
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/article/"+idArticle);
+						rd.forward(request, response);
+						return;
 				
 			}
 			
