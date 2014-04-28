@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,7 +27,9 @@ public class Article {
 	private String longDescArticle;
 	// / Commentaire bidon
 	private double prixUnitArticle;
+	@Enumerated(EnumType.STRING)
 	private Tva tva;
+	
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
@@ -151,18 +155,22 @@ public class Article {
 
 	
 
+	
+	
+	
+
 	@Override
 	public String toString() {
 		return "Article [idArticle=" + idArticle + ", nomArticle=" + nomArticle
 				+ ", shortDescArticle=" + shortDescArticle
 				+ ", longDescArticle=" + longDescArticle + ", prixUnitArticle="
-				+ prixUnitArticle + ", tva=" + tva + ", qteStock=" + qteStock
+				+ prixUnitArticle + ", "
+				//+ "tva=" + tva.valeur + ","
+				+ " qteStock=" + qteStock
 				+ ", urlImage=" + urlImage + ", categorie=" + categorie
 				+ ", plagePrixArticle=" + plagePrixArticle + ", proprietes="
 				+ proprietes + "]";
 	}
-	
-	
 
 	@Override
 	public int hashCode() {

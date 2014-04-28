@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 public class Panier {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int idPanier;
+	private long idPanier;
 
 	@JoinColumn(name = "idClient")
 	@OneToOne()
@@ -27,19 +27,26 @@ public class Panier {
 	private Date datePanier;
 	private ArrayList<LignePanier> lignesPanier ;
 	
-	public Panier() {
+	protected Panier() {
 		
 	}
 	
 	
 	
 	
-	public Panier(int idPanier, Client client, Date datePanier,
-			ArrayList<LignePanier> lignesPanier) {
+	
+	public Panier(long idPanier) {
 		super();
 		this.idPanier = idPanier;
-		this.client = client;
-		this.datePanier = datePanier;
+		lignesPanier = new ArrayList<LignePanier>();
+	}
+
+
+
+
+
+	public Panier (ArrayList<LignePanier> lignesPanier) {
+		
 		this.lignesPanier = lignesPanier;
 	}
 
@@ -90,18 +97,22 @@ public class Panier {
 	*/
 	
 	public void ajouter(Article article, int qte) throws ExceptionStock {
-		
+		System.out.print("isArticleInCart" +isArticleInCart(article));
 		if (article.isInStock(qte)){  //la qte demande est disponible
 		
 			if (isArticleInCart(article)){ //si l'article est deja pr�sent, on agit sur la quantite
 				for (LignePanier ligne : lignesPanier) {
 					if (ligne.getArticle().equals(article)){
-						ligne.setQteCommande(qte);
+						System.out.print("isArticleInCart" +article.getIdArticle());
+						ligne.setQteCommande(ligne.getQteCommande()+qte);
 					}
 				}
 				
 			}else{	 //on ajoute une ligne panier
-				LignePanier lp = new LignePanier(qte, article, this);
+				LignePanier lp = LignePanierFactory.getNewLignePanier();
+				lp.setQteCommande(qte);
+				lp.setArticle(article);
+				lp.setPanier(this);
 				lignesPanier.add(lp);
 			}
 	
@@ -113,11 +124,13 @@ public class Panier {
 	public boolean isArticleInCart(Article article) {
 		
 		boolean res = false;
-		for (LignePanier ligne : lignesPanier) {
-			if (ligne.getArticle().equals(article)){
-				res = true; break;
+		if (lignesPanier != null){
+			for (LignePanier ligne : lignesPanier) {
+				if (ligne.getArticle().equals(article)){
+					res = true; break;
+				}
 			}
-		}
+		}	
 		return res;
 	}
 
@@ -165,7 +178,7 @@ public void setDatePanier(Date datePanier) {
 	this.datePanier = datePanier;
 }
 
-public int getIdPanier() {
+public long getIdPanier() {
 	return idPanier;
 }
 
@@ -174,3 +187,4 @@ public int getIdPanier() {
 
 
 }
+

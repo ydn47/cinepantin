@@ -8,9 +8,13 @@ import javax.servlet.http.HttpSessionListener;
 
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ArticleDao;
+import fr.demos.pms.dao.DAOException;
 import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Client;
+import fr.demos.pms.model.LignePanier;
+import fr.demos.pms.model.LignePanierFactory;
 import fr.demos.pms.model.Panier;
+import fr.demos.pms.model.PanierFactory;
 
 
 
@@ -37,26 +41,45 @@ public class SessionListener implements HttpSessionListener {
     	
     	nbvisiteurs.incrementer();
     	System.out.print("Created =" +nbvisiteurs);
-    	System.out.print("cr?ation panier de course associ? ? l'utilisateur");
+    	System.out.print("création panier de course associé à l'utilisateur");
     	//cr?ation panier de course associ? ? l'utilisateur
     	
     	Panier panier = null;
     	//si l'utilisateur est connect?, recuperer son panier de la bdd s'il existe
     	Client client = (Client) session.getAttribute("client");
-    	if (client != null){
+    	if (client != null){ //il est connecté
     		panier = daoPanier.findByClient(client);
     		session.setAttribute("panier",panier);		
-    	}else{
-    		panier = new Panier();
+    		
+    		
+    	}else{ //pas connecte , on cree un panier vide dans la session
+    		panier = PanierFactory.getNewPanier();
+    		
+    		panier.setDatePanier(new java.util.Date());
         	session.setAttribute("panier",panier);
     	}
-    	System.out.print("Panier : "+panier);
+    	System.out.print("Panier Listener : "+panier);
     }
 
 	/**
      * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
      */
     public void sessionDestroyed(HttpSessionEvent evt) {
+    	HttpSession session = evt.getSession();
+    	//sauvgarde dans la bdd si le client est connecté
+    	Client client = (Client) session.getAttribute("client");
+    	Panier panier = (Panier) session.getAttribute("panier");
+    	System.out.print("Panier sessionDestroyed : "+panier);
+    	if ( (client != null) && (panier!=null) ){
+    		try{
+    			daoPanier.create(panier);
+			}catch (DAOException e){
+				e.printStackTrace();
+				System.out.println("erreur Creation compte DAO"+ e.getMessage());
+				
+			}
+    	}	
+    		
     	
     	
     }

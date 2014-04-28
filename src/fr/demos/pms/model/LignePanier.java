@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 public class LignePanier {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int idLignePanier;
+	private long idLignePanier;
 	private int qteCommande;
 	@JoinColumn(name = "idArticle")
 	@ManyToOne()
@@ -34,6 +34,14 @@ public class LignePanier {
 		this.qteCommande = qteCommande;
 		this.article = article;
 		Panier = panier;
+	}
+
+
+
+
+	public LignePanier(long idLignePanier) {
+		super();
+		this.idLignePanier = idLignePanier;
 	}
 
 
@@ -63,29 +71,21 @@ public class LignePanier {
 		this.qteCommande = qteCommande;
 	}
 
-	public int getIdLignePanier() {
+	public long getIdLignePanier() {
 		return idLignePanier;
 	}
 
 	@Override
 	public String toString() {
 		return "LignePanier [idLignePanier=" + idLignePanier + ", article="
-				+ article + ", Panier=" + Panier + ", qteCommande="
+				+ article.getIdArticle() + ", Panier=" + Panier.getIdPanier() + ", qteCommande="
 				+ qteCommande + "]";
 	}
 
 
 
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((Panier == null) ? 0 : Panier.hashCode());
-		result = prime * result + ((article == null) ? 0 : article.hashCode());
-		result = prime * result + idLignePanier;
-		return result;
-	}
+	
 
 
 
@@ -114,9 +114,7 @@ public class LignePanier {
 		return true;
 	}
 	
-	
-	
-	
 
 	
 }
+

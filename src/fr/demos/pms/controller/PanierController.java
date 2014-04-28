@@ -54,9 +54,9 @@ public class PanierController extends HttpServlet {
 		System.out.print("action  " +action);
 		if ((action != null) && (action.equals("Ajouter au panier")) ){//Ajouter au panier
 			HashMap<String, String> errorMap = new HashMap<>();
-			String quantite  = request.getParameter("quantite");
+			String quantite  = request.getParameter("quantity");
 			String productId = request.getParameter("productId");
-			
+			System.out.print(quantite +"   "+ productId);
 			long idArticle = 0;
 			int qte = 0;
 			try {
@@ -71,6 +71,7 @@ public class PanierController extends HttpServlet {
 				errorMap.put("quantite", "Quantité non valide!");
 			}
 			
+			
 			Article article = null;
 			if (idArticle != 0)
 				article = daoArticle.findById(idArticle);
@@ -83,9 +84,9 @@ public class PanierController extends HttpServlet {
 					errorMap.put("quantite", "Quantité non disponible!" + "Seulement "+ e.etatStock);
 					e.printStackTrace();
 				}
-				
+				System.out.print("Panier Controller : "+panier);
 				//MAJ panier en session , sauvegarde en BDD
-				
+				session.setAttribute("panier", panier);
 				
 			}
 			

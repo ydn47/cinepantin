@@ -6,7 +6,7 @@
 <head>
 	
 	<meta charset="utf-8">
-	<title>CinePAntin - E-commerce plateform</title>
+	<title>CinePantin - E-commerce plateform</title>
 
 	<meta name="description" content="">
 	<meta name="generator" content="CinePantin">
