@@ -7,6 +7,11 @@ import javax.annotation.Resource;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.transaction.HeuristicMixedException;
+import javax.transaction.HeuristicRollbackException;
+import javax.transaction.NotSupportedException;
+import javax.transaction.RollbackException;
+import javax.transaction.SystemException;
 import javax.transaction.UserTransaction;
 
 import fr.demos.pms.annotation.Dao;
@@ -57,11 +62,33 @@ public class ArticleDaoJPA implements ArticleDao {
 		return null;
 	}
 
+	/**
+	 * Insère un article dont les propriétés sont sérialisés
+	 * @param un article
+	 */
 	@Override
 	public void create(Article a) throws DAOException {
-		// TODO Auto-generated method stub
-		
+		try {
+			ut.begin();
+			em.persist(a);
+			ut.commit();
+		 } catch (RollbackException ex) {
+	           // Log something
+	    } catch (HeuristicMixedException ex) {
+	           // Log something
+	    } catch (HeuristicRollbackException ex) {
+	           // Log something
+	    } catch (SecurityException ex) {
+	           // Log something
+	    } catch (IllegalStateException ex) {
+	           // Log something
+	    } catch (NotSupportedException ex) {
+	           // Log something
+	    } catch (SystemException ex) {
+	           // Log something
+	    }
 	}
+		
 
 	@Override
 	public Article findById(long idArticle) {

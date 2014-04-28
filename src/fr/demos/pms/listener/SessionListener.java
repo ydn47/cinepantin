@@ -32,25 +32,7 @@ public class SessionListener implements HttpSessionListener {
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent evt) {
-    	HttpSession session = evt.getSession();
-    	Compteur nbvisiteurs =  (Compteur) session.getServletContext().getAttribute("nbvisiteurs");
-    	
-    	nbvisiteurs.incrementer();
-    	System.out.print("Created =" +nbvisiteurs);
-    	System.out.print("cr?ation panier de course associ? ? l'utilisateur");
-    	//cr?ation panier de course associ? ? l'utilisateur
-    	
-    	Panier panier = null;
-    	//si l'utilisateur est connect?, recuperer son panier de la bdd s'il existe
-    	Client client = (Client) session.getAttribute("client");
-    	if (client != null){
-    		panier = daoPanier.findByClient(client);
-    		session.setAttribute("panier",panier);		
-    	}else{
-    		panier = new Panier();
-        	session.setAttribute("panier",panier);
-    	}
-    	System.out.print("Panier : "+panier);
+
     }
 
 	/**
