@@ -2,19 +2,15 @@ package fr.demos.pms.model;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.StreamCorruptedException;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -22,7 +18,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
-import fr.demos.pms.model.ExceptionStock;
 import fr.demos.pms.serial.SerialArticle;
 
 @Entity
@@ -300,7 +295,7 @@ public class Article implements SerialArticle {
 	}
 
 	@Override
-	public byte[] serialize(HashMap<String, String> hashmap) throws IOException {
+	public byte[] serialize(HashMap<?, ?> hashmap) throws IOException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();	
 		try {
 			ObjectOutputStream oos = new ObjectOutputStream(bos);
@@ -339,4 +334,11 @@ public class Article implements SerialArticle {
 		return serialProprietes;
 	}
 	
+	/**
+	 * Méthode qui renvoie les propriétés désérialisées d'un article
+	 * @return toutes les proprietes d'un article
+	 */
+	public HashMap<String, String> getProprietes() {
+		return deserialize(this.getSerialProprietes());
+	}
 }
