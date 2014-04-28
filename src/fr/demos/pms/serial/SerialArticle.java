@@ -15,12 +15,12 @@ public interface SerialArticle {
 	 * @param un HashMap contenant les propriétés de l'article
 	 * @return un tableau d'octets contenant l'objet sérialisé
 	 */
-	public byte[] serialize(HashMap<String,String> hashmap) throws IOException;
+	public byte[] serialize(HashMap<?,?> hashmap) throws IOException;
 	
 	/**
 	 * Méthode de désérialisation des propriétés d'un article
 	 * @param l'objet à désérialiser
 	 * @return un hashmap contenant les propriétés de l'objet
 	 */
-	public HashMap<String,String> deserialize(byte[] bytes) throws IOException;
+	public HashMap<?,?> deserialize(byte[] bytes) throws IOException;
 }

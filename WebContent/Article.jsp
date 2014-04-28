@@ -80,7 +80,11 @@
              <td>adipiscing</td>
              <td>elit</td>
            </tr>
-           
+            <c:forEach var="prop" items="${articleObject.getProprietes()}">
+           <tr>
+           		<td>${prop}</td>
+           </tr>
+           </c:forEach>
          </tbody>
        </table>
      </div>
