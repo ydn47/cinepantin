@@ -36,6 +36,7 @@ public class SessionListener implements HttpSessionListener {
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent evt) {
+
     	HttpSession session = evt.getSession();
     	Compteur nbvisiteurs =  (Compteur) session.getServletContext().getAttribute("nbvisiteurs");
     	
@@ -59,6 +60,7 @@ public class SessionListener implements HttpSessionListener {
         	session.setAttribute("panier",panier);
     	}
     	System.out.print("Panier Listener : "+panier);
+
     }
 
 	/**

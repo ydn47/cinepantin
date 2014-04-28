@@ -1,5 +1,13 @@
 package fr.demos.pms.model;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.StreamCorruptedException;
+import java.util.Arrays;
 import java.util.HashMap;
 
 import javax.persistence.Basic;
@@ -15,9 +23,10 @@ import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
 import fr.demos.pms.model.ExceptionStock;
+import fr.demos.pms.serial.SerialArticle;
 
 @Entity
-public class Article {
+public class Article implements SerialArticle {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -37,11 +46,11 @@ public class Article {
 	private Categorie categorie;
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
-	private PlageDePrix plagePrixArticle; 
+	private PlageDePrix plagePrixArticle;
+
+	//private HashMap<String, String> proprietes; // a serialiser
 	@Lob
-	private HashMap<String, String> proprietes; // a serialiser
-	
-	
+	private byte[] serialProprietes;
 
 	protected Article() {
 		// pour Hibernate
@@ -53,20 +62,18 @@ public class Article {
 		}
 		this.qteStock -= nb;
 	}
-	
+
 	public boolean isInStock(int nb) {
 		if (nb > this.qteStock) {
-			//throw new ExceptionStock(this, qteStock, nb);
+			// throw new ExceptionStock(this, qteStock, nb);
 			return false;
-		}else
+		} else
 			return true;
 	}
 
 	public void rajouterAuStock(int nb) {
 		this.qteStock += nb;
 	}
-
-	
 
 	public String getNomArticle() {
 		return nomArticle;
@@ -127,22 +134,51 @@ public class Article {
 	public void setPlagePrixArticle(PlageDePrix plagePrixArticle) {
 		this.plagePrixArticle = plagePrixArticle;
 	}
-
+	
+	/**
+	 * Constructeur qui prend un hashmap en tant que propriétés
+	 * @return un article créé avec un HashMap
+	 */
 	public Article(long idArticle, String nomArticle, String shortDescArticle,
-			String longDescArticle, double prixUnitArticle, int qteStock,
-			String urlImage, Categorie categorie, PlageDePrix plagePrixArticle,
-			HashMap<String, String> proprietes) {
+			String longDescArticle, double prixUnitArticle, Tva tva,
+			int qteStock, String urlImage, Categorie categorie,
+			PlageDePrix plagePrixArticle, HashMap<String, String> proprietes) {
 		super();
 		this.idArticle = idArticle;
 		this.nomArticle = nomArticle;
 		this.shortDescArticle = shortDescArticle;
 		this.longDescArticle = longDescArticle;
 		this.prixUnitArticle = prixUnitArticle;
+		this.tva = tva;
 		this.qteStock = qteStock;
 		this.urlImage = urlImage;
 		this.categorie = categorie;
 		this.plagePrixArticle = plagePrixArticle;
-		this.proprietes = proprietes;
+		try {
+			this.serialProprietes = serialize(proprietes);
+		} catch (IOException e) {
+			System.err.println("Erreur de conversion du HashMap");
+		}
+	}
+	
+	
+
+	public Article(long idArticle, String nomArticle, String shortDescArticle,
+			String longDescArticle, double prixUnitArticle, Tva tva,
+			int qteStock, String urlImage, Categorie categorie,
+			PlageDePrix plagePrixArticle, byte[] serialProprietes) {
+		super();
+		this.idArticle = idArticle;
+		this.nomArticle = nomArticle;
+		this.shortDescArticle = shortDescArticle;
+		this.longDescArticle = longDescArticle;
+		this.prixUnitArticle = prixUnitArticle;
+		this.tva = tva;
+		this.qteStock = qteStock;
+		this.urlImage = urlImage;
+		this.categorie = categorie;
+		this.plagePrixArticle = plagePrixArticle;
+		this.serialProprietes = serialProprietes;
 	}
 
 	public String getUrlImage() {
@@ -168,9 +204,11 @@ public class Article {
 				//+ "tva=" + tva.valeur + ","
 				+ " qteStock=" + qteStock
 				+ ", urlImage=" + urlImage + ", categorie=" + categorie
-				+ ", plagePrixArticle=" + plagePrixArticle + ", proprietes="
-				+ proprietes + "]";
+				+ ", plagePrixArticle=" + plagePrixArticle
+				+ ", serialProprietes=" + Arrays.toString(serialProprietes)
+				+ "]";
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -189,9 +227,8 @@ public class Article {
 		long temp;
 		temp = Double.doubleToLongBits(prixUnitArticle);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result
-				+ ((proprietes == null) ? 0 : proprietes.hashCode());
 		result = prime * result + qteStock;
+		result = prime * result + Arrays.hashCode(serialProprietes);
 		result = prime
 				* result
 				+ ((shortDescArticle == null) ? 0 : shortDescArticle.hashCode());
@@ -235,12 +272,9 @@ public class Article {
 		if (Double.doubleToLongBits(prixUnitArticle) != Double
 				.doubleToLongBits(other.prixUnitArticle))
 			return false;
-		if (proprietes == null) {
-			if (other.proprietes != null)
-				return false;
-		} else if (!proprietes.equals(other.proprietes))
-			return false;
 		if (qteStock != other.qteStock)
+			return false;
+		if (!Arrays.equals(serialProprietes, other.serialProprietes))
 			return false;
 		if (shortDescArticle == null) {
 			if (other.shortDescArticle != null)
@@ -265,5 +299,44 @@ public class Article {
 		this.tva = tva;
 	}
 
+	@Override
+	public byte[] serialize(HashMap<String, String> hashmap) throws IOException {
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();	
+		try {
+			ObjectOutputStream oos = new ObjectOutputStream(bos);
+			oos.writeObject(hashmap);
+		} catch (IOException ioex)
+		{
+			throw new IOException("Erreur de sérialisation" + ioex);
+		}
+		byte buf[] = bos.toByteArray();
+		return buf;
+	}
+
+	@Override
+	public HashMap<String, String> deserialize(byte[] bytes) {
+		ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
+		ObjectInputStream ois;
+		
+		HashMap<String,String> hm = null;
+		try {
+			ois = new ObjectInputStream(bis);
+			hm  = (HashMap<String, String>) ois.readObject();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException cnfe) {
+			cnfe.printStackTrace();
+		}
+		
+		return hm;
+	}
+
+	/**
+	 * Retourne les propriétés sérialisées de l'article
+	 * @return les propriétés sérialisées de l'article
+	 */
+	public byte[] getSerialProprietes() {
+		return serialProprietes;
+	}
 	
 }
