@@ -1,3 +1,4 @@
+
 package fr.demos.pms.model;
 
 import java.io.ByteArrayInputStream;
@@ -96,10 +97,6 @@ public class Article implements SerialArticle {
 
 	public double getPrixUnitArticle() {
 		return prixUnitArticle;
-	}
-	public double getPrixUnitArticleTTC() {
-		//Prix_TTC = Prix_HT + 19.6/100*Prix_HT;
-		return prixUnitArticle * ( 1 + tva.getValeur() / 100);
 	}
 
 	public void setPrixUnitArticle(double prixUnitArticle) {
@@ -340,4 +337,18 @@ public class Article implements SerialArticle {
 		// on vérifier qu'il existe des propriétés sérialisées
 		return (this.getSerialProprietes() == null) ? null : deserialize(this.getSerialProprietes());
 	}
+	
+	/**
+	 * Formate le prix unitaire pour l'affichage
+	 * @return le prix Formate
+	 */
+	public String getPrixUnitFormate() {
+		return Prix.formatPrix(this.getPrixUnitArticle());
+	}
+	
+	public double getPrixUnitArticleTTC() {
+		return prixUnitArticle * (1 + tva.getValeur() /100);
+	}
+	
 }
+

@@ -1,3 +1,4 @@
+
 package fr.demos.pms.controller;
 
 import java.io.IOException;
@@ -19,10 +20,11 @@ import javax.servlet.http.HttpSession;
 
 
 
+
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.*;
+import fr.demos.pms.model.Adresse;
 import fr.demos.pms.model.Client;
-
 import fr.demos.pms.util.SendExternalEmail;
 
 /**
@@ -114,7 +116,21 @@ public class Sign extends HttpServlet {
 				if (client != null){
 					session.setAttribute("client", client);		
 				}
-				
+				 String eid = "wiem.marzouk@gmail.com";
+                 String message = " Welcome to CELEGANCE <br />";
+                      message+="Dear You have been successfully registered.";
+                  //    message+="<br/>" + name + ", You have been successfully registered." + event;
+
+                      message+="<br/>" ;
+                         String subject="DOWNLOAD THIS APPLICATION-ID E-MAIL NOTIFICATION !! ";
+                   /* SendExternalEmail semail =new SendExternalEmail(); 
+                      //semail.setLink(link);
+                      semail.setReceiver(" " + eid);
+                      semail.setSubject(subject);
+                      semail.setMessage(message);
+
+                      String msg=semail.sendEmail();
+                      System.out.println(" " + msg);*/
                      
                       
                       
@@ -142,6 +158,11 @@ public class Sign extends HttpServlet {
 			String email    = "";
 			String mdp      = "";
 			String newsletter = "";
+			String adresse  = "";
+			String ville    = "";
+			String codepostal = "";
+			String pays = "";
+			String telephone = "";
 			
 			if (action != null && action.endsWith("compte")) {
 				
@@ -149,6 +170,12 @@ public class Sign extends HttpServlet {
 				prenom = request.getParameter("prenom").trim();
 				email  = request.getParameter("email").trim();
 				mdp    = request.getParameter("mdp").trim();
+				adresse = request.getParameter("adresse").trim();
+				ville  = request.getParameter("ville").trim();
+				codepostal = request.getParameter("codepostal").trim();
+				pays   = request.getParameter("pays").trim();
+				
+
 				newsletter = request.getParameter("subscribe");
 				System.out.print("hgfhtdf "+newsletter);
 				if (nom == null || nom.equals("")) {
@@ -164,6 +191,23 @@ public class Sign extends HttpServlet {
 					
 					errorMap.put("mdp", "Mdp obligatoire");	
 				}
+				if (adresse == null || adresse.equals("")) {
+					errorMap.put("adresse", "Adresse obligatoire");	
+				}
+				if (ville == null || ville.equals("")) {
+					errorMap.put("ville", "Ville obligatoire");	
+				}
+				if (codepostal == null || codepostal.equals("")) {
+					errorMap.put("codepostal", "Code postal obligatoire");	
+				}
+				if (pays == null || pays.equals("")) {
+					errorMap.put("pays", "Pays obligatoire");	
+				}
+				if (telephone == null || telephone.equals("")) {
+					errorMap.put("telephone", "Téléphone obligatoire");	
+				}
+				
+				
 				//verifier que le login n'existe pas deja
 				Client client = null;
 				client = clientDao.findByLogin(email);
@@ -185,7 +229,9 @@ public class Sign extends HttpServlet {
 					if (newsletter == null) newsl = 0;
 					else newsl = 1 ;
 					
-					Client userParam = new Client(nom, prenom,email, mdp, newsl);
+					//Client userParam = new Client(nom, prenom,email, mdp, newsl);
+					Adresse adr = new Adresse(pays, ville, adresse, codepostal, telephone);
+					Client userParam = new Client(nom, prenom,email, mdp, newsl, adr, adr);
 					System.out.print(userParam);
 					try{
 						clientDao.create(userParam);
@@ -194,21 +240,6 @@ public class Sign extends HttpServlet {
 						
 					}
 					
-					 String eid = "wiem.marzouk@gmail.com";
-	                 String message = " Welcome to CELEGANCE <br />";
-	                      message+="Dear You have been successfully registered.";
-	                  //    message+="<br/>" + name + ", You have been successfully registered." + event;
-
-	                      message+="<br/>" ;
-	                         String subject="DOWNLOAD THIS APPLICATION-ID E-MAIL NOTIFICATION !! ";
-	                   /* SendExternalEmail semail =new SendExternalEmail(); 
-	                      //semail.setLink(link);
-	                      semail.setReceiver(" " + eid);
-	                      semail.setSubject(subject);
-	                      semail.setMessage(message);
-
-	                      String msg=semail.sendEmail();
-	                      System.out.println(" " + msg);*/
 					session.setAttribute("client", userParam);
 					RequestDispatcher rd = request
 							.getRequestDispatcher("/boutique");
@@ -222,3 +253,4 @@ public class Sign extends HttpServlet {
 	}
 
 }
+

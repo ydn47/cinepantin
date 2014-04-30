@@ -1,4 +1,4 @@
-	<script type="text/javascript">
+<script type="text/javascript">
 		$(document).ready(function() {
 			mutiselectCode();
 		});
@@ -75,17 +75,12 @@
 						<input class="query" name="q" type="text" placeholder="Enter search terms" size="29" value="" id="query" /> 
 						<input class="btn btn-search" id="searchForm" type="submit" value="Rechercher" name="search">
 						
-
-							placeholder="Enter search terms" size="29" value="" id="query" required="required"> 
-						<input id="searchForm" class="submit button" type="submit" value="Rechercher" name="search">
-
 					</div>
 				</form>
 			</div>
 		</div>
-		<!-- /.container -->
+		
 	</div>
-	<!-- /.menu -->
 
 </body>
 </html>

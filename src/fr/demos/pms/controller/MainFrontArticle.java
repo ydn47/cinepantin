@@ -145,10 +145,6 @@ public class MainFrontArticle extends HttpServlet {
 		 * dupliquer le code de doGet 
   			after a dispatch doPost() is called because your original request used POST method. 
 		 */
-		System.out.print("doPost MAinFrontController");
-		Collection<Categorie> listeCategories = daoCategorie
-				.findAllCategories();
-		request.setAttribute("lstCategories", listeCategories);
 
 		// On vérifie si le bouton de recherche a été cliqué
 		String action = request.getParameter("search");

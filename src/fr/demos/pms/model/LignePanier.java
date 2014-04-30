@@ -1,3 +1,4 @@
+
 package fr.demos.pms.model;
 
 import javax.persistence.Entity;
@@ -120,4 +121,5 @@ public class LignePanier {
 
 	
 }
+
 

@@ -6,6 +6,7 @@
 		 <!--<provider>org.hibernate.ejb.HibernatePersistence</provider> -->
 		 <jta-data-source>jdbc/cinePantin</jta-data-source>
 		 
+		 <class>fr.demos.pms.model.Adresse</class>
 		<class>fr.demos.pms.model.Client</class>
 		 <class>fr.demos.pms.model.Commande</class>
 		 <class>fr.demos.pms.model.Article</class>
@@ -15,7 +16,7 @@
 		  <class>fr.demos.pms.model.Panier</class> 
 		 <class>fr.demos.pms.model.LignePanier</class>
 		 <class>fr.demos.pms.model.Facture</class>   
-		 <class>fr.demos.pms.model.Adresse</class>
+		 
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<property name="eclipselink.logging.level.sql" value="FINE"/> 
