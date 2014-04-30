@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Client {
@@ -20,7 +22,10 @@ public class Client {
 	private String nom;
 	private String prenom;
 	private int newsletter;
+	
+	@OneToOne
 	private Adresse adresseFacturation;
+	@OneToOne
 	private Adresse adresseLivraison;
 
 	protected Client() {}
@@ -47,6 +52,29 @@ public class Client {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.newsletter = newsletter;
+	}
+	
+	/**
+	 * Constructeur ajoutant les addresses de livraison et de facturation
+	 * @param nom
+	 * @param prenom
+	 * @param login
+	 * @param mdp
+	 * @param newsletter
+	 * @param adresseFacturation
+	 * @param adresseLivraison
+	 */
+	public Client(String nom, String prenom, String login, String mdp,
+			int newsletter, Adresse adresseFacturation,
+			Adresse adresseLivraison ) {
+		super();
+		this.login = login;
+		this.mdp = mdp;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.newsletter = newsletter;
+		this.adresseFacturation = adresseFacturation;
+		this.adresseLivraison = adresseLivraison;
 	}
 
 	public long getIdClient() {

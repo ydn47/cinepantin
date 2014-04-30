@@ -21,13 +21,9 @@ public class Adresse {
 	private String pays;
 	private String ville;
 	private String rue;
-	private String numero;
 	private String codepostal;
 	private String telephone;
-	@JoinColumn(name = "idClient")
-	@ManyToOne
-	private Client client;
-
+	
 	public String getPays() {
 		return pays;
 	}
@@ -35,7 +31,8 @@ public class Adresse {
 	/**
 	 * Constructeur vide pour entité JPA
 	 */
-	protected Adresse() {}
+	protected Adresse() {
+	}
 
 	public void setPays(String pays) {
 		this.pays = pays;
@@ -57,14 +54,6 @@ public class Adresse {
 		this.rue = rue;
 	}
 
-	public String getNumero() {
-		return numero;
-	}
-
-	public void setNumero(String numero) {
-		this.numero = numero;
-	}
-
 	public String getCodepostal() {
 		return codepostal;
 	}
@@ -81,36 +70,43 @@ public class Adresse {
 		this.telephone = telephone;
 	}
 
-	public Client getClient() {
-		return client;
-	}
-
-	public void setClient(Client client) {
-		this.client = client;
-	}
-
 	public long getIdAdresse() {
 		return idAdresse;
-	}
-
-	public Adresse(long idAdresse, String pays, String ville, String rue,
-			String numero, String codepostal, String telephone, Client client) {
-		super();
-		this.idAdresse = idAdresse;
-		this.pays = pays;
-		this.ville = ville;
-		this.rue = rue;
-		this.numero = numero;
-		this.codepostal = codepostal;
-		this.telephone = telephone;
-		this.client = client;
 	}
 
 	@Override
 	public String toString() {
 		return "Adresse [idAdresse=" + idAdresse + ", pays=" + pays
-				+ ", ville=" + ville + ", rue=" + rue + ", numero=" + numero
-				+ ", codepostal=" + codepostal + ", telephone=" + telephone
-				+ ", client=" + client + "]";
+				+ ", ville=" + ville + ", rue=" + rue + ", codepostal="
+				+ codepostal + ", telephone=" + telephone + "]";
+	}
+
+	public Adresse(long idAdresse, String pays, String ville, String rue,
+			String codepostal, String telephone) {
+		super();
+		this.idAdresse = idAdresse;
+		this.pays = pays;
+		this.ville = ville;
+		this.rue = rue;
+		this.codepostal = codepostal;
+		this.telephone = telephone;
+	}
+	
+	/**
+	 * Génère une adresse 
+	 * @param pays
+	 * @param ville
+	 * @param rue
+	 * @param codepostal
+	 * @param telephone
+	 */
+	public Adresse(String pays, String ville, String rue,
+			String codepostal, String telephone) {
+		super();
+		this.pays = pays;
+		this.ville = ville;
+		this.rue = rue;
+		this.codepostal = codepostal;
+		this.telephone = telephone;
 	}
 }

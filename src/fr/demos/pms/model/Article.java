@@ -336,4 +336,12 @@ public class Article implements SerialArticle {
 		// on vérifier qu'il existe des propriétés sérialisées
 		return (this.getSerialProprietes() == null) ? null : deserialize(this.getSerialProprietes());
 	}
+	
+	/**
+	 * Formate le prix unitaire pour l'affichage
+	 * @return le prix Formate
+	 */
+	public String getPrixUnitFormate() {
+		return Prix.formatPrix(this.getPrixUnitArticle());
+	}
 }

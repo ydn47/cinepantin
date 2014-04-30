@@ -33,6 +33,9 @@
 				<h2>${article.getNomArticle()}</h2>
 				<p>${article.getShortDescArticle()}</p>
 				<p>${article.getLongDescArticle()}</p>
+				<h2>
+				<span class="text-muted">${article.getPrixUnitFormate()} EUR</span>
+				</h2>
 				<p><a class="btn btn-default" href="${articleCont}${article.getIdArticle()}" role="button">Afficher détails »</a></p>
 				</div>
 			</c:forEach>

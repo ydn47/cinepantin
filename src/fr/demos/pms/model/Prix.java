@@ -1,5 +1,7 @@
 package fr.demos.pms.model;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -80,6 +82,24 @@ public class Prix {
 		return res;
 	}
 
+	/**
+	 * Conversion d'un double en chaîne de caractère
+	 * @param la valeur en double
+	 * @return une chaîne de caractère représentant le prix
+	 */
+	public static String formatPrix(double valeur) {
+		// on arrondit la valeur à 2 chiffres après la virgule
+		double valeurArrondie = Math.round(valeur * 100) / 100.0;
+		
+		// on formate le prix en plaçant des points tous les milliers, et une virgule pour séparer des centimes
+		// DecimalFormat formatter = new DecimalFormat("###,###0.00");
+		DecimalFormatSymbols dfs = new DecimalFormatSymbols();
+		dfs.setDecimalSeparator(',');
+		dfs.setGroupingSeparator('.');
+		DecimalFormat formatter = new DecimalFormat("###,###0.00", dfs);
+		String res = formatter.format(valeurArrondie);
+		return res;
+	}
 	
 	public void setValeur(double valeur) {
 		this.valeur = valeur;
@@ -93,5 +113,5 @@ public class Prix {
 	 * n'est pas negatif, 2 chiffre apres la virgue, devise : en Euros TVA HT et
 	 * TTC
 	 */
-
+	
 }

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions"  prefix="fn" %>
 
 <%@include file="Head.jsp"%>
 
@@ -46,7 +47,7 @@
 			<div class="col-md-7">
 				<h2 class="featurette-heading">${articleObject.getNomArticle()}
 
-					<span class="text-muted">${articleObject.getPrixUnitArticle()}</span>
+					<span class="text-muted">${articleObject.getPrixUnitFormate()} EUR</span>
 				</h2>
 				<p class="lead">${articleObject.getShortDescArticle()}</p>
 				<p class="lead">${articleObject.getLongDescArticle()}</p>
@@ -99,14 +100,13 @@
 						<td>adipiscing</td>
 						<td>elit</td>
 					</tr>  -->
-					<c:if test='${not empty "$articleObject.getProprietes()"}'>
+
 					<c:forEach var="prop" items="${articleObject.getProprietes()}">
 						<tr>
-							<th>${prop.key}</th>
+							<th>${fn:toUpperCase(fn:substring(prop.key,0,1))}${fn:substring(prop.key,1,fn:length(prop.key))}</th>
 							<td>${prop.value}</td>
 						</tr>
 					</c:forEach>
-					</c:if>
 				</tbody>
 			</table>
 		</div>
