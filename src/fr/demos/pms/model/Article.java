@@ -33,7 +33,7 @@ public class Article implements SerialArticle {
 	private double prixUnitArticle;
 	@Enumerated(EnumType.STRING)
 	private Tva tva;
-	
+
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
@@ -43,7 +43,7 @@ public class Article implements SerialArticle {
 	@ManyToOne()
 	private PlageDePrix plagePrixArticle;
 
-	//private HashMap<String, String> proprietes; // a serialiser
+	// private HashMap<String, String> proprietes; // a serialiser
 	@Lob
 	private byte[] serialProprietes;
 
@@ -129,9 +129,10 @@ public class Article implements SerialArticle {
 	public void setPlagePrixArticle(PlageDePrix plagePrixArticle) {
 		this.plagePrixArticle = plagePrixArticle;
 	}
-	
+
 	/**
 	 * Constructeur qui prend un hashmap en tant que propriétés
+	 * 
 	 * @return un article créé avec un HashMap
 	 */
 	public Article(long idArticle, String nomArticle, String shortDescArticle,
@@ -155,8 +156,6 @@ public class Article implements SerialArticle {
 			System.err.println("Erreur de conversion du HashMap");
 		}
 	}
-	
-	
 
 	public Article(long idArticle, String nomArticle, String shortDescArticle,
 			String longDescArticle, double prixUnitArticle, Tva tva,
@@ -184,26 +183,20 @@ public class Article implements SerialArticle {
 		this.urlImage = urlImage;
 	}
 
-	
-
-	
-	
-	
-
 	@Override
 	public String toString() {
 		return "Article [idArticle=" + idArticle + ", nomArticle=" + nomArticle
 				+ ", shortDescArticle=" + shortDescArticle
-				+ ", longDescArticle=" + longDescArticle + ", prixUnitArticle="
-				+ prixUnitArticle + ", "
-				//+ "tva=" + tva.valeur + ","
-				+ " qteStock=" + qteStock
-				+ ", urlImage=" + urlImage + ", categorie=" + categorie
-				+ ", plagePrixArticle=" + plagePrixArticle
-				+ ", serialProprietes=" + Arrays.toString(serialProprietes)
-				+ "]";
+				+ ", longDescArticle=" + longDescArticle
+				+ ", prixUnitArticle="
+				+ prixUnitArticle
+				+ ", "
+				// + "tva=" + tva.valeur + ","
+				+ " qteStock=" + qteStock + ", urlImage=" + urlImage
+				+ ", categorie=" + categorie + ", plagePrixArticle="
+				+ plagePrixArticle + ", serialProprietes="
+				+ Arrays.toString(serialProprietes) + "]";
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -296,12 +289,11 @@ public class Article implements SerialArticle {
 
 	@Override
 	public byte[] serialize(HashMap<?, ?> hashmap) throws IOException {
-		ByteArrayOutputStream bos = new ByteArrayOutputStream();	
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		try {
 			ObjectOutputStream oos = new ObjectOutputStream(bos);
 			oos.writeObject(hashmap);
-		} catch (IOException ioex)
-		{
+		} catch (IOException ioex) {
 			throw new IOException("Erreur de sérialisation" + ioex);
 		}
 		byte buf[] = bos.toByteArray();
@@ -312,33 +304,36 @@ public class Article implements SerialArticle {
 	public HashMap<String, String> deserialize(byte[] bytes) {
 		ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
 		ObjectInputStream ois;
-		
-		HashMap<String,String> hm = null;
+
+		HashMap<String, String> hm = null;
 		try {
 			ois = new ObjectInputStream(bis);
-			hm  = (HashMap<String, String>) ois.readObject();
+			hm = (HashMap<String, String>) ois.readObject();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException cnfe) {
 			cnfe.printStackTrace();
 		}
-		
+
 		return hm;
 	}
 
 	/**
 	 * Retourne les propriétés sérialisées de l'article
+	 * 
 	 * @return les propriétés sérialisées de l'article
 	 */
 	public byte[] getSerialProprietes() {
 		return serialProprietes;
 	}
-	
+
 	/**
 	 * Méthode qui renvoie les propriétés désérialisées d'un article
+	 * 
 	 * @return toutes les proprietes d'un article
 	 */
 	public HashMap<String, String> getProprietes() {
-		return deserialize(this.getSerialProprietes());
+		// on vérifier qu'il existe des propriétés sérialisées
+		return (this.getSerialProprietes() == null) ? null : deserialize(this.getSerialProprietes());
 	}
 }
