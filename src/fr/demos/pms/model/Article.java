@@ -97,6 +97,10 @@ public class Article implements SerialArticle {
 	public double getPrixUnitArticle() {
 		return prixUnitArticle;
 	}
+	public double getPrixUnitArticleTTC() {
+		//Prix_TTC = Prix_HT + 19.6/100*Prix_HT;
+		return prixUnitArticle * ( 1 + tva.getValeur() / 100);
+	}
 
 	public void setPrixUnitArticle(double prixUnitArticle) {
 		this.prixUnitArticle = prixUnitArticle;

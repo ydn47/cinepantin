@@ -21,6 +21,7 @@
 	<c:url var="jumbotron" value="/_css/jumbotron.css" />
 	<c:url var="dashboard" value="/_css/dashboard.css" />
 	<c:url var="multiselcss" value="/_css/bootstrap-multiselect.css" />
+	<c:url var="bootstrapcombined" value="/_css/bootstrap-combined.no-icons.min.css" />
 	<c:url var="img" value="/_img" />
 	
 	<link rel="stylesheet" href="${normalize}" />
@@ -28,6 +29,7 @@
 	<link rel="stylesheet" href="${bootsiconlarge}">
 	<link rel="stylesheet" href="${bootscloudfront}">
 	<link rel="stylesheet" href="${jumbotron}">
+	<!--<link rel="stylesheet" href="${bootstrapcombined}">-->
 	
 	<!-- Script -->
 	<c:url var="jQuery" value="/_js/jquery-1.11.0.min.js" />

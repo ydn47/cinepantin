@@ -1,6 +1,7 @@
 package fr.demos.pms.controller;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
 
 import javax.inject.Inject;
@@ -18,6 +19,7 @@ import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Article;
 import fr.demos.pms.model.Client;
 import fr.demos.pms.model.ExceptionStock;
+import fr.demos.pms.model.LignePanier;
 import fr.demos.pms.model.Panier;
 
 /**
@@ -39,7 +41,14 @@ public class PanierController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		HttpSession session = request.getSession(); 
+		Panier panier = (Panier) session.getAttribute("panier");
+		System.out.print("nb articles " +panier.getLignesPanier().size());
+		request.setAttribute("panierContent", panier);
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/Panier.jsp");
+				rd.forward(request, response);
+				return;
 	}
 
 	/**
@@ -49,10 +58,10 @@ public class PanierController extends HttpServlet {
 		
 		HttpSession session = request.getSession(); 
 		Panier panier = (Panier) session.getAttribute("panier");
-		Client client = (Client) session.getAttribute("client");
 		
 		String action 		= request.getParameter("addCart");
-		System.out.print("action  " +action);
+		String action1 		= request.getParameter("updateCart");
+		System.out.print("action  " +action + " action1  " +action1);
 		if ((action != null) && (action.equals("Ajouter au panier")) ){//Ajouter au panier
 			HashMap<String, String> errorMap = new HashMap<>();
 			String quantite  = request.getParameter("quantity");
@@ -96,6 +105,39 @@ public class PanierController extends HttpServlet {
 				
 			}
 			
+		}else if ((action1 != null) && (action1.equals("Modifier le panier"))){ // mettre à jour
+			//// récupération des articles selectionnés
+			String[] selectionArticle = request.getParameterValues("optionsCheckbox");
+			System.out.print("length" +selectionArticle.length);
+			if (selectionArticle != null) {// retirer les articles selectionnés
+				for (int i = 0; i < selectionArticle.length; i++) {
+					System.out.print(selectionArticle[i]);
+					long idArticle = 0;
+					try {
+						idArticle = Long.parseLong(selectionArticle[i]);
+					} catch (NumberFormatException e) {
+						System.err.println("Id article non valide" + e);
+					}
+					Article article = null;
+					if (idArticle != 0)
+						article = daoArticle.findById(idArticle);
+						System.out.print(article);
+					if (article != null){
+						panier.retirer(article);
+					}	
+				}			
+			}
+			//gerer les quantites
+			
+			session.setAttribute("panier", panier);
+			RequestDispatcher rd = request
+					.getRequestDispatcher("/Panier.jsp");
+			rd.forward(request, response);
+			return;
+					
+			
+		}else { //dans tous les cas, reprendre le code de doGet
+			doPost(request, response);
 		}
 	}
 

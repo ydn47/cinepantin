@@ -29,11 +29,12 @@
 
 	 
 	<h1> Shopping Cart</h1><br>
-	 
+	 <c:if test='${not empty "$panierContent"}'>
+         <form class="form-horizontal" method="post" action="${paniercont}">
         <table class="table table-bordered table-striped">
 		  <thead>
 			  <tr>
-				<th>Remove</th>
+				<th>Supprimer</th>
 				<th>Image</th>
 				<th>Article</th>
 				<th>Quantité</th>
@@ -42,54 +43,51 @@
 			  </tr>
 			</thead>
 			<tbody>
-			  <tr>
-				<td class=""><input type="checkbox" value="option1" id="optionsCheckbox"></td>
-				<td class="muted center_text"><a href="product.html"><img src="css/images/macbook-pro.jpg"></a></td>
-				<td>MacBook Pro</td>
+				<c:forEach var="ligne" items="${panierContent.getLignesPanier()}">
+						<tr>
+							<td class=""><input type="checkbox" value="${ligne.getArticle().getIdArticle()}" id="optionsCheckbox" name="optionsCheckbox"></td>
+							<td class="muted center_text"><a href="product.html"><img src="css/images/macbook-pro.jpg"></a></td>
+							<td>${ligne.getArticle().getNomArticle()}</td>
 				
-				<td><input type="text" placeholder="1" class="input-mini"></td>
-				<td>EUR 2,350.00</td>
-				<td>EUR 2,350.00</td>
+							<td><input style ="height: 18px;padding-top:0px;padding-bottom:0px;" class="input-mini" type ="number" min="1" max="5" value="${ligne.getQteCommande()}"></td>
+							<td>EUR ${ligne.getArticle().getPrixUnitArticleTTC()}</td>
+							<td>EUR ${ligne.getTotalTTC()} </td>
+						</tr>
+					</c:forEach>
+			  <tr>
+
 			  </tr>			  
-			  <tr>
-				<td class=""><input type="checkbox" value="option1" id="optionsCheckbox"></td>
-				<td class="muted center_text"><a href="product.html"><img src="css/images/macbook-pro.jpg"></a></td>
-				<td>MacBook Pro</td>
-				
-				<td><input type="text" placeholder="1" class="input-mini"></td>
-				<td>EUR 2,350.00</td>
-				<td>EUR 2,350.00</td>
-			  </tr>	
+			   <tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>Total TTC</td>
+				<td><strong>EUR ${panierContent.getMontantTotalTTC()}</strong></td>
+			  </tr>		
 			   <tr>
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 				<td>Total HT</td>
-				<td><strong>EUR 4,700.00</strong></td>
+				<td><strong>EUR ${panierContent.getMontantTotalHT()}</strong></td>
 			  </tr>		 			 
-			  <tr>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-				<td>Total TTC</td>
-				<td><strong>EUR 4,700.00</strong></td>
-			  </tr>		  
+			   
 			</tbody>
 		  </table>
-		  
-		  <form class="form-horizontal">
+		 </c:if> 
+		  <form class="form-horizontal" method="post" action="${paniercont}">
 			<fieldset>	  
 				<div class="row">
 		  			<div class="span5">
-		  				<input type="submit" class="btn primary" value="Mettre à jour" name="updateCart"/>
+		  				<input type="submit" class="btn primary" value="Modifier le panier" name="updateCart"/>
 					</div>		  
 					<div class="span2">
-						<input type="submit" class="btn primary" value="Continuer votre shopping" name="retourBoutique"/>
+						<a href="${boutique}" class="btn primary pull-right">Continuer votre shopping</a>
 					</div>		  
 					<div class="span5">
-            			<a href="checkout.html" class="btn primary pull-right">Passer la commande</a>
+            			<a href="${paniercont}" class="btn primary pull-right">Passer la commande</a>
 					</div>
           		</div>
         	</fieldset>

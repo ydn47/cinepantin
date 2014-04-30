@@ -121,6 +121,20 @@ public class Panier {
 		}
 	
 	}
+	
+	public void retirer(Article article) {
+		System.out.print("isArticleInCart" +isArticleInCart(article));
+		if (isArticleInCart(article)){ //si l'article est deja pr�sent, on agit sur la quantite
+			for (LignePanier ligne : lignesPanier) {
+				if (ligne.getArticle().equals(article)){
+					lignesPanier.remove(ligne); break; //
+				}
+			}
+		}else{
+			System.out.print("Article n'existe pas ds le pannier");
+		}	
+	}
+	
 	public boolean isArticleInCart(Article article) {
 		
 		boolean res = false;
@@ -157,6 +171,14 @@ public class Panier {
 	   }
 	   return res ;
 	}
+	
+	public double getMontantTotalTTC() {
+		   double res = 0. ;
+		   for(LignePanier ligne: this.lignesPanier) {
+		       res += ligne.getArticle().getPrixUnitArticleTTC() * ligne.getQteCommande();
+		   }
+		   return res ;
+		}
 
 public Client getClient() {
 	return client;

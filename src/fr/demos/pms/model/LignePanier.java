@@ -74,7 +74,10 @@ public class LignePanier {
 	public long getIdLignePanier() {
 		return idLignePanier;
 	}
-
+	
+	public double getTotalTTC() {
+		return article.getPrixUnitArticleTTC() * getQteCommande();
+		}
 	@Override
 	public String toString() {
 		return "LignePanier [idLignePanier=" + idLignePanier + ", article="
