@@ -2,7 +2,7 @@
 package fr.demos.pms.controller;
 
 import java.io.IOException;
-import java.util.Collection;
+
 import java.util.HashMap;
 
 import javax.inject.Inject;
@@ -18,9 +18,8 @@ import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ArticleDao;
 import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Article;
-import fr.demos.pms.model.Client;
 import fr.demos.pms.model.ExceptionStock;
-import fr.demos.pms.model.LignePanier;
+
 import fr.demos.pms.model.Panier;
 
 /**
@@ -47,7 +46,7 @@ public class PanierController extends HttpServlet {
 		System.out.print("nb articles " +panier.getLignesPanier().size());
 		request.setAttribute("panierContent", panier);
 		RequestDispatcher rd = request
-				.getRequestDispatcher("/Panier.jsp");
+				.getRequestDispatcher("/cart.jsp");
 				rd.forward(request, response);
 				return;
 	}
@@ -109,10 +108,11 @@ public class PanierController extends HttpServlet {
 		}else if ((action1 != null) && (action1.equals("Modifier le panier"))){ // mettre à jour
 			//// récupération des articles selectionnés
 			String[] selectionArticle = request.getParameterValues("optionsCheckbox");
-			System.out.print("length" +selectionArticle.length);
+			//System.out.print("length" +selectionArticle.length);
 			if (selectionArticle != null) {// retirer les articles selectionnés
 				for (int i = 0; i < selectionArticle.length; i++) {
 					System.out.print(selectionArticle[i]);
+					
 					long idArticle = 0;
 					try {
 						idArticle = Long.parseLong(selectionArticle[i]);
@@ -129,10 +129,15 @@ public class PanierController extends HttpServlet {
 				}			
 			}
 			//gerer les quantites
+			//recupererles valeurs
+			//String[] qtes = request.getParameterValues("qte");
+			
 			
 			session.setAttribute("panier", panier);
+			System.out.print("nb articles " +panier.getLignesPanier().size());
+			request.setAttribute("panierContent", panier);
 			RequestDispatcher rd = request
-					.getRequestDispatcher("/Panier.jsp");
+					.getRequestDispatcher("/cart.jsp");
 			rd.forward(request, response);
 			return;
 					

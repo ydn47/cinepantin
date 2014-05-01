@@ -32,18 +32,12 @@ public class Panier {
 		
 	}
 	
-	
-	
-	
-	
+
 	public Panier(long idPanier) {
 		super();
 		this.idPanier = idPanier;
 		lignesPanier = new ArrayList<LignePanier>();
 	}
-
-
-
 
 
 	public Panier (ArrayList<LignePanier> lignesPanier) {
@@ -158,6 +152,22 @@ public class Panier {
 	   }
 	   return res ;
 	}
+	
+	public double getMontantTotalTTC() {
+		   double res = 0. ;
+		   for(LignePanier ligne: this.lignesPanier) {
+		       res += ligne.getArticle().getPrixUnitArticleTTC() * ligne.getQteCommande();
+		   }
+		   return res ;
+		}
+	
+	public String getMontantTotalTTCFormat() {
+		  return Prix.formatPrix(getMontantTotalTTC());
+		}
+	
+	public String getMontantTotalHTFormat() {
+		  return Prix.formatPrix(getMontantTotalHT());
+		}
 
 public Client getClient() {
 	return client;

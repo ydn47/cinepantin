@@ -63,7 +63,7 @@ public class HeaderFilter implements Filter {
 		
 		HttpSession session = ((HttpServletRequest) request).getSession(); 
 		Client client       = (Client) session.getAttribute("client");
-		System.out.print("clientSession" + client);
+		
 		if (client != null) {//l'user est connecté, on affiche Bonjour
 			String nom    = client.getNom();
 			String prenom = client.getPrenom();
@@ -79,7 +79,8 @@ public class HeaderFilter implements Filter {
 		System.out.print("panierSession" + panier);
 		if (panier!= null) {
 			int nbArticles = panier.getLignesPanier().size();
-			request.setAttribute("nbArticles",nbArticles);	
+			request.setAttribute("nbArticles",nbArticles);
+			request.setAttribute("total", panier.getMontantTotalTTCFormat());
 			
 		}
 		

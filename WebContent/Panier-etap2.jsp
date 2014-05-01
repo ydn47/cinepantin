@@ -2,113 +2,112 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@include file="Head.jsp"%>
-<c:url var="main" value="/_css/main.css" />
-<link rel="stylesheet" href="${main}">
-
-<body style="padding-top: 100px">
-	<%@include file="Header.jsp"%>
-
-
-	<div class="jumbotron">
-		<div class="container">
-			<h1>Hello, world!</h1>
-			<p>This is a template for a simple marketing or informational
-				website. It includes a large callout called a jumbotron and three
-				supporting pieces of content. Use it as a starting point to create
-				something more unique.</p>
-			<p>
-				<a class="btn btn-primary btn-lg" role="button">Learn more »</a>
-			</p>
-		</div>
-	</div>
-<div class="container">
-
-	<div class="row">
-	 	<div class="span12">
-			<div class="accordion" id="accordion2">
-            	<div class="accordion-group">
-              		<div class="accordion-heading">
-                		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                 		 <h3>Step 1: Checkout Options</h3>
-                		</a>
-              		</div>
-              		<div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
-	                	<div class="accordion-inner">
-					  		<div class="span6 no_margin_left">
-								<h4>New Customer</h4>
-								<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+<%@include file="entete.jsp"%>
+<div class="row">
+		 <div class="span12">
+		     <ul class="breadcrumb">
+    <li>
+    <a href="#">Home</a> <span class="divider">/</span>
+    </li>
+    <li>
+    <a href="cart.html">Shopping Cart</a> <span class="divider">/</span>
+    </li>
+    <li class="active">
+    <a href="/">Checkout</a>
+    </li>
+    </ul>
 	
-								<form class="">
-									<fieldset>
-										<input type="radio" value="option1" name="optionsCheckboxList1"> Register Account <br>
-										<input type="radio" value="option2" name="optionsCheckboxList1"> Guest Checkout <br><br><br><br><br>
-									  	<a class="btn btn-primary pull-right" href="#collapse2" data-toggle="collapse" data-parent="#collapse2">Continue</a>
-				
-									</fieldset>
-								</form>
-					  		</div>
-							<div class="span5">
-								<h4>Registered Customers</h4>
-								<p>If you have an account with us, please log in.</p>
-				
-									<form class="">
-										<fieldset>
-											<div class="control-group">
-												<label for="focusedInput" class="control-label">Username</label>
-												<div class="controls">
-												<input type="text" placeholder="Enter your username" id="username" class="input-xlarge focused">
-												</div>
-											</div>
-											<div class="control-group">
-												<label class="control-label">Password</label>
-												<div class="controls">
-												<input type="password" placeholder="Enter your password" id="password" class="input-xlarge">
-												</div>
-											</div>
-					
-											<a class="btn btn-primary pull-right" href="#collapse2">Continue</a>
-					
-										</fieldset>
-									</form>
-							</div> <!-- class="span5"> -->
-	                	</div><!--<div class="accordion-inner"-->
-              		</div><!--id="collapseOne"-->
-            	</div> <!--class="accordion-group"-->
+	
+	  	 <div class="row">
+	 <div class="span12">
+	 
+    
+		            <div id="accordion2" class="accordion">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  <h3>Step 1: Checkout Options</h3>
+                </a>
+              </div>
+              <div class="accordion-body collapse in" id="collapseOne">
+                <div class="accordion-inner">
+				  
+				  <div class="span6 no_margin_left">
+				<h4>New Customer</h4>
+				<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+
+				<form class="">
+					<fieldset>
+						<input type="radio" name="optionsCheckboxList1" value="option1"> Register Account <br>
+						<input type="radio" name="optionsCheckboxList1" value="option2"> Guest Checkout <br><br><br><br><br>
+					  	<a data-parent="#collapse2" data-toggle="collapse" href="#collapse2" class="btn btn-primary pull-right">Continue</a>
+
+					</fieldset>
+				</form>
+				  </div>
+				<div class="span5">
+				<h4>Registered Customers</h4>
+				<p>If you have an account with us, please log in.</p>
+
+				<form class="">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="focusedInput">Username</label>
+							<div class="controls">
+							<input type="text" class="input-xlarge focused" id="username" placeholder="Enter your username" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" autocomplete="off">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Password</label>
+							<div class="controls">
+							<input type="password" class="input-xlarge" id="password" placeholder="Enter your password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;" autocomplete="off">
+							</div>
+						</div>
+
+											  	<a href="#collapse2" class="btn btn-primary pull-right">Continue</a>
+
+					</fieldset>
+				</form>
+				  </div>
+				  
+				  
+                </div>
+              </div>
+            </div>
 
 		<div class="accordion-group">
 			<div class="accordion-heading">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+				<a href="#collapse2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
 					<h3>Step 2: Billing Details</h3>
 				</a>
 			</div>
-			<div id="collapse2" class="accordion-body collapse" style="height: 0px;">
+			<div class="accordion-body collapse" id="collapse2">
 				<div class="accordion-inner">
-					<div class="span6 no_margin_left">
+										<div class="span6 no_margin_left">
 						<legend>Your Personal Details</legend>
 					  <div class="control-group">
 						<label class="control-label">First Name</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">Last Name</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  
 					  <div class="control-group">
 						<label class="control-label">Email Address</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					 
 
 					  <div class="control-group">
 						<label class="control-label">Telephone</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  </div>
@@ -117,24 +116,24 @@
 					  <div class="control-group">
 						<label class="control-label">Address 1</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">Address 2</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  <div class="control-group">
 						<label class="control-label">City</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">ZIP</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  <div class="control-group">
 						<label class="control-label">Country</label>
@@ -147,7 +146,7 @@
 					  </div>
 					  </div>
 					  <div class="span11 no_margin_left">
-					  <br><a class="btn btn-primary pull-right" href="#collapse3">Continue</a><br><br><br>
+					  <br><a href="#collapse3" class="btn btn-primary pull-right">Continue</a><br><br><br>
 					    </div>
 				</div>
 
@@ -157,37 +156,37 @@
 			
 		<div class="accordion-group">
 			<div class="accordion-heading">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+				<a href="#collapse3" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
 					<h3>Step 3: Delivery Details</h3>
 				</a>
 			</div>
-			<div id="collapse3" class="accordion-body collapse" style="height: 0px;">
+			<div class="accordion-body collapse" id="collapse3">
 <div class="accordion-inner">
 										<div class="span6 no_margin_left">
 						<legend>Your Personal Details</legend>
 					  <div class="control-group">
 						<label class="control-label">First Name</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">Last Name</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  
 					  <div class="control-group">
 						<label class="control-label">Email Address</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					 
 
 					  <div class="control-group">
 						<label class="control-label">Telephone</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  </div>
@@ -196,24 +195,24 @@
 					  <div class="control-group">
 						<label class="control-label">Address 1</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">Address 2</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  <div class="control-group">
 						<label class="control-label">City</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>
 					  <div class="control-group">
 						<label class="control-label">ZIP</label>
 						<div class="controls docs-input-sizes">
-						  <input type="text" placeholder="" class="span4">
+						  <input type="text" class="span4" placeholder="">
 						</div>
 					  </div>					  <div class="control-group">
 						<label class="control-label">Country</label>
@@ -226,7 +225,7 @@
 					  </div>
 					  </div>
 					  					  <div class="span11 no_margin_left">
-					  <br><a class="btn btn-primary pull-right" href="#collapse3">Continue</a><br><br><br>
+					  <br><a href="#collapse3" class="btn btn-primary pull-right">Continue</a><br><br><br>
 					    </div>
 				</div>
 			</div>
@@ -235,23 +234,23 @@
 			
 					<div class="accordion-group">
 			<div class="accordion-heading">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+				<a href="#collapse4" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
 					<h3>Step 4: Payment Method</h3>
 				</a>
 			</div>
-			<div id="collapse4" class="accordion-body collapse" style="height: 0px;">
+			<div class="accordion-body collapse" id="collapse4">
 				<div class="accordion-inner">
-											<input type="radio" value="option1" name="payment1"> Collect in store<br>
-						<input type="radio" value="option2" name="payment1"> Paypal<br>
-						<input type="radio" value="option2" name="payment1"> Google checkout<br><br>
+											<input type="radio" name="payment1" value="option1"> Collect in store<br>
+						<input type="radio" name="payment1" value="option2"> Paypal<br>
+						<input type="radio" name="payment1" value="option2"> Google checkout<br><br>
 <div class="control-group">
-            <label for="textarea" class="control-label">Comments</label>
+            <label class="control-label" for="textarea">Comments</label>
             <div class="controls">
-              <textarea rows="3" id="textarea" class="input-xlarge span11"></textarea>
+              <textarea class="input-xlarge span11" id="textarea" rows="3"></textarea>
             </div>
           </div>
 					  <div class="span11 no_margin_left">
-					  <br><a class="btn btn-primary pull-right" href="#collapse3">Confirm order</a><br><br><br>
+					  <br><a href="#collapse3" class="btn btn-primary pull-right">Confirm order</a><br><br><br>
 					    </div>				</div>
 			</div>
 		</div>
@@ -264,10 +263,10 @@
 	  
 		</div>
 
-</div><!-- container -->
+      </div>
+      
+      <%@include file="pied.jsp"%>
 
-	<hr>
-
-	<%@include file="Footer.jsp"%>
 </body>
-</html>      
+</html>
+      

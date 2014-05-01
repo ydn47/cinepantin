@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,18 +13,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
-
-
-
-
-
-
 import fr.demos.pms.annotation.Dao;
-import fr.demos.pms.dao.*;
+import fr.demos.pms.dao.ClientDao;
+import fr.demos.pms.dao.DAOException;
+import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Adresse;
 import fr.demos.pms.model.Client;
-import fr.demos.pms.util.SendExternalEmail;
+
+
+
 
 /**
  * Servlet implementation class Signin
@@ -61,7 +57,7 @@ public class Sign extends HttpServlet {
 		}else if ((info != null) && (info.equals("/up")) ){ //creer un compte
 			
 			RequestDispatcher rd = request
-					.getRequestDispatcher("/Signup.jsp");
+					.getRequestDispatcher("/register.jsp");
 					rd.forward(request, response);
 			return;	
 		}else if ((info != null) && (info.equals("/disconnect")) ){ //se deconnecter
@@ -72,16 +68,28 @@ public class Sign extends HttpServlet {
 					rd.forward(request, response);
 			return;	
 		}else if ((info != null) && (info.equals("/editAccount")) ){ //modifier son compte
+			
+			/* TODO
+			 * recuperer le client de la session
+			 * repeupler le formulaire
+			 * et faire un update
+			 * 
+			 */
 			Client client = (Client) session.getAttribute("client");
 			if (client != null){
 				request.setAttribute("nom",client.getNom());
 				request.setAttribute("prenom",client.getPrenom());
 				request.setAttribute("email",client.getLogin());
-				RequestDispatcher rd = request.getRequestDispatcher("/Signup");
+				RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
 				rd.forward(request, response);
 				return;
 			}
-		}	
+		}else {
+			RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
+			rd.forward(request, response);
+			return;
+			
+		}
 	}
 
 	/**
@@ -104,48 +112,49 @@ public class Sign extends HttpServlet {
 				if (email == null || email.equals("")) {
 					errorMap.put("email", "Email (Login) obligatoire");
 				}
-				if (mdp == null || mdp.equals("")) {
-					
+				if (mdp == null || mdp.equals("")) {	
 					errorMap.put("mdp", "Mdp obligatoire");	
 				}
-				//verifier que le compte existe
-				Client client = null;
-				System.out.print("email  " +email+"  mdp  " +mdp);
-				client = clientDao.findByParam(email, mdp);
-				
-				if (client != null){
-					session.setAttribute("client", client);		
+				if(errorMap.size() ==0){
+					//verifier que le compte existe
+					Client client = null;
+					System.out.print("email  " +email+"  mdp  " +mdp);
+					client = clientDao.findByParam(email, mdp);
+					
+					if (client != null){
+						session.setAttribute("client", client);	
+						RequestDispatcher rd = request
+								.getRequestDispatcher("/boutique");
+								rd.forward(request, response);
+								System.out.print("doPost Singn fin");	
+						return;	
+					}else{
+						request.setAttribute("erreurCompte", "Votre login ou mdp est incorrect");
+						request.setAttribute("email", "");
+						request.setAttribute("mdp", "");
+						RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
+						rd.forward(request, response);
+						return;
+					}
+                      
+				}else{
+					request.setAttribute("erreur",errorMap);
+					
+					RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
+					rd.forward(request, response);
+					return;
+					
 				}
-				 String eid = "wiem.marzouk@gmail.com";
-                 String message = " Welcome to CELEGANCE <br />";
-                      message+="Dear You have been successfully registered.";
-                  //    message+="<br/>" + name + ", You have been successfully registered." + event;
-
-                      message+="<br/>" ;
-                         String subject="DOWNLOAD THIS APPLICATION-ID E-MAIL NOTIFICATION !! ";
-                   /* SendExternalEmail semail =new SendExternalEmail(); 
-                      //semail.setLink(link);
-                      semail.setReceiver(" " + eid);
-                      semail.setSubject(subject);
-                      semail.setMessage(message);
-
-                      String msg=semail.sendEmail();
-                      System.out.println(" " + msg);*/
-                     
-                      
-                      
-                      
-					RequestDispatcher rd = request
-							.getRequestDispatcher("/boutique");
-							rd.forward(request, response);
-							System.out.print("doPost Singn fin");	
-					return;	
 	
 				
 			}
 		}else if ((info != null) && (info.equals("/up")) ){//creer un compte
-			
-			
+			/* TODO
+			 * enregistrer les autres param d'adresse
+			 * verifier si le chmp mdp2 est egale au premier
+			 * envoyer un mail de confirmation creation de compte 
+			 * possibilite de gerer le meme formulaire en mode edition, le client peut modifier ses informations personelles (a voir)
+			*/
 			//recup parametre, verifier 
 			//inserer compte s'il n'exixte pas
 			//redirect home avec mise a jour header (Bonjour M XX)
@@ -172,7 +181,7 @@ public class Sign extends HttpServlet {
 				mdp    = request.getParameter("mdp").trim();
 				adresse = request.getParameter("adresse").trim();
 				ville  = request.getParameter("ville").trim();
-				codepostal = request.getParameter("codepostal").trim();
+				codepostal = request.getParameter("cp").trim();
 				pays   = request.getParameter("pays").trim();
 				
 
@@ -215,13 +224,13 @@ public class Sign extends HttpServlet {
 				if (client != null){
 					errorMap.put("email", "Email (Login) existant");
 				}
-				if(errorMap.size() !=0){
+				if(errorMap.size() != 0){
 					request.setAttribute("nom",nom);
 					request.setAttribute("prenom",prenom);
 					request.setAttribute("email",email);
 					request.setAttribute("erreur",errorMap);
 			
-					RequestDispatcher rd = request.getRequestDispatcher("/Signup.jsp");
+					RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
 					rd.forward(request, response);
 					return;
 				}else{
@@ -248,6 +257,8 @@ public class Sign extends HttpServlet {
 					
 				}
 			}
+		}else{
+			doGet(request, response);
 		}
 			
 	}

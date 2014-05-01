@@ -1,4 +1,3 @@
-
 package fr.demos.pms.model;
 
 import javax.persistence.Entity;
@@ -78,6 +77,9 @@ public class LignePanier {
 	
 	public double getTotalTTC() {
 		return article.getPrixUnitArticleTTC() * getQteCommande();
+		}
+	public String getTotalTTCFormat() {
+		return Prix.formatPrix(getTotalTTC());
 		}
 	@Override
 	public String toString() {

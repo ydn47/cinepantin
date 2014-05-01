@@ -34,7 +34,6 @@ public class Article implements SerialArticle {
 	private double prixUnitArticle;
 	@Enumerated(EnumType.STRING)
 	private Tva tva;
-
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
@@ -132,9 +131,9 @@ public class Article implements SerialArticle {
 	}
 
 	/**
-	 * Constructeur qui prend un hashmap en tant que propriétés
+	 * Constructeur qui prend un hashmap en tant que propriï¿½tï¿½s
 	 * 
-	 * @return un article créé avec un HashMap
+	 * @return un article crï¿½ï¿½ avec un HashMap
 	 */
 	public Article(long idArticle, String nomArticle, String shortDescArticle,
 			String longDescArticle, double prixUnitArticle, Tva tva,
@@ -295,7 +294,7 @@ public class Article implements SerialArticle {
 			ObjectOutputStream oos = new ObjectOutputStream(bos);
 			oos.writeObject(hashmap);
 		} catch (IOException ioex) {
-			throw new IOException("Erreur de sérialisation" + ioex);
+			throw new IOException("Erreur de sï¿½rialisation" + ioex);
 		}
 		byte buf[] = bos.toByteArray();
 		return buf;
@@ -320,21 +319,21 @@ public class Article implements SerialArticle {
 	}
 
 	/**
-	 * Retourne les propriétés sérialisées de l'article
+	 * Retourne les propriï¿½tï¿½s sï¿½rialisï¿½es de l'article
 	 * 
-	 * @return les propriétés sérialisées de l'article
+	 * @return les propriï¿½tï¿½s sï¿½rialisï¿½es de l'article
 	 */
 	public byte[] getSerialProprietes() {
 		return serialProprietes;
 	}
 
 	/**
-	 * Méthode qui renvoie les propriétés désérialisées d'un article
+	 * Mï¿½thode qui renvoie les propriï¿½tï¿½s dï¿½sï¿½rialisï¿½es d'un article
 	 * 
 	 * @return toutes les proprietes d'un article
 	 */
 	public HashMap<String, String> getProprietes() {
-		// on vérifier qu'il existe des propriétés sérialisées
+		// on vï¿½rifier qu'il existe des propriï¿½tï¿½s sï¿½rialisï¿½es
 		return (this.getSerialProprietes() == null) ? null : deserialize(this.getSerialProprietes());
 	}
 	
@@ -342,12 +341,17 @@ public class Article implements SerialArticle {
 	 * Formate le prix unitaire pour l'affichage
 	 * @return le prix Formate
 	 */
-	public String getPrixUnitFormate() {
+	public String getPrixUnitFormat() {
 		return Prix.formatPrix(this.getPrixUnitArticle());
 	}
 	
 	public double getPrixUnitArticleTTC() {
+		
 		return prixUnitArticle * (1 + tva.getValeur() /100);
+	}
+	
+	public String getPrixUnitTTCFormat() {
+		return Prix.formatPrix(this.getPrixUnitArticleTTC());
 	}
 	
 }
