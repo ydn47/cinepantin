@@ -151,8 +151,8 @@ public class Sign extends HttpServlet {
 		}else if ((info != null) && (info.equals("/up")) ){//creer un compte
 			/* TODO
 			 * enregistrer les autres param d'adresse OK
-			 * verifier si le chmp mdp2 est egale au premier OK 
-			 * eventuellement voir si on peut hasher les mdp
+			 * verifier si le chmp mdp2 est egale au premier 
+			 * 
 			 * envoyer un mail de confirmation creation de compte 
 			 * possibilite de gerer le meme formulaire en mode edition, le client peut modifier ses informations personelles (a voir)
 			*/
@@ -228,7 +228,7 @@ public class Sign extends HttpServlet {
 					errorMap.put("email", "Email (Login) existant");
 				}
 				// vérifier que le champ mdp2 est égal au champ mdp1
-				
+				// eventuellement voir si on peut hasher les mdp
 				if (!mdp.equals(mdp2)) 
 				{
 					errorMap.put("mdp2", "Les mots de passe ne sont pas égaux");
