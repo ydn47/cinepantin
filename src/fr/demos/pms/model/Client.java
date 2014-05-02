@@ -1,5 +1,6 @@
 package fr.demos.pms.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+
+import org.hibernate.annotations.Cascade;
 
 @Entity
 public class Client {
@@ -23,9 +26,9 @@ public class Client {
 	private String prenom;
 	private int newsletter;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.PERSIST)
 	private Adresse adresseFacturation;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.PERSIST)
 	private Adresse adresseLivraison;
 
 	protected Client() {}

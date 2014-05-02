@@ -91,7 +91,7 @@
 					<div class="control-group">
 						<label class="control-label">Téléphone</label>
 						<div class="controls docs-input-sizes">
-							<input type="text" class="span4" value="${telephone}" name="telephone">${erreur["telephone"] }
+							<input type="text" class="span4" value="${telephone}" name="telephone" required>${erreur["telephone"] }
 						</div>
 					</div>
 				</div>

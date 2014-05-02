@@ -150,8 +150,9 @@ public class Sign extends HttpServlet {
 			}
 		}else if ((info != null) && (info.equals("/up")) ){//creer un compte
 			/* TODO
-			 * enregistrer les autres param d'adresse
-			 * verifier si le chmp mdp2 est egale au premier
+			 * enregistrer les autres param d'adresse OK
+			 * verifier si le chmp mdp2 est egale au premier OK 
+			 * eventuellement voir si on peut hasher les mdp
 			 * envoyer un mail de confirmation creation de compte 
 			 * possibilite de gerer le meme formulaire en mode edition, le client peut modifier ses informations personelles (a voir)
 			*/
@@ -166,6 +167,7 @@ public class Sign extends HttpServlet {
 			String prenom   = "";
 			String email    = "";
 			String mdp      = "";
+			String mdp2     = "";
 			String newsletter = "";
 			String adresse  = "";
 			String ville    = "";
@@ -179,11 +181,12 @@ public class Sign extends HttpServlet {
 				prenom = request.getParameter("prenom").trim();
 				email  = request.getParameter("email").trim();
 				mdp    = request.getParameter("mdp").trim();
+				mdp2   = request.getParameter("mdp2").trim();
 				adresse = request.getParameter("adresse").trim();
 				ville  = request.getParameter("ville").trim();
 				codepostal = request.getParameter("cp").trim();
 				pays   = request.getParameter("pays").trim();
-				
+				telephone = request.getParameter("telephone").trim();
 
 				newsletter = request.getParameter("subscribe");
 				System.out.print("hgfhtdf "+newsletter);
@@ -224,6 +227,13 @@ public class Sign extends HttpServlet {
 				if (client != null){
 					errorMap.put("email", "Email (Login) existant");
 				}
+				// vérifier que le champ mdp2 est égal au champ mdp1
+				
+				if (!mdp.equals(mdp2)) 
+				{
+					errorMap.put("mdp2", "Les mots de passe ne sont pas égaux");
+				}
+				
 				if(errorMap.size() != 0){
 					request.setAttribute("nom",nom);
 					request.setAttribute("prenom",prenom);
