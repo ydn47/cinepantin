@@ -1,4 +1,3 @@
-
 package fr.demos.pms.model;
 
 import java.io.ByteArrayInputStream;
@@ -131,16 +130,15 @@ public class Article implements SerialArticle {
 	}
 
 	/**
-	 * Constructeur qui prend un hashmap en tant que propri�t�s
+	 * Constructeur qui prend un hashmap en tant que propriété
 	 * 
-	 * @return un article cr�� avec un HashMap
+	 * @return un article créé avec un HashMap
 	 */
-	public Article(long idArticle, String nomArticle, String shortDescArticle,
+	public Article(String nomArticle, String shortDescArticle,
 			String longDescArticle, double prixUnitArticle, Tva tva,
 			int qteStock, String urlImage, Categorie categorie,
 			PlageDePrix plagePrixArticle, HashMap<String, String> proprietes) {
 		super();
-		this.idArticle = idArticle;
 		this.nomArticle = nomArticle;
 		this.shortDescArticle = shortDescArticle;
 		this.longDescArticle = longDescArticle;
@@ -334,25 +332,26 @@ public class Article implements SerialArticle {
 	 */
 	public HashMap<String, String> getProprietes() {
 		// on v�rifier qu'il existe des propri�t�s s�rialis�es
-		return (this.getSerialProprietes() == null) ? null : deserialize(this.getSerialProprietes());
+		return (this.getSerialProprietes() == null) ? null : deserialize(this
+				.getSerialProprietes());
 	}
-	
+
 	/**
 	 * Formate le prix unitaire pour l'affichage
+	 * 
 	 * @return le prix Formate
 	 */
 	public String getPrixUnitFormat() {
 		return Prix.formatPrix(this.getPrixUnitArticle());
 	}
-	
+
 	public double getPrixUnitArticleTTC() {
-		
-		return prixUnitArticle * (1 + tva.getValeur() /100);
+
+		return prixUnitArticle * (1 + tva.getValeur() / 100);
 	}
-	
+
 	public String getPrixUnitTTCFormat() {
 		return Prix.formatPrix(this.getPrixUnitArticleTTC());
 	}
-	
-}
 
+}

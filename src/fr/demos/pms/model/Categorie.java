@@ -47,10 +47,9 @@ public class Categorie {
 		this.idCategorie = idCategorie;
 	}
 
-	public Categorie(long idCategorie, String nomCategorie,
+	public Categorie(String nomCategorie,
 			String descriptionCategorie) {
 		super();
-		this.idCategorie = idCategorie;
 		this.nomCategorie = nomCategorie;
 		this.descriptionCategorie = descriptionCategorie;
 	}
