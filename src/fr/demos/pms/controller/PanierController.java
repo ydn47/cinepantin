@@ -2,7 +2,6 @@
 package fr.demos.pms.controller;
 
 import java.io.IOException;
-
 import java.util.HashMap;
 
 import javax.inject.Inject;
@@ -19,7 +18,7 @@ import fr.demos.pms.dao.ArticleDao;
 import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Article;
 import fr.demos.pms.model.ExceptionStock;
-
+import fr.demos.pms.model.LignePanier;
 import fr.demos.pms.model.Panier;
 
 /**
@@ -37,6 +36,7 @@ public class PanierController extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -129,9 +129,20 @@ public class PanierController extends HttpServlet {
 				}			
 			}
 			//gerer les quantites
-			//recupererles valeurs
+			//recupererles valeurs: idee: parcoulir toutes les lignes panier et recuperer la valeur de qte qui a pour name idArticle
 			//String[] qtes = request.getParameterValues("qte");
-			
+			for (LignePanier ligne : panier.getLignesPanier()) {
+				String qte = request.getParameter(String.valueOf(ligne.getArticle().getIdArticle()));
+				if (qte != null){
+					try {
+						ligne.setQteCommande(Integer.parseInt(qte));
+					} catch (NumberFormatException e) {
+						System.err.println("qte non valide pour l'article"+ligne.getArticle().getIdArticle() + e);
+					}
+							
+				}
+				
+			}
 			
 			session.setAttribute("panier", panier);
 			System.out.print("nb articles " +panier.getLignesPanier().size());

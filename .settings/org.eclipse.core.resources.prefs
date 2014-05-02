@@ -8,6 +8,7 @@ encoding//src/fr/demos/pms/controller/PanierController.java=UTF-8
 encoding//src/fr/demos/pms/controller/Sign.java=UTF-8
 encoding//src/fr/demos/pms/dao/ClientDaoJPA.java=UTF-8
 encoding//src/fr/demos/pms/filter/HeaderFilter.java=UTF-8
+encoding//src/fr/demos/pms/filter/LoginFilter.java=UTF-8
 encoding//src/fr/demos/pms/model/Article.java=UTF-8
 encoding//src/fr/demos/pms/model/ExceptionStock.java=UTF-8
 encoding//src/fr/demos/pms/model/Panier.java=UTF-8

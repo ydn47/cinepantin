@@ -28,7 +28,7 @@ import fr.demos.pms.dao.CategorieDaoJPA;
 /**
  * Servlet Filter implementation class LoginFilter
  */
-@WebFilter(filterName="LoginFilter", urlPatterns={"/*"}, dispatcherTypes={DispatcherType.REQUEST, DispatcherType.FORWARD})
+@WebFilter(filterName="HeaderFilter", urlPatterns={"/*"}, dispatcherTypes={DispatcherType.REQUEST, DispatcherType.FORWARD})
 public class HeaderFilter implements Filter {
 	@Inject  @Dao
 	private ClientDao clientDao; 
