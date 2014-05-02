@@ -7,13 +7,13 @@
 		 <div class="span12">
 		     <ul class="breadcrumb">
     <li>
-    <a href="#">Home</a> <span class="divider">/</span>
+    <a href="${boutique}">Home</a> <span class="divider">/</span>
     </li>
     <li>
-    <a href="cart.html">Shopping Cart</a> <span class="divider">/</span>
+    <a href="${paniercont}">Panier</a> <span class="divider">/</span>
     </li>
     <li class="active">
-    <a href="/">Checkout</a>
+    <a href="/">Paiement</a>
     </li>
     </ul>
 	
@@ -26,15 +26,15 @@
             <div class="accordion-group">
               <div class="accordion-heading">
                 <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-                  <h3>Step 1: Checkout Options</h3>
+                  <h3>Etape 1: Identifiez-vous</h3>
                 </a>
               </div>
               <div class="accordion-body collapse in" id="collapseOne">
                 <div class="accordion-inner">
 				  
 				  <div class="span6 no_margin_left">
-				<h4>New Customer</h4>
-				<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+				<h4>Nouveau client</h4>
+				<p>En créant un compte, vous pourrez commander plus vite, d'être à jour sur le statut de votre commande et de garder trace des commandes que vous avez déjà faites.</p>
 
 				<form class="">
 					<fieldset>
@@ -78,7 +78,7 @@
 		<div class="accordion-group">
 			<div class="accordion-heading">
 				<a href="#collapse2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-					<h3>Step 2: Billing Details</h3>
+					<h3>Etape 2: Adresse</h3>
 				</a>
 			</div>
 			<div class="accordion-body collapse" id="collapse2">
@@ -157,7 +157,7 @@
 		<div class="accordion-group">
 			<div class="accordion-heading">
 				<a href="#collapse3" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-					<h3>Step 3: Delivery Details</h3>
+					<h3>Etape 3: Détails de livraison</h3>
 				</a>
 			</div>
 			<div class="accordion-body collapse" id="collapse3">
@@ -235,7 +235,7 @@
 					<div class="accordion-group">
 			<div class="accordion-heading">
 				<a href="#collapse4" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
-					<h3>Step 4: Payment Method</h3>
+					<h3>Etape 4: Paiement</h3>
 				</a>
 			</div>
 			<div class="accordion-body collapse" id="collapse4">

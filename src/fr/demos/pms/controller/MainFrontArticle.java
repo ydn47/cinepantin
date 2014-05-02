@@ -69,7 +69,7 @@ public class MainFrontArticle extends HttpServlet {
 
 		// On vérifie si le bouton de recherche a été cliqué
 		String action = request.getParameter("search");
-		if (action != null && action.equals("Rechercher")) {
+		if (action != null && action.equals("Ok")) {
 			// récupération du champ de saisie de recherche
 			String searchName = request.getParameter("q").trim();
 			if (searchName != null && searchName.length() > 0) {
