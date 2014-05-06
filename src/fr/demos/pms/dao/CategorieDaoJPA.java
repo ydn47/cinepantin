@@ -1,5 +1,6 @@
 package fr.demos.pms.dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import javax.annotation.Resource;
@@ -29,11 +30,14 @@ public class CategorieDaoJPA implements CategorieDao {
 	 */
 	@Override
 	public Collection<Categorie> findAllCategories() {
+		Collection<Categorie> listeCategories = new ArrayList<Categorie>();
 		String query = "SELECT cat FROM Categorie cat";
 		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
-		Collection<Categorie> listeCategories = q.getResultList();
+		listeCategories = q.getResultList();
 		
-		return listeCategories;
+		if (listeCategories != null)
+			return listeCategories;
+		else return null;
 	}
 
 }
