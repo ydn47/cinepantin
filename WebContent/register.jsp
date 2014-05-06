@@ -25,14 +25,14 @@
 						<label class="control-label">Prénom</label>
 						<div class="controls docs-input-sizes">
 							<input name="prenom" value="${prenom}" type="text" autofocus
-								required class="span4" placeholder="">${erreur["prenom"] }
+								required class="span4"  />${erreur["prenom"] }
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label">Nom</label>
 						<div class="controls docs-input-sizes">
 							<input name="nom" value="${nom}" type="text" required
-								class="span4" placeholder="">${erreur["nom"] }
+								class="span4" placeholder="" />${erreur["nom"] }
 						</div>
 					</div>
 					<div class="control-group">

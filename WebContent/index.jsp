@@ -54,7 +54,7 @@
           			<div class="thumbnail">
             			<a href="${articleCont}${article.getIdArticle()}"><img alt="" src="${imgDir}ps-vita-150cx123.jpg"></a>
             			<div class="caption">
-              			<a href="${articleCont}${article.getIdArticle()}"> <h5>${article.getNomArticle()}</h5></a>  Prix: ${article.getPrixUnitFormat()} EUR<br><br>
+              			<a href="${articleCont}${article.getIdArticle()}"> <h5>${article.getNomArticle()}</h5></a>  Prix: ${article.getPrixUnitTTCFormat()} EUR<br><br>
             			</div>
           			</div>
         		</li>

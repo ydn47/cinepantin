@@ -41,7 +41,7 @@
 						<div class="control-group">
 							<label for="focusedInput" class="control-label">Email (login)</label>
 							<div class="controls">
-								<input class="input-xlarge focused" placeholder="Saisir votre login" id="username" name="email" value="" type="email" required autofocus />${erreur["email"] }
+								<input class="input-xlarge focused" placeholder="Saisir votre login" id="username" name="email" value="" type="email" required autofocus />${erreur["email"]}
 							</div>
 						</div>
 						<div class="control-group">

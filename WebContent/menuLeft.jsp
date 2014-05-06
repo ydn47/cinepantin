@@ -12,6 +12,7 @@
 				<a href="${categController}${categorie.getIdCategorie()}">${categorie.getNomCategorie()} ${totalCategories}</a>
 			</li>
 		</c:forEach>
+
 	</ul>
 </div>
 <!-- end sidebar -->	
