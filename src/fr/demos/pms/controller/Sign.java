@@ -159,7 +159,7 @@ public class Sign extends HttpServlet {
 			//recup parametre, verifier 
 			//inserer compte s'il n'exixte pas
 			//redirect home avec mise a jour header (Bonjour M XX)
-			
+			request.setCharacterEncoding("UTF-8");
 			String action = request.getParameter("signup");
 			HashMap<String, String> errorMap = new HashMap<>();
 			
@@ -178,6 +178,9 @@ public class Sign extends HttpServlet {
 			if (action != null && action.endsWith("compte")) {
 				
 				nom    = request.getParameter("nom").trim();
+				System.out.println("**********************" +nom);
+				
+				
 				prenom = request.getParameter("prenom").trim();
 				email  = request.getParameter("email").trim();
 				mdp    = request.getParameter("mdp").trim();
@@ -249,7 +252,7 @@ public class Sign extends HttpServlet {
 					else newsl = 1 ;
 					
 					//Client userParam = new Client(nom, prenom,email, mdp, newsl);
-					Adresse adr = new Adresse(pays, ville, adresse, codepostal, telephone);
+					Adresse adr      = new Adresse(pays, ville, adresse, codepostal, telephone, nom,prenom);
 					Client userParam = new Client(nom, prenom,email, mdp, newsl, adr, adr);
 					System.out.print(userParam);
 					try{

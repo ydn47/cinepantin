@@ -77,7 +77,7 @@ public class ClientDaoJPA implements ClientDao {
 			ut.commit(); //le commit entraine le flush
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new DAOException("Pb cr�ation compte : " + c.getLogin(), e);		
+			throw new DAOException("Pb creation compte : " + c.getLogin(), e);		
 		}	
 		
 	}

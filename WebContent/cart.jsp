@@ -8,8 +8,7 @@
 
 	 
 	<h1> Panier</h1><br>
-	 
-   <c:if test='${not empty "$panierContent"}'>
+	<c:if test = '${not empty "${panierContent}" }' > 
     <form class="form-horizontal" method="post" action="${paniercont}">
         <table class="table table-bordered table-striped">
 		  <thead>

@@ -70,7 +70,7 @@
 
 				<div class="span6">
 					<h2>
-						<strong>Prix: ${articleObject.getPrixUnitFormat()} EUR</strong> <br>
+						<strong>Prix: ${articleObject.getPrixUnitTTCFormat()} EUR</strong> <br>
 						<br>
 					</h2>
 				</div>

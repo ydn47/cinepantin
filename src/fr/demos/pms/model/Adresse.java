@@ -23,15 +23,54 @@ public class Adresse {
 	private String rue;
 	private String codepostal;
 	private String telephone;
+	private String nom;
+	private String prenom;
 	
-	public String getPays() {
-		return pays;
-	}
-
+	
+	
 	/**
 	 * Constructeur vide pour entité JPA
 	 */
+	
 	protected Adresse() {
+	}
+
+	
+	public Adresse(String pays, String ville, String rue, String codepostal,
+			String telephone, String nom, String prenom) {
+		super();
+		this.pays = pays;
+		this.ville = ville;
+		this.rue = rue;
+		this.codepostal = codepostal;
+		this.telephone = telephone;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+	
+
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public void setIdAdresse(long idAdresse) {
+		this.idAdresse = idAdresse;
+	}
+
+	public String getPays() {
+		return pays;
 	}
 
 	public void setPays(String pays) {
@@ -81,32 +120,4 @@ public class Adresse {
 				+ codepostal + ", telephone=" + telephone + "]";
 	}
 
-	public Adresse(long idAdresse, String pays, String ville, String rue,
-			String codepostal, String telephone) {
-		super();
-		this.idAdresse = idAdresse;
-		this.pays = pays;
-		this.ville = ville;
-		this.rue = rue;
-		this.codepostal = codepostal;
-		this.telephone = telephone;
-	}
-	
-	/**
-	 * Génère une adresse 
-	 * @param pays
-	 * @param ville
-	 * @param rue
-	 * @param codepostal
-	 * @param telephone
-	 */
-	public Adresse(String pays, String ville, String rue,
-			String codepostal, String telephone) {
-		super();
-		this.pays = pays;
-		this.ville = ville;
-		this.rue = rue;
-		this.codepostal = codepostal;
-		this.telephone = telephone;
-	}
-}
+}	
