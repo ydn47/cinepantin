@@ -9,18 +9,9 @@
 	<ul class="nav">
 		<c:forEach var="categorie" items="${lstCategories}" varStatus="indexCategorie">
 			<li>
-				<a href="listings.jsp">${categorie.getNomCategorie()} (5)</a>
+				<a href="${categController}${categorie.getIdCategorie()}">${categorie.getNomCategorie()} ${totalCategories}</a>
 			</li>
 		</c:forEach>
-		<li>
-			<a class="active" href="listings.jsp">Livre (5)</a>
-		</li>
-		<li>
-			<a href="listings.jsp">DVD (5)</a>
-		  </li>
-		<li>
-			<a href="listings.jsp">Téléphonie (2)</a>
-		</li>
 	</ul>
 </div>
 <!-- end sidebar -->	

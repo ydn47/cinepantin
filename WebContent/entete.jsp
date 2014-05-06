@@ -50,6 +50,7 @@
 	<c:url var="paniercont" value="/panier"/>
 	<c:url var="commandecont" value="/commande"/>
   	<c:url var="imgDir" value="/css/images/" />
+  	<c:url var="categController" value="/articles/" />
   </head>
  <body>
 

@@ -96,7 +96,6 @@ public class SerialController extends HttpServlet {
 			int qte_stock = Integer.parseInt(qteStock);
 			
 			//categories = request.getParameterValues("listeCateg");
-			System.out.println(categories);
 			
 			HashMap<String, String> hm = new HashMap<>();
 			hm.put("titre", titre);

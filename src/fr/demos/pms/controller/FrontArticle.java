@@ -43,7 +43,7 @@ public class FrontArticle extends HttpServlet {
 		} catch (NumberFormatException e) {
 			System.err.println("Id article non valide" + e);
 		}
-		
+
 		Article article = null;
 		article = daoArticle.findById(idArticle);
 		System.out.print(article);

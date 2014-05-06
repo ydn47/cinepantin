@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Insert title here</title>
+<title>Insertion d'un article</title>
 </head>
 <body>
 	<form action="SerialController" method="post">
@@ -28,19 +28,11 @@
 		Catégorie <select name="listeCateg">
 			<option value="default" selected="selected">Choisissez une catégorie</option>
 			<c:if test="${not empty lstCategories}">
-			<c:forEach var="categ" items="lstCategories">
+			<c:forEach var="categ" items="${lstCategories}">
 				<option value="${categ.getIdCategorie()}">${categ.getNomCategorie()}</option>
 			</c:forEach>
 			</c:if>
 		</select>
-		<p>Ajouter une catégorie:</p>
-		Description:
-		 <input type="text"
-			id="descCategorie" name="descCategorie" maxlength="50" /><br/>
-		Nom de la catégorie: 
-		<input type="text"
-			id="nomCategorie" name="nomCategorie" maxlength="50" /><br/>
-		<br/>
 		<!-- Plage de prix -->
 		Titre: <input id="titre" type="text" name="titre" /><br/>
 		Réalisateurs: <input id="realisateurs" type="text" name="realisateurs" /><br/> 

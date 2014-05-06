@@ -6,6 +6,7 @@ import java.util.List;
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.transaction.HeuristicMixedException;
 import javax.transaction.HeuristicRollbackException;
@@ -137,6 +138,32 @@ public class ArticleDaoJPA implements ArticleDao {
 		q.setParameter(2, categories);
 		listeArticle = q.getResultList();
 		return listeArticle;
+	}
+
+	/**
+	 * Affiche tous les articles d'une catégorie passée en paramètre
+	 * @param l'id de la catégorie
+	 */
+	@Override
+	public Collection<Article> showArticleByCategory(long idCategorie) {
+		String query = "SELECT a FROM Article a WHERE a.categorie.idCategorie = ?1";
+		TypedQuery<Article> q = em.createQuery(query, Article.class);
+		q.setParameter(1, idCategorie);
+		Collection<Article> listeArticle = q.getResultList();
+		return listeArticle;	
+	}
+
+	/**
+	 * Affiche le total des articles disponibles pour chaque catégorie
+	 * @param l'id de la catégorie
+	 */
+	@Override
+	public List<Integer> countArticlesByCategory(long idCategorie) {
+		String query = "SELECT COUNT(a) FROM Article a GROUP BY a.categorie.idCategorie";
+		TypedQuery<Integer> tq = em.createQuery(query, Integer.class);
+		List<Integer> listeTotaux = tq.getResultList();
+		
+		return listeTotaux;
 	}
 
 }

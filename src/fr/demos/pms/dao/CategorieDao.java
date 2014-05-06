@@ -9,4 +9,5 @@ import fr.demos.pms.model.Categorie;
  */
 public interface CategorieDao {
 	Collection<Categorie> findAllCategories();
+	String findNomById(long idCategorie);
 }
