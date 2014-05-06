@@ -9,7 +9,7 @@
 	<ul class="nav">
 		<c:forEach var="categorie" items="${lstCategories}" varStatus="indexCategorie">
 			<li>
-				<a href="listings.jsp">${categorie.getNomCategorie} (5)</a>
+				<a href="listings.jsp">${categorie.getNomCategorie()} (5)</a>
 			</li>
 		</c:forEach>
 		<li>

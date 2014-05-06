@@ -21,7 +21,7 @@
 	<div class="span9">
 		<ul class="breadcrumb">
 			<li><a href="${boutique}">Home</a> <span class="divider">/</span></li>
-			<li><a href="#">${articleObject.getCategorie().getNomCategorie}</a> <span class="divider">/</span></li>
+			<li><a href="#">${articleObject.getCategorie().getNomCategorie()}</a> <span class="divider">/</span></li>
 			<li class="active"><a href="#">${articleObject.getNomArticle()}</a></li>
 		</ul>
 
