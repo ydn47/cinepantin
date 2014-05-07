@@ -8,9 +8,12 @@ import javax.annotation.Resource;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import javax.transaction.NotSupportedException;
+import javax.transaction.SystemException;
 import javax.transaction.UserTransaction;
 
 import fr.demos.pms.annotation.Dao;
+import fr.demos.pms.model.Adresse;
 import fr.demos.pms.model.Client;
 @Dao
 public class ClientDaoJPA implements ClientDao {
@@ -47,7 +50,7 @@ public class ClientDaoJPA implements ClientDao {
 	}
 
 
-	//ff
+	
 
 	@Override
 	public Client findByLogin(String login) {
@@ -79,6 +82,25 @@ public class ClientDaoJPA implements ClientDao {
 			e.printStackTrace();
 			throw new DAOException("Pb creation compte : " + c.getLogin(), e);		
 		}	
+		
+	}
+
+
+
+	@Override
+	public Client update(Client c) throws DAOException {
+		System.out.print("debut update ");
+		Client client = null;
+		try {
+		ut.begin();
+		client = em.merge(c);
+		ut.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new DAOException("Pb update client : " + c.getLogin(), e);		
+		}
+		System.out.print("update :"+client);
+		return client;
 		
 	}
 
