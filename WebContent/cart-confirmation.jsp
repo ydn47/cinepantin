@@ -87,32 +87,25 @@
 									<div class="control-group">
 										<label class="control-label">Prénom</label>
 										<div class="controls docs-input-sizes">
-											<input name="prenom" value="${client.getPrenom()}"
+											<input name="prenomf" value="${client.getAdresseFacturation().getPrenom()}"
 												type="text" autofocus required class="span4" />${erreur["prenom"] }
 										</div>
 									</div>
 									<div class="control-group">
 										<label class="control-label">Nom</label>
 										<div class="controls docs-input-sizes">
-											<input name="nom" value="${client.getNom()}" type="text"
+											<input name="nomf" value="${client.getAdresseFacturation().getNom()}" type="text"
 												required class="span4" placeholder="" />${erreur["nom"]}
 										</div>
 									</div>
-									<div class="control-group">
-										<label class="control-label">Email</label>
-										<div class="controls docs-input-sizes">
-											<input name="email" value="${client.getLogin()}"
-												class="span4" type="email" required>
-											${erreur["email"] }
-										</div>
-									</div>
+								
 
 									<div class="control-group">
-										<label class="control-label">Telephone</label>
+										<label class="control-label">Téléphone</label>
 										<div class="controls docs-input-sizes">
 											<input type="text" class="span4"
 												value="${client.getAdresseFacturation().getTelephone()}"
-												name="telephone" required>${erreur["telephone"] }
+												name="telephonef" required>${erreur["telephone"] }
 										</div>
 									</div>
 								</div>
@@ -121,7 +114,7 @@
 									<div class="control-group">
 										<label class="control-label">Rue</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="adresse"
+											<input type="text" class="span4" name="adressef"
 												value="${client.getAdresseFacturation().getRue()}" required>
 											${erreur["adresse"] }
 										</div>
@@ -130,7 +123,7 @@
 									<div class="control-group">
 										<label class="control-label">Code postal</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="cp"
+											<input type="text" class="span4" name="cpf"
 												value="${client.getAdresseFacturation().getCodepostal()}"
 												required> ${erreur["cp"] }
 										</div>
@@ -138,7 +131,7 @@
 									<div class="control-group">
 										<label class="control-label">Ville</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="ville"
+											<input type="text" class="span4" name="villef"
 												value="${client.getAdresseFacturation().getVille()}"
 												required> ${erreur["ville"] }
 										</div>
@@ -146,7 +139,7 @@
 									<div class="control-group">
 										<label class="control-label">Pays</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="pays"
+											<input type="text" class="span4" name="paysf"
 												value="${client.getAdresseFacturation().getPays()}" required>
 											${erreur["pays"] }
 										</div>
@@ -177,32 +170,25 @@
 									<div class="control-group">
 										<label class="control-label">Prénom</label>
 										<div class="controls docs-input-sizes">
-											<input name="prenom" value="${client.getPrenom()}"
+											<input name="prenoml" value="${client.getAdresseLivraison().getPrenom()}"
 												type="text" autofocus required class="span4" />${erreur["prenom"] }
 										</div>
 									</div>
 									<div class="control-group">
 										<label class="control-label">Nom</label>
 										<div class="controls docs-input-sizes">
-											<input name="nom" value="${client.getNom()}" type="text"
+											<input name="noml" value="${client.getAdresseLivraison().getNom()}" type="text"
 												required class="span4" placeholder="" />${erreur["nom"] }
 										</div>
 									</div>
-									<div class="control-group">
-										<label class="control-label">Email</label>
-										<div class="controls docs-input-sizes">
-											<input name="email" value="${client.getLogin()}"
-												class="span4" type="email" required>
-											${erreur["email"] }
-										</div>
-									</div>
+									
 
 									<div class="control-group">
 										<label class="control-label">Telephone</label>
 										<div class="controls docs-input-sizes">
 											<input type="text" class="span4"
 												value="${client.getAdresseLivraison().getTelephone()}"
-												name="telephone" required>${erreur["telephone"] }
+												name="telephonel" required>${erreur["telephone"] }
 										</div>
 									</div>
 								</div>
@@ -211,7 +197,7 @@
 									<div class="control-group">
 										<label class="control-label">Rue</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="adresse"
+											<input type="text" class="span4" name="adressel"
 												value="${client.getAdresseLivraison().getRue()}" required>
 											${erreur["adresse"] }
 										</div>
@@ -220,7 +206,7 @@
 									<div class="control-group">
 										<label class="control-label">Code postal</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="cp"
+											<input type="text" class="span4" name="cpl"
 												value="${client.getAdresseLivraison().getCodepostal()}"
 												required> ${erreur["cp"] }
 										</div>
@@ -228,7 +214,7 @@
 									<div class="control-group">
 										<label class="control-label">Ville</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="ville"
+											<input type="text" class="span4" name="villel"
 												value="${client.getAdresseLivraison().getVille()}" required>
 											${erreur["ville"] }
 										</div>
@@ -236,7 +222,7 @@
 									<div class="control-group">
 										<label class="control-label">Pays</label>
 										<div class="controls docs-input-sizes">
-											<input type="text" class="span4" name="pays"
+											<input type="text" class="span4" name="paysl"
 												value="${client.getAdresseLivraison().getPays()}" required>
 											${erreur["pays"] }
 										</div>

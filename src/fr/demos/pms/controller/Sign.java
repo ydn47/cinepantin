@@ -178,7 +178,7 @@ public class Sign extends HttpServlet {
 			if (action != null && action.endsWith("compte")) {
 				
 				nom    = request.getParameter("nom").trim();
-				System.out.println("**********************" +nom);
+				//System.out.println("**********************" +nom);
 				
 				
 				prenom = request.getParameter("prenom").trim();
@@ -192,7 +192,7 @@ public class Sign extends HttpServlet {
 				telephone = request.getParameter("telephone").trim();
 
 				newsletter = request.getParameter("subscribe");
-				System.out.print("hgfhtdf "+newsletter);
+				//System.out.print("hgfhtdf "+newsletter);
 				if (nom == null || nom.equals("")) {
 					errorMap.put("nom", "Nom obligatoire");
 				}

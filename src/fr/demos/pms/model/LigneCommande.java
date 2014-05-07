@@ -13,15 +13,15 @@ public class LigneCommande {
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long idLigneCommande;
-	@JoinColumn(name="idCommande")  //le nom de la colone dans la table DVD
-	@ManyToOne()
-	private Commande cmd;
+	private int qteCommandee;
 	
 	@JoinColumn(name="idArticle")  //le nom de la colone dans la table DVD
 	@ManyToOne()
 	private Article article;
 	
-	private int qteCommandee;
+	@JoinColumn(name="idCommande")  //le nom de la colone dans la table commande
+	@ManyToOne()
+	private Commande commande;
 	
 	
 

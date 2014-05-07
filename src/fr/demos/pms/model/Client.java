@@ -28,11 +28,10 @@ public class Client {
 	private String prenom;
 	private int newsletter;
 	
-	
-	@OneToOne(cascade = CascadeType.PERSIST, fetch=FetchType.EAGER)
+	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private Adresse adresseFacturation;
-	@OneToOne(cascade = CascadeType.PERSIST, fetch=FetchType.EAGER)
 	
+	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private Adresse adresseLivraison;
 
 	protected Client() {}
