@@ -60,6 +60,8 @@ public class MainFrontArticle extends HttpServlet {
 		Collection<Categorie> listeCategories = daoCategorie
 				.findAllCategories();
 		request.setAttribute("lstCategories", listeCategories);
+		
+	
 
 		// On vérifie si le bouton de recherche a été cliqué
 		String action = request.getParameter("search");

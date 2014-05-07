@@ -61,6 +61,26 @@ public class CategorieDaoJPA implements CategorieDao {
 			return null;
 		}
 	}
+
+	/**
+	 * Retrouve l'id d'une catégorie via son nom
+	 * @param le nom de la catégorie
+	 */
+	@Override
+	public long findIdByNom(String nomCategorie) {
+		String query = "SELECT cat FROM Categorie cat WHERE UPPER(cat.nomCategorie) LIKE UPPER(?1)";
+		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
+		q.setParameter(1, nomCategorie);
+		List<Categorie> cat = q.getResultList();
+		if (cat != null && !cat.isEmpty())
+		{
+			return cat.get(0).getIdCategorie();
+		}
+		else 
+		{
+			return 0;
+		}
+	}
 	
 	
 }

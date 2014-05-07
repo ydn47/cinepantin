@@ -14,6 +14,7 @@
     <a href="listings.jsp">${nomCateg}</a> <span class="divider">/</span>
     </li>
     </ul>
+    <!-- 
 	<c:forEach items="${articlesObject}" var="article">
 	<div class="row">
 	 <div class="span1">
@@ -32,8 +33,28 @@
 	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
 	  </div>
   </div>
-  </c:forEach>
+  </c:forEach>  -->
+  <c:forEach items="${articlesObject}" var="article">
+  <div class="row">
+	 <div class="span1">
+	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" id="tmp" src="css/images/ipodtouch_image2_20080909.jpg"></a>
+	  </div>	 
+	  
+	  <div class="span6">
+	   <a href="${articleCont}${article.getIdArticle()}"><h5>${article.getNomArticle()}</h5></a>
+              <p>${article.getShortDescArticle()}</p>
+	  </div>	
+
+	  <div class="span1">
+	   <p>${article.getPrixUnitTTCFormat()} &euro;</p>
+	  </div>	 
+	  
+	  <div class="span2">
+	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
+	  </div>
+  </div>
   <hr>
+   </c:forEach>
 
 
 	  

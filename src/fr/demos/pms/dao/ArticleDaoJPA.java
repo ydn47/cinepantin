@@ -73,24 +73,13 @@ public class ArticleDaoJPA implements ArticleDao {
 			ut.begin();
 			em.persist(a);
 			ut.commit();
-		 } catch (RollbackException ex) {
-	           // Log something
-	    } catch (HeuristicMixedException ex) {
-	           // Log something
-	    } catch (HeuristicRollbackException ex) {
-	           // Log something
-	    } catch (SecurityException ex) {
-	           // Log something
-	    } catch (IllegalStateException ex) {
-	           // Log something
-	    } catch (NotSupportedException ex) {
-	           // Log something
-	    } catch (SystemException ex) {
-	           // Log something
-	    }
+		 } catch (DAOException | NotSupportedException | SystemException | SecurityException | IllegalStateException | RollbackException | HeuristicMixedException | HeuristicRollbackException e) {
+			 e.printStackTrace();
+			 throw new DAOException("Pb création article" + a.getIdArticle());
+		 }
 	}
 		
-
+	
 	@Override
 	public Article findById(long idArticle) {
 
@@ -158,7 +147,7 @@ public class ArticleDaoJPA implements ArticleDao {
 	 * @param l'id de la catégorie
 	 */
 	@Override
-	public List<Integer> countArticlesByCategory(long idCategorie) {
+	public List<Integer> countArticlesByCategory() {
 		String query = "SELECT COUNT(a) FROM Article a GROUP BY a.categorie.idCategorie";
 		TypedQuery<Integer> tq = em.createQuery(query, Integer.class);
 		List<Integer> listeTotaux = tq.getResultList();

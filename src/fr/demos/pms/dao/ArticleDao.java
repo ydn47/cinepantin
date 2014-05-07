@@ -18,5 +18,5 @@ public interface ArticleDao {
 	//TODO : Article findByProperties() - rechercher un article via ses propriétés
 	void create(Article a) throws DAOException;
 	
-	List<Integer> countArticlesByCategory(long idCategorie);
+	List<Integer> countArticlesByCategory();
 }

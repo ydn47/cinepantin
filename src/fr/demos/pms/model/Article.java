@@ -8,9 +8,11 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -36,7 +38,7 @@ public class Article implements SerialArticle {
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
-	@ManyToOne()
+	@ManyToOne(cascade = CascadeType.PERSIST, fetch=FetchType.EAGER)
 	private Categorie categorie;
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
