@@ -99,7 +99,7 @@ public class Sign extends HttpServlet {
 		System.out.print("doPost Singn");
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
-		
+		response.setCharacterEncoding("UTF-8");
 		if ((info != null) && (info.equals("/in")) ){//se connecter
 			String action = request.getParameter("signin");
 			if (action != null && action.endsWith("connecter")) {
@@ -123,6 +123,7 @@ public class Sign extends HttpServlet {
 					
 					if (client != null){
 						session.setAttribute("client", client);	
+						
 						RequestDispatcher rd = request
 								.getRequestDispatcher("/boutique");
 								rd.forward(request, response);
