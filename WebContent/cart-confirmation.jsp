@@ -249,15 +249,15 @@
 						</div>
 						<div class="accordion-body collapse" id="collapse4">
 							<div class="accordion-inner">
-								<input type="radio" name="payment1" value="option1">
-								Collect in store<br> <input type="radio" name="payment1"
-									value="option2"> Paypal<br> <input type="radio"
-									name="payment1" value="option3"> Carte Bleu<br>
+								<input type="radio" name="payment1" value="option1">Collect in store<br> 
+								<input type="radio" name="payment1" value="option2"> Paypal<br> 
+								<input type="radio" name="payment1" value="option3"> Carte Bleu<br>
+								${erreur["payment1"] }
 								<br>
 								<div class="control-group">
 									<label class="control-label" for="textarea">Commentaires</label>
 									<div class="controls">
-										<textarea class="input-xlarge span11" id="textarea" rows="3"></textarea>
+										<textarea class="input-xlarge span11" id="textarea" rows="3" name="commentaire"></textarea>
 									</div>
 								</div>
 								<div class="span11 no_margin_left">

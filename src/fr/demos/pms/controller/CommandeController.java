@@ -1,6 +1,7 @@
 package fr.demos.pms.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.inject.Inject;
@@ -13,15 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import fr.demos.pms.annotation.Dao;
-import fr.demos.pms.dao.AdresseDao;
 import fr.demos.pms.dao.ClientDao;
-import fr.demos.pms.dao.ClientDaoJPA;
+
 import fr.demos.pms.dao.CommandeDao;
 import fr.demos.pms.dao.DAOException;
-import fr.demos.pms.dao.PanierDao;
 import fr.demos.pms.model.Adresse;
 import fr.demos.pms.model.Client;
 import fr.demos.pms.model.Commande;
+import fr.demos.pms.model.LigneCommande;
+import fr.demos.pms.model.LignePanier;
 import fr.demos.pms.model.Panier;
 
 /**
@@ -89,6 +90,8 @@ public class CommandeController extends HttpServlet {
 			String telephonef  = request.getParameter("telephonef").trim();
 			String telephonel  = request.getParameter("telephonel").trim();
 			
+			String typePay     = request.getParameter("payment1");
+			String commentaire = request.getParameter("commentaire");
 			//control sur les champs
 			if (nomf == null || nomf.equals("")) {
 				errorMap.put("nomf", "Nom obligatoire");
@@ -97,10 +100,10 @@ public class CommandeController extends HttpServlet {
 				errorMap.put("noml", "Nom obligatoire");
 			}
 			if (prenomf == null || prenomf.equals("")) {
-				errorMap.put("prenomf", "Prénom obligatoire");
+				errorMap.put("prenomf", "Prï¿½nom obligatoire");
 			}
 			if (prenoml == null || prenoml.equals("")) {
-				errorMap.put("prenoml", "Prénom obligatoire");
+				errorMap.put("prenoml", "Prï¿½nom obligatoire");
 			}
 			
 			if (adressef == null || adressef.equals("")) {
@@ -125,10 +128,16 @@ public class CommandeController extends HttpServlet {
 				errorMap.put("paysf", "Pays obligatoire");	
 			}
 			if (telephonel == null || telephonel.equals("")) {
-				errorMap.put("telephonel", "Téléphone obligatoire");	
+				errorMap.put("telephonel", "Tï¿½lï¿½phone obligatoire");	
+			}
+			if (typePay == null || typePay.equals("")) {
+				errorMap.put("payment1", "Paiement obligatoire");	
 			}
 			
 			if(errorMap.size() != 0){
+				/* on ne peut pas faire comme ca
+				 * penser a charger l'objet client et le passer
+				 * peupler le formulaire
 				request.setAttribute("nomf",nomf);
 				request.setAttribute("noml",noml);
 				request.setAttribute("prenomf",prenomf);
@@ -143,8 +152,13 @@ public class CommandeController extends HttpServlet {
 				request.setAttribute("villel",villel);
 				request.setAttribute("paysf",paysf);
 				request.setAttribute("paysl",paysl);
-				
-		
+				*/
+				Adresse adrLivParam     = new Adresse(paysl, villel, adressel, codepostall, telephonel, noml,prenoml);
+				Adresse adrFactParam    = new Adresse(paysf, villef, adressef, codepostalf, telephonef, nomf,prenomf);
+				client.setAdresseFacturation(adrFactParam);
+				client.setAdresseLivraison(adrLivParam);
+				request.setAttribute("commentaire",commentaire);
+				request.setAttribute("client",client);
 				RequestDispatcher rd = request.getRequestDispatcher("/cart-confirmation.jsp");
 				rd.forward(request, response);
 				return;
@@ -158,9 +172,9 @@ public class CommandeController extends HttpServlet {
 					//tester si la version de la base est different de celle affiche
 					//si egal rien a faire
 					//sinon update
-					if (!client.getAdresseLivraison().equals(adrLivParam)){ //adr a été changée
+					if (!client.getAdresseLivraison().equals(adrLivParam)){ //adr a ï¿½tï¿½ changï¿½e
 						
-						System.out.print(" 2 memes adrs  changées");
+						System.out.print(" 2 memes adrs  changï¿½es");
 						System.out.print(" avant :" +client.getAdresseLivraison());
 						//passer un objet avec un id pour que le merge fait un update
 						adrLivParam.setIdAdresse(client.getAdresseLivraison().getIdAdresse());
@@ -185,21 +199,31 @@ public class CommandeController extends HttpServlet {
 				 * enfin insert ds commande et ligne commande
 				 */
 				Panier panier = (Panier) session.getAttribute("panier");
-				Commande cmd = new Commande(new java.util.Date(), client);
-				
-				try{
-					cmdDao.create(cmd);
-				}catch (DAOException e){
-					request.setAttribute("erreur Creation commande", e.getMessage());
+				ArrayList<LigneCommande> lignesCommande = new ArrayList<LigneCommande>();
+				ArrayList<LignePanier> lignesPanier = panier.getLignesPanier();
+				double totalTTC = panier.getMontantTotalTTC();
+				Commande cmd = new Commande (new java.util.Date(), totalTTC, commentaire, typePay, client, lignesCommande);
+				if (lignesPanier != null){
+					for (LignePanier lp : lignesPanier) {
+						LigneCommande lc = new LigneCommande(lp.getQteCommande(), lp.getArticle(), cmd);
+						lignesCommande.add(lc);	
+					}
 					
-				}
-				RequestDispatcher rd = request
-						.getRequestDispatcher("/commande-merci.jsp");
-						rd.forward(request, response);
-				return;	
-				
-				
+									
+					
+					try{
+						cmdDao.create(cmd);
+					}catch (DAOException e){
+						request.setAttribute("erreur Creation commande", e.getMessage());
+						
+					}
+					RequestDispatcher rd = request
+							.getRequestDispatcher("/commande-merci.jsp");
+							rd.forward(request, response);
+					return;	
 			}
+				
+		}
 		}else {
 			//doGet(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("/commande-merci.jsp");

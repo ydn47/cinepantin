@@ -4,11 +4,14 @@ package fr.demos.pms.model;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -26,6 +29,7 @@ public class Panier {
 	private Client client;
 	@Temporal(TemporalType.DATE)
 	private Date datePanier;
+	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private ArrayList<LignePanier> lignesPanier ;
 	
 	protected Panier() {
