@@ -1,6 +1,8 @@
 package fr.demos.pms.model;
 
 import javax.persistence.CascadeType;
+import javax.persistence.ElementCollection;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,9 +28,10 @@ public class Client {
 	private String prenom;
 	private int newsletter;
 	
-	@OneToOne(cascade = CascadeType.PERSIST)
+	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private Adresse adresseFacturation;
-	@OneToOne(cascade = CascadeType.PERSIST)
+	
+	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private Adresse adresseLivraison;
 
 	protected Client() {}

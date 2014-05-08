@@ -20,9 +20,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-
 /**
  * Servlet implementation class SaisieDvd
  */
@@ -31,8 +28,6 @@ import javax.servlet.http.HttpServletResponse;
 // getPathInfo() /dvd/liste ; /dvd/add
 public class MainFrontArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	
 
 	@Inject
 	@Dao
@@ -53,7 +48,6 @@ public class MainFrontArticle extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 	/**
 	 * TODO charger la page acceuil home.jsp -menu/footer/logo - partie
 	 * user/client) - zone de recherche -afficher la liste de top ventes
@@ -66,6 +60,8 @@ public class MainFrontArticle extends HttpServlet {
 		Collection<Categorie> listeCategories = daoCategorie
 				.findAllCategories();
 		request.setAttribute("lstCategories", listeCategories);
+		
+	
 
 		// On vérifie si le bouton de recherche a été cliqué
 		String action = request.getParameter("search");
@@ -110,8 +106,12 @@ public class MainFrontArticle extends HttpServlet {
 						.getRequestDispatcher("/index.jsp");
 				rd.forward(request, response);
 				return;
-			} else // pas de mots saisis dans la barre de recherche, on affiche
+			} else  {// pas de mots saisis dans la barre de recherche, on affiche
 					// les articles
+				listeCategories = daoCategorie
+				.findAllCategories();
+		request.setAttribute("lstCategories", listeCategories);
+			}
 			{
 				// affichage des articles les plus vendus
 				Collection<Article> listeArticles = daoArticle.showMainArticles();
@@ -140,11 +140,11 @@ public class MainFrontArticle extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		/*
-		 * dupliquer le code de doGet 
-  			after a dispatch doPost() is called because your original request used POST method. 
+		 * dupliquer le code de doGet after a dispatch doPost() is called
+		 * because your original request used POST method.
 		 */
 		doGet(request, response);
-		
+
 	}
 
 }

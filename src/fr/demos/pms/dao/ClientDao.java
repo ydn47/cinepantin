@@ -14,5 +14,6 @@ public interface ClientDao {
 	Client findByParam (String login, String mpd);
 	Client findByLogin (String login);
 	void create(Client a) throws DAOException;
+	Client update(Client c) throws DAOException;
 	
 }

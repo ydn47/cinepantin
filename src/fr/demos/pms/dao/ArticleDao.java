@@ -8,7 +8,7 @@ import fr.demos.pms.model.Categorie;
 
 public interface ArticleDao {
 	Collection<Article> showMainArticles();
-
+	Collection<Article> showArticleByCategory(long idCategorie);
 	Article findById(long idArticle);
 	Collection<Article> findByNom(String nomArticle);
 	Collection<Article> findByNom(String nomArticle, List<Categorie> categories);
@@ -17,4 +17,6 @@ public interface ArticleDao {
 	Article findByLongDesc(String longDesc);
 	//TODO : Article findByProperties() - rechercher un article via ses propriétés
 	void create(Article a) throws DAOException;
+	
+	List<Integer> countArticlesByCategory();
 }

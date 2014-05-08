@@ -1,6 +1,8 @@
 package fr.demos.pms.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -47,10 +49,9 @@ public class Categorie {
 		this.idCategorie = idCategorie;
 	}
 
-	public Categorie(long idCategorie, String nomCategorie,
+	public Categorie(String nomCategorie,
 			String descriptionCategorie) {
 		super();
-		this.idCategorie = idCategorie;
 		this.nomCategorie = nomCategorie;
 		this.descriptionCategorie = descriptionCategorie;
 	}

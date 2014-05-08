@@ -1,6 +1,8 @@
 package fr.demos.pms.dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
@@ -29,11 +31,56 @@ public class CategorieDaoJPA implements CategorieDao {
 	 */
 	@Override
 	public Collection<Categorie> findAllCategories() {
+		Collection<Categorie> listeCategories = new ArrayList<Categorie>();
 		String query = "SELECT cat FROM Categorie cat";
 		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
-		Collection<Categorie> listeCategories = q.getResultList();
+		listeCategories = q.getResultList();
 		
-		return listeCategories;
+		if (listeCategories != null)
+			return listeCategories;
+		else return null;
 	}
 
+	/**
+	 * Retrouve le nom stocké en base de la catégorie via son id
+	 * @param l'id de la catégorie
+	 */
+	@Override
+	public String findNomById(long idCategorie) {
+		List<Categorie> listeCategories = null;
+		String query = "SELECT cat FROM Categorie cat WHERE cat.idCategorie = ?1";
+		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
+		q.setParameter(1, idCategorie);
+		listeCategories = q.getResultList();
+		
+		if (listeCategories != null && !listeCategories.isEmpty()) {
+			return listeCategories.get(0).getNomCategorie();
+		}
+		else 
+		{
+			return null;
+		}
+	}
+
+	/**
+	 * Retrouve l'id d'une catégorie via son nom
+	 * @param le nom de la catégorie
+	 */
+	@Override
+	public long findIdByNom(String nomCategorie) {
+		String query = "SELECT cat FROM Categorie cat WHERE UPPER(cat.nomCategorie) LIKE UPPER(?1)";
+		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
+		q.setParameter(1, nomCategorie);
+		List<Categorie> cat = q.getResultList();
+		if (cat != null && !cat.isEmpty())
+		{
+			return cat.get(0).getIdCategorie();
+		}
+		else 
+		{
+			return 0;
+		}
+	}
+	
+	
 }

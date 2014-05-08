@@ -152,15 +152,15 @@ public class Sign extends HttpServlet {
 		}else if ((info != null) && (info.equals("/up")) ){//creer un compte
 			/* TODO
 			 * enregistrer les autres param d'adresse OK
-			 * verifier si le chmp mdp2 est egale au premier OK 
-			 * eventuellement voir si on peut hasher les mdp
+			 * verifier si le chmp mdp2 est egale au premier 
+			 * 
 			 * envoyer un mail de confirmation creation de compte 
 			 * possibilite de gerer le meme formulaire en mode edition, le client peut modifier ses informations personelles (a voir)
 			*/
 			//recup parametre, verifier 
 			//inserer compte s'il n'exixte pas
 			//redirect home avec mise a jour header (Bonjour M XX)
-			
+			request.setCharacterEncoding("UTF-8");
 			String action = request.getParameter("signup");
 			HashMap<String, String> errorMap = new HashMap<>();
 			
@@ -179,6 +179,9 @@ public class Sign extends HttpServlet {
 			if (action != null && action.endsWith("compte")) {
 				
 				nom    = request.getParameter("nom").trim();
+				//System.out.println("**********************" +nom);
+				
+				
 				prenom = request.getParameter("prenom").trim();
 				email  = request.getParameter("email").trim();
 				mdp    = request.getParameter("mdp").trim();
@@ -190,7 +193,7 @@ public class Sign extends HttpServlet {
 				telephone = request.getParameter("telephone").trim();
 
 				newsletter = request.getParameter("subscribe");
-				System.out.print("hgfhtdf "+newsletter);
+				//System.out.print("hgfhtdf "+newsletter);
 				if (nom == null || nom.equals("")) {
 					errorMap.put("nom", "Nom obligatoire");
 				}
@@ -229,7 +232,7 @@ public class Sign extends HttpServlet {
 					errorMap.put("email", "Email (Login) existant");
 				}
 				// vérifier que le champ mdp2 est égal au champ mdp1
-				
+				// eventuellement voir si on peut hasher les mdp
 				if (!mdp.equals(mdp2)) 
 				{
 					errorMap.put("mdp2", "Les mots de passe ne sont pas égaux");
@@ -250,7 +253,7 @@ public class Sign extends HttpServlet {
 					else newsl = 1 ;
 					
 					//Client userParam = new Client(nom, prenom,email, mdp, newsl);
-					Adresse adr = new Adresse(pays, ville, adresse, codepostal, telephone);
+					Adresse adr      = new Adresse(pays, ville, adresse, codepostal, telephone, nom,prenom);
 					Client userParam = new Client(nom, prenom,email, mdp, newsl, adr, adr);
 					System.out.print(userParam);
 					try{

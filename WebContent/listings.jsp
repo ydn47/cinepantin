@@ -11,89 +11,64 @@
     <a href="#">Home</a> <span class="divider">/</span>
     </li>
     <li>
-    <a href="listings.jsp">Desktops</a> <span class="divider">/</span>
-    </li>
-    <li class="active">
-    <a href="category.html">Mac</a>
+    <a href="listings.jsp">${nomCateg}</a> <span class="divider">/</span>
     </li>
     </ul>
-	
-	
-	  	 <div class="row">
+    <!-- 
+	<c:forEach items="${articlesObject}" var="article">
+	<div class="row">
 	 <div class="span1">
-	  <a href="product.html"><img alt="" id="tmp" src="css/images/ipodtouch_image2_20080909.jpg"></a>
+	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" src="css/images/ipodtouch_image2_20080909.jpg"></a>
 	  </div>	 
-	  
 	  <div class="span6">
-	   <a href="product.html"><h5>iPod Touch</h5></a>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+	   <a href="${articleCont}${article.getIdArticle()}"><h5>${article.getNomArticle()}</h5></a>
+              <p>${article.getShortDescArticle()}</p>
 	  </div>	
 
 	  <div class="span1">
-	   <p>$587.50</p>
+	   <p>${article.getPrixUnitTTCFormat()} EUR</p>
 	  </div>	 
 	  
 	  <div class="span2">
-	   <p><a class="btn btn-primary" href="cart.html">Add to cart</a></p>
-	   <p><a class="" href="#">Add to Wish List</a></p>
-	   <p><a class="" href="compare.html">Add to Compare</a></p>
+	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
 	  </div>
   </div>
-  <hr>	  	 <div class="row">
+  </c:forEach>  -->
+  <c:forEach items="${articlesObject}" var="article">
+  <div class="row">
 	 <div class="span1">
-	  <a href="product.html"><img alt="" src="css/images/ipodtouch_image2_20080909.jpg"></a>
+	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" id="tmp" src="css/images/ipodtouch_image2_20080909.jpg"></a>
 	  </div>	 
 	  
 	  <div class="span6">
-	   <a href="product.html"><h5>iPod Touch</h5></a>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+	   <a href="${articleCont}${article.getIdArticle()}"><h5>${article.getNomArticle()}</h5></a>
+              <p>${article.getShortDescArticle()}</p>
 	  </div>	
 
 	  <div class="span1">
-	   <p>$587.50</p>
+	   <p>${article.getPrixUnitTTCFormat()} &euro;</p>
 	  </div>	 
 	  
 	  <div class="span2">
-	   <p><a class="btn btn-primary" href="cart.html">Add to cart</a></p>
-	   <p><a class="" href="#">Add to Wish List</a></p>
-	   <p><a class="" href="compare.html">Add to Compare</a></p>
-	  </div>
-  </div>
-  <hr>	  	 <div class="row">
-	 <div class="span1">
-	  <a href="product.html"><img alt="" src="css/images/ipodtouch_image2_20080909.jpg"></a>
-	  </div>	 
-	  
-	  <div class="span6">
-	   <a href="product.html"><h5>iPod Touch</h5></a>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-	  </div>	
-
-	  <div class="span1">
-	   <p>$587.50</p>
-	  </div>	 
-	  
-	  <div class="span2">
-	   <p><a class="btn btn-primary" href="cart.html">Add to cart</a></p>
-	   <p><a class="" href="#">Add to Wish List</a></p>
-	   <p><a class="" href="compare.html">Add to Compare</a></p>
+	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
 	  </div>
   </div>
   <hr>
+   </c:forEach>
 
 
 	  
 	  
 	      <div class="pagination">
     <ul>
-    <li><a href="#">Prev</a></li>
+    <li><a href="#">Précédent</a></li>
     <li class="active">
     <a href="#">1</a>
     </li>
     <li><a href="#">2</a></li>
     <li><a href="#">3</a></li>
     <li><a href="#">4</a></li>
-    <li><a href="#">Next</a></li>
+    <li><a href="#">Suivant</a></li>
     </ul>
     </div>
 	  

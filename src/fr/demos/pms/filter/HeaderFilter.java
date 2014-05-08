@@ -1,6 +1,7 @@
 package fr.demos.pms.filter;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
 
 import javax.inject.Inject;
@@ -57,10 +58,12 @@ public class HeaderFilter implements Filter {
 		request.setCharacterEncoding("UTF-8");
 		
 		// chargement des catégories 
-		Collection<Categorie> listeCategories = daoCategorie
-				.findAllCategories();
-		request.setAttribute("lstCategories", listeCategories);
-		
+		Collection<Categorie> listeCategories = new ArrayList<Categorie>();
+		listeCategories = daoCategorie.findAllCategories();
+		if (listeCategories != null)
+			request.setAttribute("lstCategories", listeCategories);
+		else 
+			request.setAttribute("lstCategories", null);
 		HttpSession session = ((HttpServletRequest) request).getSession(); 
 		Client client       = (Client) session.getAttribute("client");
 		

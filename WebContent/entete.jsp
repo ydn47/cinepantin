@@ -50,6 +50,7 @@
 	<c:url var="paniercont" value="/panier"/>
 	<c:url var="commandecont" value="/commande"/>
   	<c:url var="imgDir" value="/css/images/" />
+  	<c:url var="categController" value="/articles/" />
   </head>
  <body>
 
@@ -123,20 +124,19 @@
 						  
 						  	<ul class="nav pull-right">
 						  
-						   <li class="divider-vertical"></li>
-						   	<form class="navbar-search" action="${boutique}" method="get">
-								<li><select  id="example22" multiple="multiple" style="display: none" name="choixCategories">
-									<c:forEach var="cat" items="${lstCategories}">
-										<option value="${cat.getIdCategorie()}">${cat.getNomCategorie()}</option>
-									</c:forEach>
-								</select>
-								<input class="search-query span2" name="q" type="text" placeholder="Recherche"  value="" id="query" /> 
-								<input class="btn btn-primary btn-small search_btn" id="searchForm" type="submit" value="Ok" name="search">
-								
-<!-- 								<input type="text" class="search-query span2" placeholder="Search">
-									<button class="btn btn-primary btn-small search_btn" type="submit">Go</button> -->
-							 	</form>
-							 </ul>
+						   	<li class="divider-vertical"></li> 
+						   	<form class="navbar-search" action="${boutique}" method="get">								
+						   		<select  id="example22" multiple="multiple" style="display: none" name="choixCategories"> 
+									<c:if test = '${not empty "${lstCategories}" }' >
+										<c:forEach var="cat" items="${lstCategories}">
+											<option value="${cat.getIdCategorie()}">${cat.getNomCategorie()}</option>
+										</c:forEach>
+									</c:if>							
+								</select> 
+								<input class="search-query span2" name="q" type="text" placeholder="Recherche"  value="" id="query" />  
+								<input class="btn btn-primary btn-small search_btn" id="searchForm" type="submit" value="Ok" name="search"> 
+						 	</form> 
+						 </ul> 
 							
 							
 						 

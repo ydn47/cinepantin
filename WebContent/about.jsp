@@ -4,6 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions"  prefix="fn" %>
 
 <%@include file="entete.jsp"%>
+<!-- http://wrapbootstrap.com/preview/WB00223R0 -->
 <div class="row">
 
 	<div class="span3">

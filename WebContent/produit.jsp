@@ -21,7 +21,7 @@
 	<div class="span9">
 		<ul class="breadcrumb">
 			<li><a href="${boutique}">Home</a> <span class="divider">/</span></li>
-			<li><a href="#">${articleObject.getCategorie().getNomCategorie}</a> <span class="divider">/</span></li>
+			<li><a href="#">${articleObject.getCategorie().getNomCategorie()}</a> <span class="divider">/</span></li>
 			<li class="active"><a href="#">${articleObject.getNomArticle()}</a></li>
 		</ul>
 
@@ -70,7 +70,7 @@
 
 				<div class="span6">
 					<h2>
-						<strong>Prix: ${articleObject.getPrixUnitFormat()} EUR</strong> <br>
+						<strong>Prix: ${articleObject.getPrixUnitTTCFormat()} EUR</strong> <br>
 						<br>
 					</h2>
 				</div>

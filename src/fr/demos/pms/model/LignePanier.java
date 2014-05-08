@@ -13,9 +13,11 @@ public class LignePanier {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long idLignePanier;
 	private int qteCommande;
+	
 	@JoinColumn(name = "idArticle")
 	@ManyToOne()
 	private Article article;
+	
 	@JoinColumn(name = "idPanier")
 	@ManyToOne()
 	private Panier Panier;
