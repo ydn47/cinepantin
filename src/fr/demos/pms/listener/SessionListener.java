@@ -42,13 +42,13 @@ public class SessionListener implements HttpSessionListener {
     	
     	nbvisiteurs.incrementer();
     	System.out.print("Created =" +nbvisiteurs);
-    	System.out.print("création panier de course associé à l'utilisateur");
+    	System.out.print("crï¿½ation panier de course associï¿½ ï¿½ l'utilisateur");
     	//cr?ation panier de course associ? ? l'utilisateur
     	
     	Panier panier = null;
     	//si l'utilisateur est connect?, recuperer son panier de la bdd s'il existe
     	Client client = (Client) session.getAttribute("client");
-    	if (client != null){ //il est connecté
+    	if (client != null){ //il est connectï¿½
     		panier = daoPanier.findByClient(client);
     		session.setAttribute("panier",panier);		
     		
@@ -68,14 +68,13 @@ public class SessionListener implements HttpSessionListener {
      */
     public void sessionDestroyed(HttpSessionEvent evt) {
     	HttpSession session = evt.getSession();
-    	//sauvgarde dans la bdd si le client est connecté
-    	Client client = (Client) session.getAttribute("client");
+    	//sauvgarde dans la bdd si le client est connectï¿½
+    	
     	Panier panier = (Panier) session.getAttribute("panier");
     	
-    	if ( (client != null) && (panier!=null) ){
+    	if ( (panier.getClient() != null) && (panier!=null) ){
     		System.out.print("Panier sessionDestroyed : "+panier);
     		try{
-    			panier.setClient(client);
     			daoPanier.create(panier);
 			}catch (DAOException e){
 				e.printStackTrace();

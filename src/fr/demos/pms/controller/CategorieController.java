@@ -54,7 +54,7 @@ public class CategorieController extends HttpServlet {
 		} catch (NumberFormatException e) {
 			System.err.println("Id categorie non valide" + e);
 		} finally {
-			
+			// que se passe t-il si la catégorie passée dans l'URL n'est pas valide ?
 		}
 		
 		// Affichage des articles par catégorie
@@ -62,11 +62,6 @@ public class CategorieController extends HttpServlet {
 		lstArticles = daoArticle.showArticleByCategory(idCategorie);
 		if (lstArticles != null)
 			request.setAttribute("articlesObject", lstArticles);
-		
-		// Récupération du total des articles par catégorie
-		List<Integer> totalArticles = daoArticle.countArticlesByCategory(idCategorie);
-		request.setAttribute("totalArticles", totalArticles);
-		System.out.println("Total " + totalArticles);
 		
 		// Récupération de la catégorie
 		String nomCategorie = "";
