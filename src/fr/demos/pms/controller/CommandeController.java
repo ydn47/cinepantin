@@ -190,13 +190,9 @@ public class CommandeController extends HttpServlet {
 				try{
 					cmdDao.create(cmd);
 				}catch (DAOException e){
-					request.setAttribute("erreur Creation commande", e.getMessage());
-					
+					request.setAttribute("erreur Creation commande", e.getMessage());		
 				}
-				RequestDispatcher rd = request
-						.getRequestDispatcher("/commande-merci.jsp");
-						rd.forward(request, response);
-				return;	
+				
 				
 				
 			}
