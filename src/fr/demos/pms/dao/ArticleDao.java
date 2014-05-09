@@ -5,6 +5,7 @@ import java.util.List;
 
 import fr.demos.pms.model.Article;
 import fr.demos.pms.model.Categorie;
+import fr.demos.pms.model.Client;
 
 public interface ArticleDao {
 	Collection<Article> showMainArticles();
@@ -19,4 +20,6 @@ public interface ArticleDao {
 	void create(Article a) throws DAOException;
 	
 	List<Integer> countArticlesByCategory();
+	
+	Article update(Article a) throws DAOException;
 }

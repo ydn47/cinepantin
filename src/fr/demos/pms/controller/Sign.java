@@ -115,7 +115,7 @@ public class Sign extends HttpServlet {
 				if (mdp == null || mdp.equals("")) {	
 					errorMap.put("mdp", "Mdp obligatoire");	
 				}
-				if(errorMap.size() ==0){
+				if(errorMap.size() == 0){
 					//verifier que le compte existe
 					Client client = null;
 					System.out.print("email  " +email+"  mdp  " +mdp);

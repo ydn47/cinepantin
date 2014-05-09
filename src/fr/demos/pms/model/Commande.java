@@ -19,8 +19,14 @@ public class Commande {
 	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD
 	@ManyToOne()
 	private Client client;
-	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER)
+	/*
+	on utilise @JoinColumn lorsqu'on met en place un mapping du côté @ManyToOne,
+	 et qu'on utilise mappedBy="..." lorsqu'on met en place un @OneToMany.
+	*/
+
+	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER, mappedBy= "commande")
 	private ArrayList<LigneCommande> lignesCommande ;
+	
 	
 	
 	protected Commande(){}

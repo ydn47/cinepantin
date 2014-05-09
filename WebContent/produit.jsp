@@ -81,11 +81,12 @@
 						<input type="hidden" value="${articleObject.getIdArticle()}"
 							name="productId">
 					</div>
-						<div class="span3 no_margin_left">
-							<label>Qté:</label>
-							<input type="number"  min="1" max="5" value="1" placeholder="1" class="span1" id="quantity" name="quantity"/> 
+						<div class='span3 no_margin_left controls '>
+							<label >Qté:</label>
+							<input type="number"  min="1" max="5" value="1" placeholder="1" class="span1" name="quantity"/> 
 							<input  class="btn btn-primary" type="submit" name="addCart" value="Ajouter au panier" />
-							
+							${erreur["quantite"] }
+							${erreur["articleID"] }
 						</div>
 					</form>
 				</div>

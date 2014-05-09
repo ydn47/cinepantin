@@ -19,8 +19,8 @@ public class LigneCommande {
 	@ManyToOne()
 	private Article article;
 	
-	@JoinColumn(name="idCommande")  //le nom de la colone dans la table commande
-	@ManyToOne()
+	//@JoinColumn(name="idCommande")  //le nom de la colone dans la table commande
+	//@ManyToOne()
 	private Commande commande;
 
 	protected LigneCommande(){

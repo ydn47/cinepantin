@@ -58,21 +58,23 @@ public class PanierController extends HttpServlet {
 		
 		HttpSession session = request.getSession(); 
 		Panier panier = (Panier) session.getAttribute("panier");
-		
-		String action 		= request.getParameter("addCart");
-		String action1 		= request.getParameter("updateCart");
-		System.out.print("action  " +action + " action1  " +action1);
+		HashMap<String, String> errorMap = new HashMap<>();
+		String action 		    = request.getParameter("addCart");
+		String action1 		    = request.getParameter("updateCart");
+		//System.out.print("action  " +action + " action1  " +action1);
 		if ((action != null) && (action.equals("Ajouter au panier")) ){//Ajouter au panier
-			HashMap<String, String> errorMap = new HashMap<>();
+			
 			String quantite  = request.getParameter("quantity");
 			String productId = request.getParameter("productId");
-			System.out.print(quantite +"   "+ productId);
+			//System.out.print(quantite +"   "+ productId);
 			long idArticle = 0;
 			int qte = 0;
 			try {
 				idArticle = Long.parseLong(productId);
 			} catch (NumberFormatException e) {
 				System.err.println("Id article non valide" + e);
+				
+				errorMap.put("articleID", "Article non valide");
 			}
 			try {
 				qte = Integer.parseInt(quantite);
@@ -85,24 +87,33 @@ public class PanierController extends HttpServlet {
 			Article article = null;
 			if (idArticle != 0)
 				article = daoArticle.findById(idArticle);
-			System.out.print(article);
+			//System.out.print(article);
 			if (article != null){
 				try {
 					panier.ajouter(article, qte);
 					
 				} catch (ExceptionStock e) {
-					errorMap.put("quantite", "Quantité non disponible!" + "Seulement "+ e.etatStock);
+					errorMap.put("inputError", "inputError");
+					errorMap.put("error", "error");
+					errorMap.put("quantite", "Quantité non disponible! " + "Seulement "+ e.etatStock);
 					e.printStackTrace();
 				}
-				System.out.print("Panier Controller : "+panier);
-				//MAJ panier en session , sauvegarde en BDD
-				session.setAttribute("panier", panier);
-				request.setAttribute("succes", true);
-				RequestDispatcher rd = request
-						.getRequestDispatcher("/article/"+idArticle);
-						rd.forward(request, response);
-						return;
-				
+				//System.out.print("Panier Controller : "+panier);
+				if (errorMap.size() != 0){
+					request.setAttribute("erreur",errorMap);
+					
+					RequestDispatcher rd = request.getRequestDispatcher("/produit.jsp");
+					rd.forward(request, response);
+					return;
+				}else{	
+					//MAJ panier en session 
+					session.setAttribute("panier", panier);
+					request.setAttribute("succes", true);
+					RequestDispatcher rd = request
+							.getRequestDispatcher("/article/"+idArticle);
+							rd.forward(request, response);
+							return;
+				}
 			}
 			
 		}else if ((action1 != null) && (action1.equals("Modifier le panier"))){ // mettre à jour
@@ -134,25 +145,36 @@ public class PanierController extends HttpServlet {
 			for (LignePanier ligne : panier.getLignesPanier()) {
 				String qte = request.getParameter(String.valueOf(ligne.getArticle().getIdArticle()));
 				if (qte != null){
+					int qteModif = 0;
 					try {
-						ligne.setQteCommande(Integer.parseInt(qte));
+						qteModif = Integer.parseInt(qte);
+						//ligne.setQteCommande(Integer.parseInt(qte));
 					} catch (NumberFormatException e) {
 						System.err.println("qte non valide pour l'article"+ligne.getArticle().getIdArticle() + e);
+					}
+					try {
+						panier.ajouter(ligne.getArticle(), qteModif);
+						
+					} catch (ExceptionStock e) {
+						
+						errorMap.put("_"+ligne.getArticle().getIdArticle(), "Quantité non disponible! " + "Seulement "+ e.etatStock);
+						e.printStackTrace();
 					}
 							
 				}
 				
 			}
-			
+			if (errorMap.size() != 0){
+				request.setAttribute("erreur",errorMap);
+				
+			}
 			session.setAttribute("panier", panier);
 			System.out.print("nb articles " +panier.getLignesPanier().size());
 			request.setAttribute("panierContent", panier);
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/cart.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/cart.jsp");
 			rd.forward(request, response);
 			return;
-					
-			
+				
 		}else { //dans tous les cas, reprendre le code de doGet
 			doPost(request, response);
 		}

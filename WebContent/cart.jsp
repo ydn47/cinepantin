@@ -28,7 +28,11 @@
 							<td class="muted center_text"><a href="product.html"><img src="css/images/macbook-pro.jpg"></a></td>
 							<td>${ligne.getArticle().getNomArticle()}</td>
 				
-							<td><input style ="height: 18px;padding-top:0px;padding-bottom:0px;" class="input-mini" type ="number" min="1" max="5" value="${ligne.getQteCommande()}" name="${ligne.getArticle().getIdArticle()}"></td>
+							<td>
+								<input style ="height: 18px;padding-top:0px;padding-bottom:0px;" class="input-mini" type ="number" min="1" max="5" value="${ligne.getQteCommande()}" name="${ligne.getArticle().getIdArticle()}"/>
+								<c:set var="indice" value="_${ligne.getArticle().getIdArticle()}"/>
+								<span>${erreur["indice"]}</span>
+							</td>
 							<td>EUR ${ligne.getArticle().getPrixUnitTTCFormat()}</td>
 							<td>EUR ${ligne.getTotalTTCFormat()} </td>
 						</tr>

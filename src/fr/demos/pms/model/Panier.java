@@ -29,7 +29,8 @@ public class Panier {
 	private Client client;
 	@Temporal(TemporalType.DATE)
 	private Date datePanier;
-	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER)
+	
+	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER, mappedBy= "panier")
 	private ArrayList<LignePanier> lignesPanier ;
 	
 	protected Panier() {
@@ -103,7 +104,7 @@ public class Panier {
 				for (LignePanier ligne : lignesPanier) {
 					if (ligne.getArticle().equals(article)){
 						//System.out.print("isArticleInCart" +article.getIdArticle());
-						ligne.setQteCommande(ligne.getQteCommande()+qte);
+						ligne.setQteCommande(qte);
 					}
 				}
 				

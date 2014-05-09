@@ -41,7 +41,7 @@ public class SessionListener implements HttpSessionListener {
     	Compteur nbvisiteurs =  (Compteur) session.getServletContext().getAttribute("nbvisiteurs");
     	
     	nbvisiteurs.incrementer();
-    	System.out.print("Created =" +nbvisiteurs);
+    	//System.out.print("Created =" +nbvisiteurs);
     	System.out.print("cr�ation panier de course associ� � l'utilisateur");
     	//cr?ation panier de course associ? ? l'utilisateur
     	
@@ -55,7 +55,7 @@ public class SessionListener implements HttpSessionListener {
     		
     	}else{ //pas connecte , on cree un panier vide dans la session
     		panier = PanierFactory.getNewPanier();
-    		
+    		//panier = new Panier();
     		panier.setDatePanier(new java.util.Date());
         	session.setAttribute("panier",panier);
     	}

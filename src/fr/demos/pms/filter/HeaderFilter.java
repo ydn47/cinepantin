@@ -79,11 +79,16 @@ public class HeaderFilter implements Filter {
 		}
 		
 		Panier panier = (Panier) session.getAttribute("panier");
-		System.out.print("panierSession" + panier);
-		if (panier!= null) {
+		//System.out.print("panierSession" + panier);
+		if (panier.getLignesPanier() != null) {
 			int nbArticles = panier.getLignesPanier().size();
 			request.setAttribute("nbArticles",nbArticles);
 			request.setAttribute("total", panier.getMontantTotalTTCFormat());
+			
+		}else{
+			int nbArticles = 0;
+			request.setAttribute("nbArticles",nbArticles);
+			request.setAttribute("total", "0,00");
 			
 		}
 		
