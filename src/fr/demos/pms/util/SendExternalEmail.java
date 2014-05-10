@@ -10,8 +10,8 @@ public class SendExternalEmail {
 	public SendExternalEmail() {
 	}
 	
-	private String sender_email = "gawler.central@gmail.com";
-	private String sender_password = "GmailAccountPassword";
+	private String sender_email = "wiem.marzouk@gmail.com";
+	private String sender_password = "";
 	private String host_name = "smtp.gmail.com";
 	private String port_port = "465";	
  	private String mail_to = "";

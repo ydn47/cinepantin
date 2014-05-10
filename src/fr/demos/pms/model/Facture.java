@@ -14,12 +14,13 @@ import javax.persistence.TemporalType;
 
 @Entity
 public class Facture {
+
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long idFacture;
 	@Temporal(TemporalType.DATE)
 	private Date dateFacture;
-	
+	/*
 	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD
 	@OneToOne()
 	private Client client;
@@ -27,6 +28,7 @@ public class Facture {
 	@JoinColumn(name="idCommande")  //le nom de la colone dans la table DVD
 	@OneToOne()
 	private Commande commande;
+	*/
 	private double totalTTC;
 	private double totalHT;
 	private double totalTVA;

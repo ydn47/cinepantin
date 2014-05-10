@@ -51,6 +51,7 @@
 	<c:url var="commandecont" value="/commande"/>
   	<c:url var="imgDir" value="/css/images/" />
   	<c:url var="categController" value="/articles/" />
+  	<c:url var="contact" value="/contact" />
   </head>
  <body>
 
@@ -116,9 +117,9 @@
 						  <ul class="nav">
 							<li><a href="${boutique}">Boutique</a></li>
 
-							<li><a href="#">Evènements</a></li>
+							<li><a href="${boutique}">Evènements</a></li>
 							<li><a href="about.jsp">About</a><li>
-							<li><a href="contact.jsp">Contact</a><li>
+							<li><a href="${contact}">Contact</a><li>
 			
 						  </ul>
 						  

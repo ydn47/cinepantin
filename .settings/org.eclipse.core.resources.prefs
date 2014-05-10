@@ -4,6 +4,7 @@
 eclipse.preferences.version=1
 encoding//WebContent/_js/valider.js=UTF-8
 encoding//src/fr/demos/pms/controller/CommandeController.java=UTF-8
+encoding//src/fr/demos/pms/controller/ContactController.java=UTF-8
 encoding//src/fr/demos/pms/controller/MainFrontArticle.java=UTF-8
 encoding//src/fr/demos/pms/controller/PanierController.java=UTF-8
 encoding//src/fr/demos/pms/controller/Sign.java=UTF-8

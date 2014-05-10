@@ -80,7 +80,7 @@ public class Sign extends HttpServlet {
 				request.setAttribute("nom",client.getNom());
 				request.setAttribute("prenom",client.getPrenom());
 				request.setAttribute("email",client.getLogin());
-				RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
 				rd.forward(request, response);
 				return;
 			}

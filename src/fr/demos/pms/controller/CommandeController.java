@@ -238,8 +238,7 @@ public class CommandeController extends HttpServlet {
 						request.setAttribute("erreur Creation commande", e.getMessage());
 						
 					}
-					
-					panier.setLignesPanier(null);
+					panier.viderPanier();
 					session.setAttribute("panier", panier);
 					RequestDispatcher rd = request
 							.getRequestDispatcher("/commande-merci.jsp");

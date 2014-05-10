@@ -121,6 +121,11 @@ public class Panier {
 		}
 	
 	}
+	
+	public void viderPanier(){
+		lignesPanier.clear();
+
+	}
 	public boolean isArticleInCart(Article article) {
 		
 		boolean res = false;
