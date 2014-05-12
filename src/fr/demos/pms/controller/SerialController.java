@@ -109,6 +109,7 @@ public class SerialController extends HttpServlet {
 		// String tva = "";
 		String qteStock = "";
 		String nomFichierImage = "";
+		long idCategorie = 0;
 
 		String action = request.getParameter("valider");
 
@@ -123,6 +124,10 @@ public class SerialController extends HttpServlet {
 			// tva = request.getParameter("listeCateg");
 			qteStock = request.getParameter("qteStock").trim();
 			int qte_stock = Integer.parseInt(qteStock);
+			String nomCategorie = request.getParameter("categorie");
+			
+			idCategorie = daoCategorie.findIdByNom(nomCategorie);
+			Categorie cat = new Categorie(idCategorie);
 
 			// Récupération du fichier image
 			// nomFichierImage = request.getParameter("file");
@@ -139,7 +144,7 @@ public class SerialController extends HttpServlet {
 			//hm.put("realisateurs", realisateurs);
 
 			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,
-					prixUnit, Tva.NORMAL, qte_stock, null, null, null, hm));
+					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));
 
 
 		}
