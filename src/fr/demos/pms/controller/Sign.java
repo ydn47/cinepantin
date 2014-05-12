@@ -80,7 +80,7 @@ public class Sign extends HttpServlet {
 				request.setAttribute("nom",client.getNom());
 				request.setAttribute("prenom",client.getPrenom());
 				request.setAttribute("email",client.getLogin());
-				RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("/register.jsp");
 				rd.forward(request, response);
 				return;
 			}
@@ -99,7 +99,7 @@ public class Sign extends HttpServlet {
 		System.out.print("doPost Singn");
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
-		
+		response.setCharacterEncoding("UTF-8");
 		if ((info != null) && (info.equals("/in")) ){//se connecter
 			String action = request.getParameter("signin");
 			if (action != null && action.endsWith("connecter")) {
@@ -115,7 +115,7 @@ public class Sign extends HttpServlet {
 				if (mdp == null || mdp.equals("")) {	
 					errorMap.put("mdp", "Mdp obligatoire");	
 				}
-				if(errorMap.size() ==0){
+				if(errorMap.size() == 0){
 					//verifier que le compte existe
 					Client client = null;
 					System.out.print("email  " +email+"  mdp  " +mdp);
@@ -123,6 +123,7 @@ public class Sign extends HttpServlet {
 					
 					if (client != null){
 						session.setAttribute("client", client);	
+						
 						RequestDispatcher rd = request
 								.getRequestDispatcher("/boutique");
 								rd.forward(request, response);

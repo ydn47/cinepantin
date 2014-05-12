@@ -155,4 +155,19 @@ public class ArticleDaoJPA implements ArticleDao {
 		return listeTotaux;
 	}
 
+	@Override
+	public Article update(Article a) throws DAOException {
+		Article article = null;
+		try {
+		ut.begin();
+		article = em.merge(a);
+		ut.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new DAOException("Pb update article : " + a.getNomArticle(), e);		
+		}
+		System.out.print("update article :"+article);
+		return article;
+	}
+
 }

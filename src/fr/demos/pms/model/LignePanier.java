@@ -18,9 +18,9 @@ public class LignePanier {
 	@ManyToOne()
 	private Article article;
 	
-	@JoinColumn(name = "idPanier")
-	@ManyToOne()
-	private Panier Panier;
+	//@JoinColumn(name = "idPanier")
+	//@ManyToOne()
+	private Panier panier;
 	
 	
 
@@ -35,7 +35,7 @@ public class LignePanier {
 		super();
 		this.qteCommande = qteCommande;
 		this.article = article;
-		Panier = panier;
+		panier = panier;
 	}
 
 
@@ -58,11 +58,11 @@ public class LignePanier {
 	}
 
 	public Panier getPanier() {
-		return Panier;
+		return panier;
 	}
 
 	public void setPanier(Panier panier) {
-		Panier = panier;
+		panier = panier;
 	}
 
 	public int getQteCommande() {
@@ -86,7 +86,7 @@ public class LignePanier {
 	@Override
 	public String toString() {
 		return "LignePanier [idLignePanier=" + idLignePanier + ", article="
-				+ article.getIdArticle() + ", Panier=" + Panier.getIdPanier() + ", qteCommande="
+				+ article.getIdArticle() + " , qteCommande="
 				+ qteCommande + "]";
 	}
 
@@ -107,10 +107,10 @@ public class LignePanier {
 		if (getClass() != obj.getClass())
 			return false;
 		LignePanier other = (LignePanier) obj;
-		if (Panier == null) {
-			if (other.Panier != null)
+		if (panier == null) {
+			if (other.panier != null)
 				return false;
-		} else if (!Panier.equals(other.Panier))
+		} else if (!panier.equals(other.panier))
 			return false;
 		if (article == null) {
 			if (other.article != null)

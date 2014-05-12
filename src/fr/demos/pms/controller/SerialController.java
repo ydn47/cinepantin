@@ -52,7 +52,16 @@ public class SerialController extends HttpServlet {
 		request.setAttribute("lstCategories", listeCategories);
 
 		// En fonction de l'article précisé, afficher une liste des propriétés
-		String categorie = request.getPathInfo().substring(1).toUpperCase();
+		String categorie = request.getPathInfo();
+		//System.out.println("Categorie " + categorie);
+		if (categorie != null)
+		{
+			categorie = categorie.substring(1).toUpperCase();
+		}
+		else 
+		{
+			categorie = "";
+		}
 		boolean urlCategorie = false;
 		
 		if (categorie.length() > 0) {
@@ -75,6 +84,7 @@ public class SerialController extends HttpServlet {
 			request.setAttribute("proprietes", serialProprietes);
 		}
 		
+		request.setAttribute("categorie", categorie);
 		request.setAttribute("urlCategorie", urlCategorie);
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/SerialArticle.jsp");
@@ -99,7 +109,6 @@ public class SerialController extends HttpServlet {
 		// String tva = "";
 		String qteStock = "";
 		String nomFichierImage = "";
-		long idCategorie = 0;
 
 		String action = request.getParameter("valider");
 
@@ -123,22 +132,6 @@ public class SerialController extends HttpServlet {
 			// String filename = filePart.getName();
 			// System.out.println(filename);
 
-			
-			String categorie = request.getPathInfo();
-			Categorie cat = null; 
-
-			// la catégorie est passée dans l'URL
-			if (categorie != null && categorie.length() > 0) {
-				categorie = categorie.substring(1).toUpperCase();
-				System.out.println("CHECK: " + categorie);
-				idCategorie = daoCategorie.findIdByNom(categorie);
-			}
-			else // la catégorie n'est pas passée
-			{
-				categorie = request.getParameter("listeCateg");
-				idCategorie = Long.parseLong(categorie);
-			}
-			cat = new Categorie(idCategorie);
 
 			HashMap<String, String> hm = new HashMap<>();
 			// récupération des propriétés d'un article
@@ -146,12 +139,14 @@ public class SerialController extends HttpServlet {
 			//hm.put("realisateurs", realisateurs);
 
 			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,
-					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));
+					prixUnit, Tva.NORMAL, qte_stock, null, null, null, hm));
 
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/SerialArticle.jsp");
-			rd.forward(request, response);
-			return;
+
 		}
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/SerialArticle.jsp");
+		rd.forward(request, response);
+		return;
 	}
+	
 }

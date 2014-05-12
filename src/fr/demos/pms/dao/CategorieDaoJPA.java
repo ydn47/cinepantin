@@ -81,6 +81,19 @@ public class CategorieDaoJPA implements CategorieDao {
 			return 0;
 		}
 	}
+
+	@Override
+	public void create(Categorie c) throws DAOException {
+		try {
+			ut.begin();
+			em.persist(c);
+			ut.commit(); 
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new DAOException("Pb creation catégorie : " + c.getIdCategorie(), e);		
+		}	
+		
+	}
 	
 	
 }

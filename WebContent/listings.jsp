@@ -5,41 +5,22 @@
 <%@include file="entete.jsp"%>
 <div class="row">
 <%@include file="menuLeft.jsp"%>
-		 <div class="span9">
-		     <ul class="breadcrumb">
-    <li>
-    <a href="#">Home</a> <span class="divider">/</span>
-    </li>
-    <li>
-    <a href="listings.jsp">${nomCateg}</a> <span class="divider">/</span>
-    </li>
-    </ul>
-    <!-- 
-	<c:forEach items="${articlesObject}" var="article">
-	<div class="row">
-	 <div class="span1">
-	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" src="css/images/ipodtouch_image2_20080909.jpg"></a>
-	  </div>	 
-	  <div class="span6">
-	   <a href="${articleCont}${article.getIdArticle()}"><h5>${article.getNomArticle()}</h5></a>
-              <p>${article.getShortDescArticle()}</p>
-	  </div>	
-
-	  <div class="span1">
-	   <p>${article.getPrixUnitTTCFormat()} EUR</p>
-	  </div>	 
-	  
-	  <div class="span2">
-	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
-	  </div>
-  </div>
-  </c:forEach>  -->
+	<div class="span9">
+		<ul class="breadcrumb">
+		    <li>
+		    	<a href="#">Home</a> <span class="divider">/</span>
+		    </li>
+		    <li>
+		    	<a href="listings.jsp">${nomCateg}</a> <span class="divider">/</span>
+		    </li>
+	    </ul>
+  
   <c:forEach items="${articlesObject}" var="article">
   <div class="row">
 	 <div class="span1">
 	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" id="tmp" src="css/images/ipodtouch_image2_20080909.jpg"></a>
 	  </div>	 
-	  
+	 
 	  <div class="span6">
 	   <a href="${articleCont}${article.getIdArticle()}"><h5>${article.getNomArticle()}</h5></a>
               <p>${article.getShortDescArticle()}</p>
@@ -50,7 +31,9 @@
 	  </div>	 
 	  
 	  <div class="span2">
-	   <p><a class="btn btn-primary" href="cart.html">Ajouter</a></p>
+	   		<p>
+	   			<a class="btn btn-primary" href="${articleCont}${article.getIdArticle()}">Voir Détails</a> 
+	   		</p>
 	  </div>
   </div>
   <hr>

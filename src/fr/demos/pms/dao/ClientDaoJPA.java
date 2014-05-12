@@ -89,7 +89,6 @@ public class ClientDaoJPA implements ClientDao {
 
 	@Override
 	public Client update(Client c) throws DAOException {
-		System.out.print("debut update ");
 		Client client = null;
 		try {
 		ut.begin();

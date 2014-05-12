@@ -34,9 +34,10 @@
   
 	      <div class="span9">
 	     
-	          <p> Merci pour votre commande !</p>
+	          <p> Désolé, votre commande ne peut aboutir !</p>
 	          <br>
-	         
+	          <p>${msgErreurStock}</p>
+	          <p></p>
 	         
 	    	</div>
 

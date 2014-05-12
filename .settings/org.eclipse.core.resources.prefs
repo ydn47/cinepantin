@@ -3,12 +3,15 @@
 >>>>>>>=8b8e9364ab64632a1c0a24c9905b1ab2ae7a708d
 eclipse.preferences.version=1
 encoding//WebContent/_js/valider.js=UTF-8
+encoding//src/fr/demos/pms/controller/CommandeController.java=UTF-8
+encoding//src/fr/demos/pms/controller/ContactController.java=UTF-8
 encoding//src/fr/demos/pms/controller/MainFrontArticle.java=UTF-8
 encoding//src/fr/demos/pms/controller/PanierController.java=UTF-8
 encoding//src/fr/demos/pms/controller/Sign.java=UTF-8
 encoding//src/fr/demos/pms/dao/ClientDaoJPA.java=UTF-8
 encoding//src/fr/demos/pms/filter/HeaderFilter.java=UTF-8
 encoding//src/fr/demos/pms/filter/LoginFilter.java=UTF-8
+encoding//src/fr/demos/pms/listener/SessionListener.java=UTF-8
 encoding//src/fr/demos/pms/model/Article.java=UTF-8
 encoding//src/fr/demos/pms/model/ExceptionStock.java=UTF-8
 encoding//src/fr/demos/pms/model/Panier.java=UTF-8

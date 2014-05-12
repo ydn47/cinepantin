@@ -19,9 +19,40 @@ public class Commande {
 	@JoinColumn(name="idClient")  //le nom de la colone dans la table DVD
 	@ManyToOne()
 	private Client client;
-	
+	/*
+	on utilise @JoinColumn lorsqu'on met en place un mapping du côté @ManyToOne,
+	 et qu'on utilise mappedBy="..." lorsqu'on met en place un @OneToMany.
+	*/
+
+	@OneToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE}, fetch=FetchType.EAGER, mappedBy= "commande")
 	private ArrayList<LigneCommande> lignesCommande ;
 	
+	
+	
+	protected Commande(){}
+
+	
+	public Commande(Date dateCommande, Client client) {
+		super();
+		
+		this.dateCommande = dateCommande;
+		this.client = client;
+	}
+	
+	
+	public Commande(Date dateCommande, double totalTTC, String commentaire,
+			String typePaiement, Client client,
+			ArrayList<LigneCommande> lignesCommande) {
+		super();
+		this.dateCommande = dateCommande;
+		this.totalTTC = totalTTC;
+		this.commentaire = commentaire;
+		this.typePaiement = typePaiement;
+		this.client = client;
+		this.lignesCommande = lignesCommande;
+	}
+
+
 	public double getTotalTTC() {
 		return totalTTC;
 	}
@@ -61,16 +92,6 @@ public class Commande {
 		this.lignesCommande = lignesCommande;
 	}
 
-
-	protected Commande(){}
-
-	
-	public Commande(Date dateCommande, Client client) {
-		super();
-		
-		this.dateCommande = dateCommande;
-		this.client = client;
-	}
 
 
 	public long getIdCommande() {

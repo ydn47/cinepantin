@@ -20,8 +20,9 @@ public class PanierDaoJPA implements PanierDao {
 
 	@Override
 	public Panier findByClient(Client client) {
+		System.out.print("find panier by client");
 		Panier panier = null;
-		String query = "select  from Panier p where p.client = ?1 "; //le nom de la classe
+		String query = "select p from Panier p where p.client = ?1 "; //le nom de la classe
 		TypedQuery<Panier> q = em.createQuery(query,Panier.class);
 		q.setParameter(1,client);
 
