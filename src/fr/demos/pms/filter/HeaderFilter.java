@@ -3,6 +3,7 @@ package fr.demos.pms.filter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.servlet.DispatcherType;
@@ -17,6 +18,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.*;
 
 import fr.demos.pms.annotation.Dao;
+import fr.demos.pms.dao.ArticleDao;
 import fr.demos.pms.dao.ClientDao;
 import fr.demos.pms.dao.ClientDaoJPA;
 import fr.demos.pms.model.Categorie;
@@ -33,9 +35,12 @@ import fr.demos.pms.dao.CategorieDaoJPA;
 public class HeaderFilter implements Filter {
 	@Inject  @Dao
 	private ClientDao clientDao; 
-	
+
 	@Inject @Dao
 	private CategorieDao daoCategorie;
+	
+	@Inject @Dao
+	private ArticleDao daoArticle;
     /**
      * Default constructor. 
      */
@@ -66,6 +71,10 @@ public class HeaderFilter implements Filter {
 			request.setAttribute("lstCategories", null);
 		HttpSession session = ((HttpServletRequest) request).getSession(); 
 		Client client       = (Client) session.getAttribute("client");
+		
+		// Récupération du total des articles par catégorie
+		List<Integer> totalArticles = daoArticle.countArticlesByCategory();
+		request.setAttribute("totalArticles", totalArticles);
 		
 		if (client != null) {//l'user est connecté, on affiche Bonjour
 			String nom    = client.getNom();
