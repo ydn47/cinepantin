@@ -82,7 +82,9 @@ public class SerialController extends HttpServlet {
 			};
 			urlCategorie = true;		
 			request.setAttribute("proprietes", serialProprietes);
-		}
+		
+		} 
+
 		
 		request.setAttribute("categorie", categorie);
 		request.setAttribute("urlCategorie", urlCategorie);
@@ -125,9 +127,23 @@ public class SerialController extends HttpServlet {
 			qteStock = request.getParameter("qteStock").trim();
 			int qte_stock = Integer.parseInt(qteStock);
 			String nomCategorie = request.getParameter("categorie");
-			
-			idCategorie = daoCategorie.findIdByNom(nomCategorie);
-			Categorie cat = new Categorie(idCategorie);
+			Categorie cat = null;
+			if (nomCategorie != null && nomCategorie != "")
+			{
+				idCategorie = daoCategorie.findIdByNom(nomCategorie);
+				if (idCategorie != 0)
+				{
+					cat = new Categorie(idCategorie);
+				}
+				else 
+				{
+					cat = new Categorie(3);
+				}
+			} else
+			{
+				// la catégorie 3 correspond à n'importe quel autre catégorie que dvd et livres
+				cat = new Categorie(3);
+			}
 
 			// Récupération du fichier image
 			// nomFichierImage = request.getParameter("file");
@@ -146,12 +162,12 @@ public class SerialController extends HttpServlet {
 			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,
 					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));
 
-
+			RequestDispatcher rd = request
+					.getRequestDispatcher("/SerialArticle.jsp");
+			rd.forward(request, response);
+			return;
 		}
-		RequestDispatcher rd = request
-				.getRequestDispatcher("/SerialArticle.jsp");
-		rd.forward(request, response);
-		return;
+	
 	}
 	
 }

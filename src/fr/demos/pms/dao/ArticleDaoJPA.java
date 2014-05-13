@@ -6,7 +6,6 @@ import java.util.List;
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.transaction.HeuristicMixedException;
 import javax.transaction.HeuristicRollbackException;
@@ -18,7 +17,6 @@ import javax.transaction.UserTransaction;
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.model.Article;
 import fr.demos.pms.model.Categorie;
-import fr.demos.pms.model.Client;
 /**
  * 
  * @author Yann-Dara Nong
@@ -39,12 +37,8 @@ public class ArticleDaoJPA implements ArticleDao {
 	 */
 	@Override
 	public Collection<Article> showMainArticles() {
-		// TODO : modifier la requête afin que seuls les premiers articles
-
 		String query = "SELECT a FROM Article a";
-		TypedQuery<Article> q = em.createQuery(query, Article.class);
-		//q.setParameter(1, login);
-		//q.setParameter(2, mdp);
+		TypedQuery<Article> q = em.createQuery(query, Article.class).setMaxResults(9);
 		Collection<Article> listeArticle = q.getResultList();
 
 		return listeArticle;

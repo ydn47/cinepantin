@@ -10,7 +10,7 @@
 <title>Insertion d'un article</title>
 </head>
 <body>
-	<form action="SerialController" method="post">
+	<form action="/CinePantin/SerialController" method="post">
 		<input type="hidden" name="categorie" value="${categorie}" />
 		Nom de l'article <input type="text" id="nomArticle" name="nomArticle"
 			maxlength="100" /><br /> Description courte <input type="text"
