@@ -51,18 +51,21 @@ public class SerialController extends HttpServlet {
 				.findAllCategories();
 		request.setAttribute("lstCategories", listeCategories);
 
+		boolean urlCategorie = false;
 		// En fonction de l'article précisé, afficher une liste des propriétés
 		String categorie = request.getPathInfo();
 		//System.out.println("Categorie " + categorie);
 		if (categorie != null)
 		{
+			urlCategorie = true;
 			categorie = categorie.substring(1).toUpperCase();
 		}
 		else 
 		{
+			
 			categorie = "";
 		}
-		boolean urlCategorie = false;
+		
 		
 		if (categorie.length() > 0) {
 			Collection<String> serialProprietes = new ArrayList<>();
