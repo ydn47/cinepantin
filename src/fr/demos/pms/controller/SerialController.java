@@ -66,29 +66,7 @@ public class SerialController extends HttpServlet {
 			categorie = "";
 		}
 		
-		
-		if (categorie.length() > 0) {
-			Collection<String> serialProprietes = new ArrayList<>();
 
-			switch (categorie) {
-			case "DVD":
-				serialProprietes.add("Titre");
-				serialProprietes.add("Réalisateurs");
-				break;
-			case "LIVRES":
-				serialProprietes.add("Auteur");
-				serialProprietes.add("Genre");
-				break;
-			default:
-				serialProprietes.add("Description");
-				break;
-			};
-			urlCategorie = true;		
-			request.setAttribute("proprietes", serialProprietes);
-		
-		} 
-
-		
 		request.setAttribute("categorie", categorie);
 		request.setAttribute("urlCategorie", urlCategorie);
 		RequestDispatcher rd = request
@@ -114,7 +92,7 @@ public class SerialController extends HttpServlet {
 		// String tva = "";
 		String qteStock = "";
 		String nomFichierImage = "";
-		long idCategorie = 0;
+		int idCategorie = 0;
 
 		String action = request.getParameter("valider");
 
@@ -130,6 +108,9 @@ public class SerialController extends HttpServlet {
 			qteStock = request.getParameter("qteStock").trim();
 			int qte_stock = Integer.parseInt(qteStock);
 			String nomCategorie = request.getParameter("categorie");
+			
+			String titre = request.getParameter("titre");
+			
 			Categorie cat = null;
 			if (nomCategorie != null && nomCategorie != "")
 			{
@@ -162,6 +143,21 @@ public class SerialController extends HttpServlet {
 			//hm.put("titre", titre);
 			//hm.put("realisateurs", realisateurs);
 
+			switch (idCategorie) {
+			case 1: // DVD
+				hm.put("Titre", request.getParameter("titre"));
+				hm.put("Réalisateurs", request.getParameter("realisateurs"));
+				break;
+
+			case 2: // Livres
+				hm.put("Auteur", request.getParameter("auteur"));
+				hm.put("Genre", request.getParameter("genre"));
+				break;
+			default:
+				hm.put("Description", request.getParameter("description"));
+				break;
+			}
+			
 			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,
 					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));
 

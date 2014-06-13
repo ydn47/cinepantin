@@ -91,7 +91,7 @@ public class MainFrontArticle extends HttpServlet {
 
 				try {
 					for (String selCateg : selectionCateg) {
-						categories.add(new Categorie(Long.parseLong(selCateg)));
+						categories.add(new Categorie(Integer.parseInt(selCateg)));
 					}
 				} catch (NumberFormatException nbf) {
 					System.err.println("Erreur de conversion de format" + nbf);

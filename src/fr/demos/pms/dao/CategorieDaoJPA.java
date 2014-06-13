@@ -67,7 +67,7 @@ public class CategorieDaoJPA implements CategorieDao {
 	 * @param le nom de la catégorie
 	 */
 	@Override
-	public long findIdByNom(String nomCategorie) {
+	public int findIdByNom(String nomCategorie) {
 		String query = "SELECT cat FROM Categorie cat WHERE UPPER(cat.nomCategorie) LIKE UPPER(?1)";
 		TypedQuery<Categorie> q = em.createQuery(query, Categorie.class);
 		q.setParameter(1, nomCategorie);

@@ -11,6 +11,6 @@ import fr.demos.pms.model.Client;
 public interface CategorieDao {
 	Collection<Categorie> findAllCategories();
 	String findNomById(long idCategorie);
-	long findIdByNom(String nomCategorie);
+	int findIdByNom(String nomCategorie);
 	void create(Categorie c) throws DAOException;
 }
