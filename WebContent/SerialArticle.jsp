@@ -37,7 +37,7 @@
 		<!-- Plage de prix -->
 		<c:choose>
 		<c:when test="${categorie == 'DVD'}">
-			Titre : <input type="text" name="titre" value="" /><br/>
+			Acteurs : <input type="text" name="acteurs" value="" /><br/>
 			Réalisateurs : <input type="text" name="realisateurs" value="" /><br/>
 		</c:when>
 		<c:when test="${categorie == 'LIVRES'}">

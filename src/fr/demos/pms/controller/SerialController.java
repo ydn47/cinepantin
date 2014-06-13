@@ -145,7 +145,7 @@ public class SerialController extends HttpServlet {
 
 			switch (idCategorie) {
 			case 1: // DVD
-				hm.put("Titre", request.getParameter("titre"));
+				hm.put("Acteurs", request.getParameter("acteurs"));
 				hm.put("Réalisateurs", request.getParameter("realisateurs"));
 				break;
 
