@@ -14,9 +14,9 @@
 		<input type="hidden" name="categorie" value="${categorie}" />
 		Nom de l'article <input type="text" id="nomArticle" name="nomArticle"
 			maxlength="100" /><br /> Description courte <input type="text"
-			id="shortDesc" name="shortDesc" maxlength="100" /><br />
-		Description longue <input type="text" id="longDesc" name="longDesc"
-			maxlength="255" /><br /> Prix unitaire <input type="text"
+			id="shortDesc" name="shortDesc"/><br />
+		Description longue <input type="text" id="longDesc" name="longDesc"/><br /> 
+		Prix unitaire <input type="text"
 			id="prixUnit" name="prixUnit" /><br /> Quantité en stock <input
 			type="text" id="qteStock" name="qteStock" /><br /> TVA <select>
 			<option value="REDUIT">REDUIT</option>
