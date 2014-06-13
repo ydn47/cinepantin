@@ -35,12 +35,19 @@
 			</select>
 		</c:if>
 		<!-- Plage de prix -->
-		<input type="hidden" name="longueurProp" value="${fn:length(proprietes)}" />
-		<c:forEach items="${proprietes}" var="prop" varStatus="status">
-			<input type="hidden" name="propName" value="${prop}" />
-			${prop} :<input type="text" id="propriete${status}" name="propriete${status}" />
-			<br />
-		</c:forEach>
+		<c:choose>
+		<c:when test="${categorie == 'DVD'}">
+			Titre : <input type="text" name="titre" value="" /><br/>
+			Réalisateurs : <input type="text" name="realisateurs" value="" /><br/>
+		</c:when>
+		<c:when test="${categorie == 'LIVRES'}">
+			Auteur : <input type="text" name="auteur" value="" /><br/>
+			Genre : <input type="text" name="genre" value="" /><br/>
+		</c:when>
+		<c:otherwise>
+			Description: <input type="text" name="description" value="" /><br />
+		</c:otherwise>
+		</c:choose>
 
 		<input type="submit" name="valider" value="valider" />
 

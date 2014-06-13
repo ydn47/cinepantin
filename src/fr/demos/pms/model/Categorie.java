@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Categorie {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long idCategorie;
+	private int idCategorie;
 	private String nomCategorie;
 	private String descriptionCategorie;
 
@@ -29,7 +29,7 @@ public class Categorie {
 		this.descriptionCategorie = descriptionCategorie;
 	}
 
-	public long getIdCategorie() {
+	public int getIdCategorie() {
 		return idCategorie;
 	}
 
@@ -42,7 +42,7 @@ public class Categorie {
 	 * Constructeur par idCategorie
 	 * @param idCategorie
 	 */
-	public Categorie(long idCategorie) {
+	public Categorie(int idCategorie) {
 		super();
 		this.idCategorie = idCategorie;
 	}
