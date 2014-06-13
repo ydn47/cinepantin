@@ -35,21 +35,21 @@
 
 		<div class="row">
 			<div class="span3">
-				<img src="css/images/ipod_touch.jpg" alt="">
+				<img src="${imgDir}article${articleObject.getIdArticle()}.jpg" alt="">
 
 
 				<ul class="thumbnails">
 
 					<li class="span1"><a class="thumbnail" href="#"> <img
-							alt="" src="css/images/1_50.jpg">
+							alt="" src="${imgDir}article${articleObject.getIdArticle()}_1.jpg">
 					</a></li>
 
 					<li class="span1"><a class="thumbnail" href="#"> <img
-							alt="" src="css/images/2_50.jpg">
+							alt="" src="${imgDir}article${articleObject.getIdArticle()}_2.jpg">
 					</a></li>
 
 					<li class="span1"><a class="thumbnail" href="#"> <img
-							alt="" src="css/images/3_50.jpg">
+							alt="" src="${imgDir}article${articleObject.getIdArticle()}_3.jpg">
 					</a></li>
 
 				</ul>

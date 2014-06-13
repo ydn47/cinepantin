@@ -287,6 +287,8 @@ public class Article implements SerialArticle {
 		this.tva = tva;
 	}
 
+	
+	
 	@Override
 	public byte[] serialize(HashMap<?, ?> hashmap) throws IOException {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();

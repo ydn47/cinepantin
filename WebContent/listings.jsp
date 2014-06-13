@@ -18,7 +18,7 @@
   <c:forEach items="${articlesObject}" var="article">
   <div class="row">
 	 <div class="span1">
-	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" id="tmp" src="css/images/ipodtouch_image2_20080909.jpg"></a>
+	  <a href="${articleCont}${article.getIdArticle()}"><img alt="" id="tmp" src="${imgDir}article${article.getIdArticle()}.jpg"></a>
 	  </div>	 
 	 
 	  <div class="span6">

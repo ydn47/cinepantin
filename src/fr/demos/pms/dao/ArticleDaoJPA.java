@@ -57,12 +57,15 @@ public class ArticleDaoJPA implements ArticleDao {
 		return null;
 	}
 
+	
+	
 	/**
 	 * Insère un article dont les propriétés sont sérialisés
 	 * @param un article
 	 */
 	@Override
 	public void create(Article a) throws DAOException {
+		System.out.println("Article ***************************************"+a);
 		try {
 			ut.begin();
 			em.persist(a);
