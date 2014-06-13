@@ -42,7 +42,7 @@
 		  
 		  
 		<div class="span7 popular_products">
-		 <h4>Popular products</h4><br>
+		 <h4>Sélection CINEPANTIN</h4><br>
 		<ul class="thumbnails">
        		<c:if test="${empty lstArticles}">
 				<p>
@@ -52,7 +52,7 @@
 			<c:forEach var="article" items="${lstArticles}" varStatus="indexArticle">
 				<li class="span2">
           			<div class="thumbnail">
-            			<a href="${articleCont}${article.getIdArticle()}"><img alt="" src="${imgDir}ps-vita-150cx123.jpg"></a>
+            			<a href="${articleCont}${article.getIdArticle()}"><img width="150px" height ="123px" alt="" src="${imgDir}article${article.getIdArticle()}.jpg"></a>
             			<div class="caption">
               			<a href="${articleCont}${article.getIdArticle()}"> <h5>${article.getNomArticle()}</h5></a>  Prix: ${article.getPrixUnitTTCFormat()} EUR<br><br>
             			</div>
