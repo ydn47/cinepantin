@@ -15,9 +15,6 @@ import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ArticleDao;
 import fr.demos.pms.model.Article;
 
-/**
- * Servlet implementation class Article
- */
 @WebServlet("/article/*")
 public class FrontArticle extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -29,10 +26,9 @@ public class FrontArticle extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		
 		String info = request.getPathInfo();  
 		
@@ -46,7 +42,6 @@ public class FrontArticle extends HttpServlet {
 
 		Article article = null;
 		article = daoArticle.findById(idArticle);
-		System.out.print(article);
 		if (article != null)
 			request.setAttribute("articleObject", article);
 		
@@ -57,10 +52,8 @@ public class FrontArticle extends HttpServlet {
 		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
 		doGet(request, response);
 		
 	}

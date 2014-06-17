@@ -31,7 +31,6 @@ public class Article implements SerialArticle {
 	private String nomArticle;
 	private String shortDescArticle;
 	private String longDescArticle;
-	// / Commentaire bidon
 	private double prixUnitArticle;
 	@Enumerated(EnumType.STRING)
 	private Tva tva;
@@ -43,11 +42,11 @@ public class Article implements SerialArticle {
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
 	private PlageDePrix plagePrixArticle;
-
-	// private HashMap<String, String> proprietes; // a serialiser
 	@Lob
 	private byte[] serialProprietes;
 
+	
+	
 	protected Article() {
 		// pour Hibernate
 	}
