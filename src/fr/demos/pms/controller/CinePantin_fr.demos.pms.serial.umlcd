@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DEsaofa8EeOwAIzX2wwpvA">
+  <modelElement href="CinePantin.uml#_8mkgpfa7EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_GLz8kfa8EeOwAIzX2wwpvA" targetItem="_GL0joPa8EeOwAIzX2wwpvA" sourceItem="_GLz8kPa8EeOwAIzX2wwpvA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_GLz8kPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_GLz8kfa8EeOwAIzX2wwpvA" text="Interface regroupant les méthodes de sérialisation en BDD des articles &#xD;&#xA;&#xD;&#xA;@author Yann-Dara Nong&#xD;&#xA; *" item="_GL0joPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_9EB4wPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_GL0joPa8EeOwAIzX2wwpvA" comments="_GLz8kPa8EeOwAIzX2wwpvA" targetConnectionVisual="_GLz8kfa8EeOwAIzX2wwpvA" name="SerialArticle">
+    <modelElement href="CinePantin.uml#_8n6kc_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_GL0jofa8EeOwAIzX2wwpvA" position="50.0,50.0"/>
+    <visibility xmi:id="_GL0jova8EeOwAIzX2wwpvA" label="+"/>
+    <operations xmi:id="_GL0jo_a8EeOwAIzX2wwpvA" name="serialize">
+      <modelElement href="CinePantin.uml#_9A5sPPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_GL0jpPa8EeOwAIzX2wwpvA" name="Array">
+        <modelElement href="CinePantin.uml#_9A5sQPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_GL0jpfa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_GL0jpva8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_9A5sPva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_GL0jp_a8EeOwAIzX2wwpvA" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GL0jqPa8EeOwAIzX2wwpvA" name="hashmap">
+        <modelElement href="CinePantin.uml#_9A5sPfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_GL0jqfa8EeOwAIzX2wwpvA" name="HashMap">
+          <modelElement href="CinePantin.uml#_8IA8Yva7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_GL0jqva8EeOwAIzX2wwpvA" name="deserialize">
+      <modelElement href="CinePantin.uml#_9BzEPPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_GL0jq_a8EeOwAIzX2wwpvA" name="Generics">
+        <modelElement href="CinePantin.uml#_9BzEP_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_GL0jrPa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_GL0jrfa8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_9BzEPva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_GL0jrva8EeOwAIzX2wwpvA" name="HashMap">
+          <modelElement href="CinePantin.uml#_8IA8Yva7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GL0jr_a8EeOwAIzX2wwpvA" name="bytes">
+        <modelElement href="CinePantin.uml#_9BzEPfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_GL0jsPa8EeOwAIzX2wwpvA" name="byte">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
