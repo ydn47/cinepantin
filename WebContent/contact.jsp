@@ -3,7 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
-<%@include file="entete.jsp"%>
+<jsp:include page="entete.jsp">
+	<jsp:param value="contact" name="origine"/>
+</jsp:include>
 <div class="row">
 
 	 <div class="span3">

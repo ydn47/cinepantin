@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@include file="entete.jsp"%>
+<jsp:include page="entete.jsp">
+	<jsp:param value="commande-merci.jsp" name="origine"/>
+</jsp:include>
 
   <!-- Headings & Paragraph Copy -->
   <div class="row">

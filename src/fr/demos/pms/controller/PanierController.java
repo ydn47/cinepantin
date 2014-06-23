@@ -176,7 +176,7 @@ public class PanierController extends HttpServlet {
 			return;
 				
 		}else { //dans tous les cas, reprendre le code de doGet
-			doPost(request, response);
+			doGet(request, response);
 		}
 	}
 

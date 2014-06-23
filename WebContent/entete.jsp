@@ -45,7 +45,7 @@
 	<c:url var="sign" value="/sign/" scope="request"/>
 	<c:url var="signin" value="/sign/in" scope="request"/>
 	<c:url var="signup" value="/sign/up" scope="request"/>
-	<c:url var="disconnect" value="/sign/disconnect" scope="request"/>
+	<c:url var="disconnect" value="/sigout/" scope="request"/>
 	<c:url var="signmodif" value="/sign/editAccount" scope="request"/>
 	<c:url var="paniercont" value="/panier" scope="request"/>
 	<c:url var="commandecont" value="/commande" scope="request"/>
