@@ -22,6 +22,7 @@ import javax.persistence.ManyToOne;
 
 import fr.demos.pms.serial.SerialArticle;
 
+// La classe Article doit implémenter l'interface SerialArticle pour être sérialisée
 @Entity
 public class Article implements SerialArticle {
 
@@ -31,23 +32,22 @@ public class Article implements SerialArticle {
 	private String nomArticle;
 	private String shortDescArticle;
 	private String longDescArticle;
-	// / Commentaire bidon
 	private double prixUnitArticle;
 	@Enumerated(EnumType.STRING)
 	private Tva tva;
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
-	@ManyToOne(cascade = CascadeType.PERSIST, fetch=FetchType.EAGER)
+	@ManyToOne()
 	private Categorie categorie;
 	@JoinColumn(name = "idPlageDePrix")
 	@ManyToOne()
 	private PlageDePrix plagePrixArticle;
-
-	// private HashMap<String, String> proprietes; // a serialiser
 	@Lob
 	private byte[] serialProprietes;
 
+	
+	
 	protected Article() {
 		// pour Hibernate
 	}
