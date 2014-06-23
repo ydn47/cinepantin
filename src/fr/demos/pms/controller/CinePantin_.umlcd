@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DD8zwPa8EeOwAIzX2wwpvA">
-  <modelElement href="platform:/resource/CinePantin/src/fr/demos/pms/controller/CinePantin.uml#_7rTLMPa7EeOwAIzX2wwpvA"/>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DD8zwPa8EeOwAIzX2wwpvA">
+  <modelElement href="CinePantin.uml#_7rTLMPa7EeOwAIzX2wwpvA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_DI3I8Pa8EeOwAIzX2wwpvA" name="fr">
+    <modelElement href="CinePantin.uml#_8BBjkPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_DI3I8fa8EeOwAIzX2wwpvA" position="50.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_DKDbwPa8EeOwAIzX2wwpvA" name="java">
+    <modelElement href="CinePantin.uml#_8BBjk_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_DKDbwfa8EeOwAIzX2wwpvA" position="-115.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_DKDbwva8EeOwAIzX2wwpvA" name="javax">
+    <modelElement href="CinePantin.uml#_8BBjlva7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_DKDbw_a8EeOwAIzX2wwpvA" position="200.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_DKDbxPa8EeOwAIzX2wwpvA" name="org">
+    <modelElement href="CinePantin.uml#_8BxKcPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_DKDbxfa8EeOwAIzX2wwpvA" position="350.0,50.0" size="-1.0,-1.0"/>
+  </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

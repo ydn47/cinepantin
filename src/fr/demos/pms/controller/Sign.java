@@ -46,10 +46,21 @@ public class Sign extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.print("doGet Singn");
 		HttpSession session = request.getSession(); 
-		String info = request.getPathInfo();
+		StringBuilder sb = new StringBuilder(request.getPathInfo());
+		String[] myArray = sb.toString().split("/");
+		String info = myArray[0];
+		System.out.print("info " +info);
+		String origine = "";
+		if (myArray.length == 2 )
+			origine  = myArray[1];
+		else if (myArray.length > 2 )
+			origine  = myArray[1]+"/"+myArray[2];
+		
+		System.out.print("origine " +origine);
+		
 		
 		if ((info != null) && (info.equals("/in")) ){  //se connecter
-		
+			
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/Signin.jsp");
 				rd.forward(request, response);
@@ -85,6 +96,7 @@ public class Sign extends HttpServlet {
 				return;
 			}
 		}else {
+			request.setAttribute("origine",origine);
 			RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
 			rd.forward(request, response);
 			return;
@@ -100,7 +112,12 @@ public class Sign extends HttpServlet {
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
 		response.setCharacterEncoding("UTF-8");
+		String origine  = request.getParameter("origine").trim();
+		System.out.print("origine " +origine);
 		if ((info != null) && (info.equals("/in")) ){//se connecter
+			
+			//verifier d'ou je viens
+			
 			String action = request.getParameter("signin");
 			if (action != null && action.endsWith("connecter")) {
 				String email    = "";
@@ -125,7 +142,7 @@ public class Sign extends HttpServlet {
 						session.setAttribute("client", client);	
 						
 						RequestDispatcher rd = request
-								.getRequestDispatcher("/boutique");
+								.getRequestDispatcher("/"+origine);
 								rd.forward(request, response);
 								System.out.print("doPost Singn fin");	
 						return;	
@@ -265,7 +282,7 @@ public class Sign extends HttpServlet {
 					
 					session.setAttribute("client", userParam);
 					RequestDispatcher rd = request
-							.getRequestDispatcher("/boutique");
+							.getRequestDispatcher("/"+origine);
 							rd.forward(request, response);
 					return;	
 					

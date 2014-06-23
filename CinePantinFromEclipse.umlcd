@@ -28,7 +28,7 @@
       <cardinality xmi:id="_nGRQMfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGRQMvJCEeOdbuFC81ov4A" sourceAnchor="442.0,50.0" targetAnchor="0.0,113.0" target="_nHXcYPJCEeOdbuFC81ov4A" source="_nGR3QPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGRQMvJCEeOdbuFC81ov4A" sourceAnchor="442.0,50.0" targetAnchor="0.0,113.0" source="_nGR3QPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8pM0fJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nGRQM_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j8teQPJCEeOdbuFC81ov4A"/>
@@ -52,10 +52,10 @@
       <cardinality xmi:id="_nGRQOvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGjkEfJCEeOdbuFC81ov4A" targetItem="_nGmndPJCEeOdbuFC81ov4A" sourceItem="_nGjkEPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGkLIfJCEeOdbuFC81ov4A" targetItem="_nGmnevJCEeOdbuFC81ov4A" sourceItem="_nGkLIPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGkLI_JCEeOdbuFC81ov4A" targetItem="_nGmngfJCEeOdbuFC81ov4A" sourceItem="_nGkLIvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGmAUPJCEeOdbuFC81ov4A" sourceAnchor="142.0,0.0" targetAnchor="0.0,73.0" target="_nIOYAPJCEeOdbuFC81ov4A" source="_nGmnYPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGjkEfJCEeOdbuFC81ov4A" sourceItem="_nGjkEPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGkLIfJCEeOdbuFC81ov4A" sourceItem="_nGkLIPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGkLI_JCEeOdbuFC81ov4A" sourceItem="_nGkLIvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGmAUPJCEeOdbuFC81ov4A" sourceAnchor="142.0,0.0" targetAnchor="0.0,73.0">
     <modelElement href="CinePantinFromEclipse.uml#_j89V4fJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FQ_OAPLVEeO0S8ezpQFlsQ" sourceY="-189" targetX="-821"/>
     <stereotypes xmi:id="_nGmAUfJCEeOdbuFC81ov4A" name="Reference">
@@ -80,7 +80,7 @@
       <cardinality xmi:id="_nGmAWPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGmAWfJCEeOdbuFC81ov4A" sourceAnchor="442.0,91.0" targetAnchor="65.0,90.0" target="_nIkWQPJCEeOdbuFC81ov4A" source="_nGmnYPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGmAWfJCEeOdbuFC81ov4A" sourceAnchor="442.0,91.0" targetAnchor="65.0,90.0">
     <modelElement href="CinePantinFromEclipse.uml#_j9BnUfJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FQ_1EPLVEeO0S8ezpQFlsQ" sourceX="805" targetY="72"/>
     <stereotypes xmi:id="_nGmAWvJCEeOdbuFC81ov4A" name="Reference">
@@ -128,10 +128,10 @@
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGsG8fJCEeOdbuFC81ov4A" targetItem="_nGtVKfJCEeOdbuFC81ov4A" sourceItem="_nGsG8PJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGsG8_JCEeOdbuFC81ov4A" targetItem="_nGtVMPJCEeOdbuFC81ov4A" sourceItem="_nGsG8vJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGxmgfJCEeOdbuFC81ov4A" targetItem="_nGzbyfJCEeOdbuFC81ov4A" sourceItem="_nGxmgPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGxmg_JCEeOdbuFC81ov4A" targetItem="_nGzbz_JCEeOdbuFC81ov4A" sourceItem="_nGxmgvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGyNkfJCEeOdbuFC81ov4A" targetItem="_nGzb1vJCEeOdbuFC81ov4A" sourceItem="_nGyNkPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGzbsPJCEeOdbuFC81ov4A" source="_nGzbufJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGxmgfJCEeOdbuFC81ov4A" sourceItem="_nGxmgPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGxmg_JCEeOdbuFC81ov4A" sourceItem="_nGxmgvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nGyNkfJCEeOdbuFC81ov4A" sourceItem="_nGyNkPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nGzbsPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8c_kfJCEeOdbuFC81ov4A"/>
     <visualProperties xmi:id="_tY3s4PLVEeO0S8ezpQFlsQ"/>
     <stereotypes xmi:id="_nGzbsfJCEeOdbuFC81ov4A" name="Reference">
@@ -152,7 +152,7 @@
       <cardinality xmi:id="_nGzbuPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nG3tIPJCEeOdbuFC81ov4A" sourceAnchor="0.0,68.0" targetAnchor="158.0,0.0" target="_nIOYAPJCEeOdbuFC81ov4A" source="_nG6wefJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nG3tIPJCEeOdbuFC81ov4A" sourceAnchor="0.0,68.0" targetAnchor="158.0,0.0" source="_nG6wefJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8RZYfJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRDfc_LVEeO0S8ezpQFlsQ" sourceX="-492" targetX="-2026" targetY="717"/>
     <bendpoints xmi:id="_FREGgPLVEeO0S8ezpQFlsQ" sourceX="-492" sourceY="-973" targetX="-2026" targetY="-256"/>
@@ -205,7 +205,7 @@
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nG4UMfJCEeOdbuFC81ov4A" targetItem="_nG7XgvJCEeOdbuFC81ov4A" sourceItem="_nG4UMPJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nG4UM_JCEeOdbuFC81ov4A" targetItem="_nG7XifJCEeOdbuFC81ov4A" sourceItem="_nG4UMvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nG6wcPJCEeOdbuFC81ov4A" sourceAnchor="221.0,137.0" targetAnchor="115.0,0.0" target="_nH2kkPJCEeOdbuFC81ov4A" source="_nG6wefJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nG6wcPJCEeOdbuFC81ov4A" sourceAnchor="221.0,137.0" targetAnchor="115.0,0.0" source="_nG6wefJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8VDwfJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FREtkfLVEeO0S8ezpQFlsQ" sourceY="20" targetX="-1456" targetY="987"/>
     <bendpoints xmi:id="_FREtkvLVEeO0S8ezpQFlsQ" sourceX="-1204" sourceY="20" targetX="-2660" targetY="987"/>
@@ -233,7 +233,7 @@
       <cardinality xmi:id="_nG6wePJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHAQAPJCEeOdbuFC81ov4A" sourceAnchor="168.0,156.0" targetAnchor="240.0,242.0" target="_nH62APJCEeOdbuFC81ov4A" source="_nHCsRPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHAQAPJCEeOdbuFC81ov4A" sourceAnchor="168.0,156.0" targetAnchor="240.0,242.0" target="_nH62APJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8IPcPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_Hvp98PLXEeO0S8ezpQFlsQ" sourceY="45" targetX="-285" targetY="387"/>
     <bendpoints xmi:id="_Hvp98fLXEeO0S8ezpQFlsQ" sourceX="285" sourceY="45" targetY="387"/>
@@ -259,7 +259,7 @@
       <cardinality xmi:id="_nHCFNPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHAQAfJCEeOdbuFC81ov4A" sourceAnchor="88.0,0.0" targetAnchor="0.0,1.0" target="_nHXcYPJCEeOdbuFC81ov4A" source="_nHCsRPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHAQAfJCEeOdbuFC81ov4A" sourceAnchor="88.0,0.0" targetAnchor="0.0,1.0">
     <modelElement href="CinePantinFromEclipse.uml#_j8NH8fJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRF7sPLVEeO0S8ezpQFlsQ" sourceY="-424" targetX="-1569"/>
     <stereotypes xmi:id="_nHCFMfJCEeOdbuFC81ov4A" name="Reference">
@@ -284,9 +284,9 @@
       <cardinality xmi:id="_nHCsQfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHAQA_JCEeOdbuFC81ov4A" targetItem="_nHCsWPJCEeOdbuFC81ov4A" sourceItem="_nHAQAvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHA3EfJCEeOdbuFC81ov4A" targetItem="_nHCsXvJCEeOdbuFC81ov4A" sourceItem="_nHA3EPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHA3E_JCEeOdbuFC81ov4A" targetItem="_nHCsZfJCEeOdbuFC81ov4A" sourceItem="_nHA3EvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHAQA_JCEeOdbuFC81ov4A" sourceItem="_nHAQAvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHA3EfJCEeOdbuFC81ov4A" sourceItem="_nHA3EPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHA3E_JCEeOdbuFC81ov4A" sourceItem="_nHA3EvJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHHkwPJCEeOdbuFC81ov4A" sourceAnchor="209.0,0.0" targetAnchor="252.0,242.0" target="_nH62APJCEeOdbuFC81ov4A" source="_nHKBAvJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8teQfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nHIy4_JCEeOdbuFC81ov4A" name="Reference">
@@ -311,7 +311,7 @@
       <cardinality xmi:id="_nHJZ8_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHHkwfJCEeOdbuFC81ov4A" sourceAnchor="442.0,68.0" targetAnchor="95.0,90.0" target="_nIkWQPJCEeOdbuFC81ov4A" source="_nHKBAvJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHHkwfJCEeOdbuFC81ov4A" sourceAnchor="442.0,68.0" targetAnchor="95.0,90.0" source="_nHKBAvJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j8xvsPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRDfcPLVEeO0S8ezpQFlsQ" sourceX="75" targetX="-1202" targetY="230"/>
     <bendpoints xmi:id="_FRDfcfLVEeO0S8ezpQFlsQ" sourceX="75" sourceY="-97" targetX="-1202" targetY="133"/>
@@ -362,7 +362,7 @@
       <cardinality xmi:id="_nHRVwvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHO5gfJCEeOdbuFC81ov4A" sourceAnchor="188.0,0.0" targetAnchor="0.0,31.0" target="_nHXcYPJCEeOdbuFC81ov4A" source="_nHR80PJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHO5gfJCEeOdbuFC81ov4A" sourceAnchor="188.0,0.0" targetAnchor="0.0,31.0" source="_nHR80PJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j85rgfJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRC4YPLVEeO0S8ezpQFlsQ" sourceY="-379" targetX="-1006"/>
     <stereotypes xmi:id="_nHQutfJCEeOdbuFC81ov4A" name="Reference">
@@ -390,15 +390,15 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHPgkPJCEeOdbuFC81ov4A" targetItem="_nHR85PJCEeOdbuFC81ov4A" sourceItem="_nHO5gvJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHPgkvJCEeOdbuFC81ov4A" targetItem="_nHR86vJCEeOdbuFC81ov4A" sourceItem="_nHPgkfJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHQHoPJCEeOdbuFC81ov4A" targetItem="_nHR88fJCEeOdbuFC81ov4A" sourceItem="_nHPgk_JCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHWOQPJCEeOdbuFC81ov4A" targetItem="_nHXcYPJCEeOdbuFC81ov4A" sourceItem="_nHVnMPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nHuBsPJCEeOdbuFC81ov4A" sourceAnchor="157.0,175.0" targetAnchor="145.0,0.0" dashed="true" superClass="_nHXcYPJCEeOdbuFC81ov4A" subClass="_nHxFCfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nHWOQPJCEeOdbuFC81ov4A" sourceItem="_nHVnMPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nHuBsPJCEeOdbuFC81ov4A" sourceAnchor="157.0,175.0" targetAnchor="145.0,0.0" dashed="true">
     <modelElement href="CinePantinFromEclipse.uml#_jt8pgPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRCRUPLVEeO0S8ezpQFlsQ" sourceY="139" targetX="-307" targetY="1325"/>
     <bendpoints xmi:id="_FRCRUfLVEeO0S8ezpQFlsQ" sourceX="1823" sourceY="139" targetX="1516" targetY="1325"/>
     <bendpoints xmi:id="_FRCRUvLVEeO0S8ezpQFlsQ" sourceX="1823" sourceY="-1335" targetX="1516" targetY="-149"/>
     <bendpoints xmi:id="_FRCRU_LVEeO0S8ezpQFlsQ" sourceX="307" sourceY="-1335" targetY="-149"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHwd8PJCEeOdbuFC81ov4A" source="_nHxFCfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHwd8PJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9N0kfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nHwd8fJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9SGAPJCEeOdbuFC81ov4A"/>
@@ -418,7 +418,7 @@
       <cardinality xmi:id="_nHwd-PJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHxFAPJCEeOdbuFC81ov4A" source="_nHxFCfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nHxFAPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9SGAfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nHxFAfJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9WXcPJCEeOdbuFC81ov4A"/>
@@ -438,10 +438,10 @@
       <cardinality xmi:id="_nHxFCPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIBjsPJCEeOdbuFC81ov4A" sourceAnchor="384.0,154.0" targetAnchor="0.0,151.0" dashed="true" superClass="_nH62APJCEeOdbuFC81ov4A" subClass="_nIF1IfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIBjsPJCEeOdbuFC81ov4A" sourceAnchor="384.0,154.0" targetAnchor="0.0,151.0" dashed="true" superClass="_nH62APJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_jt4YEPJCEeOdbuFC81ov4A"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nICKwPJCEeOdbuFC81ov4A" source="_nIF1IfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nICKwPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9F4wfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIEnAPJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9JjIPJCEeOdbuFC81ov4A"/>
@@ -461,7 +461,7 @@
       <cardinality xmi:id="_nIFOEvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nICKwfJCEeOdbuFC81ov4A" source="_nIF1IfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nICKwfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9JjIfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIEnBPJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9N0kPJCEeOdbuFC81ov4A"/>
@@ -481,12 +481,12 @@
       <cardinality xmi:id="_nIFOF_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIRbUPJCEeOdbuFC81ov4A" sourceAnchor="0.0,104.0" targetAnchor="0.0,43.0" dashed="true" superClass="_nIOYAPJCEeOdbuFC81ov4A" subClass="_nIVFsPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIRbUPJCEeOdbuFC81ov4A" sourceAnchor="0.0,104.0" targetAnchor="0.0,43.0" dashed="true">
     <modelElement href="CinePantinFromEclipse.uml#_jt_s0PJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FQ_1EfLVEeO0S8ezpQFlsQ" sourceX="-150" targetX="-978" targetY="504"/>
     <bendpoints xmi:id="_FQ_1EvLVEeO0S8ezpQFlsQ" sourceX="-150" sourceY="-504" targetX="-978"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nISCYPJCEeOdbuFC81ov4A" source="_nIVFsPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nISCYPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9WXcfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIT3kPJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9ao4PJCEeOdbuFC81ov4A"/>
@@ -506,7 +506,7 @@
       <cardinality xmi:id="_nIUeovJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nISCYfJCEeOdbuFC81ov4A" source="_nIVFsPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nISCYfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9ao4fJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIT3lPJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9eTQPJCEeOdbuFC81ov4A"/>
@@ -526,7 +526,7 @@
       <cardinality xmi:id="_nIUep_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIZ-MPJCEeOdbuFC81ov4A" source="_nIdBgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIZ-MPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9vZAPJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIalQ_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9zDYPJCEeOdbuFC81ov4A"/>
@@ -549,7 +549,7 @@
       <cardinality xmi:id="_nIbzYPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIZ-MfJCEeOdbuFC81ov4A" source="_nIdBgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIZ-MfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9zDYfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIbMUvJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j93U0PJCEeOdbuFC81ov4A"/>
@@ -572,11 +572,11 @@
       <cardinality xmi:id="_nIbzZvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIZ-MvJCEeOdbuFC81ov4A" sourceAnchor="270.0,65.0" targetAnchor="155.0,90.0" dashed="true" superClass="_nIkWQPJCEeOdbuFC81ov4A" subClass="_nIdBgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIZ-MvJCEeOdbuFC81ov4A" sourceAnchor="270.0,65.0" targetAnchor="155.0,90.0" dashed="true">
     <modelElement href="CinePantinFromEclipse.uml#_juHBkPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRAcIfLVEeO0S8ezpQFlsQ" sourceX="560" targetY="290"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIfdwPJCEeOdbuFC81ov4A" source="_nIhS8PJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIfdwPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9m2IfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIgE0_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9rHkPJCEeOdbuFC81ov4A"/>
@@ -596,7 +596,7 @@
       <cardinality xmi:id="_nIgr4vJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIfdwfJCEeOdbuFC81ov4A" source="_nIhS8PJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIfdwfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9rHkfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIgE1_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9ux8PJCEeOdbuFC81ov4A"/>
@@ -616,16 +616,16 @@
       <cardinality xmi:id="_nIgr5_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIfdwvJCEeOdbuFC81ov4A" dashed="true" subClass="_nIhS8PJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nIfdwvJCEeOdbuFC81ov4A" dashed="true">
     <modelElement href="CinePantinFromEclipse.uml#_jxtvMPJCEeOdbuFC81ov4A"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nImLcPJCEeOdbuFC81ov4A" sourceAnchor="314.0,78.0" targetAnchor="145.0,0.0" dashed="true" superClass="_nH2kkPJCEeOdbuFC81ov4A" subClass="_nIonsfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nImLcPJCEeOdbuFC81ov4A" sourceAnchor="314.0,78.0" targetAnchor="145.0,0.0" dashed="true">
     <modelElement href="CinePantinFromEclipse.uml#_juDXMPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRBDMPLVEeO0S8ezpQFlsQ" sourceX="264" targetX="1045" targetY="1142"/>
     <bendpoints xmi:id="_FRBDMfLVEeO0S8ezpQFlsQ" sourceX="264" sourceY="-1187" targetX="1045" targetY="-45"/>
     <bendpoints xmi:id="_FRBDMvLVEeO0S8ezpQFlsQ" sourceX="-781" sourceY="-1187" targetY="-45"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nImygPJCEeOdbuFC81ov4A" source="_nIonsfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nImygPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9eTQfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nInZk_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9iksPJCEeOdbuFC81ov4A"/>
@@ -645,7 +645,7 @@
       <cardinality xmi:id="_nIoAovJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nImygfJCEeOdbuFC81ov4A" source="_nIonsfJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nImygfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9iksfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nInZl_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9m2IPJCEeOdbuFC81ov4A"/>
@@ -665,7 +665,7 @@
       <cardinality xmi:id="_nIoAp_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIrrAPJCEeOdbuFC81ov4A" sourceAnchor="75.0,0.0" targetAnchor="30.0,147.0" target="_nIOYAPJCEeOdbuFC81ov4A" source="_nIwjgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIrrAPJCEeOdbuFC81ov4A" sourceAnchor="75.0,0.0" targetAnchor="30.0,147.0">
     <modelElement href="CinePantinFromEclipse.uml#_j93U0fJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIs5I_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j97mQPJCEeOdbuFC81ov4A"/>
@@ -689,7 +689,7 @@
       <cardinality xmi:id="_nIvVYPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIrrAfJCEeOdbuFC81ov4A" sourceAnchor="15.0,0.0" targetAnchor="195.0,128.0" target="_nHXcYPJCEeOdbuFC81ov4A" source="_nIwjgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIrrAfJCEeOdbuFC81ov4A" sourceAnchor="15.0,0.0" targetAnchor="195.0,128.0">
     <modelElement href="CinePantinFromEclipse.uml#_j97mQfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nIs5J_JCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j9_QoPJCEeOdbuFC81ov4A"/>
@@ -713,7 +713,7 @@
       <cardinality xmi:id="_nIvVZfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIsSEPJCEeOdbuFC81ov4A" sourceAnchor="157.0,0.0" targetAnchor="180.0,0.0" target="_nH62APJCEeOdbuFC81ov4A" source="_nIwjgPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nIsSEPJCEeOdbuFC81ov4A" sourceAnchor="157.0,0.0" targetAnchor="180.0,0.0" target="_nH62APJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j9_QofJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_Hvp98vLXEeO0S8ezpQFlsQ" sourceY="-35" targetX="-623" targetY="-15"/>
     <bendpoints xmi:id="_Hvp98_LXEeO0S8ezpQFlsQ" sourceX="623" sourceY="-35" targetY="-15"/>
@@ -739,11 +739,11 @@
       <cardinality xmi:id="_nIvVavJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nItgMvJCEeOdbuFC81ov4A" targetItem="_nIwjlPJCEeOdbuFC81ov4A" sourceItem="_nItgMfJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nItgNPJCEeOdbuFC81ov4A" targetItem="_nIwjmvJCEeOdbuFC81ov4A" sourceItem="_nItgM_JCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nIuHQfJCEeOdbuFC81ov4A" targetItem="_nIwjnfJCEeOdbuFC81ov4A" sourceItem="_nIuHQPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nIuHQ_JCEeOdbuFC81ov4A" targetItem="_nIwjpvJCEeOdbuFC81ov4A" sourceItem="_nIuHQvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI1cAPJCEeOdbuFC81ov4A" sourceAnchor="0.0,65.0" targetAnchor="0.0,133.0" target="_nIOYAPJCEeOdbuFC81ov4A" source="_nI34QPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nItgMvJCEeOdbuFC81ov4A" sourceItem="_nItgMfJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nItgNPJCEeOdbuFC81ov4A" sourceItem="_nItgM_JCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nIuHQfJCEeOdbuFC81ov4A" sourceItem="_nIuHQPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nIuHQ_JCEeOdbuFC81ov4A" sourceItem="_nIuHQvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI1cAPJCEeOdbuFC81ov4A" sourceAnchor="0.0,65.0" targetAnchor="0.0,133.0" source="_nI34QPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j-DiEfJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FQ-m8vLVEeO0S8ezpQFlsQ" sourceX="-53" targetX="-60" targetY="791"/>
     <bendpoints xmi:id="_FQ-m8_LVEeO0S8ezpQFlsQ" sourceX="-53" sourceY="-791" targetX="-60"/>
@@ -776,7 +776,7 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI67kfJCEeOdbuFC81ov4A" targetItem="_nI7ipfJCEeOdbuFC81ov4A" sourceItem="_nI67kPJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI67k_JCEeOdbuFC81ov4A" targetItem="_nI7iq_JCEeOdbuFC81ov4A" sourceItem="_nI67kvJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI67lfJCEeOdbuFC81ov4A" targetItem="_nI7isPJCEeOdbuFC81ov4A" sourceItem="_nI67lPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI9X0PJCEeOdbuFC81ov4A" sourceAnchor="242.0,0.0" targetAnchor="252.0,242.0" target="_nH62APJCEeOdbuFC81ov4A" source="_nJAbIPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI9X0PJCEeOdbuFC81ov4A" sourceAnchor="242.0,0.0" targetAnchor="252.0,242.0" target="_nH62APJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j-HMcfJCEeOdbuFC81ov4A"/>
     <stereotypes xmi:id="_nI-l8vJCEeOdbuFC81ov4A" name="Reference">
       <modelElement href="CinePantinFromEclipse.uml#_j-Ld4PJCEeOdbuFC81ov4A"/>
@@ -800,7 +800,7 @@
       <cardinality xmi:id="_nI_0EPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI9-4PJCEeOdbuFC81ov4A" sourceAnchor="293.0,13.0" targetAnchor="199.0,90.0" target="_nIkWQPJCEeOdbuFC81ov4A" source="_nJAbIPJCEeOdbuFC81ov4A">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nI9-4PJCEeOdbuFC81ov4A" sourceAnchor="293.0,13.0" targetAnchor="199.0,90.0">
     <modelElement href="CinePantinFromEclipse.uml#_j-Ld4fJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_FRBqQvLVEeO0S8ezpQFlsQ" sourceX="477" targetY="382"/>
     <stereotypes xmi:id="_nI-l9vJCEeOdbuFC81ov4A" name="Reference">
@@ -822,8 +822,8 @@
       <cardinality xmi:id="_nI_0FfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI_NAPJCEeOdbuFC81ov4A" targetItem="_nJAbNPJCEeOdbuFC81ov4A" sourceItem="_nI-l9_JCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI_NAvJCEeOdbuFC81ov4A" targetItem="_nJAbOfJCEeOdbuFC81ov4A" sourceItem="_nI_NAfJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI_NAPJCEeOdbuFC81ov4A" sourceItem="_nI-l9_JCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nI_NAvJCEeOdbuFC81ov4A" sourceItem="_nI_NAfJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nJF6sPJCEeOdbuFC81ov4A" sourceAnchor="151.0,111.0" targetAnchor="0.0,118.0" target="_nJKzOfJCEeOdbuFC81ov4A" source="_nJpUUPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j7t_w_JCEeOdbuFC81ov4A"/>
     <nameVisual xmi:id="_nJIW8PJCEeOdbuFC81ov4A" text="">
@@ -1110,11 +1110,11 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKLf0fJCEeOdbuFC81ov4A" targetItem="_nKPxg_JCEeOdbuFC81ov4A" sourceItem="_nKLf0PJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKLf0_JCEeOdbuFC81ov4A" targetItem="_nKPxiPJCEeOdbuFC81ov4A" sourceItem="_nKLf0vJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKMt8PJCEeOdbuFC81ov4A" targetItem="_nKPxtfJCEeOdbuFC81ov4A" sourceItem="_nKMG4PJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKY7MfJCEeOdbuFC81ov4A" targetItem="_nKbXcPJCEeOdbuFC81ov4A" sourceItem="_nKY7MPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKZiQfJCEeOdbuFC81ov4A" targetItem="_nKbXjPJCEeOdbuFC81ov4A" sourceItem="_nKZiQPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKaJUfJCEeOdbuFC81ov4A" targetItem="_nKbXlPJCEeOdbuFC81ov4A" sourceItem="_nKaJUPJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKaJU_JCEeOdbuFC81ov4A" targetItem="_nKbXm_JCEeOdbuFC81ov4A" sourceItem="_nKaJUvJCEeOdbuFC81ov4A"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKeawfJCEeOdbuFC81ov4A" targetItem="_nKfB0PJCEeOdbuFC81ov4A" sourceItem="_nKeawPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKY7MfJCEeOdbuFC81ov4A" sourceItem="_nKY7MPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKZiQfJCEeOdbuFC81ov4A" sourceItem="_nKZiQPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKaJUfJCEeOdbuFC81ov4A" sourceItem="_nKaJUPJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKaJU_JCEeOdbuFC81ov4A" sourceItem="_nKaJUvJCEeOdbuFC81ov4A"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_nKeawfJCEeOdbuFC81ov4A" sourceItem="_nKeawPJCEeOdbuFC81ov4A"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_nKgP8PJCEeOdbuFC81ov4A" sourceAnchor="185.0,101.0" targetAnchor="13.0,451.0" target="_nKzK4PJCEeOdbuFC81ov4A" source="_nKj6UfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j7nSEPJCEeOdbuFC81ov4A"/>
     <bendpoints xmi:id="_HkXegPLYEeO0S8ezpQFlsQ" sourceX="25" targetY="161"/>
@@ -1160,6 +1160,7 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nK_YIPJCEeOdbuFC81ov4A" sourceAnchor="0.0,38.0" targetAnchor="276.0,45.0" dashed="true" superClass="_nK__MPJCEeOdbuFC81ov4A" subClass="_nKzK4PJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_jyE7kPJCEeOdbuFC81ov4A"/>
   </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oejpgfa7EeOwAIzX2wwpvA" targetItem="_oejpgva7EeOwAIzX2wwpvA" sourceItem="_oejpgPa7EeOwAIzX2wwpvA"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGKigPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGKigfJCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()" item="_nGR3VvJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j70tcPJCEeOdbuFC81ov4A"/>
   </nodes>
@@ -1169,13 +1170,13 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGMXsPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGMXsfJCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_nGR3Y_JCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j70tcvJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGjkEPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGjkEfJCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()" item="_nGmndPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGjkEPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGjkEfJCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()">
     <modelElement href="CinePantinFromEclipse.uml#_j71UgvJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGkLIPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGkLIfJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_nGmnevJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGkLIPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGkLIfJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)">
     <modelElement href="CinePantinFromEclipse.uml#_j71Ug_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGkLIvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGkLI_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_nGmngfJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGkLIvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGkLI_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)">
     <modelElement href="CinePantinFromEclipse.uml#_j71UhPJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGsG8PJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGsG8fJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_nGtVKfJCEeOdbuFC81ov4A">
@@ -1184,13 +1185,13 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGsG8vJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGsG8_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_nGtVMPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j70GZ_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGxmgPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGxmgfJCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()" item="_nGzbyfJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGxmgPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGxmgfJCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()">
     <modelElement href="CinePantinFromEclipse.uml#_j70GYvJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGxmgvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGxmg_JCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_nGzbz_JCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGxmgvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGxmg_JCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)">
     <modelElement href="CinePantinFromEclipse.uml#_j70GY_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGyNkPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGyNkfJCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_nGzb1vJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nGyNkPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nGyNkfJCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)">
     <modelElement href="CinePantinFromEclipse.uml#_j70GZPJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nG4UMPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nG4UMfJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_nG7XgvJCEeOdbuFC81ov4A">
@@ -1199,13 +1200,13 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nG4UMvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nG4UM_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_nG7XifJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j70GYPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHAQAvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHAQA_JCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()" item="_nHCsWPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHAQAvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHAQA_JCEeOdbuFC81ov4A" text="@see HttpServlet#HttpServlet()">
     <modelElement href="CinePantinFromEclipse.uml#_j7zfU_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHA3EPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHA3EfJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_nHCsXvJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHA3EPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHA3EfJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)">
     <modelElement href="CinePantinFromEclipse.uml#_j7zfVPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHA3EvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHA3E_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_nHCsZfJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHA3EvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHA3E_JCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)">
     <modelElement href="CinePantinFromEclipse.uml#_j7zfVfJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHIL0PJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHIL0fJCEeOdbuFC81ov4A" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_nHKBG_JCEeOdbuFC81ov4A">
@@ -1223,19 +1224,19 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHPgk_JCEeOdbuFC81ov4A" sourceConnectionVisual="_nHQHoPJCEeOdbuFC81ov4A" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_nHR88fJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j71UgPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHVnMPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHWOQPJCEeOdbuFC81ov4A" text="@author Yann-Dara Nong" item="_nHXcYPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nHVnMPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nHWOQPJCEeOdbuFC81ov4A" text="@author Yann-Dara Nong">
     <modelElement href="CinePantinFromEclipse.uml#_j71UhfJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nItgMfJCEeOdbuFC81ov4A" sourceConnectionVisual="_nItgMvJCEeOdbuFC81ov4A" text="Default constructor." item="_nIwjlPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nItgMfJCEeOdbuFC81ov4A" sourceConnectionVisual="_nItgMvJCEeOdbuFC81ov4A" text="Default constructor.">
     <modelElement href="CinePantinFromEclipse.uml#_j72iovJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nItgM_JCEeOdbuFC81ov4A" sourceConnectionVisual="_nItgNPJCEeOdbuFC81ov4A" text="@see Filter#destroy()" item="_nIwjmvJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nItgM_JCEeOdbuFC81ov4A" sourceConnectionVisual="_nItgNPJCEeOdbuFC81ov4A" text="@see Filter#destroy()">
     <modelElement href="CinePantinFromEclipse.uml#_j72io_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nIuHQPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nIuHQfJCEeOdbuFC81ov4A" text="@see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)" item="_nIwjnfJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nIuHQPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nIuHQfJCEeOdbuFC81ov4A" text="@see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)">
     <modelElement href="CinePantinFromEclipse.uml#_j72ipPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nIuHQvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nIuHQ_JCEeOdbuFC81ov4A" text="@see Filter#init(FilterConfig)" item="_nIwjpvJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nIuHQvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nIuHQ_JCEeOdbuFC81ov4A" text="@see Filter#init(FilterConfig)">
     <modelElement href="CinePantinFromEclipse.uml#_j72ipfJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI2DEvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nI2DE_JCEeOdbuFC81ov4A" text="Default constructor." item="_nI34SvJCEeOdbuFC81ov4A">
@@ -1259,10 +1260,10 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI67lPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nI67lfJCEeOdbuFC81ov4A" text="@see ServletContextListener#contextDestroyed(ServletContextEvent)" item="_nI7isPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_j73Js_JCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI-l9_JCEeOdbuFC81ov4A" sourceConnectionVisual="_nI_NAPJCEeOdbuFC81ov4A" text="@see HttpSessionListener#sessionCreated(HttpSessionEvent)" item="_nJAbNPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI-l9_JCEeOdbuFC81ov4A" sourceConnectionVisual="_nI_NAPJCEeOdbuFC81ov4A" text="@see HttpSessionListener#sessionCreated(HttpSessionEvent)">
     <modelElement href="CinePantinFromEclipse.uml#_j73JtPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI_NAfJCEeOdbuFC81ov4A" sourceConnectionVisual="_nI_NAvJCEeOdbuFC81ov4A" text="@see HttpSessionListener#sessionDestroyed(HttpSessionEvent)" item="_nJAbOfJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nI_NAfJCEeOdbuFC81ov4A" sourceConnectionVisual="_nI_NAvJCEeOdbuFC81ov4A" text="@see HttpSessionListener#sessionDestroyed(HttpSessionEvent)">
     <modelElement href="CinePantinFromEclipse.uml#_j73JtfJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKAgsPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKAgsfJCEeOdbuFC81ov4A" text="Classe de gestion des adresses client&#xD;&#xA;&#xD;&#xA;@author Yann-Dara Nong&#xD;&#xA; *" item="_nKELEPJCEeOdbuFC81ov4A">
@@ -1277,19 +1278,19 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKMG4PJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKMt8PJCEeOdbuFC81ov4A" text="on verifie le stock sans retirer&#xD;&#xA;&#x9;* si on cherche � ajouter un article deja pr�sent, on augmente la quantite&#xD;&#xA;&#x9;* &#xD;&#xA;&#x9;* @param LignePanier" item="_nKPxtfJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_kr-YAfJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKY7MPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKY7MfJCEeOdbuFC81ov4A" text="@author Yann-Dara Nong" item="_nKbXcPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKY7MPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKY7MfJCEeOdbuFC81ov4A" text="@author Yann-Dara Nong">
     <modelElement href="CinePantinFromEclipse.uml#_kr-YBfJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKZiQPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKZiQfJCEeOdbuFC81ov4A" text="Construit le prix d'un article. La valeur est d'abord vérifiée&#xD;&#xA;&#x9; * @param la valeur entrée en tant que String" item="_nKbXjPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKZiQPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKZiQfJCEeOdbuFC81ov4A" text="Construit le prix d'un article. La valeur est d'abord vérifiée&#xD;&#xA;&#x9; * @param la valeur entrée en tant que String">
     <modelElement href="CinePantinFromEclipse.uml#_kr-_EPJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKaJUPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKaJUfJCEeOdbuFC81ov4A" text="Vérifie le format du prix&#xD;&#xA;&#x9; * Format : une suite de chiffres , ne commençant pas par 0, pouvant contenir une virgule ou un point, &#xD;&#xA;&#x9; * suivi de 2 décimales. Il faut au moins un chiffre avant la virgule, pouvant être égal à 0.&#xD;&#xA;&#x9; * @param la chaîne de caractères contenant la valeur&#xD;&#xA;&#x9; * @return vrai si la valeur est correctement formatée, faux sinon&#xD;&#xA;&#x9; * @throws un objet ExceptionPrix" item="_nKbXlPJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKaJUPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKaJUfJCEeOdbuFC81ov4A" text="Vérifie le format du prix&#xD;&#xA;&#x9; * Format : une suite de chiffres , ne commençant pas par 0, pouvant contenir une virgule ou un point, &#xD;&#xA;&#x9; * suivi de 2 décimales. Il faut au moins un chiffre avant la virgule, pouvant être égal à 0.&#xD;&#xA;&#x9; * @param la chaîne de caractères contenant la valeur&#xD;&#xA;&#x9; * @return vrai si la valeur est correctement formatée, faux sinon&#xD;&#xA;&#x9; * @throws un objet ExceptionPrix">
     <modelElement href="CinePantinFromEclipse.uml#_kr-_EfJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKaJUvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKaJU_JCEeOdbuFC81ov4A" text="Conversion d'un double en chaîne de caractère&#xD;&#xA;&#x9; * @param la valeur en double&#xD;&#xA;&#x9; * @return une chaîne de caractère représentant le prix" item="_nKbXm_JCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKaJUvJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKaJU_JCEeOdbuFC81ov4A" text="Conversion d'un double en chaîne de caractère&#xD;&#xA;&#x9; * @param la valeur en double&#xD;&#xA;&#x9; * @return une chaîne de caractère représentant le prix">
     <modelElement href="CinePantinFromEclipse.uml#_kr-_EvJCEeOdbuFC81ov4A"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKeawPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKeawfJCEeOdbuFC81ov4A" text="Gestion des exceptions de prix&#xD;&#xA;@author Yann-Dara Nong&#xD;&#xA; *" item="_nKfB0PJCEeOdbuFC81ov4A">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKeawPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKeawfJCEeOdbuFC81ov4A" text="Gestion des exceptions de prix&#xD;&#xA;@author Yann-Dara Nong&#xD;&#xA; *">
     <modelElement href="CinePantinFromEclipse.uml#_j74-5fJCEeOdbuFC81ov4A"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nKg3APJCEeOdbuFC81ov4A" sourceConnectionVisual="_nKg3AfJCEeOdbuFC81ov4A" text="Constructeur par idCategorie&#xD;&#xA;&#x9; * @param idCategorie" item="_nKj6cPJCEeOdbuFC81ov4A">
@@ -1306,1895 +1307,6 @@
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_nK-xEPJCEeOdbuFC81ov4A" sourceConnectionVisual="_nK-xEfJCEeOdbuFC81ov4A" text="Interface regroupant les méthodes de sérialisation en BDD des articles &#xD;&#xA;&#xD;&#xA;@author Yann-Dara Nong&#xD;&#xA; *" item="_nK__MPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_kr-_FvJCEeOdbuFC81ov4A"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nJ_SkPJCEeOdbuFC81ov4A" name="PanierFactory">
-    <modelElement href="CinePantinFromEclipse.uml#_jvGgEfJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nJ_SkfJCEeOdbuFC81ov4A" position="-750.0,1931.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nJ_SkvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nJ_Sk_JCEeOdbuFC81ov4A" defaultValue="1" name="_currentId" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_krqO8PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ_SlPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krq2AfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ_SlfJCEeOdbuFC81ov4A" label="~"/>
-      <cardinality xmi:id="_nJ_SlvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJ_Sl_JCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nJ_SmPJCEeOdbuFC81ov4A" name="getNewPanier" staticOperation="true">
-      <modelElement href="CinePantinFromEclipse.uml#_kpEN8PJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nJ_SmfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nJ_SmvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kpEN8fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ_Sm_JCEeOdbuFC81ov4A" name="Panier">
-          <modelElement href="CinePantinFromEclipse.uml#_jst6cfJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nJEFgPJCEeOdbuFC81ov4A" name="Compteur">
-    <modelElement href="CinePantinFromEclipse.uml#_jkRJEPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nJEFgfJCEeOdbuFC81ov4A" position="-495.0,1937.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nJEFgvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nJEFg_JCEeOdbuFC81ov4A" name="valeur">
-      <modelElement href="CinePantinFromEclipse.uml#_j6eCk_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJEFhPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6eClPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJEFhfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nJEFhvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJEFh_JCEeOdbuFC81ov4A" name="int">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nJEFiPJCEeOdbuFC81ov4A" name="Compteur">
-      <modelElement href="CinePantinFromEclipse.uml#_jkRwIPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nJEFifJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nJEFivJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nJEFi_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkSXMPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJEFjPJCEeOdbuFC81ov4A" name="Compteur">
-          <modelElement href="CinePantinFromEclipse.uml#_jkRJEPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nJEFjfJCEeOdbuFC81ov4A" name="valeur">
-        <modelElement href="CinePantinFromEclipse.uml#_jkRwIfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJEFjvJCEeOdbuFC81ov4A" name="int">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nJEFj_JCEeOdbuFC81ov4A" name="toString">
-      <modelElement href="CinePantinFromEclipse.uml#_jkSXMfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJEFkPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jkS-QPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJEFkfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jkS-QfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJEFkvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nJEFk_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkSXMvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJEFlPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nJEFlfJCEeOdbuFC81ov4A" name="incrementer">
-      <modelElement href="CinePantinFromEclipse.uml#_jkS-Q_JCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nJEFlvJCEeOdbuFC81ov4A" label="~"/>
-    </operations>
-    <operations xmi:id="_nJEFl_JCEeOdbuFC81ov4A" name="decrementer">
-      <modelElement href="CinePantinFromEclipse.uml#_jkS-RPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nJEFmPJCEeOdbuFC81ov4A" label="~"/>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nGiV8PJCEeOdbuFC81ov4A" name="IOException">
-    <modelElement href="CinePantinFromEclipse.uml#_jrub8fJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nGiV8fJCEeOdbuFC81ov4A" position="-124.0,1094.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nGiV8vJCEeOdbuFC81ov4A" name="Reference">
-      <modelElement href="CinePantinFromEclipse.uml#_jrytYPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nGiV8_JCEeOdbuFC81ov4A" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nGggwPJCEeOdbuFC81ov4A" name="ServletException">
-    <modelElement href="CinePantinFromEclipse.uml#_jsEaMfJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nGhH0PJCEeOdbuFC81ov4A" position="30.0,1101.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nGhH0fJCEeOdbuFC81ov4A" name="Reference">
-      <modelElement href="CinePantinFromEclipse.uml#_jsIroPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nGhH0vJCEeOdbuFC81ov4A" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nFemAPJCEeOdbuFC81ov4A" name="Dao">
-    <modelElement href="CinePantinFromEclipse.uml#_jiXroPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nFemAfJCEeOdbuFC81ov4A" position="-19.0,30.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nFemAvJCEeOdbuFC81ov4A" name="AnnotationDefinition">
-      <modelElement href="CinePantinFromEclipse.uml#_jiZg0PJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nFemA_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jiau8PJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nFemBPJCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jibWAPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nFemBfJCEeOdbuFC81ov4A" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nK-KAPJCEeOdbuFC81ov4A" name="LignePanierFactory">
-    <modelElement href="CinePantinFromEclipse.uml#_jvCOofJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nK-KAfJCEeOdbuFC81ov4A" position="-1396.0,962.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nK-KAvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nK-KA_JCEeOdbuFC81ov4A" defaultValue="1" name="_currentId" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_kri6MPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nK-KBPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_kri6MvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nK-KBfJCEeOdbuFC81ov4A" label="~"/>
-      <cardinality xmi:id="_nK-KBvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nK-KB_JCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nK-KCPJCEeOdbuFC81ov4A" name="getNewLignePanier" staticOperation="true">
-      <modelElement href="CinePantinFromEclipse.uml#_kodxAPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nK-KCfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nK-KCvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kodxAfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nK-KC_JCEeOdbuFC81ov4A" name="LignePanier">
-          <modelElement href="CinePantinFromEclipse.uml#_jspB8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_nJQ50PJCEeOdbuFC81ov4A" name="Devise">
-    <modelElement href="CinePantinFromEclipse.uml#_jlYjYPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nJQ50fJCEeOdbuFC81ov4A" position="-1336.0,1114.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nJQ50vJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nJQ50_JCEeOdbuFC81ov4A" name="symbole">
-      <modelElement href="CinePantinFromEclipse.uml#_j7LNMPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nJQ51PJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nJQ51fJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJQ51vJCEeOdbuFC81ov4A" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nJQ51_JCEeOdbuFC81ov4A" name="Devise">
-      <modelElement href="CinePantinFromEclipse.uml#_jlfREPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nJQ52PJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nJQ52fJCEeOdbuFC81ov4A" label="~"/>
-      <outParameters xmi:id="_nJQ52vJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jlf4IvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJQ52_JCEeOdbuFC81ov4A" name="Devise">
-          <modelElement href="CinePantinFromEclipse.uml#_jlYjYPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nJQ53PJCEeOdbuFC81ov4A" name="s">
-        <modelElement href="CinePantinFromEclipse.uml#_jlfREfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJQ53fJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <literals xmi:id="_nJQ53vJCEeOdbuFC81ov4A" name="EUR">
-      <modelElement href="CinePantinFromEclipse.uml#_jlZKcPJCEeOdbuFC81ov4A"/>
-    </literals>
-    <literals xmi:id="_nJQ53_JCEeOdbuFC81ov4A" name="USD">
-      <modelElement href="CinePantinFromEclipse.uml#_jlZxgfJCEeOdbuFC81ov4A"/>
-    </literals>
-    <literals xmi:id="_nJQ54PJCEeOdbuFC81ov4A" name="GBP">
-      <modelElement href="CinePantinFromEclipse.uml#_jlZxg_JCEeOdbuFC81ov4A"/>
-    </literals>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIhS8PJCEeOdbuFC81ov4A" name="ContactDaoJPA" associationsOut="_nIfdwPJCEeOdbuFC81ov4A _nIfdwfJCEeOdbuFC81ov4A" generalizations="_nIfdwvJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jkAqYPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIhS8fJCEeOdbuFC81ov4A" position="-32.0,1617.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nIhS8vJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jkAqYfJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nIhS8_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jkBRcPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nIhS9PJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIhS9fJCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6aYMvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIgr5PJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6aYM_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdH6YPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6aYM_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIhS9_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIhS-PJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIhS-fJCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIhS-vJCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6aYNfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIgr6fJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6a_QPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdJIgPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6a_QPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIhS_PJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIhS_fJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIhS_vJCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIhS__JCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_juFMYPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIhTAPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juFzcPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIh6APJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIh6AfJCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_juFMYfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIh6AvJCEeOdbuFC81ov4A" name="Contact">
-          <modelElement href="CinePantinFromEclipse.uml#_jlWHIPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nJ82UPJCEeOdbuFC81ov4A" name="Contact">
-    <modelElement href="CinePantinFromEclipse.uml#_jlWHIPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nJ82UfJCEeOdbuFC81ov4A" position="-173.0,2022.0" size="147.0,160.0" visible="false"/>
-    <stereotypes xmi:id="_nJ82UvJCEeOdbuFC81ov4A" name="JPA1StyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jlWHIfJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nJ82U_JCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nJ82VPJCEeOdbuFC81ov4A" name="idContact">
-      <modelElement href="CinePantinFromEclipse.uml#_j7FGlfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ82VfJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j7FtoPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJ82VvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j7FtofJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82V_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nJ82WPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJ82WfJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nJ82WvJCEeOdbuFC81ov4A" name="demande">
-      <modelElement href="CinePantinFromEclipse.uml#_j7GUs_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ82W_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j7GUtPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82XPJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nJ82XfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJ82XvJCEeOdbuFC81ov4A" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nJ82X_JCEeOdbuFC81ov4A" name="nom">
-      <modelElement href="CinePantinFromEclipse.uml#_j7GUtfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ82YPJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j7GUtvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82YfJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nJ82YvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJ82Y_JCEeOdbuFC81ov4A" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nJ82ZPJCEeOdbuFC81ov4A" name="email">
-      <modelElement href="CinePantinFromEclipse.uml#_j7GUt_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ82ZfJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j7G7wPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82ZvJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nJ82Z_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJ82aPJCEeOdbuFC81ov4A" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nJ82afJCEeOdbuFC81ov4A" name="Contact">
-      <modelElement href="CinePantinFromEclipse.uml#_jlWuMPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nJ82avJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nJ82a_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jlXVQPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82bPJCEeOdbuFC81ov4A" label="#"/>
-      <outParameters xmi:id="_nJ82bfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jlXVQfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ82bvJCEeOdbuFC81ov4A" name="Contact">
-          <modelElement href="CinePantinFromEclipse.uml#_jlWHIPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nJ82b_JCEeOdbuFC81ov4A" name="Contact">
-      <modelElement href="CinePantinFromEclipse.uml#_jlXVQvJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nJ82cPJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nJ82cfJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jlX8U_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJ82cvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nJ82c_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jlX8UvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ82dPJCEeOdbuFC81ov4A" name="Contact">
-          <modelElement href="CinePantinFromEclipse.uml#_jlWHIPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nJ82dfJCEeOdbuFC81ov4A" name="demande">
-        <modelElement href="CinePantinFromEclipse.uml#_jlXVQ_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ82dvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nJ82d_JCEeOdbuFC81ov4A" name="nom">
-        <modelElement href="CinePantinFromEclipse.uml#_jlXVRPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ82ePJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nJ82efJCEeOdbuFC81ov4A" name="email">
-        <modelElement href="CinePantinFromEclipse.uml#_jlXVRfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJ82evJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nKbXcPJCEeOdbuFC81ov4A" comments="_nKY7MPJCEeOdbuFC81ov4A" targetConnectionVisual="_nKY7MfJCEeOdbuFC81ov4A" name="Prix">
-    <modelElement href="CinePantinFromEclipse.uml#_kp7JkvJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nKbXcfJCEeOdbuFC81ov4A" position="-664.0,1541.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nKbXcvJCEeOdbuFC81ov4A" name="JPA1StyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_kp7woPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nKbXc_JCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nKbXdPJCEeOdbuFC81ov4A" name="idPrix">
-      <modelElement href="CinePantinFromEclipse.uml#_krsEIPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKbXdfJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krsEIfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nKbXdvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_krsEIvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXd_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nKbXePJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKbXefJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nKbXevJCEeOdbuFC81ov4A" name="valeur">
-      <modelElement href="CinePantinFromEclipse.uml#_krsrMvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKbXe_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krsrM_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXfPJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nKbXffJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKbXfvJCEeOdbuFC81ov4A" name="double">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nKbXf_JCEeOdbuFC81ov4A" name="devise">
-      <modelElement href="CinePantinFromEclipse.uml#_krsrNPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKbXgPJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krsrNfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXgfJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nKbXgvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKbXg_JCEeOdbuFC81ov4A" name="Devise">
-        <modelElement href="CinePantinFromEclipse.uml#_jlYjYPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nKbXhPJCEeOdbuFC81ov4A" name="Prix">
-      <modelElement href="CinePantinFromEclipse.uml#_kp8XsPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nKbXhfJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nKbXhvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8XtfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXh_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKbXiPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8XtPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXifJCEeOdbuFC81ov4A" name="Prix">
-          <modelElement href="CinePantinFromEclipse.uml#_kp7JkvJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKbXivJCEeOdbuFC81ov4A" name="valeur">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8XsfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXi_JCEeOdbuFC81ov4A" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nKbXjPJCEeOdbuFC81ov4A" comments="_nKZiQPJCEeOdbuFC81ov4A" targetConnectionVisual="_nKZiQfJCEeOdbuFC81ov4A" name="Prix">
-      <modelElement href="CinePantinFromEclipse.uml#_kp8XtvJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nKbXjfJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nKbXjvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8-wvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXj_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKbXkPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8-wfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXkfJCEeOdbuFC81ov4A" name="Prix">
-          <modelElement href="CinePantinFromEclipse.uml#_kp7JkvJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKbXkvJCEeOdbuFC81ov4A" name="valeur">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8Xt_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXk_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nKbXlPJCEeOdbuFC81ov4A" comments="_nKaJUPJCEeOdbuFC81ov4A" targetConnectionVisual="_nKaJUfJCEeOdbuFC81ov4A" name="checkValeur">
-      <modelElement href="CinePantinFromEclipse.uml#_kp8-w_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKbXlfJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8-xvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXlvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKbXl_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8-xfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXmPJCEeOdbuFC81ov4A" name="boolean">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKbXmfJCEeOdbuFC81ov4A" name="valeur">
-        <modelElement href="CinePantinFromEclipse.uml#_kp8-xPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXmvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nKbXm_JCEeOdbuFC81ov4A" comments="_nKaJUvJCEeOdbuFC81ov4A" targetConnectionVisual="_nKaJU_JCEeOdbuFC81ov4A" name="formatPrix" staticOperation="true">
-      <modelElement href="CinePantinFromEclipse.uml#_kp9l0PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKbXnPJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_kp9l0_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKbXnfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKbXnvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kp9l0vJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXn_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKbXoPJCEeOdbuFC81ov4A" name="valeur">
-        <modelElement href="CinePantinFromEclipse.uml#_kp9l0fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKbXofJCEeOdbuFC81ov4A" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIF1IfJCEeOdbuFC81ov4A" name="ArticleDaoJPA" associationsOut="_nICKwPJCEeOdbuFC81ov4A _nICKwfJCEeOdbuFC81ov4A" generalizations="_nIBjsPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jjfF8PJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIF1IvJCEeOdbuFC81ov4A" position="413.0,-56.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nIF1I_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jjftAPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nIF1JPJCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jjnBwPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nIF1JfJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIF1JvJCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6XU4PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIFOFPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6XU4fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec_-kPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6XU4fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1KPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIF1KfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIF1KvJCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIF1K_JCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6XU4_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1IPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6XU5PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdBMsPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6XU5PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1LfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIF1LvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIF1L_JCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIF1MPJCEeOdbuFC81ov4A" name="showMainArticles">
-      <modelElement href="CinePantinFromEclipse.uml#_jjftAfJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nIF1MfJCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <stereotypes xmi:id="_nIF1MvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjg7IPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1M_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1NPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjgUEPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1NfJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nIF1NvJCEeOdbuFC81ov4A" name="findByShortDesc">
-      <modelElement href="CinePantinFromEclipse.uml#_jjg7IvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1N_JCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjiJQPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1OPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1OfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt5mMPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1OvJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1O_JCEeOdbuFC81ov4A" name="shortDesc">
-        <modelElement href="CinePantinFromEclipse.uml#_jjg7I_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1PPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1PfJCEeOdbuFC81ov4A" name="findByLongDesc">
-      <modelElement href="CinePantinFromEclipse.uml#_jjiJQvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1PvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjiwUPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1P_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1QPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt5mMfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1QfJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1QvJCEeOdbuFC81ov4A" name="longDesc">
-        <modelElement href="CinePantinFromEclipse.uml#_jjiJQ_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1Q_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1RPJCEeOdbuFC81ov4A" name="findById">
-      <modelElement href="CinePantinFromEclipse.uml#_jjjXYPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1RfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjjXYvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1RvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1R_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt6NQvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1SPJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1SfJCEeOdbuFC81ov4A" name="idArticle">
-        <modelElement href="CinePantinFromEclipse.uml#_jjjXYfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1SvJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1S_JCEeOdbuFC81ov4A" name="findByNom">
-      <modelElement href="CinePantinFromEclipse.uml#_jjj-cPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nIF1TPJCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <stereotypes xmi:id="_nIF1TfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjklgvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1TvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1T_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjj-cvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1UPJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1UfJCEeOdbuFC81ov4A" name="nomArticle">
-        <modelElement href="CinePantinFromEclipse.uml#_jjj-cfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1UvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1U_JCEeOdbuFC81ov4A" name="showArticleByCategory">
-      <modelElement href="CinePantinFromEclipse.uml#_jjlMkPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nIF1VPJCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <stereotypes xmi:id="_nIF1VfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjlzovJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1VvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1V_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjlMkvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1WPJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1WfJCEeOdbuFC81ov4A" name="idCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jjlMkfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1WvJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1W_JCEeOdbuFC81ov4A" name="countArticlesByCategory">
-      <modelElement href="CinePantinFromEclipse.uml#_jjmasPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1XPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjmas_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1XfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1XvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjmasfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1X_JCEeOdbuFC81ov4A" name="int">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nIF1YPJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jt5mMvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1YfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jt6NQPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1YvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIF1Y_JCEeOdbuFC81ov4A" name="a">
-        <modelElement href="CinePantinFromEclipse.uml#_jt5mM_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1ZPJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1ZfJCEeOdbuFC81ov4A" name="update">
-      <modelElement href="CinePantinFromEclipse.uml#_jt60UPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIF1ZvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jt60U_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1Z_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1aPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt60UvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1afJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1avJCEeOdbuFC81ov4A" name="a">
-        <modelElement href="CinePantinFromEclipse.uml#_jt60UfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1a_JCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIF1bPJCEeOdbuFC81ov4A" name="findByNom">
-      <modelElement href="CinePantinFromEclipse.uml#_jxnBgPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nIF1bfJCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <stereotypes xmi:id="_nIF1bvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jxr6AfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIF1b_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIF1cPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jxnokPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1cfJCEeOdbuFC81ov4A" name="Article">
-          <modelElement href="CinePantinFromEclipse.uml#_jkiO0PJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIF1cvJCEeOdbuFC81ov4A" name="nomArticle">
-        <modelElement href="CinePantinFromEclipse.uml#_jxnBgfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1c_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nIF1dPJCEeOdbuFC81ov4A" name="categories">
-        <modelElement href="CinePantinFromEclipse.uml#_jxnBgvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIF1dfJCEeOdbuFC81ov4A" name="List">
-          <modelElement href="CinePantinFromEclipse.uml#_jr2-0fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIVFsPJCEeOdbuFC81ov4A" name="ClientDaoJPA" associationsOut="_nISCYPJCEeOdbuFC81ov4A _nISCYfJCEeOdbuFC81ov4A" generalizations="_nIRbUPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jj25YPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIVFsfJCEeOdbuFC81ov4A" position="1364.0,505.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nIVFsvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jj3gcPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nIVFs_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jj6jwPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nIVFtPJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIVFtfJCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6YjA_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIUepPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZKEPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdCa0PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZKEPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVFt_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIVFuPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIVFufJCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIVFuvJCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6ZKEvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIUeqfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZKE_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdDo8PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZKE_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVFvPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIVFvfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIVFvvJCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIVFv_JCEeOdbuFC81ov4A" name="findAll">
-      <modelElement href="CinePantinFromEclipse.uml#_jj3gcfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIVFwPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jj4HgfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVFwfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIVFwvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jj3gcvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVFw_JCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nIVFxPJCEeOdbuFC81ov4A" name="findByParam">
-      <modelElement href="CinePantinFromEclipse.uml#_jj4ukPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIVFxfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jj4uk_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVFxvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIVFx_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_juAT4PJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVFyPJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIVFyfJCEeOdbuFC81ov4A" name="login">
-        <modelElement href="CinePantinFromEclipse.uml#_jj4ukfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVFyvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nIVFy_JCEeOdbuFC81ov4A" name="mdp">
-        <modelElement href="CinePantinFromEclipse.uml#_jj4ukvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVFzPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIVFzfJCEeOdbuFC81ov4A" name="findByLogin">
-      <modelElement href="CinePantinFromEclipse.uml#_jj5VofJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIVFzvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jj58sPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVFz_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIVF0PJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_juAT4fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVF0fJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIVF0vJCEeOdbuFC81ov4A" name="login">
-        <modelElement href="CinePantinFromEclipse.uml#_jj5VovJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVF0_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIVF1PJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_juAT4vJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIVF1fJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juA68fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVF1vJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIVF1_JCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_juA68PJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVF2PJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIVF2fJCEeOdbuFC81ov4A" name="update">
-      <modelElement href="CinePantinFromEclipse.uml#_juBiAPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIVF2vJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juBiA_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIVF2_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIVF3PJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_juBiAvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVF3fJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIVF3vJCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_juBiAfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIVF3_JCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIdBgPJCEeOdbuFC81ov4A" name="PanierDaoJPA" associationsOut="_nIZ-MPJCEeOdbuFC81ov4A _nIZ-MfJCEeOdbuFC81ov4A" generalizations="_nIZ-MvJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jkFi4PJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIdBgfJCEeOdbuFC81ov4A" position="1736.0,568.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nIdBgvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIdBg_JCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6bmUPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIbzYvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6bmUfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nIbzY_JCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6bmUvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdE3EPLQEeO0S8ezpQFlsQ" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6bmUfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdE3EfLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6bmUvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIdBhvJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIdBh_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIdBiPJCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIdBifJCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6bmVPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIbzaPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6cNYPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nIbzafJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6cNYfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdGFMPLQEeO0S8ezpQFlsQ" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6cNYPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdGsQPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6cNYfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIdBjPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIdBjfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIdBjvJCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIdBj_JCEeOdbuFC81ov4A" name="findByClient">
-      <modelElement href="CinePantinFromEclipse.uml#_juHooPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIdBkPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_juHoovJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nIdBkfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juIPsPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIdBkvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIdBk_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jx4HQPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIdBlPJCEeOdbuFC81ov4A" name="Panier">
-          <modelElement href="CinePantinFromEclipse.uml#_jst6cfJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIdBlfJCEeOdbuFC81ov4A" name="client">
-        <modelElement href="CinePantinFromEclipse.uml#_juHoofJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIdBlvJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIdBl_JCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jx4HQfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIdBmPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jx4HQ_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nIdBmfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jx4uUPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIdBmvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIdBm_JCEeOdbuFC81ov4A" name="p">
-        <modelElement href="CinePantinFromEclipse.uml#_jx4HQvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIdBnPJCEeOdbuFC81ov4A" name="Panier">
-          <modelElement href="CinePantinFromEclipse.uml#_jst6cfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nHxFCfJCEeOdbuFC81ov4A" name="CategorieDaoJPA" associationsOut="_nHwd8PJCEeOdbuFC81ov4A _nHxFAPJCEeOdbuFC81ov4A" generalizations="_nHuBsPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jjuWgPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nHxFCvJCEeOdbuFC81ov4A" position="1648.0,876.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nHxFC_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jju9kPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nHxFDPJCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jjxZ0vJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nHxFDfJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nHxFDvJCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6X78PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHxFEPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6X78fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec-JYPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6X78fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFEfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHxFEvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHxFE_JCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nHxFFPJCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6YjAPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHxFFvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6YjAfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec_XgPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6YjAfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFF_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHxFGPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHxFGfJCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nHxFGvJCEeOdbuFC81ov4A" name="findAllCategories">
-      <modelElement href="CinePantinFromEclipse.uml#_jju9kfJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHxFG_JCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <stereotypes xmi:id="_nHxFHPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjvkpPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFHfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHxFHvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjvkoPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFH_JCEeOdbuFC81ov4A" name="Categorie">
-          <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nHxFIPJCEeOdbuFC81ov4A" name="findNomById">
-      <modelElement href="CinePantinFromEclipse.uml#_jjwLsfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHxFIfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjwywPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFIvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHxFI_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjwLs_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFJPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHxFJfJCEeOdbuFC81ov4A" name="idCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jjwLsvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFJvJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHxFJ_JCEeOdbuFC81ov4A" name="findIdByNom">
-      <modelElement href="CinePantinFromEclipse.uml#_jjwywvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHxFKPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jjxZ0PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFKfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHxFKvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjwyxPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFK_JCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHxFLPJCEeOdbuFC81ov4A" name="nomCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jjwyw_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFLfJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHxFLvJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jt9QkPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHxFL_JCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_jt9QkvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHxFMPJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nHxFMfJCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_jt9QkfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHxFMvJCEeOdbuFC81ov4A" name="Categorie">
-          <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nKfB0PJCEeOdbuFC81ov4A" comments="_nKeawPJCEeOdbuFC81ov4A" targetConnectionVisual="_nKeawfJCEeOdbuFC81ov4A" name="ExceptionPrix">
-    <modelElement href="CinePantinFromEclipse.uml#_jlkwoPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nKfB0fJCEeOdbuFC81ov4A" position="2594.0,1007.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nKfB0vJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nKfB0_JCEeOdbuFC81ov4A" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_j7LNMfJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nKfB1PJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nKfB1fJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKfB1vJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nKfB1_JCEeOdbuFC81ov4A" name="chaine">
-      <modelElement href="CinePantinFromEclipse.uml#_j7LNM_JCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nKfB2PJCEeOdbuFC81ov4A" label="+"/>
-      <cardinality xmi:id="_nKfB2fJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKfB2vJCEeOdbuFC81ov4A" name="String">
-        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nKfB2_JCEeOdbuFC81ov4A" name="ExceptionPrix">
-      <modelElement href="CinePantinFromEclipse.uml#_jll-wPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nKfB3PJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nKfB3fJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKfB3vJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jll-xPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKfB3_JCEeOdbuFC81ov4A" name="ExceptionPrix">
-          <modelElement href="CinePantinFromEclipse.uml#_jlkwoPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKfB4PJCEeOdbuFC81ov4A" name="chaine">
-        <modelElement href="CinePantinFromEclipse.uml#_jll-wfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKfB4fJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_nKXGAPJCEeOdbuFC81ov4A" name="Tva">
-    <modelElement href="CinePantinFromEclipse.uml#_jtDRoPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nKXGAfJCEeOdbuFC81ov4A" position="2595.0,797.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nKXGAvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nKXGA_JCEeOdbuFC81ov4A" name="valeur">
-      <modelElement href="CinePantinFromEclipse.uml#_krxjsPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKXGBPJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krxjsfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nKXGBfJCEeOdbuFC81ov4A" label="~"/>
-      <cardinality xmi:id="_nKXGBvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKXGB_JCEeOdbuFC81ov4A" name="double">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nKXGCPJCEeOdbuFC81ov4A" name="getValeur">
-      <modelElement href="CinePantinFromEclipse.uml#_kpPNEPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nKXGCfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nKXGCvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kqCeVfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKXGC_JCEeOdbuFC81ov4A" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nKXGDPJCEeOdbuFC81ov4A" name="Tva">
-      <modelElement href="CinePantinFromEclipse.uml#_kqCeUPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nKXGDfJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nKXGDvJCEeOdbuFC81ov4A" label="~"/>
-      <outParameters xmi:id="_nKXGD_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_kqCeUvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKXGEPJCEeOdbuFC81ov4A" name="Tva">
-          <modelElement href="CinePantinFromEclipse.uml#_jtDRoPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nKXGEfJCEeOdbuFC81ov4A" name="v">
-        <modelElement href="CinePantinFromEclipse.uml#_kqCeUfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKXGEvJCEeOdbuFC81ov4A" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-        </type>
-      </parameters>
-    </operations>
-    <literals xmi:id="_nKXGE_JCEeOdbuFC81ov4A" name="REDUIT">
-      <modelElement href="CinePantinFromEclipse.uml#_kpKUkPJCEeOdbuFC81ov4A"/>
-    </literals>
-    <literals xmi:id="_nKXGFPJCEeOdbuFC81ov4A" name="NORMAL">
-      <modelElement href="CinePantinFromEclipse.uml#_kpK7ofJCEeOdbuFC81ov4A"/>
-    </literals>
-    <literals xmi:id="_nKXGFfJCEeOdbuFC81ov4A" name="LUXE">
-      <modelElement href="CinePantinFromEclipse.uml#_kpK7o_JCEeOdbuFC81ov4A"/>
-    </literals>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIonsfJCEeOdbuFC81ov4A" name="CommandeDaoJPA" associationsOut="_nImygPJCEeOdbuFC81ov4A _nImygfJCEeOdbuFC81ov4A" generalizations="_nImLcPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jj9nEPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIonsvJCEeOdbuFC81ov4A" position="2990.0,945.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nIons_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jj-OIPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nIontPJCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jj-1MPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nIontfJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIontvJCEeOdbuFC81ov4A" name="em">
-      <modelElement href="CinePantinFromEclipse.uml#_j6ZxIPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIoApPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZxIfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdKWoPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ZxIfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIonuPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIonufJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIonuvJCEeOdbuFC81ov4A" name="EntityManager">
-        <modelElement href="CinePantinFromEclipse.uml#_jtRUEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIonu_JCEeOdbuFC81ov4A" name="ut">
-      <modelElement href="CinePantinFromEclipse.uml#_j6ZxI_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIonsPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6aYMPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdK9sPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6aYMPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIonvfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIonvvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIonv_JCEeOdbuFC81ov4A" name="UserTransaction">
-        <modelElement href="CinePantinFromEclipse.uml#_jtxqYfJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIonwPJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_juDXMfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIonwfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juD-QfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIonwvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIonw_JCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_juD-QPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIonxPJCEeOdbuFC81ov4A" name="Commande">
-          <modelElement href="CinePantinFromEclipse.uml#_jlLIAPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIonxfJCEeOdbuFC81ov4A" name="findAllByClient">
-      <modelElement href="CinePantinFromEclipse.uml#_juD-Q_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIonxvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_juElUfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIonx_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIonyPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_juD-RfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIonyfJCEeOdbuFC81ov4A" name="Commande">
-          <modelElement href="CinePantinFromEclipse.uml#_jlLIAPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIonyvJCEeOdbuFC81ov4A" name="client">
-        <modelElement href="CinePantinFromEclipse.uml#_juD-RPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIony_JCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nIkWQPJCEeOdbuFC81ov4A" name="PanierDao" associationsIn="_nHHkwfJCEeOdbuFC81ov4A _nGmAWfJCEeOdbuFC81ov4A _nI9-4PJCEeOdbuFC81ov4A" subclassedBy="_nIZ-MvJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jkE70PJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIkWQfJCEeOdbuFC81ov4A" position="2411.0,253.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nIkWQvJCEeOdbuFC81ov4A" label="+"/>
-    <operations xmi:id="_nIkWQ_JCEeOdbuFC81ov4A" name="findByClient">
-      <modelElement href="CinePantinFromEclipse.uml#_juGagPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIkWRPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIkWRfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jx25JPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIkWRvJCEeOdbuFC81ov4A" name="Panier">
-          <modelElement href="CinePantinFromEclipse.uml#_jst6cfJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIkWR_JCEeOdbuFC81ov4A" name="client">
-        <modelElement href="CinePantinFromEclipse.uml#_juGagfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIkWSPJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIkWSfJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jx3gMPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIkWSvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIkWS_JCEeOdbuFC81ov4A" name="p">
-        <modelElement href="CinePantinFromEclipse.uml#_jx3gMfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIkWTPJCEeOdbuFC81ov4A" name="Panier">
-          <modelElement href="CinePantinFromEclipse.uml#_jst6cfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nIOYAPJCEeOdbuFC81ov4A" name="ClientDao" associationsIn="_nG3tIPJCEeOdbuFC81ov4A _nGmAUPJCEeOdbuFC81ov4A _nIrrAPJCEeOdbuFC81ov4A _nI1cAPJCEeOdbuFC81ov4A" subclassedBy="_nIRbUPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jjz2EPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIOYAfJCEeOdbuFC81ov4A" position="2192.0,62.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nIOYAvJCEeOdbuFC81ov4A" label="+"/>
-    <operations xmi:id="_nIOYA_JCEeOdbuFC81ov4A" name="findAll">
-      <modelElement href="CinePantinFromEclipse.uml#_jjz2EfJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIOYBPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIOYBfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjz2EvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYBvJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nIOYB_JCEeOdbuFC81ov4A" name="findByParam">
-      <modelElement href="CinePantinFromEclipse.uml#_jj0dIPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIOYCPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIOYCfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt93oPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYCvJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIOYC_JCEeOdbuFC81ov4A" name="login">
-        <modelElement href="CinePantinFromEclipse.uml#_jj0dIfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYDPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nIOYDfJCEeOdbuFC81ov4A" name="mpd">
-        <modelElement href="CinePantinFromEclipse.uml#_jj0dIvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYDvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIOYD_JCEeOdbuFC81ov4A" name="findByLogin">
-      <modelElement href="CinePantinFromEclipse.uml#_jj1EMPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIOYEPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIOYEfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt93ofJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYEvJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIOYE_JCEeOdbuFC81ov4A" name="login">
-        <modelElement href="CinePantinFromEclipse.uml#_jj1EMfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYFPJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIOYFfJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jt93ovJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIOYFvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIOYF_JCEeOdbuFC81ov4A" name="a">
-        <modelElement href="CinePantinFromEclipse.uml#_jt-esPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYGPJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIOYGfJCEeOdbuFC81ov4A" name="update">
-      <modelElement href="CinePantinFromEclipse.uml#_jt-esfJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nIOYGvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIOYG_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jt-es_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYHPJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nIOYHfJCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_jt-esvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIOYHvJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nH2kkPJCEeOdbuFC81ov4A" name="CommandeDao" associationsIn="_nG6wcPJCEeOdbuFC81ov4A" subclassedBy="_nImLcPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jj8Y8PJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nH2kkfJCEeOdbuFC81ov4A" position="2378.0,-119.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nH2kkvJCEeOdbuFC81ov4A" label="+"/>
-    <operations xmi:id="_nH2kk_JCEeOdbuFC81ov4A" name="findAllByClient">
-      <modelElement href="CinePantinFromEclipse.uml#_juCJEPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nH2klPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nH2klfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_juCwIPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nH2klvJCEeOdbuFC81ov4A" name="Commande">
-          <modelElement href="CinePantinFromEclipse.uml#_jlLIAPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nH2kl_JCEeOdbuFC81ov4A" name="client">
-        <modelElement href="CinePantinFromEclipse.uml#_juCJEfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nH2kmPJCEeOdbuFC81ov4A" name="Client">
-          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nH2kmfJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_juCwIvJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nH2kmvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nH2km_JCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_juCwI_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nH2knPJCEeOdbuFC81ov4A" name="Commande">
-          <modelElement href="CinePantinFromEclipse.uml#_jlLIAPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nHXcYPJCEeOdbuFC81ov4A" comments="_nHVnMPJCEeOdbuFC81ov4A" targetConnectionVisual="_nHWOQPJCEeOdbuFC81ov4A" name="CategorieDao" associationsIn="_nHAQAfJCEeOdbuFC81ov4A _nGRQMvJCEeOdbuFC81ov4A _nHO5gfJCEeOdbuFC81ov4A _nIrrAfJCEeOdbuFC81ov4A" subclassedBy="_nHuBsPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jjr6QPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nHXcYfJCEeOdbuFC81ov4A" position="1967.0,-135.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nHXcYvJCEeOdbuFC81ov4A" label="+"/>
-    <operations xmi:id="_nHXcY_JCEeOdbuFC81ov4A" name="findAllCategories">
-      <modelElement href="CinePantinFromEclipse.uml#_jjr6QfJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHXcZPJCEeOdbuFC81ov4A" keyword="generic_container"/>
-      <visibility xmi:id="_nHXcZfJCEeOdbuFC81ov4A" label="~"/>
-      <outParameters xmi:id="_nHXcZvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjshUPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXcZ_JCEeOdbuFC81ov4A" name="Categorie">
-          <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nHXcaPJCEeOdbuFC81ov4A" name="findNomById">
-      <modelElement href="CinePantinFromEclipse.uml#_jjtIYPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nHXcafJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHXcavJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjtIYvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXca_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHXcbPJCEeOdbuFC81ov4A" name="idCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jjtIYfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXcbfJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHXcbvJCEeOdbuFC81ov4A" name="findIdByNom">
-      <modelElement href="CinePantinFromEclipse.uml#_jjtIY_JCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nHXcb_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHXccPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjtvcPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXccfJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHXccvJCEeOdbuFC81ov4A" name="nomCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jjtIZPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXcc_JCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHXcdPJCEeOdbuFC81ov4A" name="create">
-      <modelElement href="CinePantinFromEclipse.uml#_jt8CcPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nHXcdfJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nHXcdvJCEeOdbuFC81ov4A" name="c">
-        <modelElement href="CinePantinFromEclipse.uml#_jt8CcfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHXcd_JCEeOdbuFC81ov4A" name="Categorie">
-          <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nGzbufJCEeOdbuFC81ov4A" name="ContactController" associationsOut="_nGzbsPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jixUQPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nGzbuvJCEeOdbuFC81ov4A" position="1686.0,230.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nGzbu_JCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jix7UPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nGzbvPJCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jizwgPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nGzbvfJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nGzbvvJCEeOdbuFC81ov4A" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_j6ROQPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGzbv_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6ROQvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGzbwPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nGzbwfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nGzbwvJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nGzbw_JCEeOdbuFC81ov4A" name="contactDao">
-      <modelElement href="CinePantinFromEclipse.uml#_j6ROQ_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGzbxfJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6R1UPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec0_cPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6R1UPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGzbxvJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nGzbx_JCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nGzbyPJCEeOdbuFC81ov4A" name="ContactDao">
-        <modelElement href="CinePantinFromEclipse.uml#_js0BEPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nGzbyfJCEeOdbuFC81ov4A" comments="_nGxmgPJCEeOdbuFC81ov4A" targetConnectionVisual="_nGxmgfJCEeOdbuFC81ov4A" name="ContactController">
-      <modelElement href="CinePantinFromEclipse.uml#_jiyiYPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nGzbyvJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nGzby_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jiyiZPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGzbzPJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nGzbzfJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jiyiY_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGzbzvJCEeOdbuFC81ov4A" name="ContactController">
-          <modelElement href="CinePantinFromEclipse.uml#_jixUQPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nGzbz_JCEeOdbuFC81ov4A" comments="_nGxmgvJCEeOdbuFC81ov4A" targetConnectionVisual="_nGxmg_JCEeOdbuFC81ov4A" name="doGet">
-      <modelElement href="CinePantinFromEclipse.uml#_jxXJ4PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGzb0PJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxXw8PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGzb0fJCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nGzb0vJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxXJ4fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGzb0_JCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nGzb1PJCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxXJ4vJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGzb1fJCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nGzb1vJCEeOdbuFC81ov4A" comments="_nGyNkPJCEeOdbuFC81ov4A" targetConnectionVisual="_nGyNkfJCEeOdbuFC81ov4A" name="doPost">
-      <modelElement href="CinePantinFromEclipse.uml#_jxXw8fJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGzb1_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxYYAvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGzb2PJCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nGzb2fJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxYYAPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGzb2vJCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nGzb2_JCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxYYAfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGzb3PJCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nHrlcPJCEeOdbuFC81ov4A" name="DAOException">
-    <modelElement href="CinePantinFromEclipse.uml#_jkCfkPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nHrlcfJCEeOdbuFC81ov4A" position="1250.0,912.0" size="-1.0,-1.0" visible="false"/>
-    <visibility xmi:id="_nHrlcvJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nHrlc_JCEeOdbuFC81ov4A" defaultValue="1933561632667272154L" name="serialVersionUID" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_j6a_QvJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nHrldPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHrldfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHrldvJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nHrld_JCEeOdbuFC81ov4A" name="DAOException">
-      <modelElement href="CinePantinFromEclipse.uml#_jkDGoPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHrlePJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nHrlefJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHrlevJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkDGo_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrle_JCEeOdbuFC81ov4A" name="DAOException">
-          <modelElement href="CinePantinFromEclipse.uml#_jkCfkPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nHrlfPJCEeOdbuFC81ov4A" name="DAOException">
-      <modelElement href="CinePantinFromEclipse.uml#_jkDtsPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHrlffJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nHrlfvJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHrlf_JCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkDttPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrlgPJCEeOdbuFC81ov4A" name="DAOException">
-          <modelElement href="CinePantinFromEclipse.uml#_jkCfkPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHrlgfJCEeOdbuFC81ov4A" name="mes">
-        <modelElement href="CinePantinFromEclipse.uml#_jkDtsfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrlgvJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHrlg_JCEeOdbuFC81ov4A" name="DAOException">
-      <modelElement href="CinePantinFromEclipse.uml#_jx2SEfJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHrlhPJCEeOdbuFC81ov4A" keyword="create"/>
-      <visibility xmi:id="_nHrlhfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHrlhvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jx25IvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrlh_JCEeOdbuFC81ov4A" name="DAOException">
-          <modelElement href="CinePantinFromEclipse.uml#_jkCfkPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-      <parameters xmi:id="_nHrliPJCEeOdbuFC81ov4A" name="mes">
-        <modelElement href="CinePantinFromEclipse.uml#_jx2SEvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrlifJCEeOdbuFC81ov4A" name="String">
-          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nHrlivJCEeOdbuFC81ov4A" name="e">
-        <modelElement href="CinePantinFromEclipse.uml#_jx2SE_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHrli_JCEeOdbuFC81ov4A" name="Throwable">
-          <modelElement href="CinePantinFromEclipse.uml#_jxynsPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iDIHMPLWEeO0S8ezpQFlsQ" name="NewClass1">
-    <modelElement href="CinePantinFromEclipse.uml#_iC8hAPLWEeO0S8ezpQFlsQ"/>
-    <visualProperties xmi:id="_iDIHMfLWEeO0S8ezpQFlsQ" position="1629.0,238.0" size="156.0,241.0" visible="false"/>
-    <visibility xmi:id="_iDIHMvLWEeO0S8ezpQFlsQ" label="+"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nIwjgPJCEeOdbuFC81ov4A" name="HeaderFilter" associationsOut="_nIrrAPJCEeOdbuFC81ov4A _nIrrAfJCEeOdbuFC81ov4A _nIsSEPJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jkH_IPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nIwjgfJCEeOdbuFC81ov4A" position="1719.0,-109.0" size="314.0,130.0" visible="false"/>
-    <stereotypes xmi:id="_nIwjgvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jkH_IfJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nIwjg_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jkJ0UPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nIwjhPJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nIwjhfJCEeOdbuFC81ov4A" name="clientDao">
-      <modelElement href="CinePantinFromEclipse.uml#_j6cNY_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIvVYvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6c0cPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdML0PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6c0cPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjh_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIwjiPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIwjifJCEeOdbuFC81ov4A" name="ClientDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjz2EPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIwjivJCEeOdbuFC81ov4A" name="daoCategorie">
-      <modelElement href="CinePantinFromEclipse.uml#_j6c0c_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIvVZ_JCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6c0dPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdNZ8PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6c0dPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjjPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIwjjfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIwjjvJCEeOdbuFC81ov4A" name="CategorieDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjr6QPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nIwjj_JCEeOdbuFC81ov4A" name="daoArticle">
-      <modelElement href="CinePantinFromEclipse.uml#_j6c0d_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIvVbPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6dbgPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdOBAPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6dbgPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjkfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nIwjkvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nIwjk_JCEeOdbuFC81ov4A" name="ArticleDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjV8APJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nIwjlPJCEeOdbuFC81ov4A" comments="_nItgMfJCEeOdbuFC81ov4A" targetConnectionVisual="_nItgMvJCEeOdbuFC81ov4A" name="HeaderFilter">
-      <modelElement href="CinePantinFromEclipse.uml#_jkImMPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nIwjlfJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nIwjlvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jkJNQfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjl_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nIwjmPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkJNQPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIwjmfJCEeOdbuFC81ov4A" name="HeaderFilter">
-          <modelElement href="CinePantinFromEclipse.uml#_jkH_IPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nIwjmvJCEeOdbuFC81ov4A" comments="_nItgM_JCEeOdbuFC81ov4A" targetConnectionVisual="_nItgNPJCEeOdbuFC81ov4A" name="destroy">
-      <modelElement href="CinePantinFromEclipse.uml#_jkJNQvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIwjm_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jkJNQ_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjnPJCEeOdbuFC81ov4A" label="+"/>
-    </operations>
-    <operations xmi:id="_nIwjnfJCEeOdbuFC81ov4A" comments="_nIuHQPJCEeOdbuFC81ov4A" targetConnectionVisual="_nIuHQfJCEeOdbuFC81ov4A" name="doFilter">
-      <modelElement href="CinePantinFromEclipse.uml#_jx5VYPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIwjnvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jx58cPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjn_JCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIwjoPJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jx5VYfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIwjofJCEeOdbuFC81ov4A" name="ServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_juZVcfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nIwjovJCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jx5VYvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIwjo_JCEeOdbuFC81ov4A" name="ServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_judm4fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nIwjpPJCEeOdbuFC81ov4A" name="chain">
-        <modelElement href="CinePantinFromEclipse.uml#_jx5VY_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIwjpfJCEeOdbuFC81ov4A" name="FilterChain">
-          <modelElement href="CinePantinFromEclipse.uml#_juRZofJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nIwjpvJCEeOdbuFC81ov4A" comments="_nIuHQvJCEeOdbuFC81ov4A" targetConnectionVisual="_nIuHQ_JCEeOdbuFC81ov4A" name="init">
-      <modelElement href="CinePantinFromEclipse.uml#_jx58cfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nIwjp_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jx58c_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nIwjqPJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nIwjqfJCEeOdbuFC81ov4A" name="fConfig">
-        <modelElement href="CinePantinFromEclipse.uml#_jx58cvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nIwjqvJCEeOdbuFC81ov4A" name="FilterConfig">
-          <modelElement href="CinePantinFromEclipse.uml#_juVrEfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nHCsRPJCEeOdbuFC81ov4A" name="CategorieController" associationsOut="_nHAQAPJCEeOdbuFC81ov4A _nHAQAfJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jieZUPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nHCsRfJCEeOdbuFC81ov4A" position="2106.0,299.0" size="210.0,156.0" visible="false"/>
-    <stereotypes xmi:id="_nHCsRvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jifAYPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nHCsR_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jikf8PJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nHCsSPJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nHCsSfJCEeOdbuFC81ov4A" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_j6OK8PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHCsSvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6OyAPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsS_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHCsTPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHCsTfJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nHCsTvJCEeOdbuFC81ov4A" name="daoArticle">
-      <modelElement href="CinePantinFromEclipse.uml#_j6OyAfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHCFNvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6OyAvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec4p0PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6OyAvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsUPJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHCsUfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHCsUvJCEeOdbuFC81ov4A" name="ArticleDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjV8APJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nHCsU_JCEeOdbuFC81ov4A" name="daoCategorie">
-      <modelElement href="CinePantinFromEclipse.uml#_j6OyBfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHCsQ_JCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6PZEPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ec538PLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6PZEPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsVfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nHCsVvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nHCsV_JCEeOdbuFC81ov4A" name="CategorieDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjr6QPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nHCsWPJCEeOdbuFC81ov4A" comments="_nHAQAvJCEeOdbuFC81ov4A" targetConnectionVisual="_nHAQA_JCEeOdbuFC81ov4A" name="CategorieController">
-      <modelElement href="CinePantinFromEclipse.uml#_jihcoPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nHCsWfJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nHCsWvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jiiqwfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsW_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nHCsXPJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jiiqwPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHCsXfJCEeOdbuFC81ov4A" name="CategorieController">
-          <modelElement href="CinePantinFromEclipse.uml#_jieZUPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nHCsXvJCEeOdbuFC81ov4A" comments="_nHA3EPJCEeOdbuFC81ov4A" targetConnectionVisual="_nHA3EfJCEeOdbuFC81ov4A" name="doGet">
-      <modelElement href="CinePantinFromEclipse.uml#_jxS4cPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHCsX_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxTfgvJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsYPJCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nHCsYfJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxTfgPJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHCsYvJCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nHCsY_JCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxTfgfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHCsZPJCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nHCsZfJCEeOdbuFC81ov4A" comments="_nHA3EvJCEeOdbuFC81ov4A" targetConnectionVisual="_nHA3E_JCEeOdbuFC81ov4A" name="doPost">
-      <modelElement href="CinePantinFromEclipse.uml#_jxUGkPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHCsZvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxUGk_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nHCsZ_JCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nHCsaPJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxUGkfJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHCsafJCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nHCsavJCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxUGkvJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nHCsa_JCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nJAbIPJCEeOdbuFC81ov4A" name="SessionListener" associationsOut="_nI9X0PJCEeOdbuFC81ov4A _nI9-4PJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jkWBkPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nJAbIfJCEeOdbuFC81ov4A" position="2329.0,428.0" size="-1.0,-1.0" visible="false"/>
-    <stereotypes xmi:id="_nJAbIvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jkWBkfJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nJAbI_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jkXPsPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nJAbJPJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nJAbJfJCEeOdbuFC81ov4A" name="daoArticle">
-      <modelElement href="CinePantinFromEclipse.uml#_j6epoPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nI_0EvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6epofJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_EdP2MPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6epofJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJAbJ_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nJAbKPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJAbKfJCEeOdbuFC81ov4A" name="ArticleDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjV8APJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nJAbKvJCEeOdbuFC81ov4A" name="daoPanier">
-      <modelElement href="CinePantinFromEclipse.uml#_j6eppPJCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nJAbK_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nJAbLPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nJAbLfJCEeOdbuFC81ov4A" name="PanierDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jkE70PJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nJAbLvJCEeOdbuFC81ov4A" name="SessionListener">
-      <modelElement href="CinePantinFromEclipse.uml#_jkWooPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nJAbL_JCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nJAbMPJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jkWopPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJAbMfJCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nJAbMvJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jkWoo_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJAbM_JCEeOdbuFC81ov4A" name="SessionListener">
-          <modelElement href="CinePantinFromEclipse.uml#_jkWBkPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nJAbNPJCEeOdbuFC81ov4A" comments="_nI-l9_JCEeOdbuFC81ov4A" targetConnectionVisual="_nI_NAPJCEeOdbuFC81ov4A" name="sessionCreated">
-      <modelElement href="CinePantinFromEclipse.uml#_jx9m0fJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJAbNfJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jx9m0_JCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJAbNvJCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nJAbN_JCEeOdbuFC81ov4A" name="evt">
-        <modelElement href="CinePantinFromEclipse.uml#_jx9m0vJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJAbOPJCEeOdbuFC81ov4A" name="HttpSessionEvent">
-          <modelElement href="CinePantinFromEclipse.uml#_ju5rwPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nJAbOfJCEeOdbuFC81ov4A" comments="_nI_NAfJCEeOdbuFC81ov4A" targetConnectionVisual="_nI_NAvJCEeOdbuFC81ov4A" name="sessionDestroyed">
-      <modelElement href="CinePantinFromEclipse.uml#_jx-N4PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJAbOvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jx-N4vJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nJAbO_JCEeOdbuFC81ov4A" label="+"/>
-      <parameters xmi:id="_nJAbPPJCEeOdbuFC81ov4A" name="evt">
-        <modelElement href="CinePantinFromEclipse.uml#_jx-N4fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nJAbPfJCEeOdbuFC81ov4A" name="HttpSessionEvent">
-          <modelElement href="CinePantinFromEclipse.uml#_ju5rwPJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nGmnYPJCEeOdbuFC81ov4A" name="Sign" associationsOut="_nGmAUPJCEeOdbuFC81ov4A _nGmAWfJCEeOdbuFC81ov4A">
-    <modelElement href="CinePantinFromEclipse.uml#_jjP1YPJCEeOdbuFC81ov4A"/>
-    <visualProperties xmi:id="_nGmnYfJCEeOdbuFC81ov4A" position="1912.0,290.0" size="176.0,175.0" visible="false"/>
-    <stereotypes xmi:id="_nGmnYvJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-      <modelElement href="CinePantinFromEclipse.uml#_jjQccPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <stereotypes xmi:id="_nGmnY_JCEeOdbuFC81ov4A" name="Annotations">
-      <modelElement href="CinePantinFromEclipse.uml#_jjSRoPJCEeOdbuFC81ov4A"/>
-    </stereotypes>
-    <visibility xmi:id="_nGmnZPJCEeOdbuFC81ov4A" label="+"/>
-    <attributes xmi:id="_nGmnZfJCEeOdbuFC81ov4A" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
-      <modelElement href="CinePantinFromEclipse.uml#_j6WGwvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGmnZvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j6WGxPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGmnZ_JCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nGmnaPJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nGmnafJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nGmnavJCEeOdbuFC81ov4A" name="clientDao">
-      <modelElement href="CinePantinFromEclipse.uml#_j6WGxfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGmnbPJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6Wt0PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Ecx8IPLQEeO0S8ezpQFlsQ" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j6Wt0PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGmnbfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nGmnbvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nGmnb_JCEeOdbuFC81ov4A" name="ClientDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jjz2EPJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_nGmncPJCEeOdbuFC81ov4A" name="panierDao">
-      <modelElement href="CinePantinFromEclipse.uml#_j6Wt0_JCEeOdbuFC81ov4A"/>
-      <visibility xmi:id="_nGmncfJCEeOdbuFC81ov4A" label="-"/>
-      <cardinality xmi:id="_nGmncvJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nGmnc_JCEeOdbuFC81ov4A" name="PanierDao">
-        <modelElement href="CinePantinFromEclipse.uml#_jkE70PJCEeOdbuFC81ov4A"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_nGmndPJCEeOdbuFC81ov4A" comments="_nGjkEPJCEeOdbuFC81ov4A" targetConnectionVisual="_nGjkEfJCEeOdbuFC81ov4A" name="Sign">
-      <modelElement href="CinePantinFromEclipse.uml#_jjRDgPJCEeOdbuFC81ov4A"/>
-      <keywords xmi:id="_nGmndfJCEeOdbuFC81ov4A" keyword="create"/>
-      <stereotypes xmi:id="_nGmndvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jjRDhPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGmnd_JCEeOdbuFC81ov4A" label="+"/>
-      <outParameters xmi:id="_nGmnePJCEeOdbuFC81ov4A">
-        <modelElement href="CinePantinFromEclipse.uml#_jjRDg_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGmnefJCEeOdbuFC81ov4A" name="Sign">
-          <modelElement href="CinePantinFromEclipse.uml#_jjP1YPJCEeOdbuFC81ov4A"/>
-        </type>
-      </outParameters>
-    </operations>
-    <operations xmi:id="_nGmnevJCEeOdbuFC81ov4A" comments="_nGkLIPJCEeOdbuFC81ov4A" targetConnectionVisual="_nGkLIfJCEeOdbuFC81ov4A" name="doGet">
-      <modelElement href="CinePantinFromEclipse.uml#_jxgT0PJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGmne_JCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxg64fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGmnfPJCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nGmnffJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxgT0fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGmnfvJCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nGmnf_JCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxg64PJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGmngPJCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
-    <operations xmi:id="_nGmngfJCEeOdbuFC81ov4A" comments="_nGkLIvJCEeOdbuFC81ov4A" targetConnectionVisual="_nGkLI_JCEeOdbuFC81ov4A" name="doPost">
-      <modelElement href="CinePantinFromEclipse.uml#_jxg64vJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGmngvJCEeOdbuFC81ov4A" name="StyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_jxhh8fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <visibility xmi:id="_nGmng_JCEeOdbuFC81ov4A" label="#"/>
-      <parameters xmi:id="_nGmnhPJCEeOdbuFC81ov4A" name="request">
-        <modelElement href="CinePantinFromEclipse.uml#_jxg64_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGmnhfJCEeOdbuFC81ov4A" name="HttpServletRequest">
-          <modelElement href="CinePantinFromEclipse.uml#_jsROgfJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-      <parameters xmi:id="_nGmnhvJCEeOdbuFC81ov4A" name="response">
-        <modelElement href="CinePantinFromEclipse.uml#_jxhh8PJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nGmnh_JCEeOdbuFC81ov4A" name="HttpServletResponse">
-          <modelElement href="CinePantinFromEclipse.uml#_jsVf8fJCEeOdbuFC81ov4A"/>
-        </type>
-      </parameters>
-    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_nK__MPJCEeOdbuFC81ov4A" comments="_nK-xEPJCEeOdbuFC81ov4A" targetConnectionVisual="_nK-xEfJCEeOdbuFC81ov4A" name="SerialArticle" subclassedBy="_nK_YIPJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_jwPIgfJCEeOdbuFC81ov4A"/>
@@ -3262,10 +1374,10 @@
     </attributes>
     <attributes xmi:id="_nGR3SvJCEeOdbuFC81ov4A" name="daoArticle">
       <modelElement href="CinePantinFromEclipse.uml#_j6TDcfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGR3TPJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_EcwG8PLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6TDcvJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EcwG8PLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kibyPva7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6TDcvJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nGR3TfJCEeOdbuFC81ov4A" label="-"/>
@@ -3276,10 +1388,10 @@
     </attributes>
     <attributes xmi:id="_nGR3UPJCEeOdbuFC81ov4A" name="daoCategorie">
       <modelElement href="CinePantinFromEclipse.uml#_j6TDdfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGR3UvJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_EcxVEPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6TqgPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EcxVEPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kibyP_a7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6TqgPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nGR3U_JCEeOdbuFC81ov4A" label="-"/>
@@ -3441,13 +1553,13 @@
     </attributes>
     <attributes xmi:id="_nKzLDfJCEeOdbuFC81ov4A" name="categorie">
       <modelElement href="CinePantinFromEclipse.uml#_j6pBsfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_EdefsPLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjLZG_a7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j6pBsvJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdfGwPLQEeO0S8ezpQFlsQ" name="Cascade">
+      <stereotypes xmi:id="_kjLZHPa7EeOwAIzX2wwpvA" name="Cascade">
         <modelElement href="CinePantinFromEclipse.uml#_j6tTIPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdfGwfLQEeO0S8ezpQFlsQ" name="FetchStrategy">
+      <stereotypes xmi:id="_kjLZHfa7EeOwAIzX2wwpvA" name="FetchStrategy">
         <modelElement href="CinePantinFromEclipse.uml#_j6tTIfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nKzLDvJCEeOdbuFC81ov4A" label="+"/>
@@ -3458,7 +1570,7 @@
     </attributes>
     <attributes xmi:id="_nKzLEfJCEeOdbuFC81ov4A" name="plagePrixArticle">
       <modelElement href="CinePantinFromEclipse.uml#_j6t6MPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_EdUHoPLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjBoF_a7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j6uhQPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nKzLEvJCEeOdbuFC81ov4A" label="+"/>
@@ -3908,10 +2020,10 @@
     </attributes>
     <attributes xmi:id="_nJeVP_JCEeOdbuFC81ov4A" name="article">
       <modelElement href="CinePantinFromEclipse.uml#_krhsFvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJdHEvJCEeOdbuFC81ov4A" name="JoinColumns">
+      <stereotypes xmi:id="_EdUusPLQEeO0S8ezpQFlsQ" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_krhsF_JCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdUusPLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjBoGPa7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_krhsF_JCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJeVQfJCEeOdbuFC81ov4A" label="+"/>
@@ -3922,10 +2034,10 @@
     </attributes>
     <attributes xmi:id="_nJeVRPJCEeOdbuFC81ov4A" name="panier">
       <modelElement href="CinePantinFromEclipse.uml#_kriTIfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJduIvJCEeOdbuFC81ov4A" name="StyledElement">
+      <stereotypes xmi:id="_EdV80PLQEeO0S8ezpQFlsQ" name="StyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_kriTIvJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdV80PLQEeO0S8ezpQFlsQ" name="StyledElement">
+      <stereotypes xmi:id="_kjBoGfa7EeOwAIzX2wwpvA" name="StyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_kriTIvJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJeVRvJCEeOdbuFC81ov4A" label="+"/>
@@ -4105,10 +2217,10 @@
     </attributes>
     <attributes xmi:id="_nG6wg_JCEeOdbuFC81ov4A" name="clientDao">
       <modelElement href="CinePantinFromEclipse.uml#_j6QAIfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nG6JYvJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec2NkPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QAIvJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec2NkPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8Iva7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QAIvJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nG6whfJCEeOdbuFC81ov4A" label="-"/>
@@ -4119,10 +2231,10 @@
     </attributes>
     <attributes xmi:id="_nG6wiPJCEeOdbuFC81ov4A" name="cmdDao">
       <modelElement href="CinePantinFromEclipse.uml#_j6QAJfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nG6wivJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec4CwPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QnMPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec4CwPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8JPa7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QnMPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nG6wi_JCEeOdbuFC81ov4A" label="-"/>
@@ -4133,10 +2245,10 @@
     </attributes>
     <attributes xmi:id="_nG6wjvJCEeOdbuFC81ov4A" name="articleDao">
       <modelElement href="CinePantinFromEclipse.uml#_j6QnM_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nG6JZ_JCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec20oPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QnNPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec20oPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8I_a7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6QnNPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nG6wkPJCEeOdbuFC81ov4A" label="-"/>
@@ -4221,10 +2333,10 @@
     </attributes>
     <attributes xmi:id="_nHKBDPJCEeOdbuFC81ov4A" name="daoArticle">
       <modelElement href="CinePantinFromEclipse.uml#_j6TqhvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHJZ9fJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec6fAPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6URkPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec6fAPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8J_a7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6URkPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nHKBDvJCEeOdbuFC81ov4A" label="-"/>
@@ -4485,10 +2597,10 @@
     </attributes>
     <attributes xmi:id="_nJ0TgfJCEeOdbuFC81ov4A" name="article">
       <modelElement href="CinePantinFromEclipse.uml#_j7QFsfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJzsYvJCEeOdbuFC81ov4A" name="JoinColumns">
+      <stereotypes xmi:id="_Eda1UPLQEeO0S8ezpQFlsQ" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j7QFsvJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Eda1UPLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjLZFva7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j7QFsvJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJ0Tg_JCEeOdbuFC81ov4A" label="+"/>
@@ -4499,10 +2611,10 @@
     </attributes>
     <attributes xmi:id="_nJ0ThvJCEeOdbuFC81ov4A" name="commande">
       <modelElement href="CinePantinFromEclipse.uml#_j7QswPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJzFVfJCEeOdbuFC81ov4A" name="StyledElement">
+      <stereotypes xmi:id="_EdZnMPLQEeO0S8ezpQFlsQ" name="StyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_j7QswfJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdZnMPLQEeO0S8ezpQFlsQ" name="StyledElement">
+      <stereotypes xmi:id="_kjLZFfa7EeOwAIzX2wwpvA" name="StyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_j7QswfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJ0TiPJCEeOdbuFC81ov4A" label="+"/>
@@ -4572,10 +2684,10 @@
     </attributes>
     <attributes xmi:id="_nJ5L-vJCEeOdbuFC81ov4A" name="article">
       <modelElement href="CinePantinFromEclipse.uml#_j7L0QvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJ5L8vJCEeOdbuFC81ov4A" name="LegacyStyledElement">
+      <stereotypes xmi:id="_EdbcYPLQEeO0S8ezpQFlsQ" name="LegacyStyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_j7L0Q_JCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdbcYPLQEeO0S8ezpQFlsQ" name="LegacyStyledElement">
+      <stereotypes xmi:id="_kjLZF_a7EeOwAIzX2wwpvA" name="LegacyStyledElement">
         <modelElement href="CinePantinFromEclipse.uml#_j7L0Q_JCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJ5L_PJCEeOdbuFC81ov4A" label="+"/>
@@ -4811,10 +2923,10 @@
     <visibility xmi:id="_nI34RPJCEeOdbuFC81ov4A" label="+"/>
     <attributes xmi:id="_nI34RfJCEeOdbuFC81ov4A" name="clientDao">
       <modelElement href="CinePantinFromEclipse.uml#_j6dbg_JCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nI3RNPJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_EdOoEPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6eCkPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdOoEPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kjBoEfa7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6eCkPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nI34R_JCEeOdbuFC81ov4A" label="-"/>
@@ -4906,10 +3018,10 @@
     </attributes>
     <attributes xmi:id="_nGtVHvJCEeOdbuFC81ov4A" name="daoArticle">
       <modelElement href="CinePantinFromEclipse.uml#_j6R1VvJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nGtVE_JCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_EczxUPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6ScYPJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EczxUPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8IPa7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6ScYPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nGtVIPJCEeOdbuFC81ov4A" label="-"/>
@@ -4994,10 +3106,10 @@
     </attributes>
     <attributes xmi:id="_nHR82vJCEeOdbuFC81ov4A" name="daoArticle">
       <modelElement href="CinePantinFromEclipse.uml#_j6VfsPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHRVxPJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec8UMPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6VfsfJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec8UMPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kik8KPa7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6VfsfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nHR83PJCEeOdbuFC81ov4A" label="-"/>
@@ -5008,10 +3120,10 @@
     </attributes>
     <attributes xmi:id="_nHR83_JCEeOdbuFC81ov4A" name="daoCategorie">
       <modelElement href="CinePantinFromEclipse.uml#_j6VftPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nHRVyfJCEeOdbuFC81ov4A" name="Annotations">
+      <stereotypes xmi:id="_Ec87QPLQEeO0S8ezpQFlsQ" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6VftfJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_Ec87QPLQEeO0S8ezpQFlsQ" name="Annotations">
+      <stereotypes xmi:id="_kiutIPa7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j6VftfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nHR84fJCEeOdbuFC81ov4A" label="-"/>
@@ -5096,7 +3208,7 @@
     </attributes>
     <attributes xmi:id="_nKPxSvJCEeOdbuFC81ov4A" name="client">
       <modelElement href="CinePantinFromEclipse.uml#_krkIVfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_EdWj4PLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjLZEPa7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_krkIVvJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nKPxS_JCEeOdbuFC81ov4A" label="+"/>
@@ -5118,15 +3230,6 @@
     </attributes>
     <attributes xmi:id="_nKPxU_JCEeOdbuFC81ov4A" name="lignesPanier">
       <modelElement href="CinePantinFromEclipse.uml#_krlWcPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nKPKNPJCEeOdbuFC81ov4A" name="Generics">
-        <modelElement href="CinePantinFromEclipse.uml#_krpn4PJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nKPKNfJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_krpn4fJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nKPKNvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_krpn4vJCEeOdbuFC81ov4A"/>
-      </stereotypes>
       <stereotypes xmi:id="_EdcqgPLQEeO0S8ezpQFlsQ" name="Generics">
         <modelElement href="CinePantinFromEclipse.uml#_krpn4PJCEeOdbuFC81ov4A"/>
       </stereotypes>
@@ -5134,6 +3237,15 @@
         <modelElement href="CinePantinFromEclipse.uml#_krpn4fJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <stereotypes xmi:id="_EddRkfLQEeO0S8ezpQFlsQ" name="Annotations">
+        <modelElement href="CinePantinFromEclipse.uml#_krpn4vJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZGPa7EeOwAIzX2wwpvA" name="Generics">
+        <modelElement href="CinePantinFromEclipse.uml#_krpn4PJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZGfa7EeOwAIzX2wwpvA" name="LegacyStyledElement">
+        <modelElement href="CinePantinFromEclipse.uml#_krpn4fJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZGva7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_krpn4vJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nKPxV_JCEeOdbuFC81ov4A" label="-"/>
@@ -5372,6 +3484,32 @@
         </type>
       </parameters>
     </operations>
+    <operations xmi:id="_oejplva7EeOwAIzX2wwpvA" name="getMontantTotalTTCFormat">
+      <modelElement href="CinePantinFromEclipse.uml#_od9MkPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_oejpl_a7EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantinFromEclipse.uml#_oeG9kPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_oejpmPa7EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_oejpmfa7EeOwAIzX2wwpvA">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQunPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpmva7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oejpm_a7EeOwAIzX2wwpvA" name="getMontantTotalHTFormat">
+      <modelElement href="CinePantinFromEclipse.uml#_od9Mkfa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_oejpnPa7EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantinFromEclipse.uml#_oeG9kfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_oejpnfa7EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_oejpnva7EeOwAIzX2wwpvA">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQunfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpn_a7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nJKzOfJCEeOdbuFC81ov4A" name="Commande" associationsIn="_nJF6sPJCEeOdbuFC81ov4A" associationsOut="_nJKzMPJCEeOdbuFC81ov4A _nJva8PJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_jlLIAPJCEeOdbuFC81ov4A"/>
@@ -5440,10 +3578,10 @@
     </attributes>
     <attributes xmi:id="_nJKzV_JCEeOdbuFC81ov4A" name="client">
       <modelElement href="CinePantinFromEclipse.uml#_j6_nBPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJJlEvJCEeOdbuFC81ov4A" name="JoinColumns">
+      <stereotypes xmi:id="_EdREUPLQEeO0S8ezpQFlsQ" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j6_nBfJCEeOdbuFC81ov4A"/>
       </stereotypes>
-      <stereotypes xmi:id="_EdREUPLQEeO0S8ezpQFlsQ" name="JoinColumns">
+      <stereotypes xmi:id="_kjBoE_a7EeOwAIzX2wwpvA" name="JoinColumns">
         <modelElement href="CinePantinFromEclipse.uml#_j6_nBfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJKzWfJCEeOdbuFC81ov4A" label="+"/>
@@ -5454,15 +3592,6 @@
     </attributes>
     <attributes xmi:id="_nJKzXPJCEeOdbuFC81ov4A" name="lignesCommande">
       <modelElement href="CinePantinFromEclipse.uml#_j7AOEfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJKzYPJCEeOdbuFC81ov4A" name="Generics">
-        <modelElement href="CinePantinFromEclipse.uml#_j7EfgPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJKzYfJCEeOdbuFC81ov4A" name="LegacyStyledElement">
-        <modelElement href="CinePantinFromEclipse.uml#_j7EfgfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJKzYvJCEeOdbuFC81ov4A" name="Annotations">
-        <modelElement href="CinePantinFromEclipse.uml#_j7FGkPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
       <stereotypes xmi:id="_EdSScPLQEeO0S8ezpQFlsQ" name="Generics">
         <modelElement href="CinePantinFromEclipse.uml#_j7EfgPJCEeOdbuFC81ov4A"/>
       </stereotypes>
@@ -5470,6 +3599,15 @@
         <modelElement href="CinePantinFromEclipse.uml#_j7EfgfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <stereotypes xmi:id="_EdS5gfLQEeO0S8ezpQFlsQ" name="Annotations">
+        <modelElement href="CinePantinFromEclipse.uml#_j7FGkPJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjBoFPa7EeOwAIzX2wwpvA" name="Generics">
+        <modelElement href="CinePantinFromEclipse.uml#_j7EfgPJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjBoFfa7EeOwAIzX2wwpvA" name="LegacyStyledElement">
+        <modelElement href="CinePantinFromEclipse.uml#_j7EfgfJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjBoFva7EeOwAIzX2wwpvA" name="Annotations">
         <modelElement href="CinePantinFromEclipse.uml#_j7FGkPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJKzY_JCEeOdbuFC81ov4A" label="-"/>
@@ -5836,16 +3974,16 @@
     </attributes>
     <attributes xmi:id="_nJpUc_JCEeOdbuFC81ov4A" name="adresseFacturation">
       <modelElement href="CinePantinFromEclipse.uml#_j6zZxfJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJpUdvJCEeOdbuFC81ov4A" name="Cascade">
-        <modelElement href="CinePantinFromEclipse.uml#_j63rMPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJpUd_JCEeOdbuFC81ov4A" name="FetchStrategy">
-        <modelElement href="CinePantinFromEclipse.uml#_j63rMfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
       <stereotypes xmi:id="_EdXyAPLQEeO0S8ezpQFlsQ" name="Cascade">
         <modelElement href="CinePantinFromEclipse.uml#_j63rMPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <stereotypes xmi:id="_EdXyAfLQEeO0S8ezpQFlsQ" name="FetchStrategy">
+        <modelElement href="CinePantinFromEclipse.uml#_j63rMfJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZEfa7EeOwAIzX2wwpvA" name="Cascade">
+        <modelElement href="CinePantinFromEclipse.uml#_j63rMPJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZEva7EeOwAIzX2wwpvA" name="FetchStrategy">
         <modelElement href="CinePantinFromEclipse.uml#_j63rMfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJpUePJCEeOdbuFC81ov4A" label="+"/>
@@ -5856,16 +3994,16 @@
     </attributes>
     <attributes xmi:id="_nJpUe_JCEeOdbuFC81ov4A" name="adresseLivraison">
       <modelElement href="CinePantinFromEclipse.uml#_j64SQPJCEeOdbuFC81ov4A"/>
-      <stereotypes xmi:id="_nJpUfvJCEeOdbuFC81ov4A" name="Cascade">
-        <modelElement href="CinePantinFromEclipse.uml#_j68jsPJCEeOdbuFC81ov4A"/>
-      </stereotypes>
-      <stereotypes xmi:id="_nJpUf_JCEeOdbuFC81ov4A" name="FetchStrategy">
-        <modelElement href="CinePantinFromEclipse.uml#_j68jsfJCEeOdbuFC81ov4A"/>
-      </stereotypes>
       <stereotypes xmi:id="_EdYZEPLQEeO0S8ezpQFlsQ" name="Cascade">
         <modelElement href="CinePantinFromEclipse.uml#_j68jsPJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <stereotypes xmi:id="_EdZAIPLQEeO0S8ezpQFlsQ" name="FetchStrategy">
+        <modelElement href="CinePantinFromEclipse.uml#_j68jsfJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZE_a7EeOwAIzX2wwpvA" name="Cascade">
+        <modelElement href="CinePantinFromEclipse.uml#_j68jsPJCEeOdbuFC81ov4A"/>
+      </stereotypes>
+      <stereotypes xmi:id="_kjLZFPa7EeOwAIzX2wwpvA" name="FetchStrategy">
         <modelElement href="CinePantinFromEclipse.uml#_j68jsfJCEeOdbuFC81ov4A"/>
       </stereotypes>
       <visibility xmi:id="_nJpUgPJCEeOdbuFC81ov4A" label="+"/>
@@ -6012,6 +4150,62 @@
         </type>
       </parameters>
     </operations>
+    <operations xmi:id="_oejpgva7EeOwAIzX2wwpvA" comments="_oejpgPa7EeOwAIzX2wwpvA" targetConnectionVisual="_oejpgfa7EeOwAIzX2wwpvA" name="Client">
+      <modelElement href="CinePantinFromEclipse.uml#_oeQukPa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_oejpg_a7EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_oejphPa7EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQum_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_oejphfa7EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_oejphva7EeOwAIzX2wwpvA">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQumPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejph_a7EeOwAIzX2wwpvA" name="Client">
+          <modelElement href="CinePantinFromEclipse.uml#_jlEaUPJCEeOdbuFC81ov4A"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oejpiPa7EeOwAIzX2wwpvA" name="nom">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQukfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpifa7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejpiva7EeOwAIzX2wwpvA" name="prenom">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQukva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpi_a7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejpjPa7EeOwAIzX2wwpvA" name="login">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQuk_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpjfa7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejpjva7EeOwAIzX2wwpvA" name="mdp">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQulPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpj_a7EeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejpkPa7EeOwAIzX2wwpvA" name="newsletter">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQulfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpkfa7EeOwAIzX2wwpvA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejpkva7EeOwAIzX2wwpvA" name="adresseFacturation">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQulva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejpk_a7EeOwAIzX2wwpvA" name="Adresse">
+          <modelElement href="CinePantinFromEclipse.uml#_jkYd0PJCEeOdbuFC81ov4A"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oejplPa7EeOwAIzX2wwpvA" name="adresseLivraison">
+        <modelElement href="CinePantinFromEclipse.uml#_oeQul_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_oejplfa7EeOwAIzX2wwpvA" name="Adresse">
+          <modelElement href="CinePantinFromEclipse.uml#_jkYd0PJCEeOdbuFC81ov4A"/>
+        </type>
+      </parameters>
+    </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nKj6UfJCEeOdbuFC81ov4A" name="Categorie" associationsOut="_nKgP8PJCEeOdbuFC81ov4A">
     <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
@@ -6030,8 +4224,8 @@
       </stereotypes>
       <visibility xmi:id="_nKj6WPJCEeOdbuFC81ov4A" label="-"/>
       <cardinality xmi:id="_nKj6WfJCEeOdbuFC81ov4A" label="1" max="1" min="1"/>
-      <type xmi:id="_nKj6WvJCEeOdbuFC81ov4A" name="long">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      <type xmi:id="_nTPs8va7EeOwAIzX2wwpvA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
     <attributes xmi:id="_nKj6W_JCEeOdbuFC81ov4A" name="nomCategorie">
@@ -6064,8 +4258,8 @@
       <visibility xmi:id="_nKj6Z_JCEeOdbuFC81ov4A" label="+"/>
       <outParameters xmi:id="_nKj6aPJCEeOdbuFC81ov4A">
         <modelElement href="CinePantinFromEclipse.uml#_jlAI4fJCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKj6afJCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <type xmi:id="_nTZd8Pa7EeOwAIzX2wwpvA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </outParameters>
     </operations>
@@ -6096,10 +4290,10 @@
           <modelElement href="CinePantinFromEclipse.uml#_jk-6wPJCEeOdbuFC81ov4A"/>
         </type>
       </outParameters>
-      <parameters xmi:id="_nKj6dvJCEeOdbuFC81ov4A" name="idCategorie">
-        <modelElement href="CinePantinFromEclipse.uml#_jlAv8_JCEeOdbuFC81ov4A"/>
-        <type xmi:id="_nKj6d_JCEeOdbuFC81ov4A" name="long">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      <parameters xmi:id="_nTPs8Pa7EeOwAIzX2wwpvA" name="idCategorie">
+        <modelElement href="CinePantinFromEclipse.uml#_j7q8dfJCEeOdbuFC81ov4A"/>
+        <type xmi:id="_nTPs8fa7EeOwAIzX2wwpvA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </parameters>
     </operations>
@@ -6434,5 +4628,8 @@
         </type>
       </parameters>
     </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oejpgPa7EeOwAIzX2wwpvA" sourceConnectionVisual="_oejpgfa7EeOwAIzX2wwpvA" text="Constructeur ajoutant les addresses de livraison et de facturation&#xD;&#xA;&#x9; * @param nom&#xD;&#xA;&#x9; * @param prenom&#xD;&#xA;&#x9; * @param login&#xD;&#xA;&#x9; * @param mdp&#xD;&#xA;&#x9; * @param newsletter&#xD;&#xA;&#x9; * @param adresseFacturation&#xD;&#xA;&#x9; * @param adresseLivraison" item="_oejpgva7EeOwAIzX2wwpvA">
+    <modelElement href="CinePantinFromEclipse.uml#_oeZ4jfa7EeOwAIzX2wwpvA"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

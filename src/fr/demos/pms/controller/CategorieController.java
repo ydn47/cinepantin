@@ -67,6 +67,7 @@ public class CategorieController extends HttpServlet {
 		String nomCategorie = "";
 		nomCategorie = daoCategorie.findNomById(idCategorie);
 		request.setAttribute("nomCateg", nomCategorie);
+		request.setAttribute("idCateg", idCategorie);
 		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/listings.jsp");

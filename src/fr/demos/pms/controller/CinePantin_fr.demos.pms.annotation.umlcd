@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DEGkwPa8EeOwAIzX2wwpvA">
-  <modelElement href="platform:/resource/CinePantin/src/fr/demos/pms/controller/CinePantin.uml#_7rTLMPa7EeOwAIzX2wwpvA"/>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DEGkwPa8EeOwAIzX2wwpvA">
+  <modelElement href="CinePantin.uml#_8BBjmPa7EeOwAIzX2wwpvA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_DRybcPa8EeOwAIzX2wwpvA" name="Dao">
+    <modelElement href="CinePantin.uml#_8CXAUPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_DRybcfa8EeOwAIzX2wwpvA" position="50.0,50.0"/>
+    <stereotypes xmi:id="_DRybcva8EeOwAIzX2wwpvA" name="AnnotationDefinition">
+      <modelElement href="CinePantin.uml#_8CXAUfa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_DRybc_a8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8CXAUva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_DRybdPa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8CXAU_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_DRybdfa8EeOwAIzX2wwpvA" label="+"/>
+  </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

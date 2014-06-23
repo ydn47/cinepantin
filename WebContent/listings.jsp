@@ -2,7 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@include file="entete.jsp"%>
+
+<jsp:include page="entete.jsp">
+	<jsp:param value="articles/${idCateg}" name="origine"/>
+</jsp:include>
 <div class="row">
 <%@include file="menuLeft.jsp"%>
 	<div class="span9">

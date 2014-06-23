@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_i8vPAPJCEeOdbuFC81ov4A" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_i894gPJCEeOdbuFC81ov4A" source="codegen">
         <details xmi:id="_i894gfJCEeOdbuFC81ov4A" key="codegenDirectory" value="/CinePantin/src"/>
-        <details xmi:id="_nCuM8PJCEeOdbuFC81ov4A" key="AssociatedSourceCode" value="/CinePantin/src/fr/demos/pms/annotation/Dao.java;3191813880/1;/CinePantin/src/fr/demos/pms/controller/CategorieController.java;822187770/1;/CinePantin/src/fr/demos/pms/controller/CommandeController.java;449006001/1;/CinePantin/src/fr/demos/pms/controller/ContactController.java;1097887660/1;/CinePantin/src/fr/demos/pms/controller/FrontArticle.java;700968708/1;/CinePantin/src/fr/demos/pms/controller/MainFrontArticle.java;4101920769/1;/CinePantin/src/fr/demos/pms/controller/PanierController.java;183258749/1;/CinePantin/src/fr/demos/pms/controller/SerialController.java;302159875/1;/CinePantin/src/fr/demos/pms/controller/Sign.java;3999725148/1;/CinePantin/src/fr/demos/pms/dao/ArticleDao.java;128073510/1;/CinePantin/src/fr/demos/pms/dao/ArticleDaoJPA.java;1757322399/1;/CinePantin/src/fr/demos/pms/dao/CategorieDao.java;3584804920/1;/CinePantin/src/fr/demos/pms/dao/CategorieDaoJPA.java;1199367497/1;/CinePantin/src/fr/demos/pms/dao/ClientDao.java;1871346141/1;/CinePantin/src/fr/demos/pms/dao/ClientDaoJPA.java;26896587/1;/CinePantin/src/fr/demos/pms/dao/CommandeDao.java;584823000/1;/CinePantin/src/fr/demos/pms/dao/CommandeDaoJPA.java;897058255/1;/CinePantin/src/fr/demos/pms/dao/ContactDaoJPA.java;2941225645/1;/CinePantin/src/fr/demos/pms/dao/DAOException.java;1430072110/1;/CinePantin/src/fr/demos/pms/dao/PanierDao.java;222893487/1;/CinePantin/src/fr/demos/pms/dao/PanierDaoJPA.java;504403462/1;/CinePantin/src/fr/demos/pms/filter/HeaderFilter.java;1536296821/1;/CinePantin/src/fr/demos/pms/filter/LoginFilter.java;1715135538/1;/CinePantin/src/fr/demos/pms/listener/Compteur.java;3410359153/1;/CinePantin/src/fr/demos/pms/listener/ContextListener.java;3574654536/1;/CinePantin/src/fr/demos/pms/listener/SessionListener.java;1994329731/1;/CinePantin/src/fr/demos/pms/model/Adresse.java;3502477173/1;/CinePantin/src/fr/demos/pms/model/Article.java;2064013175/1;/CinePantin/src/fr/demos/pms/model/Categorie.java;293205797/1;/CinePantin/src/fr/demos/pms/model/Client.java;1665447228/1;/CinePantin/src/fr/demos/pms/model/Commande.java;1943638358/1;/CinePantin/src/fr/demos/pms/model/Contact.java;2399073733/1;/CinePantin/src/fr/demos/pms/model/Devise.java;1671396428/1;/CinePantin/src/fr/demos/pms/model/ExceptionPrix.java;1562451609/1;/CinePantin/src/fr/demos/pms/model/ExceptionStock.java;2347190773/1;/CinePantin/src/fr/demos/pms/model/Facture.java;3424757986/1;/CinePantin/src/fr/demos/pms/model/LigneCommande.java;1790350765/1;/CinePantin/src/fr/demos/pms/dao/ContactDao.java;1573887305/0;/CinePantin/src/fr/demos/pms/model/LignePanier.java;2717749456/1;/CinePantin/src/fr/demos/pms/model/LignePanierFactory.java;1324311205/1;/CinePantin/src/fr/demos/pms/model/Panier.java;964239005/1;/CinePantin/src/fr/demos/pms/model/PanierFactory.java;1374449841/1;/CinePantin/src/fr/demos/pms/model/PlageDePrix.java;2084486669/1;/CinePantin/src/fr/demos/pms/model/Prix.java;2402853299/1;/CinePantin/src/fr/demos/pms/model/Tva.java;3113154777/1;/CinePantin/src/fr/demos/pms/serial/SerialArticle.java;1631318579/1;/CinePantin/src/fr/demos/pms/util/SendExternalEmail.java;1329509067/1;"/>
+        <details xmi:id="_nCuM8PJCEeOdbuFC81ov4A" key="AssociatedSourceCode" value="/CinePantin/src/fr/demos/pms/annotation/Dao.java;3191813880/1;/CinePantin/src/fr/demos/pms/controller/CategorieController.java;822187770/1;/CinePantin/src/fr/demos/pms/controller/CommandeController.java;449006001/1;/CinePantin/src/fr/demos/pms/controller/ContactController.java;1097887660/1;/CinePantin/src/fr/demos/pms/controller/FrontArticle.java;700968708/1;/CinePantin/src/fr/demos/pms/controller/MainFrontArticle.java;2912273705/1;/CinePantin/src/fr/demos/pms/controller/PanierController.java;183258749/1;/CinePantin/src/fr/demos/pms/controller/SerialController.java;1430329355/1;/CinePantin/src/fr/demos/pms/controller/Sign.java;3999725148/1;/CinePantin/src/fr/demos/pms/dao/ArticleDao.java;128073510/1;/CinePantin/src/fr/demos/pms/dao/ArticleDaoJPA.java;3212069144/1;/CinePantin/src/fr/demos/pms/dao/CategorieDao.java;279940386/1;/CinePantin/src/fr/demos/pms/dao/CategorieDaoJPA.java;1605388430/1;/CinePantin/src/fr/demos/pms/dao/ClientDao.java;1871346141/1;/CinePantin/src/fr/demos/pms/dao/ClientDaoJPA.java;26896587/1;/CinePantin/src/fr/demos/pms/dao/CommandeDao.java;584823000/1;/CinePantin/src/fr/demos/pms/dao/CommandeDaoJPA.java;897058255/1;/CinePantin/src/fr/demos/pms/dao/ContactDaoJPA.java;2941225645/1;/CinePantin/src/fr/demos/pms/dao/DAOException.java;1430072110/1;/CinePantin/src/fr/demos/pms/dao/PanierDao.java;222893487/1;/CinePantin/src/fr/demos/pms/dao/PanierDaoJPA.java;504403462/1;/CinePantin/src/fr/demos/pms/filter/HeaderFilter.java;1536296821/1;/CinePantin/src/fr/demos/pms/filter/LoginFilter.java;1715135538/1;/CinePantin/src/fr/demos/pms/listener/Compteur.java;3410359153/1;/CinePantin/src/fr/demos/pms/listener/ContextListener.java;3574654536/1;/CinePantin/src/fr/demos/pms/listener/SessionListener.java;1994329731/1;/CinePantin/src/fr/demos/pms/model/Adresse.java;3502477173/1;/CinePantin/src/fr/demos/pms/model/Article.java;3070809232/1;/CinePantin/src/fr/demos/pms/model/Categorie.java;2611026503/1;/CinePantin/src/fr/demos/pms/model/Client.java;1665447228/1;/CinePantin/src/fr/demos/pms/model/Commande.java;1943638358/1;/CinePantin/src/fr/demos/pms/model/Contact.java;2399073733/1;/CinePantin/src/fr/demos/pms/model/Devise.java;1671396428/1;/CinePantin/src/fr/demos/pms/model/ExceptionPrix.java;1562451609/1;/CinePantin/src/fr/demos/pms/model/ExceptionStock.java;2347190773/1;/CinePantin/src/fr/demos/pms/model/Facture.java;3424757986/1;/CinePantin/src/fr/demos/pms/model/LigneCommande.java;1790350765/1;/CinePantin/src/fr/demos/pms/dao/ContactDao.java;1573887305/0;/CinePantin/src/fr/demos/pms/model/LignePanier.java;2717749456/1;/CinePantin/src/fr/demos/pms/model/LignePanierFactory.java;1324311205/1;/CinePantin/src/fr/demos/pms/model/Panier.java;964239005/1;/CinePantin/src/fr/demos/pms/model/PanierFactory.java;1374449841/1;/CinePantin/src/fr/demos/pms/model/PlageDePrix.java;2084486669/1;/CinePantin/src/fr/demos/pms/model/Prix.java;2402853299/1;/CinePantin/src/fr/demos/pms/model/Tva.java;3113154777/1;/CinePantin/src/fr/demos/pms/serial/SerialArticle.java;1631318579/1;/CinePantin/src/fr/demos/pms/util/SendExternalEmail.java;1329509067/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_mQX6sPa7EeOwAIzX2wwpvA" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_mQX6sfa7EeOwAIzX2wwpvA" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_mQX6sva7EeOwAIzX2wwpvA" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_mQX6s_a7EeOwAIzX2wwpvA" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_mQX6tPa7EeOwAIzX2wwpvA" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_jifncPJCEeOdbuFC81ov4A">
@@ -122,6 +129,7 @@
               <interfaceRealization xmi:id="_jt4YEPJCEeOdbuFC81ov4A" client="_jjfF8PJCEeOdbuFC81ov4A" supplier="_jjV8APJCEeOdbuFC81ov4A" contract="_jjV8APJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7eIIPJCEeOdbuFC81ov4A" name="showMainArticles" specification="_jjftAfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7eIIfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7eIIvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -137,7 +145,9 @@
                 <ownedParameter xmi:id="_j7eIJPJCEeOdbuFC81ov4A" name="shortDesc">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7eIJfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7eIJfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return null;&#xD;
 	</body>
@@ -146,7 +156,9 @@
                 <ownedParameter xmi:id="_j7eIJ_JCEeOdbuFC81ov4A" name="longDesc">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7eIKPJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7eIKPJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return null;&#xD;
 	</body>
@@ -154,7 +166,8 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7eIKfJCEeOdbuFC81ov4A" name="create" specification="_jt5mMvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7eIKvJCEeOdbuFC81ov4A" name="a" type="_jkiO0PJCEeOdbuFC81ov4A"/>
                 <language>java</language>
-                <body>try {&#xD;
+                <body>System.out.println(&quot;Article ***************************************&quot;+a);&#xD;
+		try {&#xD;
 			ut.begin();&#xD;
 			em.persist(a);&#xD;
 			ut.commit();&#xD;
@@ -168,7 +181,9 @@
                 <ownedParameter xmi:id="_j7evMfJCEeOdbuFC81ov4A" name="idArticle">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7evMvJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7evMvJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Article article = null;&#xD;
 		String query = &quot;SELECT a FROM Article a WHERE a.idArticle =?1&quot; ;&#xD;
@@ -190,6 +205,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7evNfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7evNvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -207,6 +223,7 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7evOfJCEeOdbuFC81ov4A" name="categories" type="_jr2-0fJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7evOvJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7evO_JCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -226,6 +243,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7fWQvJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7fWQ_JCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -238,6 +256,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7fWRPJCEeOdbuFC81ov4A" name="countArticlesByCategory" specification="_jjmasPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7fWRfJCEeOdbuFC81ov4A" isOrdered="true" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7fWRvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
@@ -251,7 +270,9 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7fWR_JCEeOdbuFC81ov4A" name="update" specification="_jt60UPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7fWSPJCEeOdbuFC81ov4A" name="a" type="_jkiO0PJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7fWSfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7fWSfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Article article = null;&#xD;
 		try {&#xD;
@@ -365,7 +386,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_jjtvcPJCEeOdbuFC81ov4A" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
               </ownedOperation>
               <ownedOperation xmi:id="_jt8CcPJCEeOdbuFC81ov4A" name="create" raisedException="_jkCfkPJCEeOdbuFC81ov4A">
@@ -378,6 +399,7 @@
               <interfaceRealization xmi:id="_jt8pgPJCEeOdbuFC81ov4A" client="_jjuWgPJCEeOdbuFC81ov4A" supplier="_jjr6QPJCEeOdbuFC81ov4A" contract="_jjr6QPJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7f9UPJCEeOdbuFC81ov4A" name="findAllCategories" specification="_jju9kfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7f9UfJCEeOdbuFC81ov4A" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7f9UvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -396,6 +418,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7f9VfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -415,11 +438,11 @@
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7f9VvJCEeOdbuFC81ov4A" name="findIdByNom" specification="_jjwywvJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7f9V_JCEeOdbuFC81ov4A" name="nomCategorie">
+                <ownedParameter xmi:id="_nSW8IPa7EeOwAIzX2wwpvA" name="nomCategorie">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7f9WPJCEeOdbuFC81ov4A" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <ownedParameter xmi:id="_nSW8Ifa7EeOwAIzX2wwpvA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>String query = &quot;SELECT cat FROM Categorie cat WHERE UPPER(cat.nomCategorie) LIKE UPPER(?1)&quot;;&#xD;
@@ -471,7 +494,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_jjwyxPJCEeOdbuFC81ov4A" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
               </ownedOperation>
               <ownedOperation xmi:id="_jt9QkPJCEeOdbuFC81ov4A" name="create" method="_j7f9WfJCEeOdbuFC81ov4A" raisedException="_jkCfkPJCEeOdbuFC81ov4A">
@@ -513,6 +536,7 @@
               <interfaceRealization xmi:id="_jt_s0PJCEeOdbuFC81ov4A" client="_jj25YPJCEeOdbuFC81ov4A" supplier="_jjz2EPJCEeOdbuFC81ov4A" contract="_jjz2EPJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7gkYPJCEeOdbuFC81ov4A" name="findAll" specification="_jj3gcfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7gkYfJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" isOrdered="true" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7gkYvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -526,7 +550,9 @@
                 <ownedParameter xmi:id="_j7gkZfJCEeOdbuFC81ov4A" name="mdp">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7gkZvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7gkZvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Client client = null;&#xD;
 		String query = &quot;select c from Client c where c.login = ?1 and c.mdp = ?2&quot;; //le nom de la classe&#xD;
@@ -548,7 +574,9 @@
                 <ownedParameter xmi:id="_j7gkaPJCEeOdbuFC81ov4A" name="login">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7gkafJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7gkafJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Client client = null;&#xD;
 		String query = &quot;select c from Client c where c.login = ?1&quot;;&#xD;
@@ -582,7 +610,9 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7hLcPJCEeOdbuFC81ov4A" name="update" specification="_juBiAPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7hLcfJCEeOdbuFC81ov4A" name="c" type="_jlEaUPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7hLcvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7hLcvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Client client = null;&#xD;
 		try {&#xD;
@@ -658,6 +688,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7hLdfJCEeOdbuFC81ov4A" name="findAllByClient" specification="_juD-Q_JCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7hLdvJCEeOdbuFC81ov4A" name="client" type="_jlEaUPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7hLd_JCEeOdbuFC81ov4A" type="_jlLIAPJCEeOdbuFC81ov4A" isOrdered="true" direction="return">
+                  <name xsi:nil="true"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7hLePJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
                 <language>java</language>
@@ -703,7 +734,9 @@
                 <defaultValue xmi:type="uml:LiteralString" xmi:id="_j6a_Q_JCEeOdbuFC81ov4A" value="1933561632667272154L"/>
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7hygvJCEeOdbuFC81ov4A" name="DAOException" specification="_jkDGoPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7hyg_JCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7hyg_JCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 	</body>
@@ -712,7 +745,9 @@
                 <ownedParameter xmi:id="_j7hyhfJCEeOdbuFC81ov4A" name="mes">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7hyhvJCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7hyhvJCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super(mes);&#xD;
 	</body>
@@ -722,7 +757,9 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7hyifJCEeOdbuFC81ov4A" name="e" type="_jxynsPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7hyivJCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7hyivJCEeOdbuFC81ov4A" type="_jkCfkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>//Throwable est le plus haut type exception&#xD;
 		super(mes, e);&#xD;
@@ -769,7 +806,9 @@
               <interfaceRealization xmi:id="_juHBkPJCEeOdbuFC81ov4A" client="_jkFi4PJCEeOdbuFC81ov4A" supplier="_jkE70PJCEeOdbuFC81ov4A" contract="_jkE70PJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7iZkPJCEeOdbuFC81ov4A" name="findByClient" specification="_juHooPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7iZkfJCEeOdbuFC81ov4A" name="client" type="_jlEaUPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7iZkvJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7iZkvJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>System.out.print(&quot;find panier by client&quot;);&#xD;
 		Panier panier = null;&#xD;
@@ -884,7 +923,9 @@
                 <ownedParameter xmi:id="_j7k11_JCEeOdbuFC81ov4A" name="idAdresse">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7k12PJCEeOdbuFC81ov4A" type="_jkYd0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7k12PJCEeOdbuFC81ov4A" type="_jkYd0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>this.idAdresse = idAdresse;&#xD;
 	</body>
@@ -911,7 +952,9 @@
                 <ownedParameter xmi:id="_j7lc5_JCEeOdbuFC81ov4A" name="prenom">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7lc6PJCEeOdbuFC81ov4A" type="_jkYd0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7lc6PJCEeOdbuFC81ov4A" type="_jkYd0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.pays = pays;&#xD;
@@ -925,6 +968,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7lc6fJCEeOdbuFC81ov4A" name="hashCode" specification="_jkekcvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7lc6vJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -945,6 +989,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7lc6_JCEeOdbuFC81ov4A" name="equals" specification="_jyDGYfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7lc7PJCEeOdbuFC81ov4A" name="obj" type="_jx-08PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7lc7fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -995,6 +1040,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7mD8PJCEeOdbuFC81ov4A" name="toString" specification="_jkfykPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7mD8fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1097,7 +1143,9 @@
               </ownedAttribute>
               <interfaceRealization xmi:id="_jyE7kPJCEeOdbuFC81ov4A" client="_jkiO0PJCEeOdbuFC81ov4A" supplier="_jwPIgfJCEeOdbuFC81ov4A" contract="_jwPIgfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7ogMPJCEeOdbuFC81ov4A" name="Article" specification="_jkkEAPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7ogMfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7ogMfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// pour Hibernate&#xD;
 	</body>
@@ -1118,6 +1166,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7ogNvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1138,6 +1187,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7ogOfJCEeOdbuFC81ov4A" name="getIdArticle" specification="_jkl5MvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7ogOvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1167,7 +1217,9 @@
                 <ownedParameter xmi:id="_j7pHSPJCEeOdbuFC81ov4A" name="categorie" type="_jk-6wPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7pHSfJCEeOdbuFC81ov4A" name="plagePrixArticle" type="_jyFioPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7pHSvJCEeOdbuFC81ov4A" name="proprietes" type="_jsgfEfJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7pHS_JCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7pHS_JCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.nomArticle = nomArticle;&#xD;
@@ -1215,7 +1267,9 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7pHWPJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7pHWfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7pHWfJCEeOdbuFC81ov4A" type="_jkiO0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idArticle = idArticle;&#xD;
@@ -1233,6 +1287,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7puUPJCEeOdbuFC81ov4A" name="toString" specification="_jknuYPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7puUfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1251,6 +1306,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7puUvJCEeOdbuFC81ov4A" name="hashCode" specification="_jkoVcPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7puU_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1283,6 +1339,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7puVPJCEeOdbuFC81ov4A" name="equals" specification="_jyQhwfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7puVfJCEeOdbuFC81ov4A" name="obj" type="_jx-08PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7puVvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1340,6 +1397,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7puV_JCEeOdbuFC81ov4A" name="serialize" specification="_jyRI1PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7puWPJCEeOdbuFC81ov4A" name="hashmap" type="_jsgfEfJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7puWfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7puWvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
@@ -1360,7 +1418,9 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7qVYvJCEeOdbuFC81ov4A" value="*"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7qVY_JCEeOdbuFC81ov4A" type="_jsgfEfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7qVY_JCEeOdbuFC81ov4A" type="_jsgfEfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>ByteArrayInputStream bis = new ByteArrayInputStream(bytes);&#xD;
 		ObjectInputStream ois;&#xD;
@@ -1379,7 +1439,9 @@
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7qVZPJCEeOdbuFC81ov4A" name="getProprietes" specification="_jkyGcvJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7qVZfJCEeOdbuFC81ov4A" type="_jsgfEfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7qVZfJCEeOdbuFC81ov4A" type="_jsgfEfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// on v�rifier qu'il existe des propri�t�s s�rialis�es&#xD;
 		return (this.getSerialProprietes() == null) ? null : deserialize(this&#xD;
@@ -1388,6 +1450,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7qVZvJCEeOdbuFC81ov4A" name="getPrixUnitFormat" specification="_jk3mAvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7qVZ_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1396,6 +1459,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7qVaPJCEeOdbuFC81ov4A" name="getPrixUnitArticleTTC" specification="_jk4NEfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7qVafJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1404,6 +1468,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7q8cPJCEeOdbuFC81ov4A" name="getPrixUnitTTCFormat" specification="_jk4NFPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7q8cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1567,7 +1632,7 @@
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_jk-6wPJCEeOdbuFC81ov4A" name="Categorie">
               <ownedAttribute xmi:id="_j6wWcPJCEeOdbuFC81ov4A" name="idCategorie" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_j6w9hfJCEeOdbuFC81ov4A" name="nomCategorie">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1576,18 +1641,15 @@
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7q8cvJCEeOdbuFC81ov4A" name="getIdCategorie" specification="_jlAI4PJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7q8c_JCEeOdbuFC81ov4A" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <ownedParameter xmi:id="_nSW8Iva7EeOwAIzX2wwpvA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>return idCategorie;&#xD;
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7q8dPJCEeOdbuFC81ov4A" name="Categorie" specification="_jlAv8vJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7q8dfJCEeOdbuFC81ov4A" name="idCategorie">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_j7q8dvJCEeOdbuFC81ov4A" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_nSW8I_a7EeOwAIzX2wwpvA" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return"/>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idCategorie = idCategorie;&#xD;
@@ -1600,7 +1662,9 @@
                 <ownedParameter xmi:id="_j7rjgvJCEeOdbuFC81ov4A" name="descriptionCategorie">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7rjg_JCEeOdbuFC81ov4A" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7rjg_JCEeOdbuFC81ov4A" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.nomCategorie = nomCategorie;&#xD;
@@ -1609,6 +1673,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7rjhPJCEeOdbuFC81ov4A" name="toString" specification="_jlB-E_JCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7rjhfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1619,6 +1684,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7rjhvJCEeOdbuFC81ov4A" name="hashCode" specification="_jlClI_JCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7rjh_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1637,6 +1703,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7rjiPJCEeOdbuFC81ov4A" name="equals" specification="_jyYdkPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7rjifJCEeOdbuFC81ov4A" name="obj" type="_jx-08PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7rjivJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1664,7 +1731,7 @@
               </ownedBehavior>
               <ownedOperation xmi:id="_jlAI4PJCEeOdbuFC81ov4A" name="getIdCategorie" method="_j7q8cvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_jlAI4fJCEeOdbuFC81ov4A" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
               </ownedOperation>
               <ownedOperation xmi:id="_jlAI4_JCEeOdbuFC81ov4A" name="Categorie" visibility="protected">
@@ -1681,10 +1748,10 @@
                   <body>Constructeur par idCategorie&#xD;
 	 * @param idCategorie</body>
                 </ownedComment>
-                <ownedParameter xmi:id="_jlAv8_JCEeOdbuFC81ov4A" name="idCategorie">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
-                </ownedParameter>
                 <ownedParameter xmi:id="_jlAv9vJCEeOdbuFC81ov4A" type="_jk-6wPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7q8dfJCEeOdbuFC81ov4A" name="idCategorie">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
               </ownedOperation>
               <ownedOperation xmi:id="_jlBXAfJCEeOdbuFC81ov4A" name="Categorie" method="_j7rjgPJCEeOdbuFC81ov4A">
                 <eAnnotations xmi:id="_jlBXBPJCEeOdbuFC81ov4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1761,7 +1828,9 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7sKmfJCEeOdbuFC81ov4A" name="adresseFacturation" type="_jkYd0PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7sKmvJCEeOdbuFC81ov4A" name="adresseLivraison" type="_jkYd0PJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7sKm_JCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7sKm_JCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idClient = idClient;&#xD;
@@ -1790,7 +1859,9 @@
                 <ownedParameter xmi:id="_j7sxpfJCEeOdbuFC81ov4A" name="newsletter">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7sxpvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7sxpvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.login = login;&#xD;
@@ -1832,6 +1903,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7sxsPJCEeOdbuFC81ov4A" name="toString" specification="_jlIEsPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7sxsfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -1839,6 +1911,38 @@
 				+ mdp + &quot;, nom=&quot; + nom + &quot;, prenom=&quot; + prenom + &quot;, newsletter=&quot;&#xD;
 				+ newsletter + &quot;, adresseFacturation=&quot; + adresseFacturation&#xD;
 				+ &quot;, adresseLivraison=&quot; + adresseLivraison + &quot;]&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oeZ4gPa7EeOwAIzX2wwpvA" name="Client" specification="_oeQukPa7EeOwAIzX2wwpvA">
+                <ownedParameter xmi:id="_oeZ4gfa7EeOwAIzX2wwpvA" name="nom">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeZ4gva7EeOwAIzX2wwpvA" name="prenom">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeZ4g_a7EeOwAIzX2wwpvA" name="login">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeZ4hPa7EeOwAIzX2wwpvA" name="mdp">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeZ4hfa7EeOwAIzX2wwpvA" name="newsletter">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeZ4hva7EeOwAIzX2wwpvA" name="adresseFacturation" type="_jkYd0PJCEeOdbuFC81ov4A"/>
+                <ownedParameter xmi:id="_oeZ4h_a7EeOwAIzX2wwpvA" name="adresseLivraison" type="_jkYd0PJCEeOdbuFC81ov4A"/>
+                <ownedParameter xmi:id="_oeZ4iPa7EeOwAIzX2wwpvA" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>super();&#xD;
+		this.login = login;&#xD;
+		this.mdp = mdp;&#xD;
+		this.nom = nom;&#xD;
+		this.prenom = prenom;&#xD;
+		this.newsletter = newsletter;&#xD;
+		this.adresseFacturation = adresseFacturation;&#xD;
+		this.adresseLivraison = adresseLivraison;&#xD;
 	</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_jlFocPJCEeOdbuFC81ov4A" name="Client" visibility="protected">
@@ -1899,6 +2003,39 @@
                 <ownedParameter xmi:id="_jwp_SPJCEeOdbuFC81ov4A" name="adresseLivraison" type="_jkYd0PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_jwqmUvJCEeOdbuFC81ov4A" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
               </ownedOperation>
+              <ownedOperation xmi:id="_oeQukPa7EeOwAIzX2wwpvA" name="Client" method="_oeZ4gPa7EeOwAIzX2wwpvA">
+                <eAnnotations xmi:id="_oeQumfa7EeOwAIzX2wwpvA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_oeQumva7EeOwAIzX2wwpvA" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_oeZ4jfa7EeOwAIzX2wwpvA">
+                  <body>Constructeur ajoutant les addresses de livraison et de facturation&#xD;
+	 * @param nom&#xD;
+	 * @param prenom&#xD;
+	 * @param login&#xD;
+	 * @param mdp&#xD;
+	 * @param newsletter&#xD;
+	 * @param adresseFacturation&#xD;
+	 * @param adresseLivraison</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_oeQukfa7EeOwAIzX2wwpvA" name="nom">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeQukva7EeOwAIzX2wwpvA" name="prenom">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeQuk_a7EeOwAIzX2wwpvA" name="login">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeQulPa7EeOwAIzX2wwpvA" name="mdp">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeQulfa7EeOwAIzX2wwpvA" name="newsletter">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oeQulva7EeOwAIzX2wwpvA" name="adresseFacturation" type="_jkYd0PJCEeOdbuFC81ov4A"/>
+                <ownedParameter xmi:id="_oeQul_a7EeOwAIzX2wwpvA" name="adresseLivraison" type="_jkYd0PJCEeOdbuFC81ov4A"/>
+                <ownedParameter xmi:id="_oeQumPa7EeOwAIzX2wwpvA" type="_jlEaUPJCEeOdbuFC81ov4A" direction="return"/>
+              </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_jlLIAPJCEeOdbuFC81ov4A" name="Commande">
               <ownedAttribute xmi:id="_j69x0PJCEeOdbuFC81ov4A" name="idCommande">
@@ -1921,7 +2058,9 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7um0PJCEeOdbuFC81ov4A" name="Commande" specification="_jyaSwPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7um0fJCEeOdbuFC81ov4A" name="dateCommande" type="_jwtCkPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7um0vJCEeOdbuFC81ov4A" name="client" type="_jlEaUPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7um0_JCEeOdbuFC81ov4A" type="_jlLIAPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7um0_JCEeOdbuFC81ov4A" type="_jlLIAPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		&#xD;
@@ -1942,7 +2081,9 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7um2fJCEeOdbuFC81ov4A" name="client" type="_jlEaUPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7um2vJCEeOdbuFC81ov4A" name="lignesCommande" type="_jsbmkPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7um2_JCEeOdbuFC81ov4A" type="_jlLIAPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7um2_JCEeOdbuFC81ov4A" type="_jlLIAPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.dateCommande = dateCommande;&#xD;
@@ -1954,7 +2095,9 @@
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7um3PJCEeOdbuFC81ov4A" name="getLignesCommande" specification="_jlOLUPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7um3fJCEeOdbuFC81ov4A" type="_jsbmkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7um3fJCEeOdbuFC81ov4A" type="_jsbmkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return lignesCommande;&#xD;
 	</body>
@@ -2027,7 +2170,9 @@
                 <ownedParameter xmi:id="_j7vN5fJCEeOdbuFC81ov4A" name="email">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7vN5vJCEeOdbuFC81ov4A" type="_jlWHIPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7vN5vJCEeOdbuFC81ov4A" type="_jlWHIPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.demande = demande;&#xD;
@@ -2104,7 +2249,9 @@
                 <ownedParameter xmi:id="_j7v08fJCEeOdbuFC81ov4A" name="chaine">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7v08vJCEeOdbuFC81ov4A" type="_jlkwoPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7v08vJCEeOdbuFC81ov4A" type="_jlkwoPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.chaine = chaine;&#xD;
@@ -2141,7 +2288,9 @@
                 <ownedParameter xmi:id="_j7v09vJCEeOdbuFC81ov4A" name="req">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7v09_JCEeOdbuFC81ov4A" type="_jlml0PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7v09_JCEeOdbuFC81ov4A" type="_jlml0PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>this.article = bk;&#xD;
      this.etatStock = stock;&#xD;
@@ -2150,6 +2299,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7v0-PJCEeOdbuFC81ov4A" name="toString" specification="_jlnM4PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7v0-fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2193,6 +2343,7 @@
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7wcAvJCEeOdbuFC81ov4A" name="getIdFacture" specification="_jlqQNPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7wcA_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2228,7 +2379,9 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_j7xDE_JCEeOdbuFC81ov4A" name="article" type="_jkiO0PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_j7xDFPJCEeOdbuFC81ov4A" name="commande" type="_jlLIAPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_j7xDFfJCEeOdbuFC81ov4A" type="_jlreUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7xDFfJCEeOdbuFC81ov4A" type="_jlreUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.qteCommandee = qteCommandee;&#xD;
@@ -2271,7 +2424,9 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_kr3DRPJCEeOdbuFC81ov4A" name="article" type="_jkiO0PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_kr3DRfJCEeOdbuFC81ov4A" name="panier" type="_jst6cfJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_kr3DRvJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr3DRvJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.qteCommande = qteCommande;&#xD;
@@ -2283,7 +2438,9 @@
                 <ownedParameter xmi:id="_kr3qUfJCEeOdbuFC81ov4A" name="idLignePanier">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_kr3qUvJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr3qUvJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idLignePanier = idLignePanier;&#xD;
@@ -2291,6 +2448,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr3qU_JCEeOdbuFC81ov4A" name="getIdLignePanier" specification="_kobUxPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr3qVPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2299,6 +2457,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr3qVfJCEeOdbuFC81ov4A" name="getTotalTTC" specification="_kobUxfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr3qVvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2307,6 +2466,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr3qV_JCEeOdbuFC81ov4A" name="getTotalTTCFormat" specification="_kob70PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr3qWPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2315,6 +2475,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr3qWfJCEeOdbuFC81ov4A" name="toString" specification="_kob70fJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr3qWvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2326,6 +2487,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr3qW_JCEeOdbuFC81ov4A" name="equals" specification="_kob71PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr3qXPJCEeOdbuFC81ov4A" name="obj" type="_jx-08PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_kr3qXfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2417,7 +2579,9 @@
                 <ownedParameter xmi:id="_kr44c_JCEeOdbuFC81ov4A" name="idPanier">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_kr44dPJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr44dPJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idPanier = idPanier;&#xD;
@@ -2426,7 +2590,9 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr44dfJCEeOdbuFC81ov4A" name="Panier" specification="_koiCdPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr44dvJCEeOdbuFC81ov4A" name="lignesPanier" type="_jsbmkPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_kr44d_JCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr44d_JCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>this.lignesPanier = lignesPanier;&#xD;
 	</body>
@@ -2437,7 +2603,9 @@
                 </ownedParameter>
                 <ownedParameter xmi:id="_kr5fgvJCEeOdbuFC81ov4A" name="client" type="_jlEaUPJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_kr5fg_JCEeOdbuFC81ov4A" name="datePanier" type="_jwtCkPJCEeOdbuFC81ov4A"/>
-                <ownedParameter xmi:id="_kr5fhPJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr5fhPJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idPanier = idPanier;&#xD;
@@ -2447,6 +2615,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr5fhfJCEeOdbuFC81ov4A" name="toString" specification="_komT4fJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr5fhvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2456,7 +2625,9 @@
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr5fh_JCEeOdbuFC81ov4A" name="getLignesPanier" specification="_kom68vJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_kr5fiPJCEeOdbuFC81ov4A" type="_jsbmkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr5fiPJCEeOdbuFC81ov4A" type="_jsbmkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return lignesPanier;&#xD;
 	</body>
@@ -2507,6 +2678,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr6GkfJCEeOdbuFC81ov4A" name="isArticleInCart" specification="_kovd0PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr6GkvJCEeOdbuFC81ov4A" name="article" type="_jkiO0PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_kr6Gk_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2531,6 +2703,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr6GlvJCEeOdbuFC81ov4A" name="getMontantTotalHT" specification="_kovd1PJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr6Gl_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2543,6 +2716,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr6GmPJCEeOdbuFC81ov4A" name="getMontantTotalTTC" specification="_kovd1fJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr6GmfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2583,6 +2757,24 @@
 		System.out.print(&quot;Article n'existe pas ds le pannier&quot;);&#xD;
 	}	&#xD;
 </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oeZ4ifa7EeOwAIzX2wwpvA" name="getMontantTotalTTCFormat" specification="_od9MkPa7EeOwAIzX2wwpvA">
+                <ownedParameter xmi:id="_oeZ4iva7EeOwAIzX2wwpvA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return Prix.formatPrix(getMontantTotalTTC());&#xD;
+		</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oeZ4i_a7EeOwAIzX2wwpvA" name="getMontantTotalHTFormat" specification="_od9Mkfa7EeOwAIzX2wwpvA">
+                <ownedParameter xmi:id="_oeZ4jPa7EeOwAIzX2wwpvA" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return Prix.formatPrix(getMontantTotalHT());&#xD;
+		</body>
               </ownedBehavior>
               <ownedOperation xmi:id="_koiCcPJCEeOdbuFC81ov4A" name="Panier" visibility="protected">
                 <eAnnotations xmi:id="_koiCcfJCEeOdbuFC81ov4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -2673,6 +2865,16 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
               </ownedOperation>
+              <ownedOperation xmi:id="_od9MkPa7EeOwAIzX2wwpvA" name="getMontantTotalTTCFormat" method="_oeZ4ifa7EeOwAIzX2wwpvA">
+                <ownedParameter xmi:id="_oeQunPa7EeOwAIzX2wwpvA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_od9Mkfa7EeOwAIzX2wwpvA" name="getMontantTotalHTFormat" method="_oeZ4i_a7EeOwAIzX2wwpvA">
+                <ownedParameter xmi:id="_oeQunfa7EeOwAIzX2wwpvA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Enumeration" xmi:id="_jtDRoPJCEeOdbuFC81ov4A" name="Tva">
               <ownedAttribute xmi:id="_krxjsPJCEeOdbuFC81ov4A" name="valeur" visibility="package" isLeaf="true" isReadOnly="true">
@@ -2714,7 +2916,9 @@
                 <defaultValue xmi:type="uml:LiteralString" xmi:id="_kri6MfJCEeOdbuFC81ov4A" value="1"/>
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr4RYPJCEeOdbuFC81ov4A" name="getNewLignePanier" specification="_kodxAPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_kr4RYfJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr4RYfJCEeOdbuFC81ov4A" type="_jspB8fJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>LignePanier l = new LignePanier(_currentId);&#xD;
 	    _currentId += 1;&#xD;
@@ -2731,7 +2935,9 @@
                 <defaultValue xmi:type="uml:LiteralString" xmi:id="_krq2APJCEeOdbuFC81ov4A" value="1"/>
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr6tpPJCEeOdbuFC81ov4A" name="getNewPanier" specification="_kpEN8PJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_kr6tpfJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr6tpfJCEeOdbuFC81ov4A" type="_jst6cfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>Panier l = new Panier(_currentId);&#xD;
 	    _currentId += 1;&#xD;
@@ -2753,13 +2959,16 @@
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
               </ownedAttribute>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr7UsPJCEeOdbuFC81ov4A" name="PlageDePrix" specification="_kpGDIPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_kr7UsfJCEeOdbuFC81ov4A" type="_jyFioPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr7UsfJCEeOdbuFC81ov4A" type="_jyFioPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// hibernate&#xD;
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr7UsvJCEeOdbuFC81ov4A" name="getIdPlageDePrix" specification="_kpGqM_JCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr7Us_JCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2776,7 +2985,9 @@
                 <ownedParameter xmi:id="_kr7Ut_JCEeOdbuFC81ov4A" name="prixMax">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_kr7UuPJCEeOdbuFC81ov4A" type="_jyFioPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr7UuPJCEeOdbuFC81ov4A" type="_jyFioPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.idPlageDePrix = idPlageDePrix;&#xD;
@@ -2795,6 +3006,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr7UufJCEeOdbuFC81ov4A" name="toString" specification="_kpGqNPJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr7UuvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2804,6 +3016,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr7Uu_JCEeOdbuFC81ov4A" name="hashCode" specification="_kpGqN_JCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr7UvPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2822,6 +3035,7 @@
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_kr7UvfJCEeOdbuFC81ov4A" name="equals" specification="_kpHRQvJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_kr7UvvJCEeOdbuFC81ov4A" name="obj" type="_jx-08PJCEeOdbuFC81ov4A"/>
                 <ownedParameter xmi:id="_kr77wPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2936,7 +3150,9 @@
                 <ownedParameter xmi:id="_kr77wvJCEeOdbuFC81ov4A" name="valeur">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_kr77w_JCEeOdbuFC81ov4A" type="_kp7JkvJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr77w_JCEeOdbuFC81ov4A" type="_kp7JkvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>this(String.valueOf(valeur));&#xD;
 	</body>
@@ -2945,7 +3161,9 @@
                 <ownedParameter xmi:id="_kr77xfJCEeOdbuFC81ov4A" name="valeur">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_kr77xvJCEeOdbuFC81ov4A" type="_kp7JkvJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_kr77xvJCEeOdbuFC81ov4A" type="_kp7JkvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		// on vérifie le format de la valeur entrée&#xD;
@@ -2971,6 +3189,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_kr77yfJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
                 </ownedParameter>
                 <language>java</language>
@@ -2991,6 +3210,7 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <ownedParameter xmi:id="_kr8i0vJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -3084,7 +3304,9 @@
               <ownedAttribute xmi:id="_j6OyAfJCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j8IPcPJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6OyBfJCEeOdbuFC81ov4A" name="daoCategorie" visibility="private" type="_jjr6QPJCEeOdbuFC81ov4A" association="_j8NH8fJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7YokPJCEeOdbuFC81ov4A" name="CategorieController" specification="_jihcoPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7YokfJCEeOdbuFC81ov4A" type="_jieZUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7YokfJCEeOdbuFC81ov4A" type="_jieZUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 	</body>
@@ -3165,7 +3387,9 @@
               <ownedAttribute xmi:id="_j6QAJfJCEeOdbuFC81ov4A" name="cmdDao" visibility="private" type="_jj8Y8PJCEeOdbuFC81ov4A" association="_j8VDwfJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6QnM_JCEeOdbuFC81ov4A" name="articleDao" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j8ZVMfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7Z2tvJCEeOdbuFC81ov4A" name="CommandeController" specification="_jiqmkPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7Z2t_JCEeOdbuFC81ov4A" type="_jipYcPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7Z2t_JCEeOdbuFC81ov4A" type="_jipYcPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
      // TODO Auto-generated constructor stub&#xD;
@@ -3410,7 +3634,9 @@
               </ownedAttribute>
               <ownedAttribute xmi:id="_j6ROQ_JCEeOdbuFC81ov4A" name="contactDao" visibility="private" type="_js0BEPJCEeOdbuFC81ov4A" association="_j8c_kfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7adw_JCEeOdbuFC81ov4A" name="ContactController" specification="_jiyiYPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7adxPJCEeOdbuFC81ov4A" type="_jixUQPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7adxPJCEeOdbuFC81ov4A" type="_jixUQPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
      // TODO Auto-generated constructor stub&#xD;
@@ -3526,7 +3752,9 @@
               </ownedAttribute>
               <ownedAttribute xmi:id="_j6R1VvJCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j8hRAfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7bE0vJCEeOdbuFC81ov4A" name="FrontArticle" specification="_ji4B8PJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7bE0_JCEeOdbuFC81ov4A" type="_ji3a4PJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7bE0_JCEeOdbuFC81ov4A" type="_ji3a4PJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
      // TODO Auto-generated constructor stub&#xD;
@@ -3597,7 +3825,9 @@
               <ownedAttribute xmi:id="_j6TDcfJCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j8licfJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6TDdfJCEeOdbuFC81ov4A" name="daoCategorie" visibility="private" type="_jjr6QPJCEeOdbuFC81ov4A" association="_j8pM0fJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7br4PJCEeOdbuFC81ov4A" name="MainFrontArticle" specification="_ji-IkPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7br4fJCEeOdbuFC81ov4A" type="_ji86cPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7br4fJCEeOdbuFC81ov4A" type="_ji86cPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		// TODO Auto-generated constructor stub&#xD;
@@ -3642,7 +3872,7 @@
 &#xD;
 				try {&#xD;
 					for (String selCateg : selectionCateg) {&#xD;
-						categories.add(new Categorie(Long.parseLong(selCateg)));&#xD;
+						categories.add(new Categorie(Integer.parseInt(selCateg)));&#xD;
 					}&#xD;
 				} catch (NumberFormatException nbf) {&#xD;
 					System.err.println(&quot;Erreur de conversion de format&quot; + nbf);&#xD;
@@ -3732,7 +3962,9 @@
               <ownedAttribute xmi:id="_j6TqhvJCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j8teQfJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6URk_JCEeOdbuFC81ov4A" name="daoPanier" visibility="private" type="_jkE70PJCEeOdbuFC81ov4A" association="_j8xvsPJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7cS8PJCEeOdbuFC81ov4A" name="PanierController" specification="_jjEPMPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7cS8fJCEeOdbuFC81ov4A" type="_jjDBEPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7cS8fJCEeOdbuFC81ov4A" type="_jjDBEPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
      // TODO Auto-generated constructor stub&#xD;
@@ -3910,7 +4142,9 @@
               <ownedAttribute xmi:id="_j6VfsPJCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j81aEfJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6VftPJCEeOdbuFC81ov4A" name="daoCategorie" visibility="private" type="_jjr6QPJCEeOdbuFC81ov4A" association="_j85rgfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7c6APJCEeOdbuFC81ov4A" name="SerialController" specification="_jjK84fJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7c6AfJCEeOdbuFC81ov4A" type="_jjJuwPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7c6AfJCEeOdbuFC81ov4A" type="_jjJuwPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		// TODO Auto-generated constructor stub&#xD;
@@ -3940,29 +4174,7 @@
 			categorie = &quot;&quot;;&#xD;
 		}&#xD;
 		&#xD;
-		&#xD;
-		if (categorie.length() > 0) {&#xD;
-			Collection&lt;String> serialProprietes = new ArrayList&lt;>();&#xD;
 &#xD;
-			switch (categorie) {&#xD;
-			case &quot;DVD&quot;:&#xD;
-				serialProprietes.add(&quot;Titre&quot;);&#xD;
-				serialProprietes.add(&quot;Réalisateurs&quot;);&#xD;
-				break;&#xD;
-			case &quot;LIVRES&quot;:&#xD;
-				serialProprietes.add(&quot;Auteur&quot;);&#xD;
-				serialProprietes.add(&quot;Genre&quot;);&#xD;
-				break;&#xD;
-			default:&#xD;
-				serialProprietes.add(&quot;Description&quot;);&#xD;
-				break;&#xD;
-			};&#xD;
-			urlCategorie = true;		&#xD;
-			request.setAttribute(&quot;proprietes&quot;, serialProprietes);&#xD;
-		&#xD;
-		} &#xD;
-&#xD;
-		&#xD;
 		request.setAttribute(&quot;categorie&quot;, categorie);&#xD;
 		request.setAttribute(&quot;urlCategorie&quot;, urlCategorie);&#xD;
 		RequestDispatcher rd = request&#xD;
@@ -3986,7 +4198,7 @@
 		// String tva = &quot;&quot;;&#xD;
 		String qteStock = &quot;&quot;;&#xD;
 		String nomFichierImage = &quot;&quot;;&#xD;
-		long idCategorie = 0;&#xD;
+		int idCategorie = 0;&#xD;
 &#xD;
 		String action = request.getParameter(&quot;valider&quot;);&#xD;
 &#xD;
@@ -4002,6 +4214,9 @@
 			qteStock = request.getParameter(&quot;qteStock&quot;).trim();&#xD;
 			int qte_stock = Integer.parseInt(qteStock);&#xD;
 			String nomCategorie = request.getParameter(&quot;categorie&quot;);&#xD;
+			&#xD;
+			String titre = request.getParameter(&quot;titre&quot;);&#xD;
+			&#xD;
 			Categorie cat = null;&#xD;
 			if (nomCategorie != null &amp;&amp; nomCategorie != &quot;&quot;)&#xD;
 			{&#xD;
@@ -4034,6 +4249,21 @@
 			//hm.put(&quot;titre&quot;, titre);&#xD;
 			//hm.put(&quot;realisateurs&quot;, realisateurs);&#xD;
 &#xD;
+			switch (idCategorie) {&#xD;
+			case 1: // DVD&#xD;
+				hm.put(&quot;Acteurs&quot;, request.getParameter(&quot;acteurs&quot;));&#xD;
+				hm.put(&quot;Réalisateurs&quot;, request.getParameter(&quot;realisateurs&quot;));&#xD;
+				break;&#xD;
+&#xD;
+			case 2: // Livres&#xD;
+				hm.put(&quot;Auteur&quot;, request.getParameter(&quot;auteur&quot;));&#xD;
+				hm.put(&quot;Genre&quot;, request.getParameter(&quot;genre&quot;));&#xD;
+				break;&#xD;
+			default:&#xD;
+				hm.put(&quot;Description&quot;, request.getParameter(&quot;description&quot;));&#xD;
+				break;&#xD;
+			}&#xD;
+			&#xD;
 			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,&#xD;
 					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));&#xD;
 &#xD;
@@ -4080,7 +4310,9 @@
               <ownedAttribute xmi:id="_j6WGxfJCEeOdbuFC81ov4A" name="clientDao" visibility="private" type="_jjz2EPJCEeOdbuFC81ov4A" association="_j89V4fJCEeOdbuFC81ov4A"/>
               <ownedAttribute xmi:id="_j6Wt0_JCEeOdbuFC81ov4A" name="panierDao" visibility="private" type="_jkE70PJCEeOdbuFC81ov4A" association="_j9BnUfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7dhEPJCEeOdbuFC81ov4A" name="Sign" specification="_jjRDgPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7dhEfJCEeOdbuFC81ov4A" type="_jjP1YPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7dhEfJCEeOdbuFC81ov4A" type="_jjP1YPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
      // TODO Auto-generated constructor stub&#xD;
@@ -4393,7 +4625,9 @@
               <ownedEnd xmi:id="_j9BnUvJCEeOdbuFC81ov4A" name="" type="_jjP1YPJCEeOdbuFC81ov4A" association="_j9BnUfJCEeOdbuFC81ov4A"/>
             </packagedElement>
           </packagedElement>
-          <packagedElement xmi:type="uml:Package" xmi:id="_jfjBIPJCEeOdbuFC81ov4A" name="util"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_jfjBIPJCEeOdbuFC81ov4A" name="util">
+            <packagedElement xmi:type="uml:Class" xmi:id="_mwgzUPa7EeOwAIzX2wwpvA" name="SendExternalEmail"/>
+          </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_jgQLwPJCEeOdbuFC81ov4A" name="filter">
             <packagedElement xmi:type="uml:Class" xmi:id="_jkH_IPJCEeOdbuFC81ov4A" clientDependency="_jx4uUvJCEeOdbuFC81ov4A" name="HeaderFilter">
               <ownedAttribute xmi:id="_j6cNY_JCEeOdbuFC81ov4A" name="clientDao" visibility="private" type="_jjz2EPJCEeOdbuFC81ov4A" association="_j93U0fJCEeOdbuFC81ov4A"/>
@@ -4401,7 +4635,9 @@
               <ownedAttribute xmi:id="_j6c0d_JCEeOdbuFC81ov4A" name="daoArticle" visibility="private" type="_jjV8APJCEeOdbuFC81ov4A" association="_j9_QofJCEeOdbuFC81ov4A"/>
               <interfaceRealization xmi:id="_jx4uUvJCEeOdbuFC81ov4A" client="_jkH_IPJCEeOdbuFC81ov4A" supplier="_juNIMfJCEeOdbuFC81ov4A" contract="_juNIMfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7iZlfJCEeOdbuFC81ov4A" name="HeaderFilter" specification="_jkImMPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7iZlvJCEeOdbuFC81ov4A" type="_jkH_IPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7iZlvJCEeOdbuFC81ov4A" type="_jkH_IPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// TODO Auto-generated constructor stub&#xD;
  </body>
@@ -4498,7 +4734,9 @@
               <ownedAttribute xmi:id="_j6dbg_JCEeOdbuFC81ov4A" name="clientDao" visibility="private" type="_jjz2EPJCEeOdbuFC81ov4A" association="_j-DiEfJCEeOdbuFC81ov4A"/>
               <interfaceRealization xmi:id="_jx6jgPJCEeOdbuFC81ov4A" client="_jkM3oPJCEeOdbuFC81ov4A" supplier="_juNIMfJCEeOdbuFC81ov4A" contract="_juNIMfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7jApvJCEeOdbuFC81ov4A" name="LoginFilter" specification="_jkOFwPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7jAp_JCEeOdbuFC81ov4A" type="_jkM3oPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7jAp_JCEeOdbuFC81ov4A" type="_jkM3oPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// TODO Auto-generated constructor stub&#xD;
  </body>
@@ -4621,7 +4859,9 @@
                 <ownedParameter xmi:id="_j7jnt_JCEeOdbuFC81ov4A" name="valeur">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_j7jnuPJCEeOdbuFC81ov4A" type="_jkRJEPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7jnuPJCEeOdbuFC81ov4A" type="_jkRJEPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>super();&#xD;
 		this.valeur = valeur;&#xD;
@@ -4629,6 +4869,7 @@
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7jnufJCEeOdbuFC81ov4A" name="toString" specification="_jkSXMfJCEeOdbuFC81ov4A">
                 <ownedParameter xmi:id="_j7jnuvJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
@@ -4665,7 +4906,9 @@
             <packagedElement xmi:type="uml:Class" xmi:id="_jkTlUPJCEeOdbuFC81ov4A" clientDependency="_jx8YsPJCEeOdbuFC81ov4A" name="ContextListener">
               <interfaceRealization xmi:id="_jx8YsPJCEeOdbuFC81ov4A" client="_jkTlUPJCEeOdbuFC81ov4A" supplier="_juxI4fJCEeOdbuFC81ov4A" contract="_juxI4fJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7kOwfJCEeOdbuFC81ov4A" name="ContextListener" specification="_jkUMYfJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7kOwvJCEeOdbuFC81ov4A" type="_jkTlUPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7kOwvJCEeOdbuFC81ov4A" type="_jkTlUPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// TODO Auto-generated constructor stub&#xD;
  </body>
@@ -4719,7 +4962,9 @@
               <ownedAttribute xmi:id="_j6eppPJCEeOdbuFC81ov4A" name="daoPanier" visibility="private" type="_jkE70PJCEeOdbuFC81ov4A" association="_j-Ld4fJCEeOdbuFC81ov4A"/>
               <interfaceRealization xmi:id="_jx9m0PJCEeOdbuFC81ov4A" client="_jkWBkPJCEeOdbuFC81ov4A" supplier="_ju99MfJCEeOdbuFC81ov4A" contract="_ju99MfJCEeOdbuFC81ov4A"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_j7k10PJCEeOdbuFC81ov4A" name="SessionListener" specification="_jkWooPJCEeOdbuFC81ov4A">
-                <ownedParameter xmi:id="_j7k10fJCEeOdbuFC81ov4A" type="_jkWBkPJCEeOdbuFC81ov4A" direction="return"/>
+                <ownedParameter xmi:id="_j7k10fJCEeOdbuFC81ov4A" type="_jkWBkPJCEeOdbuFC81ov4A" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>// TODO Auto-generated constructor stub&#xD;
  </body>
@@ -5666,6 +5911,7 @@
   <UMLLabProfile:StyledElement xmi:id="_j7QswfJCEeOdbuFC81ov4A" base_Element="_j7QswPJCEeOdbuFC81ov4A"/>
   <uml:OpaqueBehavior xmi:id="_j7n5I_JCEeOdbuFC81ov4A" name="getSerialProprietes" specification="_j6vIU_JCEeOdbuFC81ov4A">
     <ownedParameter xmi:id="_j7n5JPJCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j7n5JfJCEeOdbuFC81ov4A" value="*"/>
     </ownedParameter>
@@ -5675,6 +5921,7 @@
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_j7sKkPJCEeOdbuFC81ov4A" name="getIdClient" specification="_j6yLofJCEeOdbuFC81ov4A">
     <ownedParameter xmi:id="_j7sKkfJCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
     </ownedParameter>
     <language>java</language>
@@ -5685,13 +5932,17 @@
     <ownedParameter xmi:id="_j7vN6PJCEeOdbuFC81ov4A" name="s">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedParameter>
-    <ownedParameter xmi:id="_j7vN6fJCEeOdbuFC81ov4A" type="_jlYjYPJCEeOdbuFC81ov4A" direction="return"/>
+    <ownedParameter xmi:id="_j7vN6fJCEeOdbuFC81ov4A" type="_jlYjYPJCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
     <language>java</language>
     <body>symbole = s;&#xD;
 	</body>
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_j7wcAPJCEeOdbuFC81ov4A" name="getDateFacture" specification="_j7NpcfJCEeOdbuFC81ov4A">
-    <ownedParameter xmi:id="_j7wcAfJCEeOdbuFC81ov4A" type="_jwtCkPJCEeOdbuFC81ov4A" direction="return"/>
+    <ownedParameter xmi:id="_j7wcAfJCEeOdbuFC81ov4A" type="_jwtCkPJCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
     <language>java</language>
     <body>return dateFacture;&#xD;
 	</body>
@@ -5880,6 +6131,7 @@
   <UMLLabProfile:LegacyStyledElement xmi:id="_krxjsfJCEeOdbuFC81ov4A" base_Element="_krxjsPJCEeOdbuFC81ov4A"/>
   <uml:OpaqueBehavior xmi:id="_kr4RYvJCEeOdbuFC81ov4A" name="getIdPanier" specification="_krjhQvJCEeOdbuFC81ov4A">
     <ownedParameter xmi:id="_kr4RY_JCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
     </ownedParameter>
     <language>java</language>
@@ -5898,13 +6150,16 @@
     <ownedParameter xmi:id="_kr8i1PJCEeOdbuFC81ov4A" name="v">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
     </ownedParameter>
-    <ownedParameter xmi:id="_kr8i1fJCEeOdbuFC81ov4A" type="_jtDRoPJCEeOdbuFC81ov4A" direction="return"/>
+    <ownedParameter xmi:id="_kr8i1fJCEeOdbuFC81ov4A" type="_jtDRoPJCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
     <language>java</language>
     <body>this.valeur = v;&#xD;
 	   </body>
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_kr8i1vJCEeOdbuFC81ov4A" name="getValeur" specification="_kpPNEPJCEeOdbuFC81ov4A">
     <ownedParameter xmi:id="_kr8i1_JCEeOdbuFC81ov4A" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
     </ownedParameter>
     <language>java</language>
@@ -5912,4 +6167,8 @@
 	   </body>
   </uml:OpaqueBehavior>
   <UMLLabProfile:Reference xmi:id="_ksFswPJCEeOdbuFC81ov4A" base_Element="_ksCCYPJCEeOdbuFC81ov4A"/>
+  <UMLLabProfile:Reference xmi:id="_mwgzUfa7EeOwAIzX2wwpvA" base_Element="_mwgzUPa7EeOwAIzX2wwpvA"/>
+  <UMLLabProfile:StyledElement xmi:id="_oeG9kPa7EeOwAIzX2wwpvA" base_Element="_od9MkPa7EeOwAIzX2wwpvA"/>
+  <UMLLabProfile:StyledElement xmi:id="_oeG9kfa7EeOwAIzX2wwpvA" base_Element="_od9Mkfa7EeOwAIzX2wwpvA"/>
+  <UMLLabProfile:StyledElement xmi:id="_oeQum_a7EeOwAIzX2wwpvA" base_Element="_oeQukPa7EeOwAIzX2wwpvA"/>
 </xmi:XMI>

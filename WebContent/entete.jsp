@@ -40,18 +40,18 @@
     <![endif]-->
 
   <!-- Urls -->
-	<c:url var="articleCont" value="/article/" />
-	<c:url var="boutique" value="/boutique" />
-	<c:url var="sign" value="/sign/" />
-	<c:url var="signin" value="/sign/in" />
-	<c:url var="signup" value="/sign/up" />
-	<c:url var="disconnect" value="/sign/disconnect" />
-	<c:url var="signmodif" value="/sign/editAccount" />
-	<c:url var="paniercont" value="/panier"/>
-	<c:url var="commandecont" value="/commande"/>
-  	<c:url var="imgDir" value="/css/images/" />
-  	<c:url var="categController" value="/articles/" />
-  	<c:url var="contact" value="/contact" />
+	<c:url var="articleCont" value="/article/" scope="request"/>
+	<c:url var="boutique" value="/boutique" scope="request"/>
+	<c:url var="sign" value="/sign/" scope="request"/>
+	<c:url var="signin" value="/sign/in" scope="request"/>
+	<c:url var="signup" value="/sign/up" scope="request"/>
+	<c:url var="disconnect" value="/sign/disconnect" scope="request"/>
+	<c:url var="signmodif" value="/sign/editAccount" scope="request"/>
+	<c:url var="paniercont" value="/panier" scope="request"/>
+	<c:url var="commandecont" value="/commande" scope="request"/>
+  	<c:url var="imgDir" value="/css/images/" scope="request"/>
+  	<c:url var="categController" value="/articles/" scope="request"/>
+  	<c:url var="contact" value="/contact" scope="request"/>
   </head>
  <body>
 
@@ -85,12 +85,12 @@
 						<a href="${boutique}">Acceuil</a> |
 						<c:choose>
 						<c:when test="${msg != null}">
-							<a href="${signmodif}"> ${msg}</a> |
-							<a href="${disconnect}">Déconexion</a></li> |
+							<a href="${signmodif}${param.origine}"> ${msg}</a> |
+							<a href="${disconnect}${param.origine}">Déconexion</a></li> |
 						</c:when>
 						<c:otherwise>
 
-							<a href="${sign}">Mon compte</a> |
+							<a href="${sign}${param.origine}">Mon compte</a> |
 						</c:otherwise>
 					</c:choose>
 					

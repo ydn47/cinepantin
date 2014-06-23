@@ -3,7 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions"  prefix="fn" %>
 
-<%@include file="entete.jsp"%>
+<jsp:include page="entete.jsp">
+	<jsp:param value="article/${articleObject.getIdArticle()}" name="origine"/>
+</jsp:include>
 <div class="row">
 	<%@include file="menuLeft.jsp"%>
 	<c:choose>

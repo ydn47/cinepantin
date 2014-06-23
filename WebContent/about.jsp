@@ -4,6 +4,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions"  prefix="fn" %>
 
 <%@include file="entete.jsp"%>
+<jsp:include page="entete.jsp">
+	<jsp:param value="about.jsp" name="origine"/>
+</jsp:include>
 <!-- http://wrapbootstrap.com/preview/WB00223R0 -->
 <div class="row">
 
