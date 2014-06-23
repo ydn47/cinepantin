@@ -5,16 +5,19 @@
 
 <%@include file="entete.jsp"%>
 <!-- http://wrapbootstrap.com/preview/WB00223R0 -->
-<div class="row">
-
+<div class="row">  
 	<div class="span3">
-	<h2>Lightweight defaults</h2>
-	<h3>Rewritten base class</h3>
-	<p>With Bootstrap 2, we've simplified the base class: <code>.alert</code> instead of <code>.alert-message</code>. We've also reduced the minimum required markup—no <code>&lt;p&gt;</code> is required by default, just the outer <code>&lt;div&gt;</code>.</p>
+	<h2>Présentation de CinéPantin</h2>
+	<h3></h3>
+	<!-- <p>With Bootstrap 2, we've simplified the base class: <code>.alert</code> instead of <code>.alert-message</code>. We've also reduced the minimum required markup—no <code>&lt;p&gt;</code> is required by default, just the outer <code>&lt;div&gt;</code>.</p> -->
+	<p align="justify">CinePantin est une librairie spécialisée dans le domaine du cinéma, qui dispose d’un magasin
+situé à Pantin. Son activité, originellement centrée sur la vente de livres sur le cinéma, s’étend
+maintenant à toutes sortes d’articles dans ce domaine (notamment des DVD, des CD, des
+affiches, des revues, des objets, des places pour des projections etc.).</p> 
 	</div>
-	<div class="span9">
+	<div class="span9"> 
 <div class="page-header">
-    <h1>About us <small>What we do</small></h1>
+    <h1>A propos de nous <small>Ce que nous faisons</small></h1>
   </div>
 
   <!-- Headings & Paragraph Copy -->
@@ -22,39 +25,40 @@
   
   
       <div class="span9">
-      <blockquote class="pull-right">
+      <!-- <blockquote class="pull-right">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
         <small>Someone famous in <cite title="">Body of work</cite></small>
-      </blockquote>
+      </blockquote> -->
 
     </div>
   
     <div class="span9">
-      <h3>Why do you do what you do?</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+      <h3>Qualité du catalogue</h3>
+      <p>Le site propose à ce jour deux catégories de produits culturels : livres et DVD.</p>
+      <p></p>
     </div>
 
     <div class="span9">
-      <h3>Who are the people behind the company?</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <h3>Innovation technologique</h3>
+      <p>Cinepantin fonde sa croissance sur l’innovation technologique, qui lui permet d’offrir à ses clients un éventail de produits toujours plus large, de façon toujours plus simple et à des prix toujours plus concurrentiels.</p>
 
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+      <p></p>
     </div>
 
     <div class="span9">
-      <h3>What kind of people will I be working with/buying from?</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <h3>Élaboration de la plateforme</h3>
+      <p>Cinepantin a commencé à mettre sa plateforme de commerce électronique à la disposition des professionnels et des particuliers en 2014.</p>
 
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+      <p></p>
     </div>
 
     <div class="span9">
-      <h3>What does your company stand for?</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <h3>Perspectives futures</h3>
+      <p>Notre activité, originellement centrée sur la vente de livres sur le cinéma, s’étendra à l'avenir
+ à toutes sortes d’articles dans ce domaine (notamment des DVD, des CD, des
+affiches, des revues, des objets, des places pour des projections etc.).</p>
 
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+      <p></p>
     </div>
 
 
