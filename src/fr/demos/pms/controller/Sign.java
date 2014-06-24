@@ -46,10 +46,22 @@ public class Sign extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.print("doGet Singn");
 		HttpSession session = request.getSession(); 
-		String info = request.getPathInfo();
+		String sb = request.getPathInfo();
+		System.out.println("sb " +sb);
+		String[] myArray = sb.split("/");
+		String info = myArray[0];
+		System.out.println("info " +info);
+		String origine = "";
+		if (myArray.length == 2 )
+			origine  = myArray[1];
+		else if (myArray.length > 2 )
+			origine  = myArray[1]+"/"+myArray[2];
+		
+		System.out.println("origine " +origine);
+		
 		
 		if ((info != null) && (info.equals("/in")) ){  //se connecter
-		
+			
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/Signin.jsp");
 				rd.forward(request, response);
@@ -58,13 +70,6 @@ public class Sign extends HttpServlet {
 			
 			RequestDispatcher rd = request
 					.getRequestDispatcher("/register.jsp");
-					rd.forward(request, response);
-			return;	
-		}else if ((info != null) && (info.equals("/disconnect")) ){ //se deconnecter
-			System.out.print ("do Get disconnect");
-			session.setAttribute("client", null);
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/boutique");
 					rd.forward(request, response);
 			return;	
 		}else if ((info != null) && (info.equals("/editAccount")) ){ //modifier son compte
@@ -85,6 +90,7 @@ public class Sign extends HttpServlet {
 				return;
 			}
 		}else {
+			request.setAttribute("origine",origine);
 			RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
 			rd.forward(request, response);
 			return;
@@ -100,7 +106,12 @@ public class Sign extends HttpServlet {
 		HttpSession session = request.getSession(); 
 		String info = request.getPathInfo();
 		response.setCharacterEncoding("UTF-8");
+		//verifier d'ou je viens
+		String origine  = request.getParameter("origine").trim();
+		System.out.println("origine " +origine);
+		System.out.println("info " +info);
 		if ((info != null) && (info.equals("/in")) ){//se connecter
+			
 			String action = request.getParameter("signin");
 			if (action != null && action.endsWith("connecter")) {
 				String email    = "";
@@ -123,9 +134,9 @@ public class Sign extends HttpServlet {
 					
 					if (client != null){
 						session.setAttribute("client", client);	
-						
+						System.out.println("origineICI " +origine);
 						RequestDispatcher rd = request
-								.getRequestDispatcher("/boutique");
+								.getRequestDispatcher("/"+origine);
 								rd.forward(request, response);
 								System.out.print("doPost Singn fin");	
 						return;	
@@ -265,7 +276,7 @@ public class Sign extends HttpServlet {
 					
 					session.setAttribute("client", userParam);
 					RequestDispatcher rd = request
-							.getRequestDispatcher("/boutique");
+							.getRequestDispatcher("/"+origine);
 							rd.forward(request, response);
 					return;	
 					

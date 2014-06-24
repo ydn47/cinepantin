@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_DEQVwPa8EeOwAIzX2wwpvA">
+  <modelElement href="CinePantin.uml#_8BBjoPa7EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWEAUfa8EeOwAIzX2wwpvA" targetItem="_FWNKava8EeOwAIzX2wwpvA" sourceItem="_FWEAUPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWEAU_a8EeOwAIzX2wwpvA" targetItem="_FWNKcPa8EeOwAIzX2wwpvA" sourceItem="_FWEAUva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWNKQfa8EeOwAIzX2wwpvA" targetItem="_FWNKd_a8EeOwAIzX2wwpvA" sourceItem="_FWNKQPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWNKQva8EeOwAIzX2wwpvA" sourceAnchor="144.0,0.0" targetAnchor="181.0,242.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWNKVPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NhHcPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznZfa8EeOwAIzX2wwpvA" position="210.0,210.0"/>
+    <stereotypes xmi:id="_FWNKQ_a8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8NhHcva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWNKRPa8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrH8APbaEeOwAIzX2wwpvA" position="40.5,18.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWNKRfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8NhHcfa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrHU8fbaEeOwAIzX2wwpvA" position="1.5,-54.333333333333314"/>
+      <visibility xmi:id="_FWNKRva8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWNKR_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWNKSPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoArticle" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvk_a7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrH8AfbaEeOwAIzX2wwpvA" position="-71.5,9.333333333333343"/>
+      <visibility xmi:id="_FWNKSfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKSva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWNKS_a8EeOwAIzX2wwpvA" sourceAnchor="0.0,4.0" targetAnchor="171.0,128.0" target="_Iana0PbaEeOwAIzX2wwpvA" source="_FWNKVPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NhHc_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznZva8EeOwAIzX2wwpvA" position="230.0,230.0"/>
+    <bendpoints xmi:id="_KL2H4PbaEeOwAIzX2wwpvA" sourceX="-787" targetY="263"/>
+    <stereotypes xmi:id="_FWNKTPa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8Nq4cPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWNKTfa8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrIjEfbaEeOwAIzX2wwpvA" position="1.0,-58.000000000000114"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWNKTva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8NhHdPa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrIjEPbaEeOwAIzX2wwpvA" position="-64.125,-47.00000000000003"/>
+      <visibility xmi:id="_FWNKT_a8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWNKUPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWNKUfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoCategorie" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvl_a7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrJKIPbaEeOwAIzX2wwpvA" position="-127.0,0.9999999999998579"/>
+      <visibility xmi:id="_FWNKUva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKU_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWNKfva8EeOwAIzX2wwpvA" sourceAnchor="221.0,0.0" targetAnchor="361.0,121.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWNKnva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8Nq4d_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznafa8EeOwAIzX2wwpvA" position="290.0,290.0"/>
+    <bendpoints xmi:id="_KL2H4fbaEeOwAIzX2wwpvA" sourceY="-174" targetX="392"/>
+    <stereotypes xmi:id="_FWNKhva8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8N0CYPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWNKg_a8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrJxMPbaEeOwAIzX2wwpvA" position="-204.99999999999997,1.9999999999999716"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWNKhPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8Nq4ePa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrJKIfbaEeOwAIzX2wwpvA" position="2.0,-77.75"/>
+      <visibility xmi:id="_FWNKiPa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWNKh_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWNKhfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="articleDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvpva7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrJxMfbaEeOwAIzX2wwpvA" position="54.666666666666686,2.000000000000057"/>
+      <visibility xmi:id="_FWNKiva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKifa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWNKgPa8EeOwAIzX2wwpvA" targetItem="_FWNKv_a8EeOwAIzX2wwpvA" sourceItem="_FWNKf_a8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWNKgva8EeOwAIzX2wwpvA" targetItem="_FWNKxva8EeOwAIzX2wwpvA" sourceItem="_FWNKgfa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWNKjPa8EeOwAIzX2wwpvA" source="_FWNKnva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8Nq4cfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznZ_a8EeOwAIzX2wwpvA" position="250.0,250.0"/>
+    <stereotypes xmi:id="_FWNKjfa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8Nq4c_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWNKjva8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWNKj_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8Nq4cva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWNKkPa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWNKkfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWNKkva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="clientDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvnva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWNKk_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKlPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWNKlfa8EeOwAIzX2wwpvA" source="_FWNKnva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8Nq4dPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznaPa8EeOwAIzX2wwpvA" position="270.0,270.0"/>
+    <stereotypes xmi:id="_FWNKlva8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8Nq4dva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWNKl_a8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWNKmPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8Nq4dfa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWNKmfa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWNKmva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWNKm_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="cmdDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvova7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWNKnPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKnfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWW7Qfa8EeOwAIzX2wwpvA" targetItem="_FWW7X_a8EeOwAIzX2wwpvA" sourceItem="_FWW7QPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWW7Q_a8EeOwAIzX2wwpvA" targetItem="_FWW7Zfa8EeOwAIzX2wwpvA" sourceItem="_FWW7Qva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWW7Rfa8EeOwAIzX2wwpvA" targetItem="_FWW7bPa8EeOwAIzX2wwpvA" sourceItem="_FWW7RPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWW7Rva8EeOwAIzX2wwpvA" source="_FWW7T_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8N0CYfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznava8EeOwAIzX2wwpvA" position="310.0,310.0"/>
+    <stereotypes xmi:id="_FWW7R_a8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8N0CY_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWW7SPa8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWW7Sfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8N0CYva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWW7Sva8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWW7S_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWW7TPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="contactDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvrfa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWW7Tfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7Tva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWW7c_a8EeOwAIzX2wwpvA" sourceAnchor="221.0,0.0" targetAnchor="361.0,91.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWW7gfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8N0CZPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWzna_a8EeOwAIzX2wwpvA" position="330.0,330.0"/>
+    <bendpoints xmi:id="_KL2u8PbaEeOwAIzX2wwpvA" sourceY="-242" targetX="889"/>
+    <stereotypes xmi:id="_FWW7e_a8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8N9zYPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWW7ePa8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrK_UPbaEeOwAIzX2wwpvA" position="-484.49999999999994,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWW7efa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8N0CZfa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrKYQPbaEeOwAIzX2wwpvA" position="2.0,-78.5"/>
+      <visibility xmi:id="_FWW7ffa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWW7fPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWW7eva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoArticle" navigable="true">
+      <modelElement href="CinePantin.uml#_8MnvtPa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrK_UfbaEeOwAIzX2wwpvA" position="1.0,-86.00000000000006"/>
+      <visibility xmi:id="_FWW7f_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7fva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWW7dfa8EeOwAIzX2wwpvA" targetItem="_FWW7lva8EeOwAIzX2wwpvA" sourceItem="_FWW7dPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWW7d_a8EeOwAIzX2wwpvA" targetItem="_FWW7nfa8EeOwAIzX2wwpvA" sourceItem="_FWW7dva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWgFMPa8EeOwAIzX2wwpvA" sourceAnchor="221.0,0.0" targetAnchor="0.0,151.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWgFSva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8N9zYfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznbPa8EeOwAIzX2wwpvA" position="-1365.0,272.0"/>
+    <bendpoints xmi:id="_KL3WAvbaEeOwAIzX2wwpvA" sourceY="-198" targetX="-937"/>
+    <stereotypes xmi:id="_FWgFO_a8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8N9zY_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWgFOPa8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrOpsPbaEeOwAIzX2wwpvA" position="428.0,1.9999999999999716"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWgFOfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8N9zYva7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrOCovbaEeOwAIzX2wwpvA" position="-17.0,-46.0"/>
+      <visibility xmi:id="_FWgFQfa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWgFQPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWgFOva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoArticle" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvu_a7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrOpsfbaEeOwAIzX2wwpvA" position="-143.0,2.000000000000057"/>
+      <visibility xmi:id="_FWgFQ_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFQva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWgFMfa8EeOwAIzX2wwpvA" sourceAnchor="378.0,0.0" targetAnchor="141.0,128.0" target="_Iana0PbaEeOwAIzX2wwpvA" source="_FWgFSva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8N9zZPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznbfa8EeOwAIzX2wwpvA" position="-1365.0,272.0"/>
+    <stereotypes xmi:id="_FWgFP_a8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8N9zZva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWgFPPa8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrP30PbaEeOwAIzX2wwpvA" position="-83.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWgFPfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8N9zZfa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrPQwPbaEeOwAIzX2wwpvA" position="-18.0,-46.0"/>
+      <visibility xmi:id="_FWgFRva8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWgFRfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWgFPva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoCategorie" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvv_a7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrP30fbaEeOwAIzX2wwpvA" position="1.0,1.0"/>
+      <visibility xmi:id="_FWgFSPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFR_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWgFM_a8EeOwAIzX2wwpvA" targetItem="_FWgFXva8EeOwAIzX2wwpvA" sourceItem="_FWgFMva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWgFNfa8EeOwAIzX2wwpvA" targetItem="_FWgFZPa8EeOwAIzX2wwpvA" sourceItem="_FWgFNPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWgFN_a8EeOwAIzX2wwpvA" targetItem="_FWgFa_a8EeOwAIzX2wwpvA" sourceItem="_FWgFNva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWgFcva8EeOwAIzX2wwpvA" sourceAnchor="221.0,0.0" targetAnchor="361.0,61.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWgFifa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8N9zZ_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznbva8EeOwAIzX2wwpvA" position="390.0,390.0"/>
+    <bendpoints xmi:id="_KL2u8fbaEeOwAIzX2wwpvA" sourceY="-253" targetX="1401"/>
+    <stereotypes xmi:id="_FWgFeva8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OG9UPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWgFd_a8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrLmYfbaEeOwAIzX2wwpvA" position="-658.0625,1.9999999999999432"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWgFePa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8N9zaPa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrLmYPbaEeOwAIzX2wwpvA" position="-17.0,-80.33333333333331"/>
+      <visibility xmi:id="_FWgFfPa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWgFe_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWgFefa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoArticle" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvxva7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrLmYvbaEeOwAIzX2wwpvA" position="84.125,-46.999999999999886"/>
+      <visibility xmi:id="_FWgFfva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFffa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWgFdPa8EeOwAIzX2wwpvA" targetItem="_FWp2NPa8EeOwAIzX2wwpvA" sourceItem="_FWgFc_a8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWgFdva8EeOwAIzX2wwpvA" targetItem="_FWp2O_a8EeOwAIzX2wwpvA" sourceItem="_FWgFdfa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWgFgPa8EeOwAIzX2wwpvA" source="_FWgFifa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8OG9Ufa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznb_a8EeOwAIzX2wwpvA" position="410.0,410.0"/>
+    <stereotypes xmi:id="_FWgFgfa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OG9U_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWgFgva8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWgFg_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8OG9Uva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWgFhPa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWgFhfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWgFhva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoPanier" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvyva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWgFh_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFiPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWp2Qva8EeOwAIzX2wwpvA" sourceAnchor="221.0,0.0" targetAnchor="181.0,0.0" target="_Iak-kPbaEeOwAIzX2wwpvA" source="_FWp2XPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8OG9VPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWzncPa8EeOwAIzX2wwpvA" position="430.0,430.0"/>
+    <bendpoints xmi:id="_KL2u8vbaEeOwAIzX2wwpvA" sourceY="-402" targetX="-1491" targetY="-88"/>
+    <bendpoints xmi:id="_KL3WAPbaEeOwAIzX2wwpvA" sourceX="1491" sourceY="-402" targetY="-88"/>
+    <stereotypes xmi:id="_FWp2Tfa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OQuUPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWp2Sva8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrM0gPbaEeOwAIzX2wwpvA" position="-103.77272727272702,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWp2S_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8OG9Vfa7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrMNcPbaEeOwAIzX2wwpvA" position="-17.0,-85.44444444444446"/>
+      <visibility xmi:id="_FWp2U_a8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWp2Uva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWp2TPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoArticle" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnvzva7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrM0gfbaEeOwAIzX2wwpvA" position="-70.50000000000023,-47.000000000000114"/>
+      <visibility xmi:id="_FWp2Vfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWp2VPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWp2Q_a8EeOwAIzX2wwpvA" sourceAnchor="251.0,0.0" targetAnchor="0.0,64.0" target="_Iana0PbaEeOwAIzX2wwpvA" source="_FWp2XPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8OQuUfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWzncfa8EeOwAIzX2wwpvA" position="450.0,450.0"/>
+    <bendpoints xmi:id="_KL3WAfbaEeOwAIzX2wwpvA" sourceY="-323" targetX="-359"/>
+    <stereotypes xmi:id="_FWp2Ufa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OQuU_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWp2Tva8EeOwAIzX2wwpvA" text="">
+      <visualProperties xmi:id="_IrOCoPbaEeOwAIzX2wwpvA" position="41.0,1.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FWp2T_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8OQuUva7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrNbkPbaEeOwAIzX2wwpvA" position="2.0,-80.5"/>
+      <visibility xmi:id="_FWp2WPa8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWp2V_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWp2UPa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="daoCategorie" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnv0va7EeOwAIzX2wwpvA"/>
+      <visualProperties xmi:id="_IrOCofbaEeOwAIzX2wwpvA" position="-141.20000000000005,1.9999999999999432"/>
+      <visibility xmi:id="_FWp2Wva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWp2Wfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2Rfa8EeOwAIzX2wwpvA" targetItem="_FWp2cPa8EeOwAIzX2wwpvA" sourceItem="_FWp2RPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2R_a8EeOwAIzX2wwpvA" targetItem="_FWp2dva8EeOwAIzX2wwpvA" sourceItem="_FWp2Rva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2Sfa8EeOwAIzX2wwpvA" targetItem="_FWp2ffa8EeOwAIzX2wwpvA" sourceItem="_FWp2SPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWp2hPa8EeOwAIzX2wwpvA" source="_FWznPva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8OQuVPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWzncva8EeOwAIzX2wwpvA" position="470.0,470.0"/>
+    <stereotypes xmi:id="_FWznMPa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OQuVva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWp2jPa8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWp2jfa8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8OQuVfa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWznNva8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWznNfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWp2jva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="clientDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnv2fa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWznOPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWznN_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FWp2hfa8EeOwAIzX2wwpvA" source="_FWznPva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8OQuV_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznc_a8EeOwAIzX2wwpvA" position="490.0,490.0"/>
+    <stereotypes xmi:id="_FWznNPa8EeOwAIzX2wwpvA" name="Reference">
+      <modelElement href="CinePantin.uml#_8OafUPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FWznMfa8EeOwAIzX2wwpvA" text=""/>
+    <sourceRole xmi:id="_FWznMva8EeOwAIzX2wwpvA" aggregationKind="NONE" name="">
+      <modelElement href="CinePantin.uml#_8OQuWPa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWznO_a8EeOwAIzX2wwpvA" label="+"/>
+      <cardinality xmi:id="_FWznOva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FWznM_a8EeOwAIzX2wwpvA" aggregationKind="NONE" name="panierDao" navigable="true">
+      <modelElement href="CinePantin.uml#_8Mnv3fa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWznPfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWznPPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2h_a8EeOwAIzX2wwpvA" targetItem="_FWznUfa8EeOwAIzX2wwpvA" sourceItem="_FWp2hva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2ifa8EeOwAIzX2wwpvA" targetItem="_FWznV_a8EeOwAIzX2wwpvA" sourceItem="_FWp2iPa8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FWp2i_a8EeOwAIzX2wwpvA" targetItem="_FWznXva8EeOwAIzX2wwpvA" sourceItem="_FWp2iva8EeOwAIzX2wwpvA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_IamMsfbaEeOwAIzX2wwpvA" targetItem="_Iana0PbaEeOwAIzX2wwpvA" sourceItem="_IamMsPbaEeOwAIzX2wwpvA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWEAUPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWEAUfa8EeOwAIzX2wwpvA" text="@see HttpServlet#HttpServlet()" item="_FWNKava8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWiva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWEAUva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWEAU_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_FWNKcPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWi_a7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWNKQPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWNKQfa8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_FWNKd_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWjPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWNKf_a8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWNKgPa8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_FWNKv_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWjva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWNKgfa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWNKgva8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_FWNKxva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWj_a7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWW7QPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWW7Qfa8EeOwAIzX2wwpvA" text="@see HttpServlet#HttpServlet()" item="_FWW7X_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWkfa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWW7Qva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWW7Q_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_FWW7Zfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWkva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWW7RPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWW7Rfa8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_FWW7bPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWk_a7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWW7dPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWW7dfa8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_FWW7lva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWlfa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWW7dva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWW7d_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_FWW7nfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWlva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWgFMva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWgFM_a8EeOwAIzX2wwpvA" text="@see HttpServlet#HttpServlet()" item="_FWgFXva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWmPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWgFNPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWgFNfa8EeOwAIzX2wwpvA" text="TODO charger la page acceuil home.jsp -menu/footer/logo - partie&#xD;&#xA;&#x9; * user/client) - zone de recherche -afficher la liste de top ventes&#xD;&#xA;&#x9; *" item="_FWgFZPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWmfa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWgFNva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWgFN_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_FWgFa_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWmva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWgFc_a8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWgFdPa8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_FWp2NPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWnPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWgFdfa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWgFdva8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_FWp2O_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWnfa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2RPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2Rfa8EeOwAIzX2wwpvA" text="@see HttpServlet#HttpServlet()" item="_FWp2cPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWn_a7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2Rva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2R_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_FWp2dva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWoPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2SPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2Sfa8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse&#xD;&#xA;&#x9; *      response)" item="_FWp2ffa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWofa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2hva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2h_a8EeOwAIzX2wwpvA" text="@see HttpServlet#HttpServlet()" item="_FWznUfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWo_a7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2iPa8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2ifa8EeOwAIzX2wwpvA" text="@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)" item="_FWznV_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWpPa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FWp2iva8EeOwAIzX2wwpvA" sourceConnectionVisual="_FWp2i_a8EeOwAIzX2wwpvA" text="@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)" item="_FWznXva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWpfa7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWNKVPa8EeOwAIzX2wwpvA" name="CategorieController" associationsOut="_FWNKQva8EeOwAIzX2wwpvA _FWNKS_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8CXAWfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWNKVfa8EeOwAIzX2wwpvA" position="-530.0,185.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWNKVva8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8CXAWva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWNKV_a8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8CzsQva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWNKWPa8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWNKWfa8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8MnvkPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKWva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvkva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKW_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKXPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKXfa8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWNKXva8EeOwAIzX2wwpvA" name="daoArticle">
+      <modelElement href="CinePantin.uml#_8Mnvk_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKX_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvlPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWNKYPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvlPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKYfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKYva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKY_a8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWNKZPa8EeOwAIzX2wwpvA" name="daoCategorie">
+      <modelElement href="CinePantin.uml#_8Mnvl_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKZfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvmPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWNKZva8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvmPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKZ_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKaPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKafa8EeOwAIzX2wwpvA" name="CategorieDao">
+        <modelElement href="CinePantin.uml#_8DZiKPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWNKava8EeOwAIzX2wwpvA" comments="_FWEAUPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWEAUfa8EeOwAIzX2wwpvA" name="CategorieController">
+      <modelElement href="CinePantin.uml#_8Cp7QPa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWNKa_a8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWNKbPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8CzsQfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKbfa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWNKbva8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8CzsQPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKb_a8EeOwAIzX2wwpvA" name="CategorieController">
+          <modelElement href="CinePantin.uml#_8CXAWfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWNKcPa8EeOwAIzX2wwpvA" comments="_FWEAUva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWEAU_a8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8LlNwPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKcfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8LlNw_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKcva8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWNKc_a8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8LlNwfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKdPa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWNKdfa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8LlNwva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKdva8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWNKd_a8EeOwAIzX2wwpvA" comments="_FWNKQPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWNKQfa8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8LlNxPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKePa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-wPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKefa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWNKeva8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8LlNxfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKe_a8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWNKfPa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8LlNxva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKffa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWNKnva8EeOwAIzX2wwpvA" name="CommandeController" associationsOut="_FWNKfva8EeOwAIzX2wwpvA _FWNKjPa8EeOwAIzX2wwpvA _FWNKlfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8CzsRfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWNKn_a8EeOwAIzX2wwpvA" position="-35.0,166.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWNKoPa8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8CzsRva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWNKofa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8CzsTPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWNKova8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWNKo_a8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnvm_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKpPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvnfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKpfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKpva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKp_a8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWNKqPa8EeOwAIzX2wwpvA" name="clientDao">
+      <modelElement href="CinePantin.uml#_8Mnvnva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKqfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvn_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWNKqva8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvn_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKq_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKrPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKrfa8EeOwAIzX2wwpvA" name="ClientDao">
+        <modelElement href="CinePantin.uml#_8DjTIPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWNKrva8EeOwAIzX2wwpvA" name="cmdDao">
+      <modelElement href="CinePantin.uml#_8Mnvova7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKr_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvo_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWNKsPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvo_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKsfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKsva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKs_a8EeOwAIzX2wwpvA" name="CommandeDao">
+        <modelElement href="CinePantin.uml#_8DjTO_a7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWNKtPa8EeOwAIzX2wwpvA" name="articleDao">
+      <modelElement href="CinePantin.uml#_8Mnvpva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKtfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvp_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWNKi_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvp_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKtva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWNKt_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWNKuPa8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWNKufa8EeOwAIzX2wwpvA" name="CommandeController">
+      <modelElement href="CinePantin.uml#_8CzsR_a7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWNKuva8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWNKu_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8CzsS_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKvPa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWNKvfa8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8CzsSva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKvva8EeOwAIzX2wwpvA" name="CommandeController">
+          <modelElement href="CinePantin.uml#_8CzsRfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWNKv_a8EeOwAIzX2wwpvA" comments="_FWNKf_a8EeOwAIzX2wwpvA" targetConnectionVisual="_FWNKgPa8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-wva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKwPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-xfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKwfa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWNKwva8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-w_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKw_a8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWNKxPa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-xPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKxfa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWNKxva8EeOwAIzX2wwpvA" comments="_FWNKgfa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWNKgva8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-xva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWNKx_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-yfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWNKyPa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWNKyfa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-x_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKyva8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWNKy_a8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-yPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWNKzPa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWW7T_a8EeOwAIzX2wwpvA" name="ContactController" associationsOut="_FWW7Rva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8CzsT_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWW7UPa8EeOwAIzX2wwpvA" position="-1057.0,204.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWW7Ufa8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8CzsUPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWW7Uva8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8CzsVva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWW7U_a8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWW7VPa8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnvqva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7Vfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8MnvrPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7Vva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7V_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWW7WPa8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWW7Wfa8EeOwAIzX2wwpvA" name="contactDao">
+      <modelElement href="CinePantin.uml#_8Mnvrfa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7Wva8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvrva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWW7W_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvrva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7XPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7Xfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWW7Xva8EeOwAIzX2wwpvA" name="ContactDao">
+        <modelElement href="CinePantin.uml#_8IdoUfa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWW7X_a8EeOwAIzX2wwpvA" comments="_FWW7QPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWW7Qfa8EeOwAIzX2wwpvA" name="ContactController">
+      <modelElement href="CinePantin.uml#_8CzsUfa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWW7YPa8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWW7Yfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8CzsVfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7Yva8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWW7Y_a8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8CzsVPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7ZPa8EeOwAIzX2wwpvA" name="ContactController">
+          <modelElement href="CinePantin.uml#_8CzsT_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWW7Zfa8EeOwAIzX2wwpvA" comments="_FWW7Qva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWW7Q_a8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-y_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7Zva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-zva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7Z_a8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWW7aPa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-zPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7afa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWW7ava8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-zfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7a_a8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWW7bPa8EeOwAIzX2wwpvA" comments="_FWW7RPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWW7Rfa8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-z_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7bfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-0va7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7bva8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWW7b_a8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-0Pa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7cPa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWW7cfa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-0fa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7cva8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWW7gfa8EeOwAIzX2wwpvA" name="FrontArticle" associationsOut="_FWW7c_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8C82MPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWW7gva8EeOwAIzX2wwpvA" position="462.0,204.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWW7g_a8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8C82Mfa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWW7hPa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8C82N_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWW7hfa8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWW7hva8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnvsfa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7h_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvs_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7iPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7ifa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWW7iva8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWW7i_a8EeOwAIzX2wwpvA" name="daoArticle">
+      <modelElement href="CinePantin.uml#_8MnvtPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7jPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvtfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWW7gPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvtfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7jfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWW7jva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWW7j_a8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWW7kPa8EeOwAIzX2wwpvA" name="FrontArticle">
+      <modelElement href="CinePantin.uml#_8C82Mva7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWW7kfa8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWW7kva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8C82Nva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7k_a8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWW7lPa8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8C82Nfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7lfa8EeOwAIzX2wwpvA" name="FrontArticle">
+          <modelElement href="CinePantin.uml#_8C82MPa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWW7lva8EeOwAIzX2wwpvA" comments="_FWW7dPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWW7dfa8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-1Pa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7l_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-1_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7mPa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWW7mfa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-1fa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7mva8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWW7m_a8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-1va7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7nPa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWW7nfa8EeOwAIzX2wwpvA" comments="_FWW7dva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWW7d_a8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-2Pa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWW7nva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-2_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWW7n_a8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWW7oPa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-2fa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7ofa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWW7ova8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-2va7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWW7o_a8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWgFifa8EeOwAIzX2wwpvA" name="PanierController" associationsOut="_FWgFcva8EeOwAIzX2wwpvA _FWgFgPa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8C82RPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWgFiva8EeOwAIzX2wwpvA" position="974.0,185.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWgFi_a8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8C82Rfa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWgFjPa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8DGnMPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWgFjfa8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWgFjva8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnvw_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFj_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvxfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFkPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFkfa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFkva8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWgFk_a8EeOwAIzX2wwpvA" name="daoArticle">
+      <modelElement href="CinePantin.uml#_8Mnvxva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFlPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvx_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWgFf_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvx_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFlfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFlva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFl_a8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWgFmPa8EeOwAIzX2wwpvA" name="daoPanier">
+      <modelElement href="CinePantin.uml#_8Mnvyva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWgFmfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFmva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFm_a8EeOwAIzX2wwpvA" name="PanierDao">
+        <modelElement href="CinePantin.uml#_8DsdHva7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWgFnPa8EeOwAIzX2wwpvA" name="PanierController">
+      <modelElement href="CinePantin.uml#_8C82Rva7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWgFnfa8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWp2MPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8C82Sva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2Mfa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWp2Mva8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8C82Sfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2M_a8EeOwAIzX2wwpvA" name="PanierController">
+          <modelElement href="CinePantin.uml#_8C82RPa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWp2NPa8EeOwAIzX2wwpvA" comments="_FWgFc_a8EeOwAIzX2wwpvA" targetConnectionVisual="_FWgFdPa8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-5va7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2Nfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-6fa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2Nva8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWp2N_a8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-5_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2OPa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWp2Ofa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-6Pa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2Ova8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWp2O_a8EeOwAIzX2wwpvA" comments="_FWgFdfa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWgFdva8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-6va7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2PPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-7fa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2Pfa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWp2Pva8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-6_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2P_a8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWp2QPa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-7Pa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2Qfa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWp2XPa8EeOwAIzX2wwpvA" name="SerialController" associationsOut="_FWp2Qva8EeOwAIzX2wwpvA _FWp2Q_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8DGnM_a7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWp2Xfa8EeOwAIzX2wwpvA" position="-2098.0,185.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWp2Xva8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8DGnNPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWp2X_a8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8DGnOva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWp2YPa8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWp2Yfa8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnvy_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2Yva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvzfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2Y_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWp2ZPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWp2Zfa8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWp2Zva8EeOwAIzX2wwpvA" name="daoArticle">
+      <modelElement href="CinePantin.uml#_8Mnvzva7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2Z_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvz_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWp2Vva8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnvz_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2aPa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWp2afa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWp2ava8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWp2a_a8EeOwAIzX2wwpvA" name="daoCategorie">
+      <modelElement href="CinePantin.uml#_8Mnv0va7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2bPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnv0_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWp2W_a8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnv0_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2bfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWp2bva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWp2b_a8EeOwAIzX2wwpvA" name="CategorieDao">
+        <modelElement href="CinePantin.uml#_8DZiKPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWp2cPa8EeOwAIzX2wwpvA" comments="_FWp2RPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2Rfa8EeOwAIzX2wwpvA" name="SerialController">
+      <modelElement href="CinePantin.uml#_8DGnNfa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWp2cfa8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWp2cva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8DGnOfa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2c_a8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWp2dPa8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DGnOPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2dfa8EeOwAIzX2wwpvA" name="SerialController">
+          <modelElement href="CinePantin.uml#_8DGnM_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWp2dva8EeOwAIzX2wwpvA" comments="_FWp2Rva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2R_a8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-7_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2d_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-8va7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2ePa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWp2efa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-8Pa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2eva8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWp2e_a8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-8fa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2fPa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWp2ffa8EeOwAIzX2wwpvA" comments="_FWp2SPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2Sfa8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-8_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWp2fva8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-9va7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWp2f_a8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWp2gPa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-9Pa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2gfa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWp2gva8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-9fa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWp2g_a8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWznPva8EeOwAIzX2wwpvA" name="Sign" associationsOut="_FWp2hPa8EeOwAIzX2wwpvA _FWp2hfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8DGnPfa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWznP_a8EeOwAIzX2wwpvA" position="1486.0,185.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWznQPa8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8DGnPva7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWznQfa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8DGnRPa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWznQva8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWznQ_a8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8Mnv1va7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWznRPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnv2Pa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWznRfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWznRva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWznR_a8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWznSPa8EeOwAIzX2wwpvA" name="clientDao">
+      <modelElement href="CinePantin.uml#_8Mnv2fa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWznSfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnv2va7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWznOfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8Mnv2va7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWznSva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWznS_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWznTPa8EeOwAIzX2wwpvA" name="ClientDao">
+        <modelElement href="CinePantin.uml#_8DjTIPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWznTfa8EeOwAIzX2wwpvA" name="panierDao">
+      <modelElement href="CinePantin.uml#_8Mnv3fa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_FWznTva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWznT_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWznUPa8EeOwAIzX2wwpvA" name="PanierDao">
+        <modelElement href="CinePantin.uml#_8DsdHva7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWznUfa8EeOwAIzX2wwpvA" comments="_FWp2hva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2h_a8EeOwAIzX2wwpvA" name="Sign">
+      <modelElement href="CinePantin.uml#_8DGnP_a7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWznUva8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWznU_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8DGnQ_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWznVPa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWznVfa8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DGnQva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWznVva8EeOwAIzX2wwpvA" name="Sign">
+          <modelElement href="CinePantin.uml#_8DGnPfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWznV_a8EeOwAIzX2wwpvA" comments="_FWp2iPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2ifa8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8L4IsPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWznWPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8L4Is_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWznWfa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWznWva8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8L4Isfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWznW_a8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWznXPa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8L4Isva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWznXfa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWznXva8EeOwAIzX2wwpvA" comments="_FWp2iva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWp2i_a8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8L4ItPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWznX_a8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8L4It_a7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWznYPa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWznYfa8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8L4Itfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWznYva8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWznY_a8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8L4Itva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWznZPa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_IamMsPbaEeOwAIzX2wwpvA" sourceConnectionVisual="_IamMsfbaEeOwAIzX2wwpvA" text="@author Yann-Dara Nong" item="_Iana0PbaEeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8NXWpva7EeOwAIzX2wwpvA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Iak-kPbaEeOwAIzX2wwpvA" name="ArticleDao" associationsIn="_FWNKQva8EeOwAIzX2wwpvA _FWNKfva8EeOwAIzX2wwpvA _FWW7c_a8EeOwAIzX2wwpvA _FWgFMPa8EeOwAIzX2wwpvA _FWgFcva8EeOwAIzX2wwpvA _FWp2Qva8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_Iak-kfbaEeOwAIzX2wwpvA" position="-567.0,-129.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Iak-kvbaEeOwAIzX2wwpvA" label="+"/>
+    <operations xmi:id="_Iak-k_baEeOwAIzX2wwpvA" name="showMainArticles">
+      <modelElement href="CinePantin.uml#_8DQYMfa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_Iak-lPbaEeOwAIzX2wwpvA" keyword="generic_container"/>
+      <visibility xmi:id="_Iak-lfbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-lvbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DQYMva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-l_baEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Iak-mPbaEeOwAIzX2wwpvA" name="showArticleByCategory">
+      <modelElement href="CinePantin.uml#_8DQYNva7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_Iak-mfbaEeOwAIzX2wwpvA" keyword="generic_container"/>
+      <visibility xmi:id="_Iak-mvbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-m_baEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DQYOPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-nPbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-nfbaEeOwAIzX2wwpvA" name="idCategorie">
+        <modelElement href="CinePantin.uml#_8DQYN_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-nvbaEeOwAIzX2wwpvA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-n_baEeOwAIzX2wwpvA" name="findById">
+      <modelElement href="CinePantin.uml#_8DQYPPa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-oPbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-ofbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8L4Iufa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-ovbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-o_baEeOwAIzX2wwpvA" name="idArticle">
+        <modelElement href="CinePantin.uml#_8DQYPfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-pPbaEeOwAIzX2wwpvA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-pfbaEeOwAIzX2wwpvA" name="findByNom">
+      <modelElement href="CinePantin.uml#_8DQYPva7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_Iak-pvbaEeOwAIzX2wwpvA" keyword="generic_container"/>
+      <visibility xmi:id="_Iak-p_baEeOwAIzX2wwpvA" label="~"/>
+      <outParameters xmi:id="_Iak-qPbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DQYQPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-qfbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-qvbaEeOwAIzX2wwpvA" name="nomArticle">
+        <modelElement href="CinePantin.uml#_8DQYP_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-q_baEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-rPbaEeOwAIzX2wwpvA" name="findByShortDesc">
+      <modelElement href="CinePantin.uml#_8DQYRPa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-rfbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-rvbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8L4Iwva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-r_baEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-sPbaEeOwAIzX2wwpvA" name="shortDesc">
+        <modelElement href="CinePantin.uml#_8DQYRfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-sfbaEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-svbaEeOwAIzX2wwpvA" name="findByLongDesc">
+      <modelElement href="CinePantin.uml#_8DQYRva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-s_baEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-tPbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8L4Iw_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-tfbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-tvbaEeOwAIzX2wwpvA" name="longDesc">
+        <modelElement href="CinePantin.uml#_8DQYR_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-t_baEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-uPbaEeOwAIzX2wwpvA" name="countArticlesByCategory">
+      <modelElement href="CinePantin.uml#_8DQYSPa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-ufbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-uvbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DQYSfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-u_baEeOwAIzX2wwpvA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Iak-vPbaEeOwAIzX2wwpvA" name="findByNom">
+      <modelElement href="CinePantin.uml#_8L4Iuva7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_Iak-vfbaEeOwAIzX2wwpvA" keyword="generic_container"/>
+      <visibility xmi:id="_Iak-vvbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-v_baEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8L4Ivfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-wPbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-wfbaEeOwAIzX2wwpvA" name="nomArticle">
+        <modelElement href="CinePantin.uml#_8L4Iu_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-wvbaEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Iak-w_baEeOwAIzX2wwpvA" name="categories">
+        <modelElement href="CinePantin.uml#_8L4IvPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-xPbaEeOwAIzX2wwpvA" name="List">
+          <modelElement href="CinePantin.uml#_8Hafcfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-xfbaEeOwAIzX2wwpvA" name="create">
+      <modelElement href="CinePantin.uml#_8L4IxPa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-xvbaEeOwAIzX2wwpvA" label="+"/>
+      <parameters xmi:id="_Iak-x_baEeOwAIzX2wwpvA" name="a">
+        <modelElement href="CinePantin.uml#_8L4Ixfa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-yPbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iak-yfbaEeOwAIzX2wwpvA" name="update">
+      <modelElement href="CinePantin.uml#_8L4Ixva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iak-yvbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iak-y_baEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8L4IyPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-zPbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iak-zfbaEeOwAIzX2wwpvA" name="a">
+        <modelElement href="CinePantin.uml#_8L4Ix_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iak-zvbaEeOwAIzX2wwpvA" name="Article">
+          <modelElement href="CinePantin.uml#_8H3LY_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Iana0PbaEeOwAIzX2wwpvA" comments="_IamMsPbaEeOwAIzX2wwpvA" targetConnectionVisual="_IamMsfbaEeOwAIzX2wwpvA" name="CategorieDao" associationsIn="_FWNKS_a8EeOwAIzX2wwpvA _FWgFMfa8EeOwAIzX2wwpvA _FWp2Q_a8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8DZiKPa7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_Iana0fbaEeOwAIzX2wwpvA" position="-1488.0,-202.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Iana0vbaEeOwAIzX2wwpvA" label="+"/>
+    <operations xmi:id="_Iana0_baEeOwAIzX2wwpvA" name="findAllCategories">
+      <modelElement href="CinePantin.uml#_8DZiKfa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_Iana1PbaEeOwAIzX2wwpvA" keyword="generic_container"/>
+      <visibility xmi:id="_Iana1fbaEeOwAIzX2wwpvA" label="~"/>
+      <outParameters xmi:id="_Iana1vbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DZiKva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana1_baEeOwAIzX2wwpvA" name="Categorie">
+          <modelElement href="CinePantin.uml#_8EJJBfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Iana2PbaEeOwAIzX2wwpvA" name="findNomById">
+      <modelElement href="CinePantin.uml#_8DZiLva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iana2fbaEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iana2vbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DZiMPa7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana2_baEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iana3PbaEeOwAIzX2wwpvA" name="idCategorie">
+        <modelElement href="CinePantin.uml#_8DZiL_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana3fbaEeOwAIzX2wwpvA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iana3vbaEeOwAIzX2wwpvA" name="findIdByNom">
+      <modelElement href="CinePantin.uml#_8DZiMfa7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iana3_baEeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_Iana4PbaEeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8DZiM_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana4fbaEeOwAIzX2wwpvA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Iana4vbaEeOwAIzX2wwpvA" name="nomCategorie">
+        <modelElement href="CinePantin.uml#_8DZiMva7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana4_baEeOwAIzX2wwpvA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Iana5PbaEeOwAIzX2wwpvA" name="create">
+      <modelElement href="CinePantin.uml#_8JgKIva7EeOwAIzX2wwpvA"/>
+      <visibility xmi:id="_Iana5fbaEeOwAIzX2wwpvA" label="+"/>
+      <parameters xmi:id="_Iana5vbaEeOwAIzX2wwpvA" name="c">
+        <modelElement href="CinePantin.uml#_8JgKI_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_Iana5_baEeOwAIzX2wwpvA" name="Categorie">
+          <modelElement href="CinePantin.uml#_8EJJBfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FWgFSva8EeOwAIzX2wwpvA" name="MainFrontArticle" associationsOut="_FWgFMPa8EeOwAIzX2wwpvA _FWgFMfa8EeOwAIzX2wwpvA">
+    <modelElement href="CinePantin.uml#_8C82Ova7EeOwAIzX2wwpvA"/>
+    <visualProperties xmi:id="_FWgFS_a8EeOwAIzX2wwpvA" position="-1725.0,220.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_FWgFTPa8EeOwAIzX2wwpvA" name="LegacyStyledElement">
+      <modelElement href="CinePantin.uml#_8C82O_a7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <stereotypes xmi:id="_FWgFTfa8EeOwAIzX2wwpvA" name="Annotations">
+      <modelElement href="CinePantin.uml#_8C82Qfa7EeOwAIzX2wwpvA"/>
+    </stereotypes>
+    <visibility xmi:id="_FWgFTva8EeOwAIzX2wwpvA" label="+"/>
+    <attributes xmi:id="_FWgFT_a8EeOwAIzX2wwpvA" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="CinePantin.uml#_8MnvuPa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFUPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Mnvuva7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFUfa8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFUva8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFU_a8EeOwAIzX2wwpvA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWgFVPa8EeOwAIzX2wwpvA" name="daoArticle">
+      <modelElement href="CinePantin.uml#_8Mnvu_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFVfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvvPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWgFRPa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvvPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFVva8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFV_a8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFWPa8EeOwAIzX2wwpvA" name="ArticleDao">
+        <modelElement href="CinePantin.uml#_8DQYMPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_FWgFWfa8EeOwAIzX2wwpvA" name="daoCategorie">
+      <modelElement href="CinePantin.uml#_8Mnvv_a7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFWva8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvwPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FWgFSfa8EeOwAIzX2wwpvA" name="Annotations">
+        <modelElement href="CinePantin.uml#_8MnvwPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFW_a8EeOwAIzX2wwpvA" label="-"/>
+      <cardinality xmi:id="_FWgFXPa8EeOwAIzX2wwpvA" label="1" max="1" min="1"/>
+      <type xmi:id="_FWgFXfa8EeOwAIzX2wwpvA" name="CategorieDao">
+        <modelElement href="CinePantin.uml#_8DZiKPa7EeOwAIzX2wwpvA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FWgFXva8EeOwAIzX2wwpvA" comments="_FWgFMva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWgFM_a8EeOwAIzX2wwpvA" name="MainFrontArticle">
+      <modelElement href="CinePantin.uml#_8C82PPa7EeOwAIzX2wwpvA"/>
+      <keywords xmi:id="_FWgFX_a8EeOwAIzX2wwpvA" keyword="create"/>
+      <stereotypes xmi:id="_FWgFYPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8C82QPa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFYfa8EeOwAIzX2wwpvA" label="+"/>
+      <outParameters xmi:id="_FWgFYva8EeOwAIzX2wwpvA">
+        <modelElement href="CinePantin.uml#_8C82P_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWgFY_a8EeOwAIzX2wwpvA" name="MainFrontArticle">
+          <modelElement href="CinePantin.uml#_8C82Ova7EeOwAIzX2wwpvA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FWgFZPa8EeOwAIzX2wwpvA" comments="_FWgFNPa8EeOwAIzX2wwpvA" targetConnectionVisual="_FWgFNfa8EeOwAIzX2wwpvA" name="doGet">
+      <modelElement href="CinePantin.uml#_8Lu-3fa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFZfa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-4Pa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFZva8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWgFZ_a8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-3va7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWgFaPa8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWgFafa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-3_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWgFava8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FWgFa_a8EeOwAIzX2wwpvA" comments="_FWgFNva8EeOwAIzX2wwpvA" targetConnectionVisual="_FWgFN_a8EeOwAIzX2wwpvA" name="doPost">
+      <modelElement href="CinePantin.uml#_8Lu-4fa7EeOwAIzX2wwpvA"/>
+      <stereotypes xmi:id="_FWgFbPa8EeOwAIzX2wwpvA" name="StyledElement">
+        <modelElement href="CinePantin.uml#_8Lu-5Pa7EeOwAIzX2wwpvA"/>
+      </stereotypes>
+      <visibility xmi:id="_FWgFbfa8EeOwAIzX2wwpvA" label="#"/>
+      <parameters xmi:id="_FWgFbva8EeOwAIzX2wwpvA" name="request">
+        <modelElement href="CinePantin.uml#_8Lu-4va7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWgFb_a8EeOwAIzX2wwpvA" name="HttpServletRequest">
+          <modelElement href="CinePantin.uml#_8HuBc_a7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FWgFcPa8EeOwAIzX2wwpvA" name="response">
+        <modelElement href="CinePantin.uml#_8Lu-4_a7EeOwAIzX2wwpvA"/>
+        <type xmi:id="_FWgFcfa8EeOwAIzX2wwpvA" name="HttpServletResponse">
+          <modelElement href="CinePantin.uml#_8H3LYfa7EeOwAIzX2wwpvA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

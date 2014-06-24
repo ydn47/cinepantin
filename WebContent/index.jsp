@@ -2,7 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@include file="entete.jsp"%>
+
+<jsp:include page="entete.jsp">
+	<jsp:param value="boutique" name="origine"/>
+</jsp:include>
 	<div class="row">
 		<%@include file="menuLeft.jsp"%>
         <div class="span9">
@@ -10,26 +13,26 @@
 			<div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
-		<img width="700px" height="210px" src="${imgDir}carousel_4.jpg" alt="">
+				<img width="700px" height="210px" src="${imgDir}carousel_4.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>First Thumbnail label</h4>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
+                  <h4>La Reine des Neiges</h4>
+                  <p>Après RAIPONCE, découvrez cette année à Noël LA REINE DES NEIGES le nouveau film d'animation des Studios Disney, un conte alliant comédie, aventure et émotion dans la plus pure tradition.</p>
+               </div>
 
               </div>
               <div class="item">
                 <img src="${imgDir}carousel_2.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Second Thumbnail label</h4>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <h4>Le Festival du Film de Colmar</h4>
+                  <p>Le Festival du Film de Colmar vous propose, durant 7 jours, d'assister à des séances gratuites en présence d'acteurs, de réalisateurs ou de producteurs.</p>
                 </div>
               </div>
 
               <div class="item">
 		<img src="${imgDir}carousel_3.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Third Thumbnail label</h4>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <h4>Cinéma d'été</h4>
+                  <p>Parmi toutes les expositions en plein air que Rome offre, le Worldhotel Ripa Roma est fier d'être un partenaire officiel d'un événement historique, l'édition XX de Isola del Cinema qui se déroule dans le decor de l'île du Tibre.</p>
                 </div>
               </div>
             </div>

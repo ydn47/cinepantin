@@ -2,10 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<%@include file="entete.jsp"%>
-
- 
-		
+<jsp:include page="entete.jsp">
+	<jsp:param value="boutique" name="origine"/>
+</jsp:include>
 	
 <div class="row">
 
@@ -37,6 +36,7 @@
 				<p>Si vous avez un compte, connectez-vous</p>
 
 				<form action="${signin}" method="post">
+					<input type="hidden" value="${origine}"name="origine">
 					<fieldset>
 						<div class="control-group">
 							<label for="focusedInput" class="control-label">Email (login)</label>

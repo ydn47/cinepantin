@@ -38,6 +38,7 @@ public class Article implements SerialArticle {
 	private int qteStock;
 	private String urlImage;
 	@JoinColumn(name = "idCategorie")
+
 	@ManyToOne()
 	private Categorie categorie;
 	@JoinColumn(name = "idPlageDePrix")

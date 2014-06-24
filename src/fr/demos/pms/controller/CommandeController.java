@@ -56,11 +56,15 @@ public class CommandeController extends HttpServlet {
 		
 		if (client != null){
 			request.setAttribute("client", client);
+			RequestDispatcher rd = request
+					.getRequestDispatcher("/cart-confirmation.jsp");
+					rd.forward(request, response);
+					return;
+		}else {
+			System.out.print("ici");
+			
 		}
-		RequestDispatcher rd = request
-				.getRequestDispatcher("/cart-confirmation.jsp");
-				rd.forward(request, response);
-				return;
+		
 	}
 
 	/**

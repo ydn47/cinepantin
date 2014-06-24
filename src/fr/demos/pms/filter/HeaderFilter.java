@@ -61,7 +61,8 @@ public class HeaderFilter implements Filter {
 	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		request.setCharacterEncoding("UTF-8");
-		
+		//String info = request.getParameter(name);
+		//System.out.print("infoFilter" +info);
 		// chargement des catégories 
 		Collection<Categorie> listeCategories = new ArrayList<Categorie>();
 		listeCategories = daoCategorie.findAllCategories();
