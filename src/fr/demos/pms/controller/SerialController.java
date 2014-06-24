@@ -139,9 +139,8 @@ public class SerialController extends HttpServlet {
 
 
 			HashMap<String, String> hm = new HashMap<>();
-			// récupération des propriétés d'un article
-			//hm.put("titre", titre);
-			//hm.put("realisateurs", realisateurs);
+			
+			System.out.println("Categ "  + idCategorie);
 
 			switch (idCategorie) {
 			case 1: // DVD
@@ -153,6 +152,7 @@ public class SerialController extends HttpServlet {
 				hm.put("Auteur", request.getParameter("auteur"));
 				hm.put("Genre", request.getParameter("genre"));
 				break;
+				
 			default:
 				hm.put("Description", request.getParameter("description"));
 				break;

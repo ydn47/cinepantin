@@ -86,7 +86,7 @@
 						<c:choose>
 						<c:when test="${msg != null}">
 							<a href="${signmodif}"> ${msg}</a> |
-							<a href="${disconnect}">Déconexion</a></li> |
+							<a href="${disconnect}">Déconnexion</a></li> |
 						</c:when>
 						<c:otherwise>
 
@@ -118,7 +118,7 @@
 							<li><a href="${boutique}">Boutique</a></li>
 
 							<li><a href="${boutique}">Evènements</a></li>
-							<li><a href="about.jsp">About</a><li>
+							<li><a href="about.jsp">A propos</a><li>
 							<li><a href="${contact}">Contact</a><li>
 			
 						  </ul>
