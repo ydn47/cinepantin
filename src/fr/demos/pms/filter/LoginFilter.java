@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import javax.inject.Inject;
+import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -22,7 +23,7 @@ import fr.demos.pms.model.Client;
 /**
  * Servlet Filter implementation class LoginFilter
  */
-@WebFilter(filterName = "LoginFilter", urlPatterns = { "/commande" })
+@WebFilter(filterName = "LoginFilter", urlPatterns = { "/commande" }, dispatcherTypes={DispatcherType.REQUEST, DispatcherType.FORWARD})
 public class LoginFilter implements Filter {
 	
 	@Inject  @Dao
@@ -69,12 +70,14 @@ public class LoginFilter implements Filter {
 					clientParam = clientDao.findByParam(loginparam, mdpparam);
 					
 					if (clientParam != null){
+						request.setAttribute("origine","commande");
 						session.setAttribute("client", clientParam);	
 						
 					}else{
 						request.setAttribute("erreurCompte", "Votre login ou mdp est incorrect");
 						request.setAttribute("email", "");
 						request.setAttribute("mdp", "");
+						request.setAttribute("origine","commande");
 						RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
 						rd.forward(request, response);
 						return;
@@ -82,13 +85,14 @@ public class LoginFilter implements Filter {
                       
 				}else{
 					request.setAttribute("erreur",errorMap);
-					
+					request.setAttribute("origine","commande");
 					RequestDispatcher rd = request.getRequestDispatcher("/my_account.jsp");
 					rd.forward(request, response);
 					return;
 					
 				}
 		}//l'user est connecté, on laisse passer
+		System.out.print("*******************************************je suis connecteé");
 		try {
 			chain.doFilter(request, response);
 		} catch (Throwable t) {

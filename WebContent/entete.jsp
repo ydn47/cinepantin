@@ -21,7 +21,9 @@
     <!-- StyleSheet -->
 	<c:url var="normalize" value="/_css/normalize.css" />
 	<c:url var="boots" value="/_css/bootstrap.min.css" />
-	<c:url var="bootsrap" value="/css/bootstrap.css" />
+	<!--<c:url var="bootsrap" value="/css/boostrap.css" /> bleu--> 
+	<c:url var="bootsrap" value="/css/boostrapOrange.css" />
+	<c:url var="bootsrap1" value="/css/screen_preview.css" />
 	<c:url var="main" value="/css/main.css" />
 	<c:url var="jqueryrating" value="/css/jquery.rating.css" />
 	<c:url var="multiselect" value="/css/bootstrap-multiselect.css" />
@@ -43,8 +45,8 @@
 	<c:url var="articleCont" value="/article/" scope="request"/>
 	<c:url var="boutique" value="/boutique" scope="request"/>
 	<c:url var="sign" value="/sign/" scope="request"/>
-	<c:url var="signin" value="/sign/in" scope="request"/>
-	<c:url var="signup" value="/sign/up" scope="request"/>
+	<c:url var="signin" value="/signin/" scope="request"/>
+	<c:url var="signup" value="/signup/" scope="request"/>
 	<c:url var="disconnect" value="/sigout/" scope="request"/>
 	<c:url var="signmodif" value="/sign/editAccount" scope="request"/>
 	<c:url var="paniercont" value="/panier" scope="request"/>
@@ -83,16 +85,16 @@
 				<div class="row">
 					<div class="links pull-right">
 						<a href="${boutique}">Acceuil</a> |
-						<c:choose>
-						<c:when test="${msg != null}">
-							<a href="${signmodif}"> ${msg}</a> |
-							<a href="${disconnect}">Déconnexion</a></li> |
-							<a href="${signmodif}${param.origine}"> ${msg}</a> |
-							<a href="${disconnect}${param.origine}">Déconnexion</a></li> |
+						<c:choose> 
+						 <c:when test="${empty msg}">
+						
+							<a href="${sign}${param.origine}">Mon compte</a> |
+							
 						</c:when>
 						<c:otherwise>
-
-							<a href="${sign}${param.origine}">Mon compte</a> |
+							<a href="#"> ${msg}</a> |
+							<a href="${disconnect}${param.origine}">Déconnexion</a></li> |
+							
 						</c:otherwise>
 					</c:choose>
 					

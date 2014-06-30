@@ -52,6 +52,8 @@ public class Sigout extends HttpServlet {
 	 //if ((info != null) && (info.equals("/disconnect")) ){ //se deconnecter
 		System.out.print ("do Get disconnect");
 		session.setAttribute("client", null);
+		request.setAttribute("msg", "");
+		
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/"+origine);
 				rd.forward(request, response);
@@ -63,7 +65,7 @@ public class Sigout extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

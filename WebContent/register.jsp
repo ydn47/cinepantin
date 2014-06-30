@@ -8,7 +8,7 @@
 	<div class="span12">
 		<ul class="breadcrumb">
 			<li><a href="${boutique}">Home</a> <span class="divider">/</span></li>
-			<li><a href="#">Account</a> <span class="divider">/</span></li>
+			<li><a href="#">Compte</a> <span class="divider">/</span></li>
 			<li class="active"><a href="#">Créer un compte</a></li>
 		</ul>
 	</div>
@@ -22,6 +22,7 @@
 				<div class="span6 no_margin_left">
 					<legend>Vos détails personnels</legend>
 					<div class="control-group">
+						<input type="hidden" value="${origine}"name="origine">
 						<label class="control-label">Prénom</label>
 						<div class="controls docs-input-sizes">
 							<input name="prenom" value="${prenom}" type="text" autofocus

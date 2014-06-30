@@ -53,7 +53,7 @@ public class CommandeController extends HttpServlet {
 		Client client = (Client) session.getAttribute("client");
 		//System.out.print("adr fact : "+client.getAdresseFacturation().getIdAdresse());
 		//System.out.print("adr liv : "+client.getAdresseLivraison().getIdAdresse());
-		
+		System.out.print("do Get");
 		if (client != null){
 			request.setAttribute("client", client);
 			RequestDispatcher rd = request
@@ -61,7 +61,7 @@ public class CommandeController extends HttpServlet {
 					rd.forward(request, response);
 					return;
 		}else {
-			System.out.print("ici");
+			System.out.print("ici=================");
 			
 		}
 		
@@ -251,11 +251,10 @@ public class CommandeController extends HttpServlet {
 			}
 				
 		}
-		}else {
-			//doGet(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("/commande-merci.jsp");
-			rd.forward(request, response);
-			return;	
+		}else{
+			System.out.print("je suis ds le else qui appelle doGet");
+			doGet(request, response);
+			
 		}
 	}	
 }

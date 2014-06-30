@@ -61,6 +61,8 @@ public class HeaderFilter implements Filter {
 	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		request.setCharacterEncoding("UTF-8");
+		HttpSession session = ((HttpServletRequest) request).getSession(); 
+		Client client       = (Client) session.getAttribute("client");
 		//String info = request.getParameter(name);
 		//System.out.print("infoFilter" +info);
 		// chargement des catégories 
@@ -70,8 +72,8 @@ public class HeaderFilter implements Filter {
 			request.setAttribute("lstCategories", listeCategories);
 		else 
 			request.setAttribute("lstCategories", null);
-		HttpSession session = ((HttpServletRequest) request).getSession(); 
-		Client client       = (Client) session.getAttribute("client");
+		
+		//Client client       = (Client) session.getAttribute("client");
 		
 		// Récupération du total des articles par catégorie
 		List<Integer> totalArticles = daoArticle.countArticlesByCategory();
@@ -90,11 +92,14 @@ public class HeaderFilter implements Filter {
 		
 		Panier panier = (Panier) session.getAttribute("panier");
 		System.out.print("panierSession" + panier);
+		int nbArticles = 0;
 		if (panier!= null) {
-			int nbArticles = panier.getLignesPanier().size();
+			nbArticles = panier.getLignesPanier().size();
 			request.setAttribute("nbArticles",nbArticles);
 			request.setAttribute("total", panier.getMontantTotalTTCFormat());
 			
+		}else{
+			request.setAttribute("nbArticles", 0);
 		}
 		
 		try {

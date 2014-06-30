@@ -28,7 +28,7 @@
 			<div class="span5 well">
 				<h2>Nouveau Client</h2>
 				<p>En créant un compte sur notre boutique, vous serez en mesure de se déplacer à travers le processus de paiement plus rapide, stocker plusieurs adresses de livraison, consulter et suivre vos commandes dans votre compte et plus encore.</p><br>
-				<a href="${signup}" class="btn btn-primary pull-right">Créer un compte</a>
+				<a href="${signup}${origine}" class="btn btn-primary pull-right">Créer un compte</a>
 			</div>	 		
 			
 			<div class="span5 well pull-right">
@@ -36,9 +36,9 @@
 				<p>Si vous avez un compte, connectez-vous</p>
 
 				<form action="${signin}" method="post">
-					<input type="hidden" value="${origine}"name="origine">
 					<fieldset>
 						<div class="control-group">
+							<input type="hidden" value="${origine}"name="origine">
 							<label for="focusedInput" class="control-label">Email (login)</label>
 							<div class="controls">
 								<input class="input-xlarge focused" placeholder="Saisir votre login" id="username" name="email" value="" type="email" required autofocus />${erreur["email"]}
