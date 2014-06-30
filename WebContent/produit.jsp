@@ -37,7 +37,7 @@
 
 		<div class="row">
 			<div class="span3">
-				<img src="${imgDir}article${articleObject.getIdArticle()}.jpg" alt="">
+				<img src="${imgDir}article${articleObject.getIdArticle()}.jpg" alt="${articleObject.getNomArticle()}">
 
 
 				<ul class="thumbnails">

@@ -27,7 +27,7 @@
 	</div>
 	<div class="span9">
 <div class="page-header">
-    <h1>Contact us</h1>
+    <h1>Contactez-nous</h1>
   </div>
 
   <!-- Headings & Paragraph Copy -->
