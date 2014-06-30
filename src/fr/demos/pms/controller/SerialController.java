@@ -27,9 +27,11 @@ import fr.demos.pms.model.Tva;
 public class SerialController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	@Inject @Dao
+	@Inject
+	@Dao
 	private ArticleDao daoArticle;
-	@Inject @Dao
+	@Inject
+	@Dao
 	private CategorieDao daoCategorie;
 
 	/**
@@ -51,24 +53,6 @@ public class SerialController extends HttpServlet {
 				.findAllCategories();
 		request.setAttribute("lstCategories", listeCategories);
 
-		boolean urlCategorie = false;
-		// En fonction de l'article précisé, afficher une liste des propriétés
-		String categorie = request.getPathInfo();
-		//System.out.println("Categorie " + categorie);
-		if (categorie != null)
-		{
-			urlCategorie = true;
-			categorie = categorie.substring(1).toUpperCase();
-		}
-		else 
-		{
-			
-			categorie = "";
-		}
-		
-
-		request.setAttribute("categorie", categorie);
-		request.setAttribute("urlCategorie", urlCategorie);
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/SerialArticle.jsp");
 		rd.forward(request, response);
@@ -81,92 +65,85 @@ public class SerialController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		Collection<Categorie> listeCategories = daoCategorie
-				.findAllCategories();
-		request.setAttribute("lstCategories", listeCategories);
-
-		String nomArticle = "";
-		String shortDesc = "";
-		String longDesc = "";
-		String prixUnitaire = "";
-		// String tva = "";
-		String qteStock = "";
-		String nomFichierImage = "";
-		int idCategorie = 0;
 
 		String action = request.getParameter("valider");
+		String action2 = request.getParameter("insert");
+		
+		// cas du choix des catégories
+		if (action != null && action.equals("Valider")) {
+			int idCategorie = 0;
+			// récupération de l'id de la catégorie sélectionnée
+			String categorie = request.getParameter("categories");
+			idCategorie = Integer.parseInt(categorie);
+			request.setAttribute("idCategorie", idCategorie);
+			// récupération du nom de la catégorie sélectionnée
+			String nomCategorie = daoCategorie.findNomById(idCategorie);
+			request.setAttribute("nomCateg", nomCategorie);
 
-		if (action != null && action.equals("valider")) {
-			nomArticle = request.getParameter("nomArticle").trim();
-			shortDesc = request.getParameter("shortDesc").trim();
-			longDesc = request.getParameter("longDesc").trim();
-			//titre = request.getParameter("titre").trim();
-			//realisateurs = request.getParameter("realisateurs").trim();
-			prixUnitaire = request.getParameter("prixUnit").trim();
-			double prixUnit = Double.parseDouble(prixUnitaire);
-			// tva = request.getParameter("listeCateg");
-			qteStock = request.getParameter("qteStock").trim();
-			int qte_stock = Integer.parseInt(qteStock);
-			String nomCategorie = request.getParameter("categorie");
+			// récupération des propriétés de la catégorie avant envoi
+			Collection<String> proprietes = new ArrayList<>();
+			switch (idCategorie) {
+			// Les id de catégorie correspondent à ceux en base, on gère les
+			// propriétés en statique (dur)
+			// car elles ne sont pas enregistrées en base
+			case 1: // DVD
+				proprietes.add("Titre");
+				proprietes.add("Réalisateur");
+				break;
+			case 2: // Livres
+				proprietes.add("Genre");
+				proprietes.add("Auteur");
+				break;
+			case 3: // Autre
+				proprietes.add("Description");
+				break;
+			default:
+				break;
+			}
+			request.setAttribute("proprietes", proprietes);
+		}
+
+		// Cas de l'insertion d'un article
+		if (action2 != null && action2.equals("Inserer")) {
+			// récupérer les propriétés de l'article et l'id categ
 			
-			String titre = request.getParameter("titre");
-			
-			Categorie cat = null;
-			if (nomCategorie != null && nomCategorie != "")
+			int idCategorie = 0;
+			try {
+				idCategorie = Integer.parseInt(request.getParameter("idCategorie"));
+			} catch  (NumberFormatException nbf)
 			{
-				idCategorie = daoCategorie.findIdByNom(nomCategorie);
-				if (idCategorie != 0)
-				{
-					cat = new Categorie(idCategorie);
-				}
-				else 
-				{
-					cat = new Categorie(3);
-				}
-			} else
-			{
-				// la catégorie 3 correspond à n'importe quel autre catégorie que dvd et livres
-				cat = new Categorie(3);
+				System.err.println("Erreur de conversion de idCategorie" + nbf);
 			}
 
-			// Récupération du fichier image
-			// nomFichierImage = request.getParameter("file");
-			// System.out.println("Fichier " + nomFichierImage);
-			// Part filePart = request.getPart("file"); // Retrieves <input
-			// type="file" name="file">
-			// String filename = filePart.getName();
-			// System.out.println(filename);
-
-
+			// Préparation de l'article
 			HashMap<String, String> hm = new HashMap<>();
-			
-			System.out.println("Categ "  + idCategorie);
 
 			switch (idCategorie) {
 			case 1: // DVD
-				hm.put("Acteurs", request.getParameter("acteurs"));
-				hm.put("Réalisateurs", request.getParameter("realisateurs"));
+				hm.put("Titre", request.getParameter("Titre"));
+				hm.put("Réalisateur", request.getParameter("Réalisateur"));
 				break;
-
 			case 2: // Livres
-				hm.put("Auteur", request.getParameter("auteur"));
-				hm.put("Genre", request.getParameter("genre"));
+				hm.put("Auteur", request.getParameter("Genre"));
+				hm.put("Auteur", request.getParameter("Auteur"));
 				break;
-				
+			case 3: // Autre
+				hm.put("Description", request.getParameter("Description"));
+				break;
 			default:
-				hm.put("Description", request.getParameter("description"));
 				break;
 			}
-			
-			daoArticle.create(new Article(nomArticle, shortDesc, longDesc,
-					prixUnit, Tva.NORMAL, qte_stock, null, cat, null, hm));
 
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/SerialArticle.jsp");
-			rd.forward(request, response);
-			return;
+			daoArticle.create(new Article("Test Insertion", "", "", 10.00, Tva.NORMAL, 10,
+					null, new Categorie(idCategorie), null, hm));
+			
 		}
-	
+		
+		RequestDispatcher rd = request
+				.getRequestDispatcher("/InsertionArticle.jsp");
+		rd.forward(request, response);
+		return;
+
 	}
-	
+
 }
