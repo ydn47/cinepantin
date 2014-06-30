@@ -52,6 +52,18 @@ public class Article implements SerialArticle {
 	protected Article() {
 		// pour Hibernate
 	}
+	
+
+	public Article(String nomArticle, String shortDescArticle,
+			double prixUnitArticle, Tva tva, int qteStock) {
+		super();
+		this.nomArticle = nomArticle;
+		this.shortDescArticle = shortDescArticle;
+		this.prixUnitArticle = prixUnitArticle;
+		this.tva = tva;
+		this.qteStock = qteStock;
+	}
+
 
 	public void retirerDuStock(int nb) throws ExceptionStock {
 		if (nb > this.qteStock) {
