@@ -38,7 +38,7 @@ public class ArticleDaoJPA implements ArticleDao {
 	@Override
 	public Collection<Article> showMainArticles() {
 		String query = "SELECT a FROM Article a";
-		TypedQuery<Article> q = em.createQuery(query, Article.class).setMaxResults(9);
+		TypedQuery<Article> q = em.createQuery(query, Article.class).setMaxResults(6);
 		Collection<Article> listeArticle = q.getResultList();
 
 		return listeArticle;

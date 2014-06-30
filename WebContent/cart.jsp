@@ -39,7 +39,7 @@
 					<c:forEach var="ligne" items="${panierContent.getLignesPanier()}">
 							<tr>
 								<td class=""><input type="checkbox" value="${ligne.getArticle().getIdArticle()}" name="optionsCheckbox"></td>
-								<td class="muted center_text"><a href="${ligne.getArticle().getIdArticle()}"><img src="${imgDir}article${ligne.getArticle().getIdArticle()}_1.jpg"></a></td>
+								<td class="muted center_text"><a href="${articleCont}${ligne.getArticle().getIdArticle()}"><img src="${imgDir}article${ligne.getArticle().getIdArticle()}_1.jpg"></a></td>
 								<td>${ligne.getArticle().getNomArticle()}</td>
 					
 								<td>
