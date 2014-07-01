@@ -79,6 +79,7 @@ public class SerialController extends HttpServlet {
 
 		// cas du choix des catégories
 		if (action != null && action.equals("Valider")) {
+			boolean nouvCat = false;
 			int idCategorie = 0;
 			// récupération de l'id de la catégorie sélectionnée
 			String categorie = request.getParameter("categories");
@@ -107,11 +108,24 @@ public class SerialController extends HttpServlet {
 			case 3: // Autre
 				proprietes.add("Description");
 				break;
-			default:
+			default: // Cas de l'insertion d'une nouvelle catégorie
+				nouvCat = true;
 				break;
 			}
 
 			request.setAttribute("proprietes", proprietes);
+
+			if (nouvCat)
+			{
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/InsertionCategorie.jsp");
+				rd.forward(request, response);
+			} else {
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/InsertionArticle.jsp");
+				rd.forward(request, response);
+			}
+			return;
 		}
 
 		// Cas de l'insertion d'un article
@@ -130,7 +144,6 @@ public class SerialController extends HttpServlet {
 			double prix = Double.parseDouble(request.getParameter("prix"));
 			int quantite = Integer.parseInt(request.getParameter("quantite"));
 
-			
 			Collection<String> proprietes = new ArrayList<>();
 			switch (idCategorie) {
 			// Les id de catégorie correspondent à ceux en base, on gère les
@@ -152,7 +165,7 @@ public class SerialController extends HttpServlet {
 			}
 
 			request.setAttribute("proprietes", proprietes);
-			
+
 			// remplissage des propriétés à sérialiser
 			switch (idCategorie) {
 			case 1: // DVD
@@ -174,13 +187,12 @@ public class SerialController extends HttpServlet {
 					prix, Tva.NORMAL, quantite, null,
 					new Categorie(idCategorie), null, hm));
 
+			RequestDispatcher rd = request
+					.getRequestDispatcher("/InsertionArticle.jsp");
+			rd.forward(request, response);
+			return;
+
 		}
 
-		RequestDispatcher rd = request
-				.getRequestDispatcher("/InsertionArticle.jsp");
-		rd.forward(request, response);
-		return;
-
 	}
-
 }

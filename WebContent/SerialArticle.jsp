@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions"  prefix="fn"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +33,9 @@
 			 <div class="row"><input type="radio" name="categories"
 				value="${typeCat.getIdCategorie()}" required />${typeCat.getNomCategorie()}</div>
 		</c:forEach>
-		<br /> 
-		<input type="submit" name="valider" value="Valider" />
+			<div class="row"><input type="radio" name="categories" value="${fn:length(lstCategories)+1}" />Nouvelle catégorie</div>
+		<br />
+		<div class="row"><input type="submit" name="valider" value="Valider" /></div>
 	</form>
 	</div>
 </body>
