@@ -7,14 +7,34 @@
 <head>
 <meta charset="UTF-8" />
 <title>Choix d'une catégorie</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<c:url var="normalize" value="/_css/normalize.css" />
+<c:url var="boots" value="/_css/bootstrap.min.css" />
+<!--<c:url var="bootsrap" value="/css/boostrap.css" /> bleu-->
+<c:url var="bootsrap" value="/css/boostrapOrange.css" />
+<c:url var="bootsrap1" value="/css/screen_preview.css" />
+<c:url var="jqueryrating" value="/css/jquery.rating.css" />
+
+
+<link rel="stylesheet" href="${normalize}" />
+<%-- <link rel="stylesheet" href="${boots}" />  --%>
+<link rel="stylesheet" href="${bootsrap}">
+<link rel="stylesheet" href="${main}">
+<link rel="stylesheet" href="${jqueryrating}">
+<link rel="stylesheet" href="${multiselect}" />
 </head>
 <body>
+	<div class="container">
 	<form action="/CinePantin/SerialController" method="post">
-		<p>Choisissez une catégorie :</p>
+		<div class="row"><h2>Choisissez une catégorie d'articles</h2></div>
 		<c:forEach items="${lstCategories}" var="typeCat">
-			<input type="radio" name="categories" value="${typeCat.getIdCategorie()}" required />${typeCat.getNomCategorie()}
+			 <div class="row"><input type="radio" name="categories"
+				value="${typeCat.getIdCategorie()}" required />${typeCat.getNomCategorie()}</div>
 		</c:forEach>
-		<br /> <input type="submit" name="valider" value="Valider" />
+		<br /> 
+		<input type="submit" name="valider" value="Valider" />
 	</form>
+	</div>
 </body>
 </html>

@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import fr.demos.pms.annotation.Dao;
 import fr.demos.pms.dao.ArticleDao;
@@ -48,6 +49,9 @@ public class SerialController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		// on supprime la session si elle était amorcée avant
+		// HttpSession session = request.getSession();
+
 		// chargement des catégories
 		Collection<Categorie> listeCategories = daoCategorie
 				.findAllCategories();
@@ -68,14 +72,20 @@ public class SerialController extends HttpServlet {
 
 		String action = request.getParameter("valider");
 		String action2 = request.getParameter("insert");
-		
+
+		// Création de la session
+		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(1800); // 30 minutes de session
+
 		// cas du choix des catégories
 		if (action != null && action.equals("Valider")) {
 			int idCategorie = 0;
 			// récupération de l'id de la catégorie sélectionnée
 			String categorie = request.getParameter("categories");
 			idCategorie = Integer.parseInt(categorie);
-			request.setAttribute("idCategorie", idCategorie);
+
+			session.setAttribute("idCategorie", idCategorie);
+
 			// récupération du nom de la catégorie sélectionnée
 			String nomCategorie = daoCategorie.findNomById(idCategorie);
 			request.setAttribute("nomCateg", nomCategorie);
@@ -87,8 +97,8 @@ public class SerialController extends HttpServlet {
 			// propriétés en statique (dur)
 			// car elles ne sont pas enregistrées en base
 			case 1: // DVD
-				proprietes.add("Titre");
 				proprietes.add("Réalisateur");
+				proprietes.add("Acteurs");
 				break;
 			case 2: // Livres
 				proprietes.add("Genre");
@@ -100,28 +110,54 @@ public class SerialController extends HttpServlet {
 			default:
 				break;
 			}
+
 			request.setAttribute("proprietes", proprietes);
 		}
 
 		// Cas de l'insertion d'un article
 		if (action2 != null && action2.equals("Inserer")) {
 			// récupérer les propriétés de l'article et l'id categ
-			
+
 			int idCategorie = 0;
-			try {
-				idCategorie = Integer.parseInt(request.getParameter("idCategorie"));
-			} catch  (NumberFormatException nbf)
-			{
-				System.err.println("Erreur de conversion de idCategorie" + nbf);
-			}
+			idCategorie = (int) session.getAttribute("idCategorie");
 
 			// Préparation de l'article
 			HashMap<String, String> hm = new HashMap<>();
 
+			String nomArticle = request.getParameter("nomArticle");
+			String descCourte = request.getParameter("descCourte");
+			String descLongue = request.getParameter("descLongue");
+			double prix = Double.parseDouble(request.getParameter("prix"));
+			int quantite = Integer.parseInt(request.getParameter("quantite"));
+
+			
+			Collection<String> proprietes = new ArrayList<>();
+			switch (idCategorie) {
+			// Les id de catégorie correspondent à ceux en base, on gère les
+			// propriétés en statique (dur)
+			// car elles ne sont pas enregistrées en base
+			case 1: // DVD
+				proprietes.add("Réalisateur");
+				proprietes.add("Acteurs");
+				break;
+			case 2: // Livres
+				proprietes.add("Genre");
+				proprietes.add("Auteur");
+				break;
+			case 3: // Autre
+				proprietes.add("Description");
+				break;
+			default:
+				break;
+			}
+
+			request.setAttribute("proprietes", proprietes);
+			
+			// remplissage des propriétés à sérialiser
 			switch (idCategorie) {
 			case 1: // DVD
-				hm.put("Titre", request.getParameter("Titre"));
-				hm.put("Réalisateur", request.getParameter("Réalisateur"));
+				hm.put("Réalisateurs", request.getParameter("Réalisateur"));
+				hm.put("Acteurs", request.getParameter("Acteurs"));
 				break;
 			case 2: // Livres
 				hm.put("Auteur", request.getParameter("Genre"));
@@ -134,11 +170,12 @@ public class SerialController extends HttpServlet {
 				break;
 			}
 
-			daoArticle.create(new Article("Test Insertion", "", "", 10.00, Tva.NORMAL, 10,
-					null, new Categorie(idCategorie), null, hm));
-			
+			daoArticle.create(new Article(nomArticle, descCourte, descLongue,
+					prix, Tva.NORMAL, quantite, null,
+					new Categorie(idCategorie), null, hm));
+
 		}
-		
+
 		RequestDispatcher rd = request
 				.getRequestDispatcher("/InsertionArticle.jsp");
 		rd.forward(request, response);
