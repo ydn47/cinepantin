@@ -31,9 +31,9 @@
 		<div class="row"><h2>Choisissez une catégorie d'articles</h2></div>
 		<c:forEach items="${lstCategories}" var="typeCat">
 			 <div class="row"><input type="radio" name="categories"
-				value="${typeCat.getIdCategorie()}" required />${typeCat.getNomCategorie()}</div>
+				value="${typeCat.getIdCategorie()}" />${typeCat.getNomCategorie()}</div>
 		</c:forEach>
-			<div class="row"><input type="radio" name="categories" value="${fn:length(lstCategories)+1}" />Nouvelle catégorie</div>
+			<div class="row"><input type="radio" name="nouvCat" value="${fn:length(lstCategories)+1}" />Nouvelle catégorie</div>
 		<br />
 		<div class="row"><input type="submit" name="valider" value="Valider" /></div>
 	</form>

@@ -13,5 +13,6 @@ encoding//src/fr/demos/pms/filter/HeaderFilter.java=UTF-8
 encoding//src/fr/demos/pms/filter/LoginFilter.java=UTF-8
 encoding//src/fr/demos/pms/listener/SessionListener.java=UTF-8
 encoding//src/fr/demos/pms/model/Article.java=UTF-8
+encoding//src/fr/demos/pms/model/Categorie.java=UTF-8
 encoding//src/fr/demos/pms/model/ExceptionStock.java=UTF-8
 encoding//src/fr/demos/pms/model/Panier.java=UTF-8

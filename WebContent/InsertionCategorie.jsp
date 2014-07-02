@@ -26,6 +26,7 @@
 		<h2>Ajout d'une nouvelle catégorie</h2>
 	</div>
 	<form action="SerialController" method="post">
+		<div class="row">Nom de la catégorie: <input type="text" name="nomCateg" value="" required="required" /></div>
 		<div class="row">Propriété 1 <input type="text" value="" name="prop1"
 			required="required" /></div>
 		<div class="row"><input type="submit" name="ajoutCateg" value="Ajouter" /></div>

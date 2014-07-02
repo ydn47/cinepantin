@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -72,6 +73,7 @@ public class SerialController extends HttpServlet {
 
 		String action = request.getParameter("valider");
 		String action2 = request.getParameter("insert");
+		String action3 = request.getParameter("ajoutCateg");
 
 		// Création de la session
 		HttpSession session = request.getSession();
@@ -79,11 +81,16 @@ public class SerialController extends HttpServlet {
 
 		// cas du choix des catégories
 		if (action != null && action.equals("Valider")) {
-			boolean nouvCat = false;
+
 			int idCategorie = 0;
 			// récupération de l'id de la catégorie sélectionnée
 			String categorie = request.getParameter("categories");
-			idCategorie = Integer.parseInt(categorie);
+			
+			// nouvelle catégorie sélectionnée
+			String nouvCateg = request.getParameter("nouvCat");
+			
+			if (categorie != null && !categorie.equals(""))
+				idCategorie = Integer.parseInt(categorie);
 
 			session.setAttribute("idCategorie", idCategorie);
 
@@ -92,7 +99,7 @@ public class SerialController extends HttpServlet {
 			request.setAttribute("nomCateg", nomCategorie);
 
 			// récupération des propriétés de la catégorie avant envoi
-			Collection<String> proprietes = new ArrayList<>();
+			List<String> proprietes = new ArrayList<>();
 			switch (idCategorie) {
 			// Les id de catégorie correspondent à ceux en base, on gère les
 			// propriétés en statique (dur)
@@ -108,23 +115,32 @@ public class SerialController extends HttpServlet {
 			case 3: // Autre
 				proprietes.add("Description");
 				break;
-			default: // Cas de l'insertion d'une nouvelle catégorie
-				nouvCat = true;
+			default: // Nouvelles catégories insérées, après implémentation de
+						// la sérialisation
+				// récupérer les propriétés selon l'id
+				proprietes = daoCategorie.getProprietes(idCategorie);
 				break;
+				
 			}
-
-			request.setAttribute("proprietes", proprietes);
-
-			if (nouvCat)
+			
+			if (nouvCateg != null)
 			{
+				proprietes = daoCategorie.getProprietes(idCategorie);
+				request.setAttribute("proprietes", proprietes);
 				RequestDispatcher rd = request
 						.getRequestDispatcher("/InsertionCategorie.jsp");
 				rd.forward(request, response);
-			} else {
+			}
+			else
+			{
+
+				request.setAttribute("proprietes", proprietes);
+	
 				RequestDispatcher rd = request
 						.getRequestDispatcher("/InsertionArticle.jsp");
 				rd.forward(request, response);
 			}
+			
 			return;
 		}
 
@@ -144,7 +160,7 @@ public class SerialController extends HttpServlet {
 			double prix = Double.parseDouble(request.getParameter("prix"));
 			int quantite = Integer.parseInt(request.getParameter("quantite"));
 
-			Collection<String> proprietes = new ArrayList<>();
+			List<String> proprietes = new ArrayList<>();
 			switch (idCategorie) {
 			// Les id de catégorie correspondent à ceux en base, on gère les
 			// propriétés en statique (dur)
@@ -161,38 +177,74 @@ public class SerialController extends HttpServlet {
 				proprietes.add("Description");
 				break;
 			default:
+				proprietes = daoCategorie.getProprietes(idCategorie);
 				break;
 			}
 
 			request.setAttribute("proprietes", proprietes);
 
 			// remplissage des propriétés à sérialiser
-			switch (idCategorie) {
-			case 1: // DVD
-				hm.put("Réalisateurs", request.getParameter("Réalisateur"));
-				hm.put("Acteurs", request.getParameter("Acteurs"));
-				break;
-			case 2: // Livres
-				hm.put("Auteur", request.getParameter("Genre"));
-				hm.put("Auteur", request.getParameter("Auteur"));
-				break;
-			case 3: // Autre
-				hm.put("Description", request.getParameter("Description"));
-				break;
-			default:
-				break;
+			
+			  switch (idCategorie) { 
+			  case 1: // DVD hm.put("Réalisateurs",
+			 request.getParameter("Réalisateur");
+			 hm.put("Acteurs",
+			 request.getParameter("Acteurs")); 
+			 break; 
+			 case 2: // Livres
+			 hm.put("Auteur", request.getParameter("Genre")); 
+			 hm.put("Auteur",
+			 request.getParameter("Auteur")); 
+			 break; case 3: // Autre
+			 hm.put("Description", request.getParameter("Description"));
+			 break; default: 	proprietes = daoCategorie.getProprietes(idCategorie);
+				for (int index = 0; index < proprietes.size(); index++) {
+					hm.put(proprietes.get(index),
+							request.getParameter("prop" + index));
+				 break; 
+			  }
+			 
+//			// récupérer les catégories
+//			proprietes = daoCategorie.getProprietes(idCategorie);
+//			for (int index = 0; index < proprietes.size(); index++) {
+//				hm.put(proprietes.get(index),
+//						request.getParameter("prop" + index));
+//			}
+				
+			 } 
+				 
+
+				daoArticle.create(new Article(nomArticle, descCourte,
+						descLongue, prix, Tva.NORMAL, quantite, null,
+						new Categorie(idCategorie), null, hm));
+
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/InsertionArticle.jsp");
+				rd.forward(request, response);
+				return;
+
 			}
 
-			daoArticle.create(new Article(nomArticle, descCourte, descLongue,
-					prix, Tva.NORMAL, quantite, null,
-					new Categorie(idCategorie), null, hm));
+			// cas de l'insertion d'une nouvelle catégorie
+			if (action3 != null && action3.equals("Ajouter")) {
+				String nomCateg = request.getParameter("nomCateg").trim();
+				String prop1 = request.getParameter("prop1").trim();
 
-			RequestDispatcher rd = request
-					.getRequestDispatcher("/InsertionArticle.jsp");
-			rd.forward(request, response);
-			return;
+				List<String> proprietesCategorie = new ArrayList<>();
+				proprietesCategorie.add(prop1);
 
+				// récupérer le dernier id de catégorie et ajouter 1
+				long newId = daoCategorie.getLastId() + 1;
+				daoCategorie.create(new Categorie(newId, nomCateg, Categorie
+						.serialize(proprietesCategorie)));
+
+				Collection<Categorie> listeCategories = daoCategorie
+						.findAllCategories();
+				request.setAttribute("lstCategories", listeCategories);
+
+				RequestDispatcher rd = request
+						.getRequestDispatcher("/SerialArticle.jsp");
+				rd.forward(request, response);
+			}
 		}
-
 	}
-}
