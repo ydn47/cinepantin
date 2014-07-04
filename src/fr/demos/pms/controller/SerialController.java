@@ -228,10 +228,15 @@ public class SerialController extends HttpServlet {
 			// cas de l'insertion d'une nouvelle catégorie
 			if (action3 != null && action3.equals("Ajouter")) {
 				String nomCateg = request.getParameter("nomCateg").trim();
-				String prop1 = request.getParameter("prop1").trim();
-
+				
 				List<String> proprietesCategorie = new ArrayList<>();
-				proprietesCategorie.add(prop1);
+				
+				int totalChamps = Integer.parseInt(request.getParameter("totalChamps"));
+				for(int index = 1; index <= totalChamps; index++)
+				{
+					proprietesCategorie.add(request.getParameter("prop" + index));
+				}
+					
 
 				// récupérer le dernier id de catégorie et ajouter 1
 				long newId = daoCategorie.getLastId() + 1;
