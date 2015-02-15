@@ -91,7 +91,7 @@ INSERT INTO `article` (`IDARTICLE`, `LONGDESCARTICLE`, `NOMARTICLE`, `PRIXUNITAR
 
 CREATE TABLE IF NOT EXISTS `categorie` (
   `IDCATEGORIE` bigint(20) NOT NULL,
-  `DESCRIPTIONCATEGORIE` varchar(255) character set utf8 collate utf8_bin default NULL,
+  `DESCRIPTIONCATEGORIE` BLOB default NULL,
   `NOMCATEGORIE` varchar(255) character set utf8 collate utf8_bin default NULL,
   PRIMARY KEY  (`IDCATEGORIE`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
